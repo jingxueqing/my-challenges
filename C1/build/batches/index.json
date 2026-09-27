@@ -1,0 +1,276 @@
+[
+  {
+    "batch": "batch-01.md",
+    "segments": 16,
+    "chars": 17609,
+    "docs": [
+      "agentic-ai-threats",
+      "index"
+    ]
+  },
+  {
+    "batch": "batch-02.md",
+    "segments": 16,
+    "chars": 17464,
+    "docs": [
+      "agentic-ai-threats"
+    ]
+  },
+  {
+    "batch": "batch-03.md",
+    "segments": 16,
+    "chars": 17985,
+    "docs": [
+      "agentic-ai-threats"
+    ]
+  },
+  {
+    "batch": "batch-04.md",
+    "segments": 16,
+    "chars": 15645,
+    "docs": [
+      "agentic-ai-threats",
+      "ai-code-review-best-practices"
+    ]
+  },
+  {
+    "batch": "batch-05.md",
+    "segments": 16,
+    "chars": 15155,
+    "docs": [
+      "ai-code-review-best-practices",
+      "claude-code-best-practices",
+      "code-review-essentials"
+    ]
+  },
+  {
+    "batch": "batch-06.md",
+    "segments": 16,
+    "chars": 14635,
+    "docs": [
+      "code-review-essentials",
+      "code-reviews-just-do-it",
+      "context-rot"
+    ]
+  },
+  {
+    "batch": "batch-07.md",
+    "segments": 16,
+    "chars": 19347,
+    "docs": [
+      "context-rot"
+    ]
+  },
+  {
+    "batch": "batch-08.md",
+    "segments": 16,
+    "chars": 22479,
+    "docs": [
+      "context-rot"
+    ]
+  },
+  {
+    "batch": "batch-09.md",
+    "segments": 16,
+    "chars": 17764,
+    "docs": [
+      "context-rot",
+      "copilot-prompt-injection-rce",
+      "devin-coding-agents-101"
+    ]
+  },
+  {
+    "batch": "batch-10.md",
+    "segments": 16,
+    "chars": 17232,
+    "docs": [
+      "devin-coding-agents-101"
+    ]
+  },
+  {
+    "batch": "batch-11.md",
+    "segments": 16,
+    "chars": 16036,
+    "docs": [
+      "devin-coding-agents-101",
+      "finding-vulnerabilities-claude-codex"
+    ]
+  },
+  {
+    "batch": "batch-12.md",
+    "segments": 16,
+    "chars": 14142,
+    "docs": [
+      "finding-vulnerabilities-claude-codex",
+      "good-context-good-code",
+      "how-long-contexts-fail"
+    ]
+  },
+  {
+    "batch": "batch-13.md",
+    "segments": 16,
+    "chars": 16449,
+    "docs": [
+      "how-long-contexts-fail",
+      "how-to-review-code-effectively"
+    ]
+  },
+  {
+    "batch": "batch-14.md",
+    "segments": 16,
+    "chars": 15351,
+    "docs": [
+      "how-to-review-code-effectively",
+      "how-warp-uses-warp",
+      "mcp-food-for-thought"
+    ]
+  },
+  {
+    "batch": "batch-15.md",
+    "segments": 16,
+    "chars": 29529,
+    "docs": [
+      "mcp-food-for-thought",
+      "mcp-introduction"
+    ]
+  },
+  {
+    "batch": "batch-16.md",
+    "segments": 16,
+    "chars": 18508,
+    "docs": [
+      "mcp-introduction",
+      "mcp-registry-preview",
+      "mcp-server-authentication"
+    ]
+  },
+  {
+    "batch": "batch-17.md",
+    "segments": 16,
+    "chars": 15325,
+    "docs": [
+      "mcp-server-authentication",
+      "observability-basics"
+    ]
+  },
+  {
+    "batch": "batch-18.md",
+    "segments": 16,
+    "chars": 16266,
+    "docs": [
+      "owasp-top-ten"
+    ]
+  },
+  {
+    "batch": "batch-19.md",
+    "segments": 16,
+    "chars": 15674,
+    "docs": [
+      "owasp-top-ten",
+      "peeking-under-the-hood-of-claude-code",
+      "prompt-engineering-guide",
+      "prompt-engineering-overview"
+    ]
+  },
+  {
+    "batch": "batch-20.md",
+    "segments": 16,
+    "chars": 18278,
+    "docs": [
+      "prompt-engineering-overview",
+      "sast-vs-dast"
+    ]
+  },
+  {
+    "batch": "batch-21.md",
+    "segments": 16,
+    "chars": 16873,
+    "docs": [
+      "sast-vs-dast",
+      "specs-are-the-new-source-code"
+    ]
+  },
+  {
+    "batch": "batch-22.md",
+    "segments": 16,
+    "chars": 16439,
+    "docs": [
+      "specs-are-the-new-source-code",
+      "sre-introduction"
+    ]
+  },
+  {
+    "batch": "batch-23.md",
+    "segments": 16,
+    "chars": 14129,
+    "docs": [
+      "sre-introduction"
+    ]
+  },
+  {
+    "batch": "batch-24.md",
+    "segments": 16,
+    "chars": 20824,
+    "docs": [
+      "sre-introduction",
+      "warp-vs-claude-code",
+      "writing-effective-tools-for-agents"
+    ]
+  },
+  {
+    "batch": "batch-25.md",
+    "segments": 16,
+    "chars": 34508,
+    "docs": [
+      "README",
+      "Vibe_Coding_Playbook",
+      "all_urls",
+      "index",
+      "robots",
+      "writing-effective-tools-for-agents"
+    ]
+  },
+  {
+    "batch": "batch-26.md",
+    "segments": 16,
+    "chars": 43246,
+    "docs": [
+      "Vibe_Coding_Playbook",
+      "ai-assisted-code-review-assessment"
+    ]
+  },
+  {
+    "batch": "batch-27.md",
+    "segments": 16,
+    "chars": 26042,
+    "docs": [
+      "ai-assisted-code-review-assessment",
+      "how-anthropic-uses-claude-code"
+    ]
+  },
+  {
+    "batch": "batch-28.md",
+    "segments": 16,
+    "chars": 13997,
+    "docs": [
+      "how-anthropic-uses-claude-code"
+    ]
+  },
+  {
+    "batch": "batch-29.md",
+    "segments": 16,
+    "chars": 14477,
+    "docs": [
+      "how-anthropic-uses-claude-code",
+      "how-openai-uses-codex"
+    ]
+  },
+  {
+    "batch": "batch-30.md",
+    "segments": 9,
+    "chars": 9057,
+    "docs": [
+      "how-openai-uses-codex"
+    ]
+  }
+]

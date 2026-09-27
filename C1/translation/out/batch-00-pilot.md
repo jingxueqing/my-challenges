@@ -1,0 +1,74 @@
+<!-- seg:code-reviews-just-do-it#001 -->
+
+在《Humanizing Peer Reviews》一文中，Karl Wiegers 开篇就给出了一个有力的论断：
+
+同行评审（peer review）——由软件交付物作者之外的人对其进行检查，以发现缺陷与改进机会的活动——是现有最强大的软件质量工具之一。同行评审的方法包括审查（inspections）、走查（walkthroughs）、同行桌面检查（peer desk checks）以及其他类似活动。在亲身受益于同行评审近十五年之后，我绝不会在一个不做同行评审的团队里工作。在 Vertigo 参与了一段时间代码评审之后，我相信同行的代码评审是你能为改进代码所做的最大的一件事。如果你现在没有和另一位开发者一起做代码评审，那你的代码里正遗漏大量缺陷，也白白错过了一些关键的职业成长机会。就我而言，在没有和一位开发者同伴一起过一遍之前，我的代码就不算完成。
+
+但请别只听我的一面之词。McConnell 在《Code Complete》中为代码评审的有效性提供了大量证据：
+
+<!-- seg:code-reviews-just-do-it#002 -->
+
+……软件测试本身的效果是有限的——平均缺陷检出率在单元测试中只有 25%，功能测试为 35%，集成测试为 45%。相比之下，设计审查与代码审查的平均有效性分别为 55% 和 60%。评审结果的案例研究令人印象深刻：
+
+在一家软件维护机构中，引入代码评审之前，55% 的单行维护改动是有错误的。引入评审之后，只有 2% 的改动存在错误。就全部改动而言，引入评审后 95% 的改动一次就正确；而在引入评审之前，一次正确的不足 20%。
+
+在一组由同一批人开发的 11 个程序中，前 5 个在没有评审的情况下开发，其余 6 个在评审参与下开发。所有程序发布到生产环境后，前 5 个平均每 100 行代码有 4.5 个错误，而经过审查的 6 个平均只有 0.82 个。评审把错误减少了 80% 以上。
+
+<!-- seg:code-reviews-just-do-it#003 -->
+
+Aetna 保险公司通过审查发现了程序中 82% 的错误，并因此把开发资源减少了 20%。
+
+IBM 的 50 万行 Orbit 项目采用了 11 级审查。它提前交付，且错误大约只有通常预期水平的 1%。
+
+一项针对 AT&T 内部一个 200 多人组织的研究报告称，该组织引入评审后，生产率提高了 14%，缺陷下降了 90%。
+
+喷气推进实验室（Jet Propulsion Laboratories）估计，通过尽早发现并修复缺陷，每次审查可节省约 25,000 美元。
+
+代码评审唯一的门槛，是找到一位你尊重的开发者来做这件事，并抽出时间执行评审。一旦开始，我想你很快就会明白：你在代码评审上花的每一分钟，都会以十倍的回报还给你。
+
+如果你的组织对代码评审还很陌生，我强烈推荐 Karl 的《Peer Reviews in Software: A Practical Guide》。他在自己网站上提供的样章也是非常好的入门材料。
+
+软件开发 / 代码评审 / 同行评审 / 代码质量 / 职业发展
+
+<!-- seg:good-context-good-code#001 -->
+
+由 Ghost 提供支持
+
+ |
+
+ 输入访问码
+
+ |
+
+ 站点所有者登录
+
+<!-- seg:how-warp-uses-warp#001 -->
+
+Notion 需要启用 JavaScript 才能使用。
+请启用 JavaScript 以继续。
+
+<!-- seg:peeking-under-the-hood-of-claude-code#001 -->
+
+Peeking Under the Hood of Claude Code（Claude Code 内部探秘）
+
+# Peeking Under the Hood of Claude Code（Claude Code 内部探秘）
+
+本文托管在 Medium 上，需要浏览器才能访问。
+
+原文链接：https://medium.com/@outsightai/peeking-under-the-hood-of-claude-code-70f5a94a9a62
+
+Medium 会拦截自动化下载。请在具备网络访问条件时自行打开上面的链接。
+
+<!-- seg:prompt-engineering-guide#001 -->
+
+提示词技术（Prompting Techniques）
+
+复制页面
+
+# 提示词技术（Prompting Techniques）
+
+提示词工程（Prompt Engineering）有助于有效地设计并改进提示词，从而在使用 LLM 完成不同任务时获得更好的结果。
+
+此前的入门示例虽然有趣，但本节将介绍更进阶的提示词工程技巧，用来完成更复杂的任务，并提升 LLM 的可靠性与性能。
+
+提示词示例 零样本提示（Zero-shot Prompting）
