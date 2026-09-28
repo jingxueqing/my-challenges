@@ -1,0 +1,20 @@
+[
+  {
+    "file": "ai-assisted-code-review-assessment.pdf",
+    "slug": "ai-assisted-code-review-assessment",
+    "chars": 53382,
+    "placeholder": false
+  },
+  {
+    "file": "how-anthropic-uses-claude-code.pdf",
+    "slug": "how-anthropic-uses-claude-code",
+    "chars": 77280,
+    "placeholder": false
+  },
+  {
+    "file": "how-openai-uses-codex.pdf",
+    "slug": "how-openai-uses-codex",
+    "chars": 12967,
+    "placeholder": false
+  }
+]

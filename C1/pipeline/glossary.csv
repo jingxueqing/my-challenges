@@ -1,0 +1,83 @@
+en,zh,notes
+Vibe Coding,氛围编程,课程核心概念 全文统一不译为"凭感觉编程"
+Scaffolding,脚手架,指项目初始模板与结构生成
+Context Engineering,上下文工程,区别于 prompt engineering 须统一
+Prompt Engineering,提示词工程,全文统一
+Prompt,提示词,名词；动词"提示"
+System Prompt,系统提示词,
+Few-shot,少样本,保留 few-shot 亦可但优先"少样本"
+Zero-shot,零样本,
+Chain-of-Thought / CoT,思维链,
+Temperature,温度,采样参数
+LLM (Large Language Model),大语言模型,
+Token,Token,计量单位 不译
+Token Limit,Token 上限,
+Context Window,上下文窗口,
+Context Rot,上下文腐烂,Chroma 研究报告术语 全文统一
+Long Context,长上下文,
+Hallucination,幻觉,
+Grounding,接地/依据核查,
+AI Agent / Agentic AI,智能体 / 智能体式 AI,
+Coding Agent,编码智能体,
+Multi-agent System,多智能体系统,
+Orchestration,编排,
+Tool Use,工具使用,
+Tool Calling,工具调用,
+Function Calling,函数调用,
+Model Context Protocol (MCP),模型上下文协议（MCP）,缩写保留 MCP
+MCP Server,MCP 服务器,
+MCP Client,MCP 客户端,
+MCP Registry,MCP 注册中心,
+Agentic Loop,智能体循环,
+SWE-bench,SWE-bench,基准名不译
+Claude Code,Claude Code,产品名不译
+Codex,Codex,产品名不译
+Copilot,Copilot,产品名不译
+Devin,Devin,产品名不译
+Cursor,Cursor,产品名不译
+Warp,Warp,产品名不译
+PRD (Product Requirements Document),产品需求文档（PRD）,
+Spec / Specification,规格说明,specs-are-the-new-source-code 一文中 Spec 译"规格说明"
+Source of Truth,唯一事实来源,
+Guardrail,护栏,
+Sandbox,沙箱,
+Code Review,代码评审,不用"代码审查/复核"
+Pull Request (PR),拉取请求（PR）,
+Static Analysis,静态分析,
+SAST,静态应用安全测试（SAST）,首次出现给全称
+DAST,动态应用安全测试（DAST）,首次出现给全称
+Prompt Injection,提示词注入,
+Remote Code Execution (RCE),远程代码执行（RCE）,
+Vulnerability,漏洞,
+OWASP Top Ten,OWASP 十大风险,专有项目名保留
+Threat Model,威胁建模,
+False Positive,误报,
+Codebase,代码库,
+Repository / Repo,仓库,
+Commit,提交,
+Diff,差异/补丁,视语境 全文优先"差异"
+Refactor,重构,
+Debug / Debugging,调试,
+Observability,可观测性,
+Trace,调用链,OpenTelemetry 语境
+Span,调用段,Trace 的组成单元
+Metrics,指标,
+Logging,日志记录,
+SRE (Site Reliability Engineering),站点可靠性工程（SRE）,
+SLO,服务等级目标（SLO）,
+On-call,值班响应,
+Kubernetes,Kubernetes,产品名不译
+Deployment,部署,
+Rollback,回滚,
+CI/CD,持续集成/持续交付（CI/CD）,
+RAG (Retrieval-Augmented Generation),检索增强生成（RAG）,
+Embedding,嵌入,全文统一用“嵌入”（嵌入模型/嵌入向量）
+Fine-tuning,微调,
+Inference,推理,
+Latency,延迟,
+Throughput,吞吐量,
+Human-in-the-loop,人在回路,
+Test-driven Development (TDD),测试驱动开发（TDD）,
+Yak Shaving,顺带活儿（yak shaving）,俚语 指被琐事带偏主线
+Golden Path,黄金路径,
+Blast Radius,爆炸半径,指变更影响范围

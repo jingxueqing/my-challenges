@@ -1,0 +1,217 @@
+[
+  {
+    "file": "agentic-ai-threats.html",
+    "slug": "agentic-ai-threats",
+    "chars": 62013,
+    "url": "https://unit42.paloaltonetworks.com/agentic-ai-threats/",
+    "placeholder": false
+  },
+  {
+    "file": "ai-code-review-best-practices.html",
+    "slug": "ai-code-review-best-practices",
+    "chars": 13080,
+    "url": "https://graphite.dev/guides/ai-code-review-implementation-best-practices",
+    "placeholder": false
+  },
+  {
+    "file": "benefits-agentic-ai-oncall.html",
+    "slug": "benefits-agentic-ai-oncall",
+    "chars": 7023,
+    "url": "https://resolve.ai/blog/Top-5-Benefits",
+    "placeholder": false
+  },
+  {
+    "file": "claude-code-best-practices.html",
+    "slug": "claude-code-best-practices",
+    "chars": 9136,
+    "url": "https://www.anthropic.com/engineering/claude-code-best-practices",
+    "placeholder": false
+  },
+  {
+    "file": "code-review-essentials.html",
+    "slug": "code-review-essentials",
+    "chars": 12045,
+    "url": "https://blakesmith.me/2015/02/09/code-review-essentials-for-software-teams.html",
+    "placeholder": false
+  },
+  {
+    "file": "code-reviews-just-do-it.html",
+    "slug": "code-reviews-just-do-it",
+    "chars": 3496,
+    "url": "https://blog.codinghorror.com/code-reviews-just-do-it/",
+    "placeholder": false
+  },
+  {
+    "file": "context-rot.html",
+    "slug": "context-rot",
+    "chars": 50332,
+    "url": "https://research.trychroma.com/context-rot",
+    "placeholder": false
+  },
+  {
+    "file": "copilot-prompt-injection-rce.html",
+    "slug": "copilot-prompt-injection-rce",
+    "chars": 7513,
+    "url": "https://embracethered.com/blog/posts/2025/github-copilot-remote-code-execution-via-prompt-injection/",
+    "placeholder": false
+  },
+  {
+    "file": "devin-coding-agents-101.html",
+    "slug": "devin-coding-agents-101",
+    "chars": 22152,
+    "url": "https://devin.ai/agents101",
+    "placeholder": false
+  },
+  {
+    "file": "finding-vulnerabilities-claude-codex.html",
+    "slug": "finding-vulnerabilities-claude-codex",
+    "chars": 23317,
+    "url": "https://semgrep.dev/blog/2025/finding-vulnerabilities-in-modern-web-apps-using-claude-code-and-openai-codex/",
+    "placeholder": false
+  },
+  {
+    "file": "good-context-good-code.html",
+    "slug": "good-context-good-code",
+    "chars": 130,
+    "url": "https://blog.stockapp.com/good-context-good-code/",
+    "placeholder": false
+  },
+  {
+    "file": "how-long-contexts-fail.html",
+    "slug": "how-long-contexts-fail",
+    "chars": 10550,
+    "url": "https://www.dbreunig.com/2025/06/22/how-contexts-fail-and-how-to-fix-them.html",
+    "placeholder": false
+  },
+  {
+    "file": "how-to-review-code-effectively.html",
+    "slug": "how-to-review-code-effectively",
+    "chars": 20079,
+    "url": "https://github.blog/developer-skills/github/how-to-review-code-effectively-a-github-staff-engineers-philosophy/",
+    "placeholder": false
+  },
+  {
+    "file": "how-warp-uses-warp.html",
+    "slug": "how-warp-uses-warp",
+    "chars": 61,
+    "url": "https://notion.warp.dev/How-Warp-uses-Warp-to-build-Warp-21643263616d81a6b9e3e63fd8a7380c",
+    "placeholder": false
+  },
+  {
+    "file": "kubernetes-troubleshooting-ai.html",
+    "slug": "kubernetes-troubleshooting-ai",
+    "chars": 9585,
+    "url": "https://resolve.ai/blog/kubernetes-troubleshooting-in-resolve-ai",
+    "placeholder": false
+  },
+  {
+    "file": "lessons-from-ai-code-reviews.html",
+    "chars": 0,
+    "url": "",
+    "placeholder": true
+  },
+  {
+    "file": "mcp-food-for-thought.html",
+    "slug": "mcp-food-for-thought",
+    "chars": 4515,
+    "url": "https://www.reillywood.com/blog/apis-dont-make-good-mcp-tools/",
+    "placeholder": false
+  },
+  {
+    "file": "mcp-introduction.html",
+    "slug": "mcp-introduction",
+    "chars": 31537,
+    "url": "https://stytch.com/blog/model-context-protocol-introduction/",
+    "placeholder": false
+  },
+  {
+    "file": "mcp-registry-preview.html",
+    "slug": "mcp-registry-preview",
+    "chars": 5416,
+    "url": "https://blog.modelcontextprotocol.io/posts/2025-09-08-mcp-registry-preview/",
+    "placeholder": false
+  },
+  {
+    "file": "mcp-server-authentication.html",
+    "slug": "mcp-server-authentication",
+    "chars": 12552,
+    "url": "https://developers.cloudflare.com/agents/guides/remote-mcp-server/",
+    "placeholder": false
+  },
+  {
+    "file": "multi-agent-systems-ai-native.html",
+    "slug": "multi-agent-systems-ai-native",
+    "chars": 14511,
+    "url": "https://resolve.ai/blog/role-of-multi-agent-systems-AI-native-engineering",
+    "placeholder": false
+  },
+  {
+    "file": "observability-basics.html",
+    "slug": "observability-basics",
+    "chars": 11970,
+    "url": "https://last9.io/blog/traces-spans-observability-basics/",
+    "placeholder": false
+  },
+  {
+    "file": "owasp-top-ten.html",
+    "slug": "owasp-top-ten",
+    "chars": 16859,
+    "url": "https://owasp.org/www-project-top-ten/",
+    "placeholder": false
+  },
+  {
+    "file": "peeking-under-the-hood-of-claude-code.html",
+    "chars": 0,
+    "url": "",
+    "placeholder": true
+  },
+  {
+    "file": "prompt-engineering-guide.html",
+    "slug": "prompt-engineering-guide",
+    "chars": 530,
+    "url": "https://www.promptingguide.ai/techniques",
+    "placeholder": false
+  },
+  {
+    "file": "prompt-engineering-overview.html",
+    "slug": "prompt-engineering-overview",
+    "chars": 23925,
+    "url": "https://cloud.google.com/discover/what-is-prompt-engineering",
+    "placeholder": false
+  },
+  {
+    "file": "sast-vs-dast.html",
+    "slug": "sast-vs-dast",
+    "chars": 21285,
+    "url": "https://www.splunk.com/en_us/blog/learn/sast-vs-dast.html",
+    "placeholder": false
+  },
+  {
+    "file": "specs-are-the-new-source-code.html",
+    "slug": "specs-are-the-new-source-code",
+    "chars": 12244,
+    "url": "https://blog.ravi-mehta.com/p/specs-are-the-new-source-code",
+    "placeholder": false
+  },
+  {
+    "file": "sre-introduction.html",
+    "slug": "sre-introduction",
+    "chars": 26350,
+    "url": "https://sre.google/sre-book/introduction/",
+    "placeholder": false
+  },
+  {
+    "file": "warp-vs-claude-code.html",
+    "slug": "warp-vs-claude-code",
+    "chars": 3938,
+    "url": "https://www.warp.dev/university/getting-started/warp-vs-claude-code",
+    "placeholder": false
+  },
+  {
+    "file": "writing-effective-tools-for-agents.html",
+    "slug": "writing-effective-tools-for-agents",
+    "chars": 21782,
+    "url": "https://www.anthropic.com/engineering/writing-tools-for-agents",
+    "placeholder": false
+  }
+]

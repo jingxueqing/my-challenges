@@ -1,0 +1,228 @@
+{
+  "total_articles": 31,
+  "translated_ok": 28,
+  "placeholder": 0,
+  "coverage_pct": 90.3,
+  "glossary_terms": 82,
+  "issues": [
+    "[缺口] good-context-good-code 原文抓取缺口（已按缺口台账处理）",
+    "[缺口] how-warp-uses-warp 原文抓取缺口（已按缺口台账处理）",
+    "[缺口] peeking-under-the-hood-of-claude-code 原文抓取缺口（已按缺口台账处理）"
+  ],
+  "entries": [
+    {
+      "slug": "agentic-ai-threats",
+      "url": "https://unit42.paloaltonetworks.com/agentic-ai-threats/",
+      "translated": true,
+      "status": "OK",
+      "ratio": 0.36
+    },
+    {
+      "slug": "ai-code-review-best-practices",
+      "url": "https://graphite.dev/guides/ai-code-review-implementation-best-practices",
+      "translated": true,
+      "status": "OK",
+      "ratio": 0.36
+    },
+    {
+      "slug": "benefits-agentic-ai-oncall",
+      "url": "https://resolve.ai/blog/Top-5-Benefits",
+      "translated": true,
+      "status": "OK",
+      "ratio": 0.37
+    },
+    {
+      "slug": "claude-code-best-practices",
+      "url": "https://www.anthropic.com/engineering/claude-code-best-practices",
+      "translated": true,
+      "status": "OK",
+      "ratio": 0.54
+    },
+    {
+      "slug": "code-review-essentials",
+      "url": "https://blakesmith.me/2015/02/09/code-review-essentials-for-software-teams.html",
+      "translated": true,
+      "status": "OK",
+      "ratio": 0.37
+    },
+    {
+      "slug": "code-reviews-just-do-it",
+      "url": "https://blog.codinghorror.com/code-reviews-just-do-it/",
+      "translated": true,
+      "status": "OK",
+      "ratio": 0.39
+    },
+    {
+      "slug": "context-rot",
+      "url": "https://research.trychroma.com/context-rot",
+      "translated": true,
+      "status": "OK",
+      "ratio": 0.45
+    },
+    {
+      "slug": "copilot-prompt-injection-rce",
+      "url": "https://embracethered.com/blog/posts/2025/github-copilot-remote-code-execution-via-prompt-injection/",
+      "translated": true,
+      "status": "OK",
+      "ratio": 0.44
+    },
+    {
+      "slug": "devin-coding-agents-101",
+      "url": "https://devin.ai/agents101",
+      "translated": true,
+      "status": "OK",
+      "ratio": 0.36
+    },
+    {
+      "slug": "finding-vulnerabilities-claude-codex",
+      "url": "https://semgrep.dev/blog/2025/finding-vulnerabilities-in-modern-web-apps-using-claude-code-and-openai-codex/",
+      "translated": true,
+      "status": "OK",
+      "ratio": 0.44
+    },
+    {
+      "slug": "good-context-good-code",
+      "url": "https://blog.stockapp.com/good-context-good-code/",
+      "translated": true,
+      "status": "GAP"
+    },
+    {
+      "slug": "how-long-contexts-fail",
+      "url": "https://www.dbreunig.com/2025/06/22/how-contexts-fail-and-how-to-fix-them.html",
+      "translated": true,
+      "status": "OK",
+      "ratio": 0.37
+    },
+    {
+      "slug": "how-to-review-code-effectively",
+      "url": "https://github.blog/developer-skills/github/how-to-review-code-effectively-a-github-staff-engineers-philosophy/",
+      "translated": true,
+      "status": "OK",
+      "ratio": 0.38
+    },
+    {
+      "slug": "how-warp-uses-warp",
+      "url": "https://notion.warp.dev/How-Warp-uses-Warp-to-build-Warp-21643263616d81a6b9e3e63fd8a7380c",
+      "translated": true,
+      "status": "GAP"
+    },
+    {
+      "slug": "kubernetes-troubleshooting-ai",
+      "url": "https://resolve.ai/blog/kubernetes-troubleshooting-in-resolve-ai",
+      "translated": true,
+      "status": "OK",
+      "ratio": 0.42
+    },
+    {
+      "slug": "lessons-from-ai-code-reviews",
+      "url": "",
+      "translated": true,
+      "status": "OK",
+      "ratio": 0.42
+    },
+    {
+      "slug": "mcp-food-for-thought",
+      "url": "https://www.reillywood.com/blog/apis-dont-make-good-mcp-tools/",
+      "translated": true,
+      "status": "OK",
+      "ratio": 0.48
+    },
+    {
+      "slug": "mcp-introduction",
+      "url": "https://stytch.com/blog/model-context-protocol-introduction/",
+      "translated": true,
+      "status": "OK",
+      "ratio": 0.4
+    },
+    {
+      "slug": "mcp-registry-preview",
+      "url": "https://blog.modelcontextprotocol.io/posts/2025-09-08-mcp-registry-preview/",
+      "translated": true,
+      "status": "OK",
+      "ratio": 0.44
+    },
+    {
+      "slug": "mcp-server-authentication",
+      "url": "https://developers.cloudflare.com/agents/guides/remote-mcp-server/",
+      "translated": true,
+      "status": "OK",
+      "ratio": 0.61
+    },
+    {
+      "slug": "multi-agent-systems-ai-native",
+      "url": "https://resolve.ai/blog/role-of-multi-agent-systems-AI-native-engineering",
+      "translated": true,
+      "status": "OK",
+      "ratio": 0.39
+    },
+    {
+      "slug": "observability-basics",
+      "url": "https://last9.io/blog/traces-spans-observability-basics/",
+      "translated": true,
+      "status": "OK",
+      "ratio": 0.46
+    },
+    {
+      "slug": "owasp-top-ten",
+      "url": "https://owasp.org/www-project-top-ten/",
+      "translated": true,
+      "status": "OK",
+      "ratio": 0.73
+    },
+    {
+      "slug": "peeking-under-the-hood-of-claude-code",
+      "url": "",
+      "translated": true,
+      "status": "GAP"
+    },
+    {
+      "slug": "prompt-engineering-guide",
+      "url": "https://www.promptingguide.ai/techniques",
+      "translated": true,
+      "status": "OK",
+      "ratio": 3.32
+    },
+    {
+      "slug": "prompt-engineering-overview",
+      "url": "https://cloud.google.com/discover/what-is-prompt-engineering",
+      "translated": true,
+      "status": "OK",
+      "ratio": 0.56
+    },
+    {
+      "slug": "sast-vs-dast",
+      "url": "https://www.splunk.com/en_us/blog/learn/sast-vs-dast.html",
+      "translated": true,
+      "status": "OK",
+      "ratio": 0.36
+    },
+    {
+      "slug": "specs-are-the-new-source-code",
+      "url": "https://blog.ravi-mehta.com/p/specs-are-the-new-source-code",
+      "translated": true,
+      "status": "OK",
+      "ratio": 0.4
+    },
+    {
+      "slug": "sre-introduction",
+      "url": "https://sre.google/sre-book/introduction/",
+      "translated": true,
+      "status": "OK",
+      "ratio": 0.34
+    },
+    {
+      "slug": "warp-vs-claude-code",
+      "url": "https://www.warp.dev/university/getting-started/warp-vs-claude-code",
+      "translated": true,
+      "status": "OK",
+      "ratio": 0.46
+    },
+    {
+      "slug": "writing-effective-tools-for-agents",
+      "url": "https://www.anthropic.com/engineering/writing-tools-for-agents",
+      "translated": true,
+      "status": "OK",
+      "ratio": 0.37
+    }
+  ]
+}
