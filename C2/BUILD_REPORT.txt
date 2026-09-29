@@ -1,0 +1,27 @@
+AI4Math Reliability Paper — Build Report
+========================================
+Build date: 2026-09-29 (GMT+8)
+Compiler: Tectonic 0.17.0
+Source: paper.tex
+Bibliography: references.bib
+Build result: SUCCESS (exit code 0)
+Pipeline: XeTeX-compatible TeX run -> BibTeX -> TeX rerun -> xdvipdfmx
+
+Validation summary
+------------------
+PDF pages: 12
+PDF bytes: 478423
+PDF SHA-256: 61685c46215a3a139f66326e2a5a188d68bc174e281f775f61e02b62fd71f981
+BibTeX entries: 20
+Distinct citation keys used: 19
+Missing citation keys: 0
+Undefined citations/references: 0
+Missing glyphs: 0
+Overfull/underfull boxes: 0
+LaTeX warnings: 0
+
+Notes
+-----
+1. The first build exposed unsupported Unicode evidence markers and minor table overflow.
+2. Markers were replaced with Y/P/-- and table column formatting was adjusted.
+3. The final clean build produced paper.pdf with no actionable warnings.
