@@ -1,0 +1,5 @@
+# AttnScope 运行依赖
+# 核心评分与题目生成只依赖 Python 标准库（>=3.9），以下均为可选。
+
+# 仅当使用 --runner openai 时需要
+openai>=1.40.0

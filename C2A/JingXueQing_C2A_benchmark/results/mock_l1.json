@@ -1,0 +1,160 @@
+{
+  "config": {
+    "ladder": "L1-selective",
+    "runner": "mock",
+    "model": "MockRunner(seed=20261003)",
+    "seed": 20261003,
+    "loads": [
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "similarities": [
+      0.2,
+      0.5,
+      0.9
+    ],
+    "conditions": [
+      "feature",
+      "conjunction"
+    ],
+    "items_per_cell": 50,
+    "note": "MockRunner 仅用于管线冒烟测试，其数值不代表任何模型，也不构成任何科学结论。"
+  },
+  "scores": {
+    "conjunction|sim=0.2": {
+      "n_items": 250,
+      "loads": [
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "accuracy_by_load": [
+        0.92,
+        0.86,
+        0.68,
+        0.74,
+        0.68
+      ],
+      "overall_accuracy": 0.776,
+      "AES_slope": -0.06,
+      "B70": 14.81,
+      "lure_capture_rate": 0.5536,
+      "split_half_reliability": 0.9168
+    },
+    "conjunction|sim=0.5": {
+      "n_items": 250,
+      "loads": [
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "accuracy_by_load": [
+        0.88,
+        0.86,
+        0.68,
+        0.6,
+        0.5
+      ],
+      "overall_accuracy": 0.704,
+      "AES_slope": -0.102,
+      "B70": 14.81,
+      "lure_capture_rate": 0.5541,
+      "split_half_reliability": 0.9919
+    },
+    "conjunction|sim=0.9": {
+      "n_items": 250,
+      "loads": [
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "accuracy_by_load": [
+        0.66,
+        0.58,
+        0.62,
+        0.46,
+        0.46
+      ],
+      "overall_accuracy": 0.556,
+      "AES_slope": -0.052,
+      "B70": 4.0,
+      "lure_capture_rate": 0.6036,
+      "split_half_reliability": 0.8722
+    },
+    "feature|sim=0.2": {
+      "n_items": 250,
+      "loads": [
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "accuracy_by_load": [
+        0.98,
+        0.88,
+        0.8,
+        0.68,
+        0.76
+      ],
+      "overall_accuracy": 0.82,
+      "AES_slope": -0.064,
+      "B70": 28.51,
+      "lure_capture_rate": 0.5333,
+      "split_half_reliability": 0.813
+    },
+    "feature|sim=0.5": {
+      "n_items": 250,
+      "loads": [
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "accuracy_by_load": [
+        0.96,
+        0.96,
+        0.8,
+        0.84,
+        0.74
+      ],
+      "overall_accuracy": 0.86,
+      "AES_slope": -0.056,
+      "B70": 64.0,
+      "lure_capture_rate": 0.6286,
+      "split_half_reliability": 0.6071
+    },
+    "feature|sim=0.9": {
+      "n_items": 250,
+      "loads": [
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "accuracy_by_load": [
+        0.98,
+        0.9,
+        0.86,
+        0.8,
+        0.66
+      ],
+      "overall_accuracy": 0.84,
+      "AES_slope": -0.074,
+      "B70": 52.5,
+      "lure_capture_rate": 0.575,
+      "split_half_reliability": 0.8946
+    }
+  }
+}
