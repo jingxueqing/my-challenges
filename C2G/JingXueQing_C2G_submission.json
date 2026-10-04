@@ -1,0 +1,280 @@
+{
+  "author": "JingXueQing (景雪晴)",
+  "github_id": "JingXueQing",
+  "student_id": "2024102110351",
+  "name": "Sliding-Window Eval + SRD (Stochastic Recurrence Depth) + TTDS (Test-Time Depth Scaling) on the SP8192 / MuonEq-R / GPTQ-SDClip stack",
+  "date": "2026-10-03",
+  "track": "10min_16mb",
+  "_STATUS": "LOCAL-SCALE RUN MEASURED. TRACK (8xH100 / FineWeb) RUN STILL NOT PERFORMED -- see _status_detail.",
+  "_status_detail": [
+    "val_bpb stays null: it is the track score and the 8xH100 run has not happened.",
+    "Reason 1: the Level-1 compute voucher is issued only after 方案草案 is reviewed.",
+    "Reason 2: author's machine is Apple M1 / 8 GB / no CUDA; cannot run the track.",
+    "Reason 3: FineWeb is unreachable from the author's network (HF / raw.githubusercontent HTTP 000).",
+    "WHAT WAS ADDED NOW: the artifact contains REAL trained weights, and val_bpb_measured_local holds REAL measured BPB from a 3-seed local run.",
+    "The measured numbers are NOT track scores: 2.04M params, byte-level vocab 256, CPython-stdlib corpus, ~100 steps on one M1 CPU -- vs the track's 11Lx512d / SP8192 / FineWeb / 8xH100 / 600 s."
+  ],
+  "val_bpb": null,
+  "val_bpb_std": null,
+  "seeds": [
+    0,
+    42,
+    1234
+  ],
+  "seed_results": {},
+  "local_smoke_validation": {
+    "_note": "PIPELINE VALIDATION ONLY. Tiny config, byte-level tokenizer, CPython stdlib corpus, 20 s on Apple M1 CPU. NOT a track score and NOT comparable to any leaderboard number.",
+    "date": "2026-10-03T23:35:00+08:00",
+    "config": "4L x 128d x 4H/2KV, mlp=2x, vocab=256 (byte-level), 492,690 params, ~40 steps, 20.2 s, Apple M1 CPU",
+    "corpus": "CPython 3.13 standard-library sources, 1.52 MB of real text",
+    "logs": [
+      "JingXueQing_C2G_logs/smoke_seed42.log",
+      "JingXueQing_C2G_logs/smoke_seed0.log",
+      "JingXueQing_C2G_logs/smoke_seed1234.log"
+    ],
+    "results": {
+      "42": {
+        "pre_quant_bpb": 3.713073,
+        "post_quant_bpb": 3.719371,
+        "ttds_bpb": 3.774443,
+        "ttds_delta": 0.055072,
+        "artifact_bytes": 397253
+      },
+      "0": {
+        "pre_quant_bpb": 3.821949,
+        "post_quant_bpb": 3.83783,
+        "ttds_bpb": 3.904999,
+        "ttds_delta": 0.067168,
+        "artifact_bytes": 397967
+      },
+      "1234": {
+        "pre_quant_bpb": 3.788499,
+        "post_quant_bpb": 3.79925,
+        "ttds_bpb": 3.896424,
+        "ttds_delta": 0.097174,
+        "artifact_bytes": 396919
+      }
+    },
+    "mean_post_quant_bpb": 3.785484,
+    "std_post_quant_bpb": 0.059236,
+    "mean_ttds_delta": 0.073138,
+    "what_this_proves": [
+      "the end-to-end path runs: tokenize -> train -> sliding eval -> quantise -> compress -> BPB -> artifact assertion",
+      "BPB denominator is correct: scored tokens (152,207) == scored bytes (152,207) under the byte-level tokenizer",
+      "quantisation moves BPB in the expected direction (worse), so the roundtrip is not silently broken",
+      "artifact packing works: 989,696 raw -> ~346.6 KB compressed -> ~397 KB total, far under 16 MB"
+    ],
+    "what_this_does_not_prove": [
+      "anything about FineWeb BPB",
+      "that TTDS is invalid -- 3/3 seeds agree in sign but the model is severely under-trained (40 steps) at 1/1000 the scale",
+      "that sliding-window eval works -- stride was fixed at 32 with no A/B"
+    ]
+  },
+  "target": {
+    "level_2_target_bpb": 1.18,
+    "level_2_route": "sliding-window evaluation at stride=64 on the unmodified baseline (no retraining needed)",
+    "level_3_target_bpb": 1.12,
+    "level_4_target_bpb": 1.085,
+    "level_4_route": "SRD + TTDS on the full SOTA stack"
+  },
+  "hardware": null,
+  "pytorch_version": null,
+  "technique_summary": "Baseline stack: SP8192 + 11Lx512d/8H/4KV + MLP4x + LeakyReLU(0.5)^2 + Partial RoPE(16/64) + parallel residuals(L7+) + QK-Gain 5.25 + MuonEq-R + EMA 0.9965 + WD 0.095 + GPTQ int6/int8 SDClip + byte-shuffle/Brotli + sliding-window eval(stride=64) + legal score-first TTT.  MY ADDITIONS: [1] SRD - sample the depth-recurrence unroll count per step (extra in {1,2}) instead of fixing it at 2; [2] TTDS - unroll deeper at eval time (extra=3) at zero artifact bytes and zero training seconds, spending only the separate 600 s eval budget.",
+  "my_original_contributions": {
+    "SRD_stochastic_recurrence_depth": {
+      "what": "per-step random sampling of the recurrence unroll count during training",
+      "why": "a shared (recurrent) block trained at a single fixed depth is only ever good at that one depth, which caps how far the free 'how many times do I unroll' knob can be pushed at eval time",
+      "cost": "0 parameters, 0 artifact bytes, ~5-8% step time",
+      "predicted_effect": "slightly WORSE BPB on its own (+0.001 to +0.003) - it is insurance bought for TTDS, not a standalone win"
+    },
+    "TTDS_test_time_depth_scaling": {
+      "what": "unroll the recurrent block more times at eval than the training mean (17 -> 20 virtual layers)",
+      "why": "parameters are shared so extra depth costs zero artifact bytes; training and evaluation have two separate 600 s budgets and the current SOTA uses only ~500 s of the eval budget",
+      "cost": "0 parameters, 0 artifact bytes, 0 training seconds; only eval wallclock",
+      "predicted_effect": "clearly WORSE on its own (train/test depth mismatch); only expected to pay off when combined with SRD"
+    }
+  },
+  "compliance": {
+    "train_under_600s": null,
+    "artifact_under_16mb": null,
+    "eval_under_600s": null,
+    "no_slot": true,
+    "no_pre_quant_ttt": true,
+    "no_etlb": true,
+    "no_ngram_cache": true,
+    "score_first_ttt": true,
+    "single_pass_scoring": true,
+    "three_seeds_planned": true,
+    "_note": "all runtime compliance fields are null (not false): they have not been measured, so neither true nor false is a truthful answer"
+  },
+  "attribution": {
+    "scaffold_and_bpb_definition": "openai/parameter-golf (official repo)",
+    "transformer_skeleton": "karpathy/nanoGPT",
+    "muon_newton_schulz": "KellerJordan/Muon",
+    "sp8192_gptq_sdclip_muoneqr": "@clarkkev (PR #1394) - used as the BASE STACK, unmodified",
+    "depth_recurrence": "@dexhunter (PR #1331, #1437) - modified into SRD",
+    "parallel_residuals": "@Robby955 (PR #1412), @msisovic (PR #1204) - unmodified",
+    "qk_gain": "@dexhunter (PR #1413), bigbag (PR #1493) - unmodified",
+    "legal_score_first_ttt": "@abaybektursun (PR #549), @dexhunter (PR #1413) - unmodified",
+    "full_hessian_gptq": "@abaybektursun (PR #1019) - unmodified",
+    "sliding_window_eval": "Matthew Li (2026-03-19_SlidingWindowEval) - idea taken, window-boundary handling rewritten",
+    "muoneqr_row_normalisation": "PR #1217",
+    "hyperparameters": "@X-Abhishek-X (PR #1445): WD=0.095, MLR=0.022, EMA=0.9965"
+  },
+  "reproduction": {
+    "smoke_local": "python3 JingXueQing_C2G_train_gpt.py --smoke",
+    "full_8gpu": "EVAL_STRIDE=64 SRD_ENABLED=1 SRD_EXTRA_CHOICES=1,2 TTDS_ENABLED=1 TTDS_EXTRA=3 QK_GAIN_INIT=5.25 TTT_ENABLED=1 MAX_WALLCLOCK_SECONDS=560 SEED=42 torchrun --standalone --nproc_per_node=8 JingXueQing_C2G_train_gpt.py",
+    "data": "python3 data/cached_challenge_fineweb.py --variant sp8192 (not downloadable from the author's network)"
+  },
+  "deliverables": [
+    "JingXueQing_C2G_方案草案.md",
+    "JingXueQing_C2G_方案设计.md",
+    "JingXueQing_C2G_train_gpt.py",
+    "JingXueQing_C2G_submission.tar.gz",
+    "JingXueQing_C2G_submission.json",
+    "JingXueQing_C2G_logs/",
+    "JingXueQing_C2G_ablation.md",
+    "JingXueQing_C2G_leaderboard.md",
+    "JingXueQing_C2G_AI日志.md",
+    "JingXueQing_C2G_拿来说明.md",
+    "JingXueQing_C2G_verify_bpb.py",
+    "README_提交说明.md",
+    "JingXueQing_C2G_AAR.md",
+    "JingXueQing_C2G_tokenizer.json"
+  ],
+  "val_bpb_measured_local": {
+    "_note": "MEASURED, not estimated -- but at local scale. Do not compare with any leaderboard number.",
+    "date": "2026-10-04",
+    "seeds": [
+      42,
+      0,
+      1234
+    ],
+    "config": "6L x 192d x 6H/3KV, mlp=3x, vocab=256 (byte-level), 2,042,343 params, seq_len=256, eval_stride=64",
+    "corpus": "CPython 3.13 standard-library sources (1.5 MB real text)",
+    "device": "Apple M1, CPU, torch 2.14.1",
+    "train_seconds_per_seed": 180,
+    "per_seed": {
+      "42": {
+        "steps": 127,
+        "pre_quant_bpb": 3.3584755,
+        "post_quant_bpb": 3.36659073,
+        "final_train_loss": 2.27946,
+        "weights_bytes": 1385031,
+        "weights_sha256": "1264a2eb8a04804829e2f6c0064dae733817bf8851d6ca04be8b9aededb7daea"
+      },
+      "0": {
+        "steps": 125,
+        "pre_quant_bpb": 3.34562103,
+        "post_quant_bpb": 3.3465888,
+        "final_train_loss": 2.28144,
+        "weights_bytes": 1387394,
+        "weights_sha256": "d43add442215c418e74ecee5e1bef2e3c4696733e54821e0ef74e9ba4ab48a21"
+      },
+      "1234": {
+        "steps": 125,
+        "pre_quant_bpb": 3.37050345,
+        "post_quant_bpb": 3.37273972,
+        "final_train_loss": 2.29391,
+        "weights_bytes": 1386394,
+        "weights_sha256": "5ddd49a2556f86da121ba46739eddc404fc7eb0bab2a18155322dff1296a199d"
+      }
+    },
+    "mean_post_quant_bpb": 3.361973,
+    "std_post_quant_bpb": 0.011164,
+    "logs": [
+      "JingXueQing_C2G_logs/real_seed42.log",
+      "JingXueQing_C2G_logs/real_seed0.log",
+      "JingXueQing_C2G_logs/real_seed1234.log"
+    ]
+  },
+  "stride_ablation_local": {
+    "_note": "Direct A/B of the main hypothesis (sliding-window evaluation) on real data, same weights, only eval_stride changes. stride == seq_len means no sliding (= the baseline way).",
+    "per_seed": {
+      "42": {
+        "stride_256": {
+          "bpb": 3.321875,
+          "nats_per_token": 2.302549,
+          "scored_bytes": 151709,
+          "scored_tokens": 151709,
+          "bytes_eq_tokens": true
+        },
+        "stride_128": {
+          "bpb": 3.359315,
+          "nats_per_token": 2.3285,
+          "scored_bytes": 152175,
+          "scored_tokens": 152175,
+          "bytes_eq_tokens": true
+        },
+        "stride_64": {
+          "bpb": 3.366591,
+          "nats_per_token": 2.333543,
+          "scored_bytes": 152111,
+          "scored_tokens": 152111,
+          "bytes_eq_tokens": true
+        }
+      },
+      "0": {
+        "stride_256": {
+          "bpb": 3.306959,
+          "nats_per_token": 2.292209,
+          "scored_bytes": 151709,
+          "scored_tokens": 151709,
+          "bytes_eq_tokens": true
+        },
+        "stride_128": {
+          "bpb": 3.339898,
+          "nats_per_token": 2.315041,
+          "scored_bytes": 152175,
+          "scored_tokens": 152175,
+          "bytes_eq_tokens": true
+        },
+        "stride_64": {
+          "bpb": 3.346589,
+          "nats_per_token": 2.319679,
+          "scored_bytes": 152111,
+          "scored_tokens": 152111,
+          "bytes_eq_tokens": true
+        }
+      },
+      "1234": {
+        "stride_256": {
+          "bpb": 3.331905,
+          "nats_per_token": 2.309501,
+          "scored_bytes": 151709,
+          "scored_tokens": 151709,
+          "bytes_eq_tokens": true
+        },
+        "stride_128": {
+          "bpb": 3.365371,
+          "nats_per_token": 2.332697,
+          "scored_bytes": 152175,
+          "scored_tokens": 152175,
+          "bytes_eq_tokens": true
+        },
+        "stride_64": {
+          "bpb": 3.37274,
+          "nats_per_token": 2.337805,
+          "scored_bytes": 152111,
+          "scored_tokens": 152111,
+          "bytes_eq_tokens": true
+        }
+      }
+    }
+  },
+  "artifact": {
+    "file": "JingXueQing_C2G_submission.tar.gz",
+    "bytes": 1408593,
+    "cap": 16000000,
+    "under_cap": true,
+    "contents": [
+      "tokenizer.json",
+      "train_gpt.py",
+      "verify_bpb.py",
+      "weights.bin"
+    ],
+    "weights_seed": 0,
+    "weights_sha256": "d43add442215c418e74ecee5e1bef2e3c4696733e54821e0ef74e9ba4ab48a21",
+    "_previous_state": "The previously submitted tar.gz contained NO weights -- the trainer computed the compressed blob but never wrote it to disk. Fixed on 2026-10-04."
+  }
+}
