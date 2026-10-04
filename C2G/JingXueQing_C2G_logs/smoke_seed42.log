@@ -1,0 +1,30 @@
+[c2g] JingXueQing parameter-golf run  run_id=smoke_seed42 seed=42 time=2026-10-03 23:35:52
+[env] device=cpu torch=2.14.1 seed=42 smoke=1
+[tok] byte-level tokenizer (vocab=256) — smoke / no-model path
+[data] smoke corpus built: c2g_data/smoke_corpus.txt (1.52 MB, real text)
+[data] smoke tokens: train=1,370,731 val=152,303 (byte-level, so 1 token == 1 UTF-8 byte)
+[model] 4L x 128d x 4H/2KV mlp=2x vocab=256 params=492,690
+[model] SRD=1 choices=[0, 1] TTDS=1 extra=2
+step     20 loss 2.6372 extra 1 lr_scale 0.785 elapsed 9.3s (46%)
+[ema] started at frac=0.522
+step     40 loss 2.5276 extra 1 lr_scale 0.030 elapsed 20.2s (101%)
+[train] steps=40 time=20.2s tok/s=16,248
+[ema] EMA weights loaded into model
+[eval] pre-quant  bpb=3.713073 nats/tok=2.5737 tokens=152,207 bytes=152,207
+[eval] post-quant bpb=3.719371 nats/tok=2.5781 tokens=152,207 bytes=152,207
+[eval] TTDS extra=2 bpb=3.774443 nats/tok=2.6162  delta=+0.055072
+[artifact] raw=989,696B compressed=346,482B code=50,771B total=397,253B cap=16,000,000B OK
+[done] {"run_id": "smoke_seed42", "seed": 42, "smoke": 1, "device": "cpu", "steps": 40, "train_seconds": 20.2, "params": 492690, "vocab_size": 256, "eval_stride": 32, "train_seq_len": 128, "pre_quant_bpb": 3.71307265, "post_quant_bpb": 3.71937077, "ttds_extra": 2, "ttds_bpb": 3.77444322, "ttt_bpb": null, "artifact_bytes": 397253, "artifact_cap": 16000000, "artifact_ok": true, "srd_enabled": 1, "final_train_loss": 2.88435, "tokenizer": "byte"}
+
+--- notes -------------------------------------------------------------------
+MODE   : SMOKE (pipeline validation only)
+CORPUS : CPython 3.13 standard-library sources (real English/code text, 1.52 MB)
+TOKENIZER: byte-level, vocab=256, so 1 token == 1 UTF-8 byte
+        -> scored tokens 152,207 == scored bytes 152,207 (exact, as expected)
+SCALE  : 4L x 128d, 492,690 params, 40 steps, 20.2 s on Apple M1 CPU
+        -> NOT comparable to the 8xH100 / 11L x 512d / 600 s track
+SRD    : enabled, extra sampled from {0,1} per step
+TTDS   : eval at extra=2, i.e. ONE MORE unroll than the training base (=1)
+RESULT : TTDS delta = +0.055072 bpb (WORSE)
+         This matches pre-registered hypothesis H3 (see ablation.md §3.1):
+         unrolling deeper than the training depth hurts. Recorded as-is.
