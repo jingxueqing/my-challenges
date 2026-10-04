@@ -1,0 +1,78 @@
+# ============================================================
+# 评分标准档案（rubric profile）
+# ------------------------------------------------------------
+# 默认档案 = Elite20 C4 官方 rubric（通用化后也适用于任何“AI 日志 / AAR / 技能说明”评审）。
+# 想换成你自己的课程/公司标准：照抄一份改 signals 和 signal_keywords 即可，
+# 脚本不需要改任何一行代码。
+#
+# 格式约束（本文件用内置迷你 YAML 解析器读取，请勿写过于复杂的 YAML）：
+#   · 只用缩进表示层级，不要用 Tab
+#   · 列表统一写成行内形式 [a, b, c]
+#   · 不要在列表项里再嵌字典（写成 key: 的二级映射）
+# ============================================================
+
+profile: elite20-c4
+version: 1
+description: Elite20 C4 官方评分标准（通用版），适用于 AI 日志 / AAR / 技能说明三类文档
+
+# ---------------- 维度与分值 ----------------
+dimensions:
+  skillQuality:
+    label: 技能质量
+    maxPoints: 25
+    signals: [描述准确, 结构完整, 可执行]
+  teachability:
+    label: 可教性
+    maxPoints: 20
+    signals: [有教学文档, 有示例, 有演示]
+  artifactCompleteness:
+    label: 产物完整性
+    maxPoints: 15
+    signals: [产物齐全, 可运行, 有复现说明]
+  aiUsage:
+    label: AI使用质量
+    maxPoints: 20
+    signals: [多轮迭代, prompt优化, 工作流设计, AI日志佐证]
+  reflectionQuality:
+    label: 复盘质量
+    maxPoints: 20
+    signals: [具体问题分析, 有改进方案, 记录迭代过程, 含失败经验]
+
+# ---------------- 信号 → 命中关键词 ----------------
+# 命中任意一个关键词即算该 signal 命中；改这里就能适配你自己的评审口径。
+signal_keywords:
+  描述准确: [解决什么问题, 输入, 输出, 一句话说明, 使用场景, IO]
+  结构完整: [目录结构, SKILL.md, scripts, references, 工作流, Step]
+  可执行: [python3, 命令, 运行, 脚本, 安装, 可执行, CLI]
+  有教学文档: [教学说明, 如何上手, 常见坑, 教程, 教学]
+  有示例: [示例, 例子, 真实案例, Example, 样例]
+  有演示: [demo, Demo, 截图, 录屏, 视频, mp4, live demo]
+  产物齐全: [交付物, 产物, 文件清单, 清单, 提交内容]
+  可运行: [验证, 测试, 复现, 运行成功, 输出, 通过]
+  有复现说明: [复现, 安装, 使用步骤, 命令, README]
+  多轮迭代: [轮次, 迭代, 第二轮, 第三轮, 改成, 重做, 返工, 再来, 优化]
+  prompt优化: [prompt, Prompt, 指令, 改写, 优化轨迹, 提示词]
+  工作流设计: [工作流, 流程, pipeline, 步骤, Step, 流水线]
+  AI日志佐证: [AI 日志, AI日志, AI 工具, 工具调用, 用了什么 AI, 模型]
+  具体问题分析: [原因, 差距, 问题, 根因, 为什么, 分析]
+  有改进方案: [改进, 下一步, 方案, 优化, TODO, 优先级]
+  记录迭代过程: [迭代, 版本, v2, 第二轮, 修改, 返工]
+  含失败经验: [失败, 踩坑, 报错, 返工, 不对, 错了, 误判, 教训]
+
+# ---------------- 红旗（触发后该维度直接封顶） ----------------
+red_flags:
+  missing_artifacts:
+    label: 核心交付物缺失
+    affectedDimension: artifactCompleteness
+    maxScore: 5
+    absent: [交付物, 产物, 文件清单, 清单]
+  one_shot_ai:
+    label: 一句话指令直接提交、无迭代
+    affectedDimension: aiUsage
+    maxScore: 5
+    absent: [迭代, 轮次, 改成, 重做, 优化, 第二轮, 返工]
+  no_ai_log:
+    label: 无 AI 使用记录 / 无 AAR
+    affectedDimension: reflectionQuality
+    maxScore: 5
+    absent: [AI 日志, AI日志, AAR, 复盘, 用了什么 AI]
