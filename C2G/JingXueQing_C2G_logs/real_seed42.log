@@ -1,0 +1,31 @@
+[real] seed=42 wallclock=180.0s cfg=6Lx192d seq=256 stride=64 start=2026-10-04 18:45:09
+[env] device=cpu torch=2.14.1 seed=42 smoke=1
+[tok] byte-level tokenizer (vocab=256) — smoke / no-model path
+[data] smoke corpus built: /Users/jingxueqing/WorkBuddy/2026-10-03-21-53-07/c2g_real/data/smoke_corpus.txt (1.52 MB, real text)
+[data] smoke tokens: train=1,370,731 val=152,303 (byte-level, so 1 token == 1 UTF-8 byte)
+[model] 6L x 192d x 6H/3KV mlp=3x vocab=256 params=2,042,343
+[model] SRD=1 choices=[0, 1] TTDS=1 extra=2
+step     10 loss 3.0301 extra 0 lr_scale 1.000 elapsed 12.8s (7%)
+step     20 loss 2.7829 extra 0 lr_scale 1.000 elapsed 24.7s (14%)
+step     30 loss 2.6838 extra 0 lr_scale 1.000 elapsed 37.3s (21%)
+step     40 loss 2.6112 extra 0 lr_scale 1.000 elapsed 49.8s (28%)
+step     50 loss 2.3859 extra 0 lr_scale 0.918 elapsed 62.3s (35%)
+step     60 loss 2.3753 extra 1 lr_scale 0.801 elapsed 77.9s (43%)
+[ema] started at frac=0.501
+step     70 loss 2.3844 extra 1 lr_scale 0.675 elapsed 94.3s (52%)
+step     80 loss 2.2955 extra 0 lr_scale 0.547 elapsed 110.3s (61%)
+step     90 loss 2.3007 extra 1 lr_scale 0.441 elapsed 124.7s (69%)
+step    100 loss 2.2866 extra 0 lr_scale 0.318 elapsed 139.9s (78%)
+step    110 loss 2.2804 extra 0 lr_scale 0.195 elapsed 155.9s (87%)
+step    120 loss 2.2278 extra 1 lr_scale 0.079 elapsed 171.4s (95%)
+[train] steps=127 time=181.5s tok/s=5,733
+[ema] EMA weights loaded into model
+[eval] pre-quant  bpb=3.358475 nats/tok=2.3279 tokens=152,111 bytes=152,111
+[eval] post-quant bpb=3.366591 nats/tok=2.3335 tokens=152,111 bytes=152,111
+[eval] TTDS extra=2 bpb=3.394365 nats/tok=2.3528  delta=+0.027774
+[artifact] raw=4,096,256B compressed=1,385,031B code=50,771B total=1,435,802B cap=16,000,000B OK
+[done] {"run_id": "real_seed42", "seed": 42, "smoke": 1, "device": "cpu", "steps": 127, "train_seconds": 181.5, "params": 2042343, "vocab_size": 256, "eval_stride": 64, "train_seq_len": 256, "pre_quant_bpb": 3.3584755, "post_quant_bpb": 3.36659073, "ttds_extra": 2, "ttds_bpb": 3.39436457, "ttt_bpb": null, "artifact_bytes": 1435802, "artifact_cap": 16000000, "artifact_ok": true, "srd_enabled": 1, "final_train_loss": 2.27946, "tokenizer": "byte"}
+[ab] stride=256 bpb=3.321875 nats/tok=2.302549 bytes=151,709 tokens=151,709 eq=True
+[ab] stride=128 bpb=3.359315 nats/tok=2.328500 bytes=152,175 tokens=152,175 eq=True
+[ab] stride=64 bpb=3.366591 nats/tok=2.333543 bytes=152,111 tokens=152,111 eq=True
+[ab-final] {"run_id": "real_seed42", "seed": 42, "smoke": 1, "device": "cpu", "steps": 127, "train_seconds": 181.5, "params": 2042343, "vocab_size": 256, "eval_stride": 64, "train_seq_len": 256, "pre_quant_bpb": 3.3584755, "post_quant_bpb": 3.36659073, "ttds_extra": 2, "ttds_bpb": 3.39436457, "ttt_bpb": null, "artifact_bytes": 1435802, "artifact_cap": 16000000, "artifact_ok": true, "srd_enabled": 1, "final_train_loss": 2.27946, "tokenizer": "byte", "weights_file": "weights_seed42.bin", "weights_bytes": 1385031, "weights_raw_bytes": 4096256, "weights_sha256": "1264a2eb8a04804829e2f6c0064dae733817bf8851d6ca04be8b9aededb7daea", "stride_ab": {"stride_256": {"bpb": 3.321875, "nats_per_token": 2.302549, "scored_bytes": 151709, "scored_tokens": 151709, "bytes_eq_tokens": true}, "stride_128": {"bpb": 3.359315, "nats_per_token": 2.3285, "scored_bytes": 152175, "scored_tokens": 152175, "bytes_eq_tokens": true}, "stride_64": {"bpb": 3.366591, "nats_per_token": 2.333543, "scored_bytes": 152111, "scored_tokens": 152111, "bytes_eq_tokens": true}}, "elapsed_total_s": 369.7}
