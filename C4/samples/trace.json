@@ -1,0 +1,264 @@
+{
+  "generated_at": "2026-10-03T20:53:51",
+  "input": "samples/demo_session.jsonl",
+  "sources": [
+    {
+      "file": "samples/demo_session.jsonl",
+      "kind": "jsonl",
+      "turns": 18
+    }
+  ],
+  "stats": {
+    "user_turns": 7,
+    "assistant_turns": 9,
+    "rounds": 7,
+    "user_chars_total": 366,
+    "assistant_chars_total": 485,
+    "avg_user_prompt_chars": 52,
+    "tool_calls": 28,
+    "tool_by_name": {
+      "Edit": 12,
+      "Bash": 10,
+      "Write": 6
+    },
+    "refine_rounds": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "failed_rounds": [
+      2,
+      4
+    ],
+    "human_work_rounds": [
+      5
+    ],
+    "first_ts": "2026-10-02T09:12:03Z",
+    "last_ts": "2026-10-02T09:52:44Z",
+    "prompt_len_trend": [
+      50,
+      39,
+      53,
+      48,
+      75,
+      60,
+      41
+    ]
+  },
+  "rounds": [
+    {
+      "index": 1,
+      "ts": "2026-10-02T09:12:03Z",
+      "user_text": "帮我写个 Python 脚本，把 sales.csv 里的销售数据按月份汇总，输出一个新的 CSV。",
+      "user_chars": 50,
+      "assistant_texts": [
+        "我先看一下文件结构，然后写脚本。",
+        "文件有三列。我用 pandas 按 date 的月份分组求和。"
+      ],
+      "tools": [
+        "Bash",
+        "Write"
+      ],
+      "errors": [],
+      "refine": false,
+      "human_work": false,
+      "assistant_chars": 47,
+      "tool_calls": 2,
+      "assistant_preview": "我先看一下文件结构，然后写脚本。 文件有三列。我用 pandas 按 date 的月份分组求和。",
+      "failed": false
+    },
+    {
+      "index": 2,
+      "ts": "2026-10-02T09:15:44Z",
+      "user_text": "跑不起来，报错：KeyError: 'date'。你检查一下列名是不是有问题。",
+      "user_chars": 39,
+      "assistant_texts": [
+        "Traceback (most recent call last):\n  File \"summarize.py\", line 8\nKeyError: 'date'\n看起来是文件里带了 BOM，第一列名其实是 \\ufeffdate。我改成按位置取列。"
+      ],
+      "tools": [
+        "Edit"
+      ],
+      "errors": [],
+      "refine": true,
+      "human_work": false,
+      "assistant_chars": 124,
+      "tool_calls": 1,
+      "assistant_preview": "Traceback (most recent call last): File \"summarize.py\", line 8 KeyError: 'date' 看起来是文件里带了 BOM，第一列名其实是 \\ufeffdate。我改成按位置取…",
+      "failed": true
+    },
+    {
+      "index": 3,
+      "ts": "2026-10-02T09:21:18Z",
+      "user_text": "能跑了。但结果不对——我要的是按月份汇总，你现在是按周。而且金额那列是字符串，求和变成了拼接。重新改一下。",
+      "user_chars": 53,
+      "assistant_texts": [
+        "两个问题：分组粒度错了、dtype 没转。我改成分组前先 to_datetime 再取 to_period('M')，金额用 pd.to_numeric。"
+      ],
+      "tools": [
+        "Edit",
+        "Bash"
+      ],
+      "errors": [],
+      "refine": true,
+      "human_work": false,
+      "assistant_chars": 77,
+      "tool_calls": 2,
+      "assistant_preview": "两个问题：分组粒度错了、dtype 没转。我改成分组前先 to_datetime 再取 to_period('M')，金额用 pd.to_numeric。",
+      "failed": false
+    },
+    {
+      "index": 4,
+      "ts": "2026-10-02T09:29:05Z",
+      "user_text": "还是不对。空值被当成 0 了，会拉低平均值，应该剔除掉再算。另外我想按 region 再拆一层。",
+      "user_chars": 48,
+      "assistant_texts": [
+        "明白，改成 dropna 后 groupby(['month','region'])。",
+        "输出目录没权限，我改成写到 ./out/ 下，并加了 makedirs。"
+      ],
+      "tools": [
+        "Edit",
+        "Edit",
+        "Bash"
+      ],
+      "errors": [
+        "Permission denied: cannot write output.csv"
+      ],
+      "refine": true,
+      "human_work": false,
+      "assistant_chars": 79,
+      "tool_calls": 3,
+      "assistant_preview": "明白，改成 dropna 后 groupby(['month','region'])。 输出目录没权限，我改成写到 ./out/ 下，并加了 makedirs。",
+      "failed": true
+    },
+    {
+      "index": 5,
+      "ts": "2026-10-02T09:41:52Z",
+      "user_text": "对了。现在加个 --month 参数，可以只算某个月；再加个单元测试，我自己补了三个边界用例（空文件、全空值、跨年数据），你把它们写成 pytest。",
+      "user_chars": 75,
+      "assistant_texts": [
+        "加 argparse 的 --month，并生成 test_summarize.py 覆盖你给的三个用例。"
+      ],
+      "tools": [
+        "Write",
+        "Bash"
+      ],
+      "errors": [],
+      "refine": true,
+      "human_work": true,
+      "assistant_chars": 53,
+      "tool_calls": 2,
+      "assistant_preview": "加 argparse 的 --month，并生成 test_summarize.py 覆盖你给的三个用例。",
+      "failed": false
+    },
+    {
+      "index": 6,
+      "ts": "2026-10-02T09:47:33Z",
+      "user_text": "测试里跨年那条失败了：2025-12 和 2026-01 被分到同一组？检查一下 to_period 是不是把年份丢了。",
+      "user_chars": 60,
+      "assistant_texts": [
+        "确认是我写错了：分组 key 只取了 dt.month 没带年份。改成 dt.to_period('M').astype(str) 后测试全绿。"
+      ],
+      "tools": [
+        "Edit",
+        "Bash"
+      ],
+      "errors": [],
+      "refine": true,
+      "human_work": false,
+      "assistant_chars": 72,
+      "tool_calls": 2,
+      "assistant_preview": "确认是我写错了：分组 key 只取了 dt.month 没带年份。改成 dt.to_period('M').astype(str) 后测试全绿。",
+      "failed": false
+    },
+    {
+      "index": 7,
+      "ts": "2026-10-02T09:52:20Z",
+      "user_text": "全过了。最后把脚本整理一下，加上 docstring 和使用示例，我要交给同事跑。",
+      "user_chars": 41,
+      "assistant_texts": [
+        "加 docstring、--help 示例和 README 片段。"
+      ],
+      "tools": [
+        "Edit",
+        "Write"
+      ],
+      "errors": [],
+      "refine": false,
+      "human_work": false,
+      "assistant_chars": 33,
+      "tool_calls": 2,
+      "assistant_preview": "加 docstring、--help 示例和 README 片段。",
+      "failed": false
+    }
+  ],
+  "prompt_evolution": [
+    {
+      "from_round": 1,
+      "to_round": 2,
+      "similarity": 0.0,
+      "kind": "追加新要求",
+      "before": "帮我写个 Python 脚本，把 sales.csv 里的销售数据按月份汇总，输出一个新的 CSV。",
+      "after": "跑不起来，报错：KeyError: 'date'。你检查一下列名是不是有问题。",
+      "new_tokens": [
+        "date",
+        "keyerror"
+      ]
+    },
+    {
+      "from_round": 2,
+      "to_round": 3,
+      "similarity": 0.02,
+      "kind": "追加新要求",
+      "before": "跑不起来，报错：KeyError: 'date'。你检查一下列名是不是有问题。",
+      "after": "能跑了。但结果不对——我要的是按月份汇总，你现在是按周。而且金额那列是字符串，求和变成了拼接。重新改一下。",
+      "new_tokens": [
+        "不对",
+        "且金",
+        "串求",
+        "了但",
+        "了拼",
+        "份汇"
+      ]
+    },
+    {
+      "from_round": 3,
+      "to_round": 4,
+      "similarity": 0.03,
+      "kind": "追加新要求",
+      "before": "能跑了。但结果不对——我要的是按月份汇总，你现在是按周。而且金额那列是字符串，求和变成了拼接。重新改一下。",
+      "after": "还是不对。空值被当成 0 了，会拉低平均值，应该剔除掉再算。另外我想按 region 再拆一层。",
+      "new_tokens": [
+        "region"
+      ]
+    },
+    {
+      "from_round": 4,
+      "to_round": 5,
+      "similarity": 0.01,
+      "kind": "追加新要求",
+      "before": "还是不对。空值被当成 0 了，会拉低平均值，应该剔除掉再算。另外我想按 region 再拆一层。",
+      "after": "对了。现在加个 --month 参数，可以只算某个月；再加个单元测试，我自己补了三个边界用例（空文件、全空值、跨年数据），你把它们写成 pytest。",
+      "new_tokens": [
+        "month",
+        "pytest"
+      ]
+    },
+    {
+      "from_round": 5,
+      "to_round": 6,
+      "similarity": 0.03,
+      "kind": "追加新要求",
+      "before": "对了。现在加个 --month 参数，可以只算某个月；再加个单元测试，我自己补了三个边界用例（空文件、全空值、跨年数据），你把它们写成 pytest。",
+      "after": "测试里跨年那条失败了：2025-12 和 2026-01 被分到同一组？检查一下 to_period 是不是把年份丢了。",
+      "new_tokens": [
+        "01",
+        "12",
+        "2025",
+        "2026",
+        "to_period"
+      ]
+    }
+  ]
+}
