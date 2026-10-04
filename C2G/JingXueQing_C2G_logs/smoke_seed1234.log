@@ -1,0 +1,21 @@
+[c2g] JingXueQing parameter-golf run  run_id=smoke_seed1234 seed=1234 time=2026-10-03 23:38:01
+[env] device=cpu torch=2.14.1 seed=1234 smoke=1
+[tok] byte-level tokenizer (vocab=256) — smoke / no-model path
+[data] smoke corpus built: c2g_data/smoke_corpus.txt (1.52 MB, real text)
+[data] smoke tokens: train=1,370,731 val=152,303 (byte-level, so 1 token == 1 UTF-8 byte)
+[model] 4L x 128d x 4H/2KV mlp=2x vocab=256 params=492,690
+[model] SRD=1 choices=[0, 1] TTDS=1 extra=2
+step     20 loss 2.7897 extra 1 lr_scale 0.786 elapsed 9.3s (46%)
+[ema] started at frac=0.518
+step     40 loss 2.5688 extra 1 lr_scale 0.071 elapsed 19.5s (98%)
+[train] steps=41 time=20.2s tok/s=16,663
+[ema] EMA weights loaded into model
+[eval] pre-quant  bpb=3.788499 nats/tok=2.6260 tokens=152,207 bytes=152,207
+[eval] post-quant bpb=3.799250 nats/tok=2.6334 tokens=152,207 bytes=152,207
+[eval] TTDS extra=2 bpb=3.896424 nats/tok=2.7008  delta=+0.097174
+[artifact] raw=989,696B compressed=346,148B code=50,771B total=396,919B cap=16,000,000B OK
+[done] {"run_id": "smoke_seed1234", "seed": 1234, "smoke": 1, "device": "cpu", "steps": 41, "train_seconds": 20.2, "params": 492690, "vocab_size": 256, "eval_stride": 32, "train_seq_len": 128, "pre_quant_bpb": 3.7884992, "post_quant_bpb": 3.79924975, "ttds_extra": 2, "ttds_bpb": 3.89642405, "ttt_bpb": null, "artifact_bytes": 396919, "artifact_cap": 16000000, "artifact_ok": true, "srd_enabled": 1, "final_train_loss": 2.90483, "tokenizer": "byte"}
+
+--- notes -------------------------------------------------------------------
+MODE : SMOKE (pipeline validation only). See smoke_seed42.log for the full caveat list.
+RESULT: TTDS delta = +0.097174 bpb (WORSE) -- consistent with H3.
