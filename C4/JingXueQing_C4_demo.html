@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>ai-log-forge · Live Demo</title>
+<style>
+  :root{
+    --bg:#f7f8fa; --card:#ffffff; --ink:#1a1d24; --sub:#5b6472; --line:#e3e7ee;
+    --accent:#2f6df6; --accent-soft:#eaf1ff; --green:#0f9960; --green-soft:#e8f7f0;
+    --red:#d94a4a; --red-soft:#fdecec; --amber:#c77700; --amber-soft:#fff5e5;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+       padding:28px 26px 34px;}
+  .wrap{max-width:1128px;margin:0 auto}
+  h1{font-size:27px;margin:0 0 6px;letter-spacing:-.3px}
+  .io{font-size:15px;color:var(--sub);margin-bottom:20px}
+  .io b{color:var(--ink)}
+  .pill{display:inline-block;background:var(--accent-soft);color:var(--accent);
+        font-size:12px;padding:3px 10px;border-radius:20px;margin-right:8px;font-weight:600}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin-bottom:16px}
+  h2{font-size:16px;margin:0 0 12px;display:flex;align-items:center;gap:8px}
+  .num{width:22px;height:22px;border-radius:50%;background:var(--accent);color:#fff;
+       font-size:12px;display:flex;align-items:center;justify-content:center;font-weight:700}
+  pre{margin:0;background:#1e222b;color:#e6e9ef;border-radius:9px;padding:14px 16px;
+      font-size:12.5px;line-height:1.75;overflow-x:auto;
+      font-family:"SF Mono",Menlo,Consolas,monospace}
+  pre .g{color:#7ee2a8} pre .r{color:#ff9a9a} pre .y{color:#ffd479}
+  pre .c{color:#8b93a3} pre .b{color:#8ab4ff}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .score{border-radius:12px;padding:16px 18px;text-align:center;border:1px solid var(--line)}
+  .score.bad{background:var(--amber-soft);border-color:#f0d9b0}
+  .score.good{background:var(--green-soft);border-color:#b7e3cd}
+  .score .n{font-size:38px;font-weight:800;line-height:1.1}
+  .score.bad .n{color:var(--amber)} .score.good .n{color:var(--green)}
+  .score .t{font-size:12.5px;color:var(--sub);margin-top:4px}
+  .arrow{display:flex;align-items:center;justify-content:center;font-size:26px;color:var(--accent);font-weight:800}
+  table{width:100%;border-collapse:collapse;font-size:12.5px}
+  th,td{border:1px solid var(--line);padding:7px 9px;text-align:left}
+  th{background:#f2f4f8;font-weight:600}
+  tr td:first-child{white-space:nowrap}
+  .ok{color:var(--green);font-weight:600}
+  .flag{background:var(--red-soft);border-left:3px solid var(--red);padding:9px 12px;
+        border-radius:6px;font-size:12.5px;margin-top:10px}
+  .kpi{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px}
+  .kpi div{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+  .kpi .v{font-size:21px;font-weight:800} .kpi .l{font-size:11.5px;color:var(--sub);margin-top:2px}
+  .foot{font-size:12px;color:var(--sub);text-align:center;margin-top:6px}
+  code{background:#eef1f6;padding:1px 5px;border-radius:4px;font-size:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>ai-log-forge · AI 日志 / AAR 锻造器</h1>
+  <div class="io">
+    <span class="pill">输入</span>一段真实 AI 协作记录（<code>.jsonl</code> / <code>.json</code> / <code>.md</code>）
+    ＋ 姓名 / 挑战号
+    &nbsp;→&nbsp;
+    <span class="pill">输出</span><b>《AI 日志》+《AAR》+ 体检报告</b>（数据全部来自真实记录，不可伪造）
+  </div>
+
+  <div class="kpi">
+    <div><div class="v">7 轮</div><div class="l">从记录里抽出的对话轮次</div></div>
+    <div><div class="v">28 次</div><div class="l">工具调用（Edit×12 Bash×10 Write×6）</div></div>
+    <div><div class="v">2 个</div><div class="l">自动捕获的失败/返工轮次</div></div>
+    <div><div class="v">5 条</div><div class="l">prompt 逐轮优化链</div></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="num">1</span>抽取证据 — extract_trace.py</h2>
+<pre><span class="c">$ python3 scripts/extract_trace.py -i demo_session.jsonl -o trace.json --markdown</span>
+<span class="g">[完成]</span> trace.json -> ./trace.json
+       源文件 1 个 ｜ 轮次 7 ｜ 用户发言 7 ｜ AI 回复 9 ｜ 工具调用 28
+       工具分布：Edit×12、Bash×10、Write×6
+       迭代信号轮次：[2, 3, 4, 5, 6]
+       <span class="r">失败/返工轮次：[2, 4]</span>
+       prompt 优化链：5 条
+
+--- 轮次摘要 ---
+#1 [2 工具] 我：帮我写个 Python 脚本，把 sales.csv 里的销售数据按月份汇总…
+<span class="y">#2🔁迭代 ❌失败</span> [1 工具] 我：跑不起来，报错：KeyError: 'date'。你检查一下列名是不是有问题。
+<span class="y">#3🔁迭代</span> [2 工具] 我：能跑了。但结果不对——我要的是按月份汇总，你现在是按周…
+<span class="y">#4🔁迭代 ❌失败</span> [3 工具] 我：还是不对。空值被当成 0 了…另外我想按 region 再拆一层。
+#5🔁迭代 ✋我动手 [2 工具] 我：加个 --month 参数…我自己补了三个边界用例，你写成 pytest。
+<span class="y">#6🔁迭代</span> [2 工具] 我：跨年那条失败了：2025-12 和 2026-01 被分到同一组？
+#7 [2 工具] 我：全过了。加上 docstring 和使用示例，我要交给同事跑。</pre>
+  </div>
+
+  <div class="card">
+    <h2><span class="num">2</span>锻造文档 — forge.py（事实填好，判断留白）</h2>
+<pre><span class="c">$ python3 scripts/forge.py -t trace.json -n Demo -c C4 --title "销售数据汇总脚本开发" -o .</span>
+<span class="g">[完成]</span> 已生成 2 个文件：
+       - Demo_C4_AI日志.md  (7658 字节)
+       - Demo_C4_AAR.md     (1452 字节)
+       共 7 轮 ｜ 2 个失败轮次 ｜ 5 条 prompt 优化链
+<span class="y">[注意]</span> 文件里带 `&lt;!-- LLM-FILL: ... --&gt;` 标记的地方需要补写。</pre>
+    <div class="flag">
+      🚩 <b>关键设计</b>：脚本只填「事实」（轮次、时间、工具、报错），
+      所有需要人判断的地方都留成 <code>&lt;!-- LLM-FILL --&gt;</code> 占位符，<b>绝不替用户编反思</b>。
+    </div>
+  </div>
+
+  <div class="card">
+    <h2><span class="num">3</span>交卷前体检 — health_check.py（闭环：80 → 100）</h2>
+    <div class="grid2" style="margin-bottom:14px">
+      <div class="score bad">
+        <div class="n">80</div>
+        <div class="t">补写前 ｜ 22 处占位符未填（−20）<br>退出码 <b>1</b> ❌ 不许交</div>
+      </div>
+      <div class="score good">
+        <div class="n">100</div>
+        <div class="t">补写后 ｜ 占位符 0 处<br>退出码 <b>0</b> ✅ 可以交了</div>
+      </div>
+    </div>
+<pre><span class="c">$ python3 scripts/health_check.py -f *_已补写.md -t trace.json -p references/rubric_ai_log.yaml</span>
+**总分：<span class="g">100.0 / 100.0（100%）</span>**
+&gt; 硬证据：7 轮对话 ｜ 28 次工具调用 ｜ 2 个失败轮次 ｜ 5 条 prompt 优化链
+
+| 维度          | 得分       | 命中信号                                              |
+|---------------|-----------|---------------------------------------------------|
+| AI使用质量     | <span class="g">30.0/30.0</span> | 多轮迭代、prompt优化、工作流设计、AI日志佐证、人机分工清晰 |
+| 复盘质量       | <span class="g">45.0/45.0</span> | 具体问题分析、有改进方案、记录迭代过程、含失败经验、有量化数据 |
+| 产物完整性     | <span class="g">25.0/25.0</span> | 产物齐全、可运行、有复现说明                          |
+退出码=0  <span class="c">（0 = 无红旗、无未填占位符）</span></pre>
+  </div>
+
+  <div class="grid2">
+    <div class="card">
+      <h2><span class="num">4</span>技能包结构</h2>
+<pre>ai-log-forge/
+├── SKILL.md            <span class="c">177 行主指令</span>
+├── scripts/
+│   ├── extract_trace.py <span class="c">证据层 517 行</span>
+│   ├── forge.py         <span class="c">骨架层 314 行</span>
+│   └── health_check.py  <span class="c">评分层 288 行</span>
+└── references/
+    ├── rubric_profile.yaml  <span class="c">C4 全套档案</span>
+    ├── rubric_ai_log.yaml   <span class="c">日志精简档案</span>
+    └── input_formats.md
+打包 → <span class="b">JingXueQing_C4_ai-log-forge.skill</span> (23 KB)</pre>
+    </div>
+    <div class="card">
+      <h2><span class="num">5</span>30 秒上手（零 pip 依赖）</h2>
+<pre><span class="c"># ① 抽证据</span>
+python3 scripts/extract_trace.py \
+  -i ~/.claude/projects/*/xxx.jsonl -o trace.json
+
+<span class="c"># ② 出文档</span>
+python3 scripts/forge.py -t trace.json \
+  -n 你的名字 -c C4 --title "任务标题" -o .
+
+<span class="c"># ③ 体检（退出码≠0 就别交）</span>
+python3 scripts/health_check.py \
+  -f 你的名字_C4_AI日志.md 你的名字_C4_AAR.md \
+  -t trace.json -o 体检报告.md
+
+<span class="c"># 没有记录？走访谈模式</span>
+python3 scripts/forge.py --interview -n 你的名字 -c C4</pre>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2><span class="num">6</span>为什么这 20 分差值很关键</h2>
+    <table>
+      <tr><th>rubric 维度</th><th>分值</th><th>日志里对应什么</th><th>本技能怎么保证</th></tr>
+      <tr><td>AI使用质量</td><td>20 分</td><td>多轮迭代 / prompt 优化 / 你做了什么</td><td class="ok">trace.json 硬证据 + 逐轮判断列表</td></tr>
+      <tr><td>复盘质量</td><td>20 分</td><td>失败经验 / 改进方案 / 迭代过程</td><td class="ok">自动捕获失败轮次 + AAR 模板强制填写</td></tr>
+      <tr><td>红旗：一句话指令无迭代</td><td>封顶 5 分</td><td>轮次 &lt; 3 且无修正信号</td><td class="ok">体检单独列红旗 + 退出码 1</td></tr>
+      <tr><td>红旗：无 AI 使用记录</td><td>封顶 5 分</td><td>压根没写日志</td><td class="ok">本技能就是为了解决它</td></tr>
+    </table>
+  </div>
+
+  <div class="foot">
+    JingXueQing_C4 · ai-log-forge · 全部输出为本机真实运行结果，可 <code>bash samples/run_all.sh</code> 一键复现
+  </div>
+</div>
+</body>
+</html>
