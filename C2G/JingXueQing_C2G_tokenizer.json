@@ -1,0 +1,5 @@
+{
+  "kind": "byte-level",
+  "vocab_size": 256,
+  "note": "Local measured run uses a byte-level tokenizer (vocab 256) because the SP8192 SentencePiece model ships with the FineWeb dataset, which is not downloadable from the author's network. The track submission path uses SP8192 (TOKENIZER_PATH)."
+}
