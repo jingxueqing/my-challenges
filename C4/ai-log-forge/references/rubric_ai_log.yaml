@@ -1,0 +1,58 @@
+# ============================================================
+# 评分标准档案 · 精简版（只评「AI 日志 / AAR」本身）
+# ------------------------------------------------------------
+# 默认档案 rubric_profile.yaml 是 C4 全套 5 维度（含技能质量、可教性）。
+# 如果你只想检查一份 AI 日志 / AAR 写得够不够，用这个更准：
+#   python3 scripts/health_check.py -f x_AI日志.md x_AAR.md -t trace.json \
+#       -p references/rubric_ai_log.yaml
+# ============================================================
+
+profile: ai-log-only
+version: 1
+description: 只针对 AI 日志 / AAR 的精简评分标准（总分 100）
+
+dimensions:
+  aiUsage:
+    label: AI使用质量
+    maxPoints: 30
+    signals: [多轮迭代, prompt优化, 工作流设计, AI日志佐证, 人机分工清晰]
+  reflectionQuality:
+    label: 复盘质量
+    maxPoints: 45
+    signals: [具体问题分析, 有改进方案, 记录迭代过程, 含失败经验, 有量化数据]
+  artifactCompleteness:
+    label: 产物完整性
+    maxPoints: 25
+    signals: [产物齐全, 可运行, 有复现说明]
+
+signal_keywords:
+  多轮迭代: [轮次, 迭代, 第二轮, 第三轮, 改成, 重做, 返工, 再来, 优化, 追加]
+  prompt优化: [prompt, Prompt, 指令, 改写, 优化轨迹, 提示词, 说法]
+  工作流设计: [工作流, 流程, pipeline, 步骤, Step, 流水线, 链路]
+  AI日志佐证: [AI 日志, AI日志, AI 工具, 工具调用, 用了什么 AI, 模型, trace]
+  人机分工清晰: [我做了什么, 我（人）, 我的判断, 手动, 验收, 分工]
+  具体问题分析: [原因, 差距, 问题, 根因, 为什么, 分析, 误判]
+  有改进方案: [改进, 下一步, 方案, 优化, TODO, 优先级, 改什么]
+  记录迭代过程: [迭代, 版本, v2, 第二轮, 修改, 返工, 时间线]
+  含失败经验: [失败, 踩坑, 报错, 返工, 不对, 错了, 误判, 教训, 触发方式]
+  有量化数据: [轮, 次, 字, %, 分, 条, 工具调用, 统计]
+  产物齐全: [交付物, 产物, 文件清单, 清单, 复现信息]
+  可运行: [验证, 测试, 复现, 运行成功, 输出, 通过, pytest]
+  有复现说明: [复现, 安装, 使用步骤, 命令, README, python3]
+
+red_flags:
+  one_shot_ai:
+    label: 一句话指令直接提交、无迭代
+    affectedDimension: aiUsage
+    maxScore: 5
+    absent: [迭代, 轮次, 改成, 重做, 优化, 第二轮, 返工]
+  no_ai_log:
+    label: 无 AI 使用记录 / 无 AAR
+    affectedDimension: reflectionQuality
+    maxScore: 5
+    absent: [AI 日志, AI日志, AAR, 复盘, 用了什么 AI]
+  no_failure_reflection:
+    label: 没有写任何失败经验
+    affectedDimension: reflectionQuality
+    maxScore: 10
+    absent: [失败, 踩坑, 报错, 返工, 教训, 误判]
