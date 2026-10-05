@@ -1,0 +1,7 @@
+---
+name: json-flatten
+description: 展开嵌套 JSON
+---
+```bash
+python3 flatten.py in.json -o out.json
+```
