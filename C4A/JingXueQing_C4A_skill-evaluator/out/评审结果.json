@@ -1,0 +1,2238 @@
+{
+  "folder": "/Users/jingxueqing/Desktop/C4A-交付_JingXueQing_技能提交自动评审器/评审输入样例",
+  "generated_at": "2026-10-05 11:40:34",
+  "rubric_version": "c4a-rubric-v1.1",
+  "n_files": 37,
+  "n_authors": 3,
+  "non_c4_count": 0,
+  "weights": {
+    "reusable": 0.25,
+    "executable": 0.3,
+    "verifiable": 0.2,
+    "clear_io": 0.25
+  },
+  "authors": [
+    {
+      "author": "jingxueqing",
+      "composite": 1.0,
+      "rank": 1,
+      "file_count": 32,
+      "versions": [],
+      "needs_human": [],
+      "completeness": {
+        "author": "jingxueqing",
+        "n_present": 5,
+        "n_partial": 0,
+        "n_missing": 0,
+        "score": 1.0,
+        "verdict": "✅ 齐全",
+        "missing_labels": [],
+        "partial_labels": [],
+        "ambiguous": false,
+        "slots": [
+          {
+            "key": "skill_doc",
+            "label": "Skill 说明文档",
+            "status": "✅",
+            "strength": 1.0,
+            "matched_files": [
+              "JingXueQing_C4_ai-log-forge/JingXueQing_C4_skill说明.md",
+              "JingXueQing_C4_ai-log-forge/ai-log-forge/SKILL.md",
+              "JingXueQing_C4_ai-log-forge/C4上传包_JingXueQing.zip",
+              "JingXueQing_C4_ai-log-forge/JingXueQing_C4_ai-log-forge.skill"
+            ],
+            "evidence": [
+              {
+                "file": "JingXueQing_C4_ai-log-forge/JingXueQing_C4_skill说明.md",
+                "type": "filename",
+                "pattern": "skill[-_ ]?说明",
+                "weight": 1.0,
+                "detail": "文件名命中 skill[-_ ]?说明"
+              },
+              {
+                "file": "JingXueQing_C4_ai-log-forge/JingXueQing_C4_skill说明.md",
+                "type": "ext",
+                "pattern": ".md",
+                "weight": 0.35,
+                "detail": "扩展名 .md 属于推荐类型"
+              },
+              {
+                "file": "JingXueQing_C4_ai-log-forge/ai-log-forge/SKILL.md",
+                "type": "filename",
+                "pattern": "SKILL\\.md$",
+                "weight": 0.9,
+                "detail": "文件名命中 SKILL\\.md$"
+              },
+              {
+                "file": "JingXueQing_C4_ai-log-forge/ai-log-forge/SKILL.md",
+                "type": "ext",
+                "pattern": ".md",
+                "weight": 0.35,
+                "detail": "扩展名 .md 属于推荐类型"
+              }
+            ],
+            "reason": "文件名命中 skill[-_ ]?说明"
+          },
+          {
+            "key": "executable",
+            "label": "可执行内容",
+            "status": "✅",
+            "strength": 1.0,
+            "matched_files": [
+              "JingXueQing_C4_ai-log-forge/JingXueQing_C4_ai-log-forge.skill",
+              "JingXueQing_C4_ai-log-forge/C4上传包_JingXueQing.zip",
+              "JingXueQing_C4_ai-log-forge/JingXueQing_C4_AI日志.md",
+              "JingXueQing_C4_ai-log-forge/JingXueQing_C4_skill说明.md"
+            ],
+            "evidence": [
+              {
+                "file": "JingXueQing_C4_ai-log-forge/JingXueQing_C4_ai-log-forge.skill",
+                "type": "filename",
+                "pattern": "\\.skill$",
+                "weight": 1.0,
+                "detail": "文件名命中 \\.skill$"
+              },
+              {
+                "file": "JingXueQing_C4_ai-log-forge/JingXueQing_C4_ai-log-forge.skill",
+                "type": "filename",
+                "pattern": "技能|skill(?![-_ ]?(说明|doc))",
+                "weight": 0.6,
+                "detail": "文件名命中 技能|skill(?![-_ ]?(说明|doc))"
+              },
+              {
+                "file": "JingXueQing_C4_ai-log-forge/C4上传包_JingXueQing.zip",
+                "type": "ext",
+                "pattern": ".zip",
+                "weight": 0.35,
+                "detail": "扩展名 .zip 属于推荐类型"
+              },
+              {
+                "file": "JingXueQing_C4_ai-log-forge/C4上传包_JingXueQing.zip",
+                "type": "content",
+                "pattern": "```(python|bash|sh|javascript|js)",
+                "weight": 0.9,
+                "detail": "内容第 252 行命中「```bash」"
+              }
+            ],
+            "reason": "文件名命中 \\.skill$"
+          },
+          {
+            "key": "demo",
+            "label": "Demo（视频/截图）",
+            "status": "✅",
+            "strength": 1.0,
+            "matched_files": [
+              "JingXueQing_C4_ai-log-forge/JingXueQing_C4_demo.html",
+              "JingXueQing_C4_ai-log-forge/JingXueQing_C4_demo_01_终端实录.png",
+              "JingXueQing_C4_ai-log-forge/JingXueQing_C4_demo_02_体检闭环.png",
+              "JingXueQing_C4_ai-log-forge/JingXueQing_C4_demo_03_体检前后.png"
+            ],
+            "evidence": [
+              {
+                "file": "JingXueQing_C4_ai-log-forge/JingXueQing_C4_demo.html",
+                "type": "filename",
+                "pattern": "demo",
+                "weight": 1.0,
+                "detail": "文件名命中 demo"
+              },
+              {
+                "file": "JingXueQing_C4_ai-log-forge/JingXueQing_C4_demo.html",
+                "type": "ext",
+                "pattern": ".html",
+                "weight": 0.35,
+                "detail": "扩展名 .html 属于推荐类型"
+              },
+              {
+                "file": "JingXueQing_C4_ai-log-forge/JingXueQing_C4_demo_01_终端实录.png",
+                "type": "filename",
+                "pattern": "demo",
+                "weight": 1.0,
+                "detail": "文件名命中 demo"
+              },
+              {
+                "file": "JingXueQing_C4_ai-log-forge/JingXueQing_C4_demo_01_终端实录.png",
+                "type": "ext",
+                "pattern": ".png",
+                "weight": 0.35,
+                "detail": "扩展名 .png 属于推荐类型"
+              }
+            ],
+            "reason": "文件名命中 demo"
+          },
+          {
+            "key": "teaching_doc",
+            "label": "教学说明",
+            "status": "✅",
+            "strength": 1.0,
+            "matched_files": [
+              "JingXueQing_C4_ai-log-forge/JingXueQing_C4_教学说明.md",
+              "JingXueQing_C4_ai-log-forge/C4上传包_JingXueQing.zip",
+              "JingXueQing_C4_ai-log-forge/JingXueQing_C4_AAR.md",
+              "JingXueQing_C4_ai-log-forge/JingXueQing_C4_ai-log-forge.skill"
+            ],
+            "evidence": [
+              {
+                "file": "JingXueQing_C4_ai-log-forge/JingXueQing_C4_教学说明.md",
+                "type": "filename",
+                "pattern": "教学说明",
+                "weight": 1.0,
+                "detail": "文件名命中 教学说明"
+              },
+              {
+                "file": "JingXueQing_C4_ai-log-forge/JingXueQing_C4_教学说明.md",
+                "type": "filename",
+                "pattern": "教学",
+                "weight": 0.9,
+                "detail": "文件名命中 教学"
+              },
+              {
+                "file": "JingXueQing_C4_ai-log-forge/C4上传包_JingXueQing.zip",
+                "type": "content",
+                "pattern": "常见坑|注意事项|避坑",
+                "weight": 0.8,
+                "detail": "内容第 91 行命中「常见坑」"
+              }
+            ],
+            "reason": "文件名命中 教学说明"
+          },
+          {
+            "key": "ai_log",
+            "label": "AI 日志",
+            "status": "✅",
+            "strength": 1.0,
+            "matched_files": [
+              "JingXueQing_C4_ai-log-forge/C4上传包_JingXueQing.zip",
+              "JingXueQing_C4_ai-log-forge/JingXueQing_C4_AAR.md",
+              "JingXueQing_C4_ai-log-forge/JingXueQing_C4_AI日志.md",
+              "JingXueQing_C4_ai-log-forge/JingXueQing_C4_ai-log-forge.skill"
+            ],
+            "evidence": [
+              {
+                "file": "JingXueQing_C4_ai-log-forge/C4上传包_JingXueQing.zip",
+                "type": "filename",
+                "pattern": "AI\\s*[-_]?log",
+                "weight": 1.0,
+                "detail": "文件名命中 AI\\s*[-_]?log"
+              },
+              {
+                "file": "JingXueQing_C4_ai-log-forge/C4上传包_JingXueQing.zip",
+                "type": "filename",
+                "pattern": "ai[-_]?log",
+                "weight": 1.0,
+                "detail": "文件名命中 ai[-_]?log"
+              },
+              {
+                "file": "JingXueQing_C4_ai-log-forge/JingXueQing_C4_AAR.md",
+                "type": "filename",
+                "pattern": "AI\\s*[-_]?log",
+                "weight": 1.0,
+                "detail": "文件名命中 AI\\s*[-_]?log"
+              },
+              {
+                "file": "JingXueQing_C4_ai-log-forge/JingXueQing_C4_AAR.md",
+                "type": "filename",
+                "pattern": "ai[-_]?log",
+                "weight": 1.0,
+                "detail": "文件名命中 ai[-_]?log"
+              }
+            ],
+            "reason": "文件名命中 AI\\s*[-_]?log"
+          }
+        ]
+      },
+      "quality": {
+        "author": "jingxueqing",
+        "quality_score": 1.0,
+        "total_points": 4.0,
+        "needs_human": [],
+        "advice": [
+          "[可执行] 交付物里不能留 TODO/占位符——那说明还没做完"
+        ],
+        "criteria": [
+          {
+            "key": "reusable",
+            "label": "可复用",
+            "grade": "✅",
+            "score": 1.0,
+            "strength": 1.0,
+            "reason": "5/5 个检查项通过（加权 100%）",
+            "needs_human": false,
+            "evidence_count": 14,
+            "checks": [
+              {
+                "check_id": "REUSE.install",
+                "label": "有安装/放置说明",
+                "passed": true,
+                "detail": "4 条正向证据（权重 1.08）｜检查项档位 ✅",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "rule": "REUSE.install",
+                    "file": "C4上传包_JingXueQing.zip",
+                    "line": 13,
+                    "snippet": "| 做一个**会被别人真的用起来**的技能 | 至少 3 个人实际安装使用并给出反馈（C4 第一条评分 = 被使用次数） |",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "REUSE.install",
+                    "file": "C4上传包_JingXueQing.zip",
+                    "line": 149,
+                    "snippet": "| **我（人）** | ① 选技能方向（判断\"哪个技能会被反复用\"）；② 定\"事实归脚本、叙事归人\"的设计原则；③ 定评分对齐策略（把 rubric 的 40 分映射到日志内容）；④ 构造测试夹具；⑤ 决定占位符扣分与退出码机制；⑥ 判断每个 bug 该不该修、怎么修；⑦ 写四份交付文档；⑧ 打包并解压自测 |",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "REUSE.install",
+                    "file": "C4上传包_JingXueQing.zip",
+                    "line": 702,
+                    "snippet": "**不需要 pip install 任何东西。** 只依赖 Python 3 标准库。",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "REUSE.install",
+                    "file": "JingXueQing_C4_ai-log-forge.skill",
+                    "line": 142,
+                    "snippet": "| 没装 PyYAML | 内置迷你 YAML 解析器兜底，无需 pip install。 |",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  }
+                ]
+              },
+              {
+                "check_id": "REUSE.env",
+                "label": "声明环境依赖",
+                "passed": true,
+                "detail": "6 条正向证据（权重 1.62）｜检查项档位 ✅",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "rule": "REUSE.env",
+                    "file": "C4上传包_JingXueQing.zip",
+                    "line": 22,
+                    "snippet": "- **技能完成**：`ai-log-forge`（3 个脚本 1,119 行 + SKILL.md 177 行 + 3 份参考资料），零 pip 依赖。",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "REUSE.env",
+                    "file": "C4上传包_JingXueQing.zip",
+                    "line": 35,
+                    "snippet": "| **陌生人可复现** | 别人按说明能跑通 | **未验证** | 只在我自己的机器上跑通过（Python 3.13 + macOS）。没找同学用他自己的会话文件试过 |",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "REUSE.env",
+                    "file": "C4上传包_JingXueQing.zip",
+                    "line": 116,
+                    "snippet": "> **AI 工具**：WorkBuddy（Claude 驱动的 agent，本机执行代码）＋ 本机 Python 3.13.12",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "REUSE.env",
+                    "file": "C4上传包_JingXueQing.zip",
+                    "line": 417,
+                    "snippet": "<h2><span class=\"num\">5</span>30 秒上手（零 pip 依赖）</h2>",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "REUSE.env",
+                    "file": "C4上传包_JingXueQing.zip",
+                    "line": 702,
+                    "snippet": "**不需要 pip install 任何东西。** 只依赖 Python 3 标准库。",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "REUSE.env",
+                    "file": "JingXueQing_C4_ai-log-forge.skill",
+                    "line": 142,
+                    "snippet": "| 没装 PyYAML | 内置迷你 YAML 解析器兜底，无需 pip install。 |",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  }
+                ]
+              },
+              {
+                "check_id": "REUSE.nopath",
+                "label": "无硬编码本地绝对路径",
+                "passed": true,
+                "detail": "未检出任何问题信号（该项为负向检查，通过）｜检查项档位 ✅",
+                "confidence": 0.0,
+                "evidence": []
+              },
+              {
+                "check_id": "REUSE.nosecret",
+                "label": "无硬编码密钥",
+                "passed": true,
+                "detail": "未检出任何问题信号（该项为负向检查，通过）｜检查项档位 ✅",
+                "confidence": 0.0,
+                "evidence": []
+              },
+              {
+                "check_id": "REUSE.general",
+                "label": "有泛化/适用边界说明",
+                "passed": true,
+                "detail": "4 条正向证据（权重 1.08）｜检查项档位 ✅",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "rule": "REUSE.general",
+                    "file": "C4上传包_JingXueQing.zip",
+                    "line": 15,
+                    "snippet": "| 交付物齐全 | 说明 / 可执行包 / demo / 教学 / AI 日志 五件套，文件名能被平台自动匹配 |",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "REUSE.general",
+                    "file": "C4上传包_JingXueQing.zip",
+                    "line": 35,
+                    "snippet": "| **陌生人可复现** | 别人按说明能跑通 | **未验证** | 只在我自己的机器上跑通过（Python 3.13 + macOS）。没找同学用他自己的会话文件试过 |",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "REUSE.general",
+                    "file": "C4上传包_JingXueQing.zip",
+                    "line": 103,
+                    "snippet": "把\"别人卡住的地方\"补进 SKILL.md 的边界情况和教学说明的常见坑。",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "REUSE.general",
+                    "file": "C4上传包_JingXueQing.zip",
+                    "line": 358,
+                    "snippet": "#5🔁迭代 ✋我动手 [2 工具] 我：加个 --month 参数…我自己补了三个边界用例，你写成 pytest。",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "executable",
+            "label": "可执行",
+            "grade": "✅",
+            "score": 1.0,
+            "strength": 1.0,
+            "reason": "3/4 个检查项通过（加权 81%），检出 2 处问题信号",
+            "needs_human": false,
+            "evidence_count": 16,
+            "checks": [
+              {
+                "check_id": "EXEC.code",
+                "label": "含可运行的代码/prompt/workflow",
+                "passed": true,
+                "detail": "8 条正向证据（权重 2.21）｜检查项档位 ✅",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "rule": "EXEC.code",
+                    "file": "SKILL.md",
+                    "line": 56,
+                    "snippet": "## Workflow",
+                    "polarity": "positive",
+                    "weight": 0.324
+                  },
+                  {
+                    "rule": "EXEC.code",
+                    "file": "C4上传包_JingXueQing.zip",
+                    "line": 246,
+                    "snippet": "| 一键复现 | `bash samples/run_all.sh` → 全流程退出码 0，见 `samples/demo_run.log` |",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "EXEC.code",
+                    "file": "C4上传包_JingXueQing.zip",
+                    "line": 252,
+                    "snippet": "```bash",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "EXEC.code",
+                    "file": "C4上传包_JingXueQing.zip",
+                    "line": 254,
+                    "snippet": "bash samples/run_all.sh            # 4 步：抽证据 → 出文档 → 体检 → 补写后复检",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "EXEC.code",
+                    "file": "C4上传包_JingXueQing.zip",
+                    "line": 543,
+                    "snippet": "```bash",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "EXEC.code",
+                    "file": "JingXueQing_C4_ai-log-forge.skill",
+                    "line": 57,
+                    "snippet": "## Workflow",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  }
+                ]
+              },
+              {
+                "check_id": "EXEC.frontmatter",
+                "label": "SKILL.md 有 YAML frontmatter",
+                "passed": true,
+                "detail": "2 条正向证据（权重 0.54）｜检查项档位 ✅",
+                "confidence": 0.8,
+                "evidence": [
+                  {
+                    "rule": "EXEC.frontmatter",
+                    "file": "JingXueQing_C4_ai-log-forge.skill",
+                    "line": 4,
+                    "snippet": "description: >",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "EXEC.frontmatter",
+                    "file": "JingXueQing_C4_ai-log-forge.skill",
+                    "line": 1321,
+                    "snippet": "description: 只针对 AI 日志 / AAR 的精简评分标准（总分 100）",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  }
+                ]
+              },
+              {
+                "check_id": "EXEC.runnable",
+                "label": "有明确运行命令",
+                "passed": true,
+                "detail": "6 条正向证据（权重 1.62）｜检查项档位 ✅",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "rule": "EXEC.runnable",
+                    "file": "C4上传包_JingXueQing.zip",
+                    "line": 246,
+                    "snippet": "| 一键复现 | `bash samples/run_all.sh` → 全流程退出码 0，见 `samples/demo_run.log` |",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "EXEC.runnable",
+                    "file": "C4上传包_JingXueQing.zip",
+                    "line": 252,
+                    "snippet": "```bash",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "EXEC.runnable",
+                    "file": "C4上传包_JingXueQing.zip",
+                    "line": 254,
+                    "snippet": "bash samples/run_all.sh            # 4 步：抽证据 → 出文档 → 体检 → 补写后复检",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "EXEC.runnable",
+                    "file": "C4上传包_JingXueQing.zip",
+                    "line": 345,
+                    "snippet": "<pre><span class=\"c\">$ python3 scripts/extract_trace.py -i demo_session.jsonl -o trace.json --markdown</span>",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "EXEC.runnable",
+                    "file": "C4上传包_JingXueQing.zip",
+                    "line": 365,
+                    "snippet": "<pre><span class=\"c\">$ python3 scripts/forge.py -t trace.json -n Demo -c C4 --title \"销售数据汇总脚本开发\" -o .</span>",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "EXEC.runnable",
+                    "file": "C4上传包_JingXueQing.zip",
+                    "line": 543,
+                    "snippet": "```bash",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  }
+                ]
+              },
+              {
+                "check_id": "EXEC.notemplate",
+                "label": "不是空壳/占位模板",
+                "passed": false,
+                "detail": "检出 2 处问题信号（JingXueQing_C4_ai-log-forge.skill）｜检查项档位 ❌",
+                "confidence": 0.8,
+                "evidence": [
+                  {
+                    "rule": "EXEC.notemplate",
+                    "file": "JingXueQing_C4_ai-log-forge.skill",
+                    "line": 1344,
+                    "snippet": "有改进方案: [改进, 下一步, 方案, 优化, TODO, 优先级, 改什么]",
+                    "polarity": "negative",
+                    "weight": 1.2
+                  },
+                  {
+                    "rule": "EXEC.notemplate",
+                    "file": "JingXueQing_C4_ai-log-forge.skill",
+                    "line": 1487,
+                    "snippet": "有改进方案: [改进, 下一步, 方案, 优化, TODO, 优先级]",
+                    "polarity": "negative",
+                    "weight": 1.2
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "verifiable",
+            "label": "可验证",
+            "grade": "✅",
+            "score": 1.0,
+            "strength": 1.0,
+            "reason": "4/4 个检查项通过（加权 100%）",
+            "needs_human": false,
+            "evidence_count": 20,
+            "checks": [
+              {
+                "check_id": "VERI.example",
+                "label": "有示例/测试用例",
+                "passed": true,
+                "detail": "6 条正向证据（权重 1.62）｜检查项档位 ✅",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "rule": "VERI.example",
+                    "file": "C4上传包_JingXueQing.zip",
+                    "line": 15,
+                    "snippet": "| 交付物齐全 | 说明 / 可执行包 / demo / 教学 / AI 日志 五件套，文件名能被平台自动匹配 |",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "VERI.example",
+                    "file": "C4上传包_JingXueQing.zip",
+                    "line": 16,
+                    "snippet": "| 文档要教会别人用 | 有教学文档、有示例、有演示 |",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "VERI.example",
+                    "file": "C4上传包_JingXueQing.zip",
+                    "line": 25,
+                    "snippet": "- **交付物**：说明 / 教学 / AI 日志 / demo（1 个 live demo + 3 张截图）/ `.skill` 包，**AAR 补交中**（本文件）。",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "VERI.example",
+                    "file": "C4上传包_JingXueQing.zip",
+                    "line": 36,
+                    "snippet": "| **demo 真实性** | 用真实会话记录演示 | 用了**构造夹具** | 本机没有 Claude Code 会话文件（`~/.claude/projects` 为空），只能手写 7 轮样例保证可复现 |",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "VERI.example",
+                    "file": "C4上传包_JingXueQing.zip",
+                    "line": 358,
+                    "snippet": "#5🔁迭代 ✋我动手 [2 工具] 我：加个 --month 参数…我自己补了三个边界用例，你写成 pytest。",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "VERI.example",
+                    "file": "C4上传包_JingXueQing.zip",
+                    "line": 822,
+                    "snippet": "| **P2** | 产物验证写具体命令 + 结果（`pytest -q → 3 passed`） | 「可运行」「有复现说明」 |",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  }
+                ]
+              },
+              {
+                "check_id": "VERI.expected",
+                "label": "定义了预期结果/成功判据",
+                "passed": true,
+                "detail": "4 条正向证据（权重 1.19）｜检查项档位 ✅",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "rule": "VERI.expected",
+                    "file": "challenges.yaml",
+                    "line": 11,
+                    "snippet": "expected_artifacts:",
+                    "polarity": "positive",
+                    "weight": 0.324
+                  },
+                  {
+                    "rule": "VERI.expected",
+                    "file": "challenges.yaml",
+                    "line": 46,
+                    "snippet": "expected_artifacts:",
+                    "polarity": "positive",
+                    "weight": 0.324
+                  },
+                  {
+                    "rule": "VERI.expected",
+                    "file": "C4上传包_JingXueQing.zip",
+                    "line": 844,
+                    "snippet": "- 返工多 = 你的首轮指令没给验收标准；",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "VERI.expected",
+                    "file": "JingXueQing_C4_ai-log-forge.skill",
+                    "line": 351,
+                    "snippet": "{PLACEHOLDER.format(hint='列 3-5 条：你的判断、取舍、手动改动、验收标准。这是“AI 使用质量”得分的关键')}",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  }
+                ]
+              },
+              {
+                "check_id": "VERI.demo",
+                "label": "有可看的运行证据（截图/录屏）",
+                "passed": true,
+                "detail": "4 条正向证据（权重 1.19）｜检查项档位 ✅",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "rule": "VERI.demo",
+                    "file": "challenges.yaml",
+                    "line": 117,
+                    "snippet": "- \"姓名_C4_demo.mp4 或截图 — Demo\"",
+                    "polarity": "positive",
+                    "weight": 0.324
+                  },
+                  {
+                    "rule": "VERI.demo",
+                    "file": "challenges.yaml",
+                    "line": 180,
+                    "snippet": "- \"姓名_C6_demo.mp4 — 演示视频\"",
+                    "polarity": "positive",
+                    "weight": 0.324
+                  },
+                  {
+                    "rule": "VERI.demo",
+                    "file": "C4上传包_JingXueQing.zip",
+                    "line": 25,
+                    "snippet": "- **交付物**：说明 / 教学 / AI 日志 / demo（1 个 live demo + 3 张截图）/ `.skill` 包，**AAR 补交中**（本文件）。",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "VERI.demo",
+                    "file": "C4上传包_JingXueQing.zip",
+                    "line": 936,
+                    "snippet": "| `*demo*` | `JingXueQing_C4_demo.html`（live demo）<br>`JingXueQing_C4_demo_01_终端实录.png`<br>`JingXueQing_C4_demo_02_体检闭环.png`<br>`JingXueQing_C4_demo_03_体检前后.png",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  }
+                ]
+              },
+              {
+                "check_id": "VERI.reproduce",
+                "label": "步骤可复现（含具体数值/参数）",
+                "passed": true,
+                "detail": "6 条正向证据（权重 1.62）｜检查项档位 ✅",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "rule": "VERI.reproduce",
+                    "file": "C4上传包_JingXueQing.zip",
+                    "line": 13,
+                    "snippet": "| 做一个**会被别人真的用起来**的技能 | 至少 3 个人实际安装使用并给出反馈（C4 第一条评分 = 被使用次数） |",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "VERI.reproduce",
+                    "file": "C4上传包_JingXueQing.zip",
+                    "line": 14,
+                    "snippet": "| 技能本身要可复用、可执行、可验证、IO 明确 | 陌生人按说明 5 分钟能跑通；给定输入能复现同样输出 |",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "VERI.reproduce",
+                    "file": "C4上传包_JingXueQing.zip",
+                    "line": 242,
+                    "snippet": "| `forge.py` | 生成两份 md；`--interview` 模式正常输出 8 问提纲 |",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "VERI.reproduce",
+                    "file": "C4上传包_JingXueQing.zip",
+                    "line": 245,
+                    "snippet": "| 四份文档 | 人工复核：命令与脚本实际参数一致（`-t` = trace，`--title` = 标题） |",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "VERI.reproduce",
+                    "file": "C4上传包_JingXueQing.zip",
+                    "line": 621,
+                    "snippet": "**Step 1 抽取结果**：",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "VERI.reproduce",
+                    "file": "C4上传包_JingXueQing.zip",
+                    "line": 631,
+                    "snippet": "**Step 2 生成**：`Demo_C4_AI日志.md`（9 KB）+ `Demo_C4_AAR.md`",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "clear_io",
+            "label": "IO 明确",
+            "grade": "✅",
+            "score": 1.0,
+            "strength": 1.0,
+            "reason": "3/3 个检查项通过（加权 100%）",
+            "needs_human": false,
+            "evidence_count": 12,
+            "checks": [
+              {
+                "check_id": "IO.pair",
+                "label": "存在「输入…，输出…」成对描述",
+                "passed": true,
+                "detail": "4 条正向证据（权重 1.17）｜检查项档位 ✅",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "rule": "IO.pair",
+                    "file": "JingXueQing_C4_skill说明.md",
+                    "line": 44,
+                    "snippet": "| **可验证** | 给定输入 X，输出 Y 可预期：7 轮记录 → 7 行时间线、28 次工具调用、2 个失败轮次、5 条 prompt 链 | 体检报告给出可复核的数字；补写占位符后分数 80 → 100，退出码 1 → 0 |",
+                    "polarity": "positive",
+                    "weight": 0.36
+                  },
+                  {
+                    "rule": "IO.pair",
+                    "file": "C4上传包_JingXueQing.zip",
+                    "line": 457,
+                    "snippet": "> **一句话：输入**一段真实的 AI 协作记录，**输出**一份有数据支撑、能过评审的《AI 使用日志》+《AAR 复盘》+ 交卷前体检报告。",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "IO.pair",
+                    "file": "C4上传包_JingXueQing.zip",
+                    "line": 498,
+                    "snippet": "| **可验证** | 给定输入 X，输出 Y 可预期：7 轮记录 → 7 行时间线、28 次工具调用、2 个失败轮次、5 条 prompt 链 | 体检报告给出可复核的数字；补写占位符后分数 80 → 100，退出码 1 → 0 |",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "IO.pair",
+                    "file": "C4上传包_JingXueQing.zip",
+                    "line": 618,
+                    "snippet": "**输入**：`samples/demo_session.jsonl` —— 一份 7 轮的 Claude Code 会话样例",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  }
+                ]
+              },
+              {
+                "check_id": "IO.typed",
+                "label": "输入输出有类型/格式说明",
+                "passed": true,
+                "detail": "6 条正向证据（权重 1.62）｜检查项档位 ✅",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "rule": "IO.typed",
+                    "file": "C4上传包_JingXueQing.zip",
+                    "line": 1,
+                    "snippet": "--- [JingXueQing_C4_AAR.md] ---",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "IO.typed",
+                    "file": "C4上传包_JingXueQing.zip",
+                    "line": 5,
+                    "snippet": "> 配套文件：`JingXueQing_C4_AI日志.md`（过程记录）、`JingXueQing_C4_交付物自检.md`（交付物核对）。",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "IO.typed",
+                    "file": "C4上传包_JingXueQing.zip",
+                    "line": 62,
+                    "snippet": "`AttributeError: 'str' object has no attribute 'get'` —— 我把 `red_flags` 当成列表遍历，",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "IO.typed",
+                    "file": "C4上传包_JingXueQing.zip",
+                    "line": 63,
+                    "snippet": "实际它是映射，拿到的是 key 字符串。改成兼容 dict / list 两种写法。",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "IO.typed",
+                    "file": "C4上传包_JingXueQing.zip",
+                    "line": 533,
+                    "snippet": "| 👥 **团队协作规范** | 统一日志格式 + 统一体检标准，新人照着做就不会漏项 |",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "IO.typed",
+                    "file": "C4上传包_JingXueQing.zip",
+                    "line": 578,
+                    "snippet": "│   ├── extract_trace.py              517 行 · 解析 4 种输入格式 → trace.json（证据层）",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  }
+                ]
+              },
+              {
+                "check_id": "IO.oneline",
+                "label": "有一句话功能摘要",
+                "passed": true,
+                "detail": "2 条正向证据（权重 0.54）｜检查项档位 ✅",
+                "confidence": 0.8,
+                "evidence": [
+                  {
+                    "rule": "IO.oneline",
+                    "file": "C4上传包_JingXueQing.zip",
+                    "line": 23,
+                    "snippet": "- **功能闭环实测通过**：7 轮记录 → 抽出 7 轮 / 28 次工具调用 / 2 个失败轮次 / 5 条 prompt 链；",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "IO.oneline",
+                    "file": "C4上传包_JingXueQing.zip",
+                    "line": 34,
+                    "snippet": "| **被使用次数** | ≥3 人使用并反馈 | **0 人** | 技能今天才做完，还没发群；我先追求\"功能完备\"而不是\"尽快发出去\"，把传播排在最后 |",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "author": "wechatgroup",
+      "composite": 0.69,
+      "rank": 2,
+      "file_count": 3,
+      "versions": [],
+      "needs_human": [],
+      "completeness": {
+        "author": "wechatgroup",
+        "n_present": 2,
+        "n_partial": 2,
+        "n_missing": 1,
+        "score": 0.6,
+        "verdict": "⚠️ 部分缺失",
+        "missing_labels": [
+          "Demo（视频/截图）"
+        ],
+        "partial_labels": [
+          "教学说明",
+          "AI 日志"
+        ],
+        "ambiguous": true,
+        "slots": [
+          {
+            "key": "skill_doc",
+            "label": "Skill 说明文档",
+            "status": "✅",
+            "strength": 0.9,
+            "matched_files": [
+              "WeChatGroup_C4_wechat-doc-mapper/wechat-doc-mapper_src/SKILL.md",
+              "WeChatGroup_C4_wechat-doc-mapper/WeChatGroup_C4_wechat-doc-mapper.skill",
+              "WeChatGroup_C4_wechat-doc-mapper/wechat-doc-mapper_src/scripts/wechat_doc_mapper.py"
+            ],
+            "evidence": [
+              {
+                "file": "WeChatGroup_C4_wechat-doc-mapper/wechat-doc-mapper_src/SKILL.md",
+                "type": "filename",
+                "pattern": "SKILL\\.md$",
+                "weight": 0.9,
+                "detail": "文件名命中 SKILL\\.md$"
+              },
+              {
+                "file": "WeChatGroup_C4_wechat-doc-mapper/wechat-doc-mapper_src/SKILL.md",
+                "type": "ext",
+                "pattern": ".md",
+                "weight": 0.35,
+                "detail": "扩展名 .md 属于推荐类型"
+              },
+              {
+                "file": "WeChatGroup_C4_wechat-doc-mapper/WeChatGroup_C4_wechat-doc-mapper.skill",
+                "type": "content",
+                "pattern": "输出|output",
+                "weight": 0.5,
+                "detail": "内容第 8 行命中「Output」"
+              }
+            ],
+            "reason": "文件名命中 SKILL\\.md$"
+          },
+          {
+            "key": "executable",
+            "label": "可执行内容",
+            "status": "✅",
+            "strength": 1.0,
+            "matched_files": [
+              "WeChatGroup_C4_wechat-doc-mapper/WeChatGroup_C4_wechat-doc-mapper.skill",
+              "WeChatGroup_C4_wechat-doc-mapper/wechat-doc-mapper_src/scripts/wechat_doc_mapper.py",
+              "WeChatGroup_C4_wechat-doc-mapper/wechat-doc-mapper_src/SKILL.md"
+            ],
+            "evidence": [
+              {
+                "file": "WeChatGroup_C4_wechat-doc-mapper/WeChatGroup_C4_wechat-doc-mapper.skill",
+                "type": "filename",
+                "pattern": "\\.skill$",
+                "weight": 1.0,
+                "detail": "文件名命中 \\.skill$"
+              },
+              {
+                "file": "WeChatGroup_C4_wechat-doc-mapper/WeChatGroup_C4_wechat-doc-mapper.skill",
+                "type": "filename",
+                "pattern": "技能|skill(?![-_ ]?(说明|doc))",
+                "weight": 0.6,
+                "detail": "文件名命中 技能|skill(?![-_ ]?(说明|doc))"
+              },
+              {
+                "file": "WeChatGroup_C4_wechat-doc-mapper/wechat-doc-mapper_src/scripts/wechat_doc_mapper.py",
+                "type": "filename",
+                "pattern": "\\.(py|sh|js|ts)$",
+                "weight": 0.9,
+                "detail": "文件名命中 \\.(py|sh|js|ts)$"
+              },
+              {
+                "file": "WeChatGroup_C4_wechat-doc-mapper/wechat-doc-mapper_src/scripts/wechat_doc_mapper.py",
+                "type": "ext",
+                "pattern": ".py",
+                "weight": 0.35,
+                "detail": "扩展名 .py 属于推荐类型"
+              }
+            ],
+            "reason": "文件名命中 \\.skill$"
+          },
+          {
+            "key": "demo",
+            "label": "Demo（视频/截图）",
+            "status": "❌",
+            "strength": 0.5,
+            "matched_files": [
+              "WeChatGroup_C4_wechat-doc-mapper/WeChatGroup_C4_wechat-doc-mapper.skill",
+              "WeChatGroup_C4_wechat-doc-mapper/wechat-doc-mapper_src/scripts/wechat_doc_mapper.py"
+            ],
+            "evidence": [
+              {
+                "file": "WeChatGroup_C4_wechat-doc-mapper/WeChatGroup_C4_wechat-doc-mapper.skill",
+                "type": "content",
+                "pattern": "<video|\\.mp4|\\.mov",
+                "weight": 0.5,
+                "detail": "内容第 374 行命中「.mp4」"
+              },
+              {
+                "file": "WeChatGroup_C4_wechat-doc-mapper/wechat-doc-mapper_src/scripts/wechat_doc_mapper.py",
+                "type": "content",
+                "pattern": "<video|\\.mp4|\\.mov",
+                "weight": 0.5,
+                "detail": "内容第 49 行命中「.mp4」"
+              }
+            ],
+            "reason": "内容第 374 行命中「.mp4」"
+          },
+          {
+            "key": "teaching_doc",
+            "label": "教学说明",
+            "status": "⚠️",
+            "strength": 0.8,
+            "matched_files": [
+              "WeChatGroup_C4_wechat-doc-mapper/WeChatGroup_C4_wechat-doc-mapper.skill",
+              "WeChatGroup_C4_wechat-doc-mapper/wechat-doc-mapper_src/SKILL.md"
+            ],
+            "evidence": [
+              {
+                "file": "WeChatGroup_C4_wechat-doc-mapper/WeChatGroup_C4_wechat-doc-mapper.skill",
+                "type": "content",
+                "pattern": "常见坑|注意事项|避坑",
+                "weight": 0.8,
+                "detail": "内容第 1001 行命中「常见坑」"
+              },
+              {
+                "file": "WeChatGroup_C4_wechat-doc-mapper/wechat-doc-mapper_src/SKILL.md",
+                "type": "ext",
+                "pattern": ".md",
+                "weight": 0.35,
+                "detail": "扩展名 .md 属于推荐类型"
+              },
+              {
+                "file": "WeChatGroup_C4_wechat-doc-mapper/wechat-doc-mapper_src/SKILL.md",
+                "type": "content",
+                "pattern": "^\\s*\\d+[\\.、]\\s+\\S+",
+                "weight": 0.5,
+                "detail": "内容第 73 行命中「1. First」"
+              }
+            ],
+            "reason": "内容第 1001 行命中「常见坑」"
+          },
+          {
+            "key": "ai_log",
+            "label": "AI 日志",
+            "status": "⚠️",
+            "strength": 0.8,
+            "matched_files": [
+              "WeChatGroup_C4_wechat-doc-mapper/WeChatGroup_C4_wechat-doc-mapper.skill",
+              "WeChatGroup_C4_wechat-doc-mapper/wechat-doc-mapper_src/SKILL.md",
+              "WeChatGroup_C4_wechat-doc-mapper/wechat-doc-mapper_src/scripts/wechat_doc_mapper.py"
+            ],
+            "evidence": [
+              {
+                "file": "WeChatGroup_C4_wechat-doc-mapper/WeChatGroup_C4_wechat-doc-mapper.skill",
+                "type": "content",
+                "pattern": "使用的\\s*AI|AI\\s*工具|ChatGPT|Claude|DeepSeek|Cursor",
+                "weight": 0.8,
+                "detail": "内容第 1019 行命中「claude」"
+              },
+              {
+                "file": "WeChatGroup_C4_wechat-doc-mapper/wechat-doc-mapper_src/SKILL.md",
+                "type": "ext",
+                "pattern": ".md",
+                "weight": 0.35,
+                "detail": "扩展名 .md 属于推荐类型"
+              },
+              {
+                "file": "WeChatGroup_C4_wechat-doc-mapper/wechat-doc-mapper_src/SKILL.md",
+                "type": "content",
+                "pattern": "prompt|提示词",
+                "weight": 0.6,
+                "detail": "内容第 236 行命中「prompt」"
+              }
+            ],
+            "reason": "内容第 1019 行命中「claude」"
+          }
+        ]
+      },
+      "quality": {
+        "author": "wechatgroup",
+        "quality_score": 0.75,
+        "total_points": 3.0,
+        "needs_human": [],
+        "advice": [
+          "[可复用] 补一节「安装」，写清 `pip install -r requirements.txt` / 拷贝到哪个目录 / 如何验证装上了",
+          "[可复用] 补「适用范围与不适用场景」，让使用者知道边界在哪",
+          "[可验证] 明确写出「预期输出是什么」，否则使用者在不知道自己有没有做对",
+          "[IO 明确] 在说明文档顶部加一行「**输入**：xxx  →  **输出**：xxx」，这是四条件里最容易检查也最容易丢分的一条",
+          "[IO 明确] 文档开头写一句「本技能用于 ……」，读者 10 秒内要能判断要不要用"
+        ],
+        "criteria": [
+          {
+            "key": "reusable",
+            "label": "可复用",
+            "grade": "⚠️",
+            "score": 0.5,
+            "strength": 0.833,
+            "reason": "3/5 个检查项通过（加权 53%）",
+            "needs_human": false,
+            "evidence_count": 5,
+            "checks": [
+              {
+                "check_id": "REUSE.install",
+                "label": "有安装/放置说明",
+                "passed": false,
+                "detail": "未检出任何相关信号｜检查项档位 ❌",
+                "confidence": 0.0,
+                "evidence": []
+              },
+              {
+                "check_id": "REUSE.env",
+                "label": "声明环境依赖",
+                "passed": true,
+                "detail": "4 条正向证据（权重 1.24）｜检查项档位 ✅",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "rule": "REUSE.env",
+                    "file": "SKILL.md",
+                    "line": 27,
+                    "snippet": "## Prerequisites",
+                    "polarity": "positive",
+                    "weight": 0.324
+                  },
+                  {
+                    "rule": "REUSE.env",
+                    "file": "SKILL.md",
+                    "line": 113,
+                    "snippet": "import re",
+                    "polarity": "positive",
+                    "weight": 0.324
+                  },
+                  {
+                    "rule": "REUSE.env",
+                    "file": "SKILL.md",
+                    "line": 148,
+                    "snippet": "from collections import defaultdict",
+                    "polarity": "positive",
+                    "weight": 0.324
+                  },
+                  {
+                    "rule": "REUSE.env",
+                    "file": "WeChatGroup_C4_wechat-doc-mapper.skill",
+                    "line": 28,
+                    "snippet": "## Prerequisites",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  }
+                ]
+              },
+              {
+                "check_id": "REUSE.nopath",
+                "label": "无硬编码本地绝对路径",
+                "passed": true,
+                "detail": "未检出任何问题信号（该项为负向检查，通过）｜检查项档位 ✅",
+                "confidence": 0.0,
+                "evidence": []
+              },
+              {
+                "check_id": "REUSE.nosecret",
+                "label": "无硬编码密钥",
+                "passed": true,
+                "detail": "未检出任何问题信号（该项为负向检查，通过）｜检查项档位 ✅",
+                "confidence": 0.0,
+                "evidence": []
+              },
+              {
+                "check_id": "REUSE.general",
+                "label": "有泛化/适用边界说明",
+                "passed": false,
+                "detail": "未检出任何相关信号｜检查项档位 ❌",
+                "confidence": 0.52,
+                "evidence": [
+                  {
+                    "rule": "REUSE.general",
+                    "file": "WeChatGroup_C4_wechat-doc-mapper.skill",
+                    "line": 1095,
+                    "snippet": "构建个人影响力。选择一个平台（微信公众号或知乎），持续发布内容并分享到群里。",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "executable",
+            "label": "可执行",
+            "grade": "✅",
+            "score": 1.0,
+            "strength": 1.0,
+            "reason": "4/4 个检查项通过（加权 100%）",
+            "needs_human": false,
+            "evidence_count": 12,
+            "checks": [
+              {
+                "check_id": "EXEC.code",
+                "label": "含可运行的代码/prompt/workflow",
+                "passed": true,
+                "detail": "8 条正向证据（权重 2.48）｜检查项档位 ✅",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "rule": "EXEC.code",
+                    "file": "SKILL.md",
+                    "line": 92,
+                    "snippet": "## Workflow",
+                    "polarity": "positive",
+                    "weight": 0.324
+                  },
+                  {
+                    "rule": "EXEC.code",
+                    "file": "SKILL.md",
+                    "line": 99,
+                    "snippet": "```bash",
+                    "polarity": "positive",
+                    "weight": 0.324
+                  },
+                  {
+                    "rule": "EXEC.code",
+                    "file": "SKILL.md",
+                    "line": 112,
+                    "snippet": "```python",
+                    "polarity": "positive",
+                    "weight": 0.324
+                  },
+                  {
+                    "rule": "EXEC.code",
+                    "file": "SKILL.md",
+                    "line": 113,
+                    "snippet": "import re",
+                    "polarity": "positive",
+                    "weight": 0.324
+                  },
+                  {
+                    "rule": "EXEC.code",
+                    "file": "SKILL.md",
+                    "line": 148,
+                    "snippet": "from collections import defaultdict",
+                    "polarity": "positive",
+                    "weight": 0.324
+                  },
+                  {
+                    "rule": "EXEC.code",
+                    "file": "wechat_doc_mapper.py",
+                    "line": 6,
+                    "snippet": "python3 scripts/wechat_doc_mapper.py <FOLDER_PATH> [--output OUTPUT_XLSX]",
+                    "polarity": "positive",
+                    "weight": 0.324
+                  }
+                ]
+              },
+              {
+                "check_id": "EXEC.frontmatter",
+                "label": "SKILL.md 有 YAML frontmatter",
+                "passed": true,
+                "detail": "2 条正向证据（权重 0.59）｜检查项档位 ✅",
+                "confidence": 0.8,
+                "evidence": [
+                  {
+                    "rule": "EXEC.frontmatter",
+                    "file": "SKILL.md",
+                    "line": 3,
+                    "snippet": "description: >",
+                    "polarity": "positive",
+                    "weight": 0.324
+                  },
+                  {
+                    "rule": "EXEC.frontmatter",
+                    "file": "WeChatGroup_C4_wechat-doc-mapper.skill",
+                    "line": 4,
+                    "snippet": "description: >",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  }
+                ]
+              },
+              {
+                "check_id": "EXEC.runnable",
+                "label": "有明确运行命令",
+                "passed": true,
+                "detail": "4 条正向证据（权重 1.24）｜检查项档位 ✅",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "rule": "EXEC.runnable",
+                    "file": "SKILL.md",
+                    "line": 99,
+                    "snippet": "```bash",
+                    "polarity": "positive",
+                    "weight": 0.324
+                  },
+                  {
+                    "rule": "EXEC.runnable",
+                    "file": "SKILL.md",
+                    "line": 177,
+                    "snippet": "```bash",
+                    "polarity": "positive",
+                    "weight": 0.324
+                  },
+                  {
+                    "rule": "EXEC.runnable",
+                    "file": "wechat_doc_mapper.py",
+                    "line": 6,
+                    "snippet": "python3 scripts/wechat_doc_mapper.py <FOLDER_PATH> [--output OUTPUT_XLSX]",
+                    "polarity": "positive",
+                    "weight": 0.324
+                  },
+                  {
+                    "rule": "EXEC.runnable",
+                    "file": "WeChatGroup_C4_wechat-doc-mapper.skill",
+                    "line": 331,
+                    "snippet": "python3 scripts/wechat_doc_mapper.py <FOLDER_PATH> [--output OUTPUT_XLSX]",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  }
+                ]
+              },
+              {
+                "check_id": "EXEC.notemplate",
+                "label": "不是空壳/占位模板",
+                "passed": true,
+                "detail": "未检出任何问题信号（该项为负向检查，通过）｜检查项档位 ✅",
+                "confidence": 0.0,
+                "evidence": []
+              }
+            ]
+          },
+          {
+            "key": "verifiable",
+            "label": "可验证",
+            "grade": "✅",
+            "score": 1.0,
+            "strength": 1.0,
+            "reason": "3/4 个检查项通过（加权 76%）",
+            "needs_human": false,
+            "evidence_count": 14,
+            "checks": [
+              {
+                "check_id": "VERI.example",
+                "label": "有示例/测试用例",
+                "passed": true,
+                "detail": "4 条正向证据（权重 1.13）｜检查项档位 ✅",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "rule": "VERI.example",
+                    "file": "SKILL.md",
+                    "line": 50,
+                    "snippet": "**Examples:**",
+                    "polarity": "positive",
+                    "weight": 0.324
+                  },
+                  {
+                    "rule": "VERI.example",
+                    "file": "WeChatGroup_C4_wechat-doc-mapper.skill",
+                    "line": 51,
+                    "snippet": "**Examples:**",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "VERI.example",
+                    "file": "WeChatGroup_C4_wechat-doc-mapper.skill",
+                    "line": 998,
+                    "snippet": "- \"姓名_C4_skill说明.md — Skill 说明文档（问题、场景、IO、步骤、案例）\"",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "VERI.example",
+                    "file": "WeChatGroup_C4_wechat-doc-mapper.skill",
+                    "line": 1000,
+                    "snippet": "- \"姓名_C4_demo.mp4 或截图 — Demo\"",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  }
+                ]
+              },
+              {
+                "check_id": "VERI.expected",
+                "label": "定义了预期结果/成功判据",
+                "passed": false,
+                "detail": "仅 2 条弱信号（权重 0.54），证据不足｜检查项档位 ⚠️",
+                "confidence": 0.8,
+                "evidence": [
+                  {
+                    "rule": "VERI.expected",
+                    "file": "WeChatGroup_C4_wechat-doc-mapper.skill",
+                    "line": 755,
+                    "snippet": "for artifact in challenges[cid].get(\"expected_artifacts\", []):",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "VERI.expected",
+                    "file": "WeChatGroup_C4_wechat-doc-mapper.skill",
+                    "line": 781,
+                    "snippet": "headers3 = [\"ID\", \"Name (CN)\", \"Name (EN)\", \"Description\", \"Expected Artifacts\"]",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  }
+                ]
+              },
+              {
+                "check_id": "VERI.demo",
+                "label": "有可看的运行证据（截图/录屏）",
+                "passed": true,
+                "detail": "4 条正向证据（权重 1.08）｜检查项档位 ✅",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "rule": "VERI.demo",
+                    "file": "WeChatGroup_C4_wechat-doc-mapper.skill",
+                    "line": 374,
+                    "snippet": "\".mp4\", \".mp3\", \".wav\", \".m4a\",",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "VERI.demo",
+                    "file": "WeChatGroup_C4_wechat-doc-mapper.skill",
+                    "line": 437,
+                    "snippet": "elif ext in (\".mp4\", \".mp3\", \".wav\", \".m4a\"):",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "VERI.demo",
+                    "file": "WeChatGroup_C4_wechat-doc-mapper.skill",
+                    "line": 1000,
+                    "snippet": "- \"姓名_C4_demo.mp4 或截图 — Demo\"",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "VERI.demo",
+                    "file": "WeChatGroup_C4_wechat-doc-mapper.skill",
+                    "line": 1099,
+                    "snippet": "- \"姓名_C7_数据截图.png — 传播数据（阅读量、点赞、转发）\"",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  }
+                ]
+              },
+              {
+                "check_id": "VERI.reproduce",
+                "label": "步骤可复现（含具体数值/参数）",
+                "passed": true,
+                "detail": "4 条正向证据（权重 1.19）｜检查项档位 ✅",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "rule": "VERI.reproduce",
+                    "file": "SKILL.md",
+                    "line": 94,
+                    "snippet": "### Step 0 — Get the folder path",
+                    "polarity": "positive",
+                    "weight": 0.324
+                  },
+                  {
+                    "rule": "VERI.reproduce",
+                    "file": "SKILL.md",
+                    "line": 105,
+                    "snippet": "### Step 1 — Identify author and build deliverable bundles",
+                    "polarity": "positive",
+                    "weight": 0.324
+                  },
+                  {
+                    "rule": "VERI.reproduce",
+                    "file": "WeChatGroup_C4_wechat-doc-mapper.skill",
+                    "line": 331,
+                    "snippet": "python3 scripts/wechat_doc_mapper.py <FOLDER_PATH> [--output OUTPUT_XLSX]",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "VERI.reproduce",
+                    "file": "WeChatGroup_C4_wechat-doc-mapper.skill",
+                    "line": 335,
+                    "snippet": "- Excel file to --output path (default: /mnt/user-data/outputs/elite20_doc_map.xlsx)",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "clear_io",
+            "label": "IO 明确",
+            "grade": "⚠️",
+            "score": 0.5,
+            "strength": 1.0,
+            "reason": "1/3 个检查项通过（加权 31%）",
+            "needs_human": false,
+            "evidence_count": 6,
+            "checks": [
+              {
+                "check_id": "IO.pair",
+                "label": "存在「输入…，输出…」成对描述",
+                "passed": false,
+                "detail": "未检出任何相关信号｜检查项档位 ❌",
+                "confidence": 0.0,
+                "evidence": []
+              },
+              {
+                "check_id": "IO.typed",
+                "label": "输入输出有类型/格式说明",
+                "passed": true,
+                "detail": "6 条正向证据（权重 1.94）｜检查项档位 ✅",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "rule": "IO.typed",
+                    "file": "SKILL.md",
+                    "line": 8,
+                    "snippet": "Excel (.xlsx) file with gap analysis per author.",
+                    "polarity": "positive",
+                    "weight": 0.324
+                  },
+                  {
+                    "rule": "IO.typed",
+                    "file": "SKILL.md",
+                    "line": 31,
+                    "snippet": "- The xlsx skill at `/mnt/skills/public/xlsx/SKILL.md` (for Excel output formatting)",
+                    "polarity": "positive",
+                    "weight": 0.324
+                  },
+                  {
+                    "rule": "IO.typed",
+                    "file": "SKILL.md",
+                    "line": 184,
+                    "snippet": "import os, json",
+                    "polarity": "positive",
+                    "weight": 0.324
+                  },
+                  {
+                    "rule": "IO.typed",
+                    "file": "SKILL.md",
+                    "line": 200,
+                    "snippet": "print(json.dumps(inventory, indent=2, ensure_ascii=False))",
+                    "polarity": "positive",
+                    "weight": 0.324
+                  },
+                  {
+                    "rule": "IO.typed",
+                    "file": "SKILL.md",
+                    "line": 232,
+                    "snippet": "For each document, score it against each challenge using a keyword + artifact-schema match:",
+                    "polarity": "positive",
+                    "weight": 0.324
+                  },
+                  {
+                    "rule": "IO.typed",
+                    "file": "SKILL.md",
+                    "line": 282,
+                    "snippet": "and which artifact-schema slots are filled vs. missing for each author's bundle",
+                    "polarity": "positive",
+                    "weight": 0.324
+                  }
+                ]
+              },
+              {
+                "check_id": "IO.oneline",
+                "label": "有一句话功能摘要",
+                "passed": false,
+                "detail": "未检出任何相关信号｜检查项档位 ❌",
+                "confidence": 0.0,
+                "evidence": []
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "author": "Elite20TA",
+      "composite": 0.59,
+      "rank": 3,
+      "file_count": 2,
+      "versions": [],
+      "needs_human": [
+        "IO 明确"
+      ],
+      "completeness": {
+        "author": "Elite20TA",
+        "n_present": 2,
+        "n_partial": 1,
+        "n_missing": 2,
+        "score": 0.5,
+        "verdict": "⚠️ 部分缺失",
+        "missing_labels": [
+          "Demo（视频/截图）",
+          "教学说明"
+        ],
+        "partial_labels": [
+          "AI 日志"
+        ],
+        "ambiguous": true,
+        "slots": [
+          {
+            "key": "skill_doc",
+            "label": "Skill 说明文档",
+            "status": "✅",
+            "strength": 0.9,
+            "matched_files": [
+              "Elite20TA_C4_skill-explainer/skill-explainer_src/SKILL.md",
+              "Elite20TA_C4_skill-explainer/Elite20TA_C4_skill-explainer.skill"
+            ],
+            "evidence": [
+              {
+                "file": "Elite20TA_C4_skill-explainer/skill-explainer_src/SKILL.md",
+                "type": "filename",
+                "pattern": "SKILL\\.md$",
+                "weight": 0.9,
+                "detail": "文件名命中 SKILL\\.md$"
+              },
+              {
+                "file": "Elite20TA_C4_skill-explainer/skill-explainer_src/SKILL.md",
+                "type": "ext",
+                "pattern": ".md",
+                "weight": 0.35,
+                "detail": "扩展名 .md 属于推荐类型"
+              },
+              {
+                "file": "Elite20TA_C4_skill-explainer/Elite20TA_C4_skill-explainer.skill",
+                "type": "content",
+                "pattern": "输入|input",
+                "weight": 0.5,
+                "detail": "内容第 5 行命中「input」"
+              }
+            ],
+            "reason": "文件名命中 SKILL\\.md$"
+          },
+          {
+            "key": "executable",
+            "label": "可执行内容",
+            "status": "✅",
+            "strength": 1.0,
+            "matched_files": [
+              "Elite20TA_C4_skill-explainer/Elite20TA_C4_skill-explainer.skill",
+              "Elite20TA_C4_skill-explainer/skill-explainer_src/SKILL.md"
+            ],
+            "evidence": [
+              {
+                "file": "Elite20TA_C4_skill-explainer/Elite20TA_C4_skill-explainer.skill",
+                "type": "filename",
+                "pattern": "\\.skill$",
+                "weight": 1.0,
+                "detail": "文件名命中 \\.skill$"
+              },
+              {
+                "file": "Elite20TA_C4_skill-explainer/Elite20TA_C4_skill-explainer.skill",
+                "type": "filename",
+                "pattern": "技能|skill(?![-_ ]?(说明|doc))",
+                "weight": 0.6,
+                "detail": "文件名命中 技能|skill(?![-_ ]?(说明|doc))"
+              },
+              {
+                "file": "Elite20TA_C4_skill-explainer/skill-explainer_src/SKILL.md",
+                "type": "filename",
+                "pattern": "技能|skill(?![-_ ]?(说明|doc))",
+                "weight": 0.6,
+                "detail": "文件名命中 技能|skill(?![-_ ]?(说明|doc))"
+              },
+              {
+                "file": "Elite20TA_C4_skill-explainer/skill-explainer_src/SKILL.md",
+                "type": "ext",
+                "pattern": ".md",
+                "weight": 0.35,
+                "detail": "扩展名 .md 属于推荐类型"
+              }
+            ],
+            "reason": "文件名命中 \\.skill$"
+          },
+          {
+            "key": "demo",
+            "label": "Demo（视频/截图）",
+            "status": "❌",
+            "strength": 0.0,
+            "matched_files": [],
+            "evidence": [],
+            "reason": "未找到任何对应文件"
+          },
+          {
+            "key": "teaching_doc",
+            "label": "教学说明",
+            "status": "❌",
+            "strength": 0.5,
+            "matched_files": [
+              "Elite20TA_C4_skill-explainer/Elite20TA_C4_skill-explainer.skill",
+              "Elite20TA_C4_skill-explainer/skill-explainer_src/SKILL.md"
+            ],
+            "evidence": [
+              {
+                "file": "Elite20TA_C4_skill-explainer/Elite20TA_C4_skill-explainer.skill",
+                "type": "content",
+                "pattern": "^\\s*\\d+[\\.、]\\s+\\S+",
+                "weight": 0.5,
+                "detail": "内容第 335 行命中「 1. **Critical」"
+              },
+              {
+                "file": "Elite20TA_C4_skill-explainer/skill-explainer_src/SKILL.md",
+                "type": "ext",
+                "pattern": ".md",
+                "weight": 0.35,
+                "detail": "扩展名 .md 属于推荐类型"
+              }
+            ],
+            "reason": "内容第 335 行命中「 1. **Critical」"
+          },
+          {
+            "key": "ai_log",
+            "label": "AI 日志",
+            "status": "⚠️",
+            "strength": 0.8,
+            "matched_files": [
+              "Elite20TA_C4_skill-explainer/Elite20TA_C4_skill-explainer.skill",
+              "Elite20TA_C4_skill-explainer/skill-explainer_src/SKILL.md"
+            ],
+            "evidence": [
+              {
+                "file": "Elite20TA_C4_skill-explainer/Elite20TA_C4_skill-explainer.skill",
+                "type": "content",
+                "pattern": "使用的\\s*AI|AI\\s*工具|ChatGPT|Claude|DeepSeek|Cursor",
+                "weight": 0.8,
+                "detail": "内容第 5 行命中「Claude」"
+              },
+              {
+                "file": "Elite20TA_C4_skill-explainer/skill-explainer_src/SKILL.md",
+                "type": "ext",
+                "pattern": ".md",
+                "weight": 0.35,
+                "detail": "扩展名 .md 属于推荐类型"
+              },
+              {
+                "file": "Elite20TA_C4_skill-explainer/skill-explainer_src/SKILL.md",
+                "type": "content",
+                "pattern": "使用的\\s*AI|AI\\s*工具|ChatGPT|Claude|DeepSeek|Cursor",
+                "weight": 0.8,
+                "detail": "内容第 4 行命中「Claude」"
+              }
+            ],
+            "reason": "内容第 5 行命中「Claude」"
+          }
+        ]
+      },
+      "quality": {
+        "author": "Elite20TA",
+        "quality_score": 0.65,
+        "total_points": 2.6,
+        "needs_human": [
+          "IO 明确"
+        ],
+        "advice": [
+          "[可执行] 给出「保存为 xxx.py 后执行 `python3 xxx.py <输入>`」这样的完整命令行",
+          "[可验证] 明确写出「预期输出是什么」，否则使用者在不知道自己有没有做对",
+          "[可验证] 贴一张真实运行截图（脱敏），比任何文字描述都有说服力",
+          "[IO 明确] 在说明文档顶部加一行「**输入**：xxx  →  **输出**：xxx」，这是四条件里最容易检查也最容易丢分的一条",
+          "[IO 明确] 给输入输出标上具体类型（本地文件夹路径 / .md 文本 / JSON 对象）",
+          "[IO 明确] 文档开头写一句「本技能用于 ……」，读者 10 秒内要能判断要不要用"
+        ],
+        "criteria": [
+          {
+            "key": "reusable",
+            "label": "可复用",
+            "grade": "✅",
+            "score": 1.0,
+            "strength": 1.0,
+            "reason": "5/5 个检查项通过（加权 100%）",
+            "needs_human": false,
+            "evidence_count": 8,
+            "checks": [
+              {
+                "check_id": "REUSE.install",
+                "label": "有安装/放置说明",
+                "passed": true,
+                "detail": "2 条正向证据（权重 0.59）｜检查项档位 ✅",
+                "confidence": 0.8,
+                "evidence": [
+                  {
+                    "rule": "REUSE.install",
+                    "file": "SKILL.md",
+                    "line": 34,
+                    "snippet": "- **A skill name** — if installed, resolve from `/mnt/skills/user/`, `/mnt/skills/public/`,",
+                    "polarity": "positive",
+                    "weight": 0.324
+                  },
+                  {
+                    "rule": "REUSE.install",
+                    "file": "Elite20TA_C4_skill-explainer.skill",
+                    "line": 35,
+                    "snippet": "- **A skill name** — if installed, resolve from `/mnt/skills/user/`, `/mnt/skills/public/`,",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  }
+                ]
+              },
+              {
+                "check_id": "REUSE.env",
+                "label": "声明环境依赖",
+                "passed": true,
+                "detail": "4 条正向证据（权重 1.13）｜检查项档位 ✅",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "rule": "REUSE.env",
+                    "file": "SKILL.md",
+                    "line": 78,
+                    "snippet": "- `compatibility` — optional tool/env requirements",
+                    "polarity": "positive",
+                    "weight": 0.324
+                  },
+                  {
+                    "rule": "REUSE.env",
+                    "file": "Elite20TA_C4_skill-explainer.skill",
+                    "line": 43,
+                    "snippet": "import tarfile, tempfile, shutil",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "REUSE.env",
+                    "file": "Elite20TA_C4_skill-explainer.skill",
+                    "line": 44,
+                    "snippet": "from pathlib import Path",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "REUSE.env",
+                    "file": "Elite20TA_C4_skill-explainer.skill",
+                    "line": 79,
+                    "snippet": "- `compatibility` — optional tool/env requirements",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  }
+                ]
+              },
+              {
+                "check_id": "REUSE.nopath",
+                "label": "无硬编码本地绝对路径",
+                "passed": true,
+                "detail": "未检出任何问题信号（该项为负向检查，通过）｜检查项档位 ✅",
+                "confidence": 0.0,
+                "evidence": []
+              },
+              {
+                "check_id": "REUSE.nosecret",
+                "label": "无硬编码密钥",
+                "passed": true,
+                "detail": "未检出任何问题信号（该项为负向检查，通过）｜检查项档位 ✅",
+                "confidence": 0.0,
+                "evidence": []
+              },
+              {
+                "check_id": "REUSE.general",
+                "label": "有泛化/适用边界说明",
+                "passed": true,
+                "detail": "2 条正向证据（权重 0.59）｜检查项档位 ✅",
+                "confidence": 0.8,
+                "evidence": [
+                  {
+                    "rule": "REUSE.general",
+                    "file": "SKILL.md",
+                    "line": 116,
+                    "snippet": "has_edge_cases = bool(re.search(r'(?i)(edge case|corner case|error|fallback|边界)', body))",
+                    "polarity": "positive",
+                    "weight": 0.324
+                  },
+                  {
+                    "rule": "REUSE.general",
+                    "file": "Elite20TA_C4_skill-explainer.skill",
+                    "line": 117,
+                    "snippet": "has_edge_cases = bool(re.search(r'(?i)(edge case|corner case|error|fallback|边界)', body))",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "executable",
+            "label": "可执行",
+            "grade": "✅",
+            "score": 1.0,
+            "strength": 1.0,
+            "reason": "3/4 个检查项通过（加权 70%）",
+            "needs_human": false,
+            "evidence_count": 8,
+            "checks": [
+              {
+                "check_id": "EXEC.code",
+                "label": "含可运行的代码/prompt/workflow",
+                "passed": true,
+                "detail": "6 条正向证据（权重 1.67）｜检查项档位 ✅",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "rule": "EXEC.code",
+                    "file": "SKILL.md",
+                    "line": 37,
+                    "snippet": "## Workflow",
+                    "polarity": "positive",
+                    "weight": 0.324
+                  },
+                  {
+                    "rule": "EXEC.code",
+                    "file": "Elite20TA_C4_skill-explainer.skill",
+                    "line": 38,
+                    "snippet": "## Workflow",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "EXEC.code",
+                    "file": "Elite20TA_C4_skill-explainer.skill",
+                    "line": 42,
+                    "snippet": "```python",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "EXEC.code",
+                    "file": "Elite20TA_C4_skill-explainer.skill",
+                    "line": 43,
+                    "snippet": "import tarfile, tempfile, shutil",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "EXEC.code",
+                    "file": "Elite20TA_C4_skill-explainer.skill",
+                    "line": 44,
+                    "snippet": "from pathlib import Path",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "EXEC.code",
+                    "file": "Elite20TA_C4_skill-explainer.skill",
+                    "line": 89,
+                    "snippet": "```python",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  }
+                ]
+              },
+              {
+                "check_id": "EXEC.frontmatter",
+                "label": "SKILL.md 有 YAML frontmatter",
+                "passed": true,
+                "detail": "2 条正向证据（权重 0.59）｜检查项档位 ✅",
+                "confidence": 0.8,
+                "evidence": [
+                  {
+                    "rule": "EXEC.frontmatter",
+                    "file": "SKILL.md",
+                    "line": 3,
+                    "snippet": "description: >",
+                    "polarity": "positive",
+                    "weight": 0.324
+                  },
+                  {
+                    "rule": "EXEC.frontmatter",
+                    "file": "Elite20TA_C4_skill-explainer.skill",
+                    "line": 4,
+                    "snippet": "description: >",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  }
+                ]
+              },
+              {
+                "check_id": "EXEC.runnable",
+                "label": "有明确运行命令",
+                "passed": false,
+                "detail": "未检出任何相关信号｜检查项档位 ❌",
+                "confidence": 0.0,
+                "evidence": []
+              },
+              {
+                "check_id": "EXEC.notemplate",
+                "label": "不是空壳/占位模板",
+                "passed": true,
+                "detail": "未检出任何问题信号（该项为负向检查，通过）｜检查项档位 ✅",
+                "confidence": 0.0,
+                "evidence": []
+              }
+            ]
+          },
+          {
+            "key": "verifiable",
+            "label": "可验证",
+            "grade": "⚠️",
+            "score": 0.5,
+            "strength": 1.0,
+            "reason": "2/4 个检查项通过（加权 48%）",
+            "needs_human": false,
+            "evidence_count": 10,
+            "checks": [
+              {
+                "check_id": "VERI.example",
+                "label": "有示例/测试用例",
+                "passed": true,
+                "detail": "4 条正向证据（权重 1.08）｜检查项档位 ✅",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "rule": "VERI.example",
+                    "file": "Elite20TA_C4_skill-explainer.skill",
+                    "line": 36,
+                    "snippet": "or `/mnt/skills/examples/`",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "VERI.example",
+                    "file": "Elite20TA_C4_skill-explainer.skill",
+                    "line": 49,
+                    "snippet": "# Case 1: .skill file (tar.gz)",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "VERI.example",
+                    "file": "Elite20TA_C4_skill-explainer.skill",
+                    "line": 59,
+                    "snippet": "# Case 2: directory",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "VERI.example",
+                    "file": "Elite20TA_C4_skill-explainer.skill",
+                    "line": 64,
+                    "snippet": "for base in ['/mnt/skills/user', '/mnt/skills/public', '/mnt/skills/examples']:",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  }
+                ]
+              },
+              {
+                "check_id": "VERI.expected",
+                "label": "定义了预期结果/成功判据",
+                "passed": false,
+                "detail": "仅 2 条弱信号（权重 0.54），证据不足｜检查项档位 ⚠️",
+                "confidence": 0.8,
+                "evidence": [
+                  {
+                    "rule": "VERI.expected",
+                    "file": "Elite20TA_C4_skill-explainer.skill",
+                    "line": 195,
+                    "snippet": "- **Expected outputs:** What gets produced",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "VERI.expected",
+                    "file": "Elite20TA_C4_skill-explainer.skill",
+                    "line": 279,
+                    "snippet": "| ✅ Good | Has numbered/ordered workflow steps; includes code blocks for key operations; documents expected inputs and outputs; handles edge cases |",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  }
+                ]
+              },
+              {
+                "check_id": "VERI.demo",
+                "label": "有可看的运行证据（截图/录屏）",
+                "passed": false,
+                "detail": "未检出任何相关信号｜检查项档位 ❌",
+                "confidence": 0.0,
+                "evidence": []
+              },
+              {
+                "check_id": "VERI.reproduce",
+                "label": "步骤可复现（含具体数值/参数）",
+                "passed": true,
+                "detail": "4 条正向证据（权重 1.13）｜检查项档位 ✅",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "rule": "VERI.reproduce",
+                    "file": "SKILL.md",
+                    "line": 154,
+                    "snippet": "For each script file, read the docstring and argparse description if present.",
+                    "polarity": "positive",
+                    "weight": 0.324
+                  },
+                  {
+                    "rule": "VERI.reproduce",
+                    "file": "Elite20TA_C4_skill-explainer.skill",
+                    "line": 40,
+                    "snippet": "### Step 1 — Resolve and unpack the skill",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "VERI.reproduce",
+                    "file": "Elite20TA_C4_skill-explainer.skill",
+                    "line": 72,
+                    "snippet": "### Step 2 — Parse SKILL.md",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "VERI.reproduce",
+                    "file": "Elite20TA_C4_skill-explainer.skill",
+                    "line": 155,
+                    "snippet": "For each script file, read the docstring and argparse description if present.",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "clear_io",
+            "label": "IO 明确",
+            "grade": "❌",
+            "score": 0.0,
+            "strength": 0.333,
+            "reason": "0/3 个检查项通过（加权 0%）（证据较少，建议人工复核）",
+            "needs_human": true,
+            "evidence_count": 2,
+            "checks": [
+              {
+                "check_id": "IO.pair",
+                "label": "存在「输入…，输出…」成对描述",
+                "passed": false,
+                "detail": "未检出任何相关信号｜检查项档位 ❌",
+                "confidence": 0.0,
+                "evidence": []
+              },
+              {
+                "check_id": "IO.typed",
+                "label": "输入输出有类型/格式说明",
+                "passed": false,
+                "detail": "仅 2 条弱信号（权重 0.54），证据不足｜检查项档位 ⚠️",
+                "confidence": 0.8,
+                "evidence": [
+                  {
+                    "rule": "IO.typed",
+                    "file": "Elite20TA_C4_skill-explainer.skill",
+                    "line": 1,
+                    "snippet": "--- [skill-explainer/SKILL.md] ---",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  },
+                  {
+                    "rule": "IO.typed",
+                    "file": "Elite20TA_C4_skill-explainer.skill",
+                    "line": 34,
+                    "snippet": "- **A skill directory path** — containing at minimum a `SKILL.md`",
+                    "polarity": "positive",
+                    "weight": 0.27
+                  }
+                ]
+              },
+              {
+                "check_id": "IO.oneline",
+                "label": "有一句话功能摘要",
+                "passed": false,
+                "detail": "未检出任何相关信号｜检查项档位 ❌",
+                "confidence": 0.0,
+                "evidence": []
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
