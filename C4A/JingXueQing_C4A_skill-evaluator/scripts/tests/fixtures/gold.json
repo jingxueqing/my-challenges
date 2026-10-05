@@ -1,0 +1,130 @@
+{
+  "LiMing": {
+    "completeness": {
+      "skill_doc": "✅",
+      "executable": "✅",
+      "demo": "✅",
+      "teaching_doc": "✅",
+      "ai_log": "✅"
+    },
+    "quality": {
+      "reusable": "✅",
+      "executable": "✅",
+      "verifiable": "✅",
+      "clear_io": "✅"
+    },
+    "_note": "五件套齐全的标准满分提交"
+  },
+  "WangXiao": {
+    "completeness": {
+      "skill_doc": "✅",
+      "executable": "✅",
+      "demo": "❌",
+      "teaching_doc": "❌",
+      "ai_log": "❌"
+    },
+    "quality": {
+      "reusable": "❌",
+      "executable": "⚠️",
+      "verifiable": "❌",
+      "clear_io": "❌"
+    },
+    "_note": "只交了两样，且没写 IO 与安装"
+  },
+  "ZhangWei": {
+    "completeness": {
+      "skill_doc": "✅",
+      "executable": "✅",
+      "demo": "❌",
+      "teaching_doc": "✅",
+      "ai_log": "✅"
+    },
+    "quality": {
+      "reusable": "✅",
+      "executable": "✅",
+      "verifiable": "✅",
+      "clear_io": "✅"
+    },
+    "_note": "四件套，缺 demo"
+  },
+  "SunLi": {
+    "completeness": {
+      "skill_doc": "✅",
+      "executable": "✅",
+      "demo": "✅",
+      "teaching_doc": "✅",
+      "ai_log": "✅"
+    },
+    "quality": {
+      "reusable": "❌",
+      "executable": "✅",
+      "verifiable": "✅",
+      "clear_io": "✅"
+    },
+    "_note": "对抗：硬编码 /Users/ 路径 + 明文 sk- key → 可复用必须 ❌"
+  },
+  "ChenJing": {
+    "completeness": {
+      "skill_doc": "⚠️",
+      "executable": "✅",
+      "demo": "✅",
+      "teaching_doc": "⚠️",
+      "ai_log": "✅"
+    },
+    "quality": {
+      "reusable": "❌",
+      "executable": "❌",
+      "verifiable": "❌",
+      "clear_io": "❌"
+    },
+    "_note": "对抗：通篇 TODO/待填写 → 可执行、可验证必须 ❌"
+  },
+  "ZhaoLiu": {
+    "completeness": {
+      "skill_doc": "✅",
+      "executable": "✅",
+      "demo": "✅",
+      "teaching_doc": "✅",
+      "ai_log": "✅"
+    },
+    "quality": {
+      "reusable": "✅",
+      "executable": "✅",
+      "verifiable": "✅",
+      "clear_io": "✅"
+    },
+    "_note": "对抗：文档讨论'禁止 TODO/硬编码路径'（元提及）→ 不应误判 ❌"
+  },
+  "ZhangLei": {
+    "completeness": {
+      "skill_doc": "✅",
+      "executable": "✅",
+      "demo": "✅",
+      "teaching_doc": "✅",
+      "ai_log": "✅"
+    },
+    "quality": {
+      "reusable": "✅",
+      "executable": "✅",
+      "verifiable": "⚠️",
+      "clear_io": "✅"
+    },
+    "_note": "子文件夹按作者分组，测试作者兜底识别；可验证偏弱（无测试用例）"
+  },
+  "WuYang": {
+    "completeness": {
+      "skill_doc": "✅",
+      "executable": "✅",
+      "demo": "✅",
+      "teaching_doc": "✅",
+      "ai_log": "✅"
+    },
+    "quality": {
+      "reusable": "✅",
+      "executable": "✅",
+      "verifiable": "⚠️",
+      "clear_io": "✅"
+    },
+    "_note": "含 v1/v2 迭代，应检出 v2"
+  }
+}
