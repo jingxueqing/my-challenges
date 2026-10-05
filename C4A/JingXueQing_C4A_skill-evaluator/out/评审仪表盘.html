@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>C4 提交自动评审报告</title>
+<style>
+ :root { --bd:#e3e6ec; --mut:#6b7280; --ok:#16a34a; --warn:#d97706; --bad:#dc2626; --bg:#f7f8fa }
+ * { box-sizing:border-box }
+ body { margin:0; padding:32px; background:var(--bg); color:#1f2430;
+   font:14px/1.6 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif }
+ .wrap { max-width:1180px; margin:0 auto }
+ h1 { font-size:24px; margin:0 0 4px }
+ .sub { color:var(--mut); font-size:13px; margin-bottom:24px }
+ .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:12px; margin-bottom:24px }
+ .card { background:#fff; border:1px solid var(--bd); border-radius:10px; padding:16px }
+ .card .n { font-size:26px; font-weight:600 }
+ .card .l { color:var(--mut); font-size:12px; margin-top:2px }
+ .dist { display:flex; gap:8px; align-items:center; background:#fff; border:1px solid var(--bd);
+   border-radius:10px; padding:10px 14px; margin-bottom:8px; font-size:13px }
+ .dist b { width:80px }
+ .ok { color:var(--ok) } .warn { color:var(--warn) } .bad { color:var(--bad) }
+ .na { color:var(--mut) }
+ table { width:100%; border-collapse:collapse; background:#fff; border:1px solid var(--bd);
+   border-radius:10px; overflow:hidden }
+ th,td { padding:10px 12px; text-align:left; border-bottom:1px solid var(--bd); font-size:13px;
+   vertical-align:top }
+ th { background:#eef1f6; font-weight:600; white-space:nowrap }
+ tr:last-child td { border-bottom:none }
+ td.rank { font-weight:600; color:var(--mut) } td.name { font-weight:600 }
+ td.✅ { color:var(--ok); font-size:16px } td.⚠️ { color:var(--warn); font-size:16px }
+ td.❌ { color:var(--bad); font-size:16px }
+ td.score,td.total { font-weight:600; font-variant-numeric:tabular-nums }
+ td.adv { color:var(--mut); font-size:12px; max-width:320px }
+ .bar { width:70px; height:6px; background:#e8eaef; border-radius:3px; overflow:hidden; display:inline-block;
+   vertical-align:middle; margin-right:6px }
+ .bar i { display:block; height:100%; background:#2f5496 }
+ .foot { margin-top:20px; color:var(--mut); font-size:12px }
+</style></head><body><div class="wrap">
+<h1>C4 技能提交自动评审报告</h1>
+<div class="sub">生成时间 2026-10-05 11:40:34 ｜ 扫描路径 <code>/Users/jingxueqing/Desktop/C4A-交付_JingXueQing_技能提交自动评审器/评审输入样例</code>
+ ｜ 识别 3 位作者 / 37 个 C4 文件 ｜ 标准 <code>c4a-rubric-v1.1</code></div>
+<div class="cards">
+  <div class="card"><div class="n">3</div><div class="l">提交人数</div></div>
+  <div class="card"><div class="n">1</div><div class="l">完整提交（5/5）</div></div>
+  <div class="card"><div class="n">70%</div><div class="l">平均完整性</div></div>
+  <div class="card"><div class="n">0.80</div><div class="l">平均质量分 /4</div></div>
+  <div class="card"><div class="n">1</div><div class="l">需人工复核</div></div>
+</div>
+<h2 style="font-size:15px;margin:20px 0 10px">四条件评级分布</h2>
+<div class="dist"><b>可复用</b><span class="ok">✅ 2</span><span class="warn">⚠️ 1</span><span class="bad">❌ 0</span></div><div class="dist"><b>可执行</b><span class="ok">✅ 3</span><span class="warn">⚠️ 0</span><span class="bad">❌ 0</span></div><div class="dist"><b>可验证</b><span class="ok">✅ 2</span><span class="warn">⚠️ 1</span><span class="bad">❌ 0</span></div><div class="dist"><b>IO 明确</b><span class="ok">✅ 1</span><span class="warn">⚠️ 1</span><span class="bad">❌ 1</span></div>
+<h2 style="font-size:15px;margin:24px 0 10px">排名明细</h2>
+<table><thead><tr><th>#</th><th>作者</th><th>完整性</th><th>可复用</th><th>可执行</th>
+<th>可验证</th><th>IO明确</th><th>质量分</th><th>综合分</th><th>首要建议</th></tr></thead>
+<tbody>
+      <tr>
+        <td class="rank">1</td>
+        <td class="name">jingxueqing</td>
+        <td><div class="bar"><i style="width:100%"></i></div>
+            <span>5/5</span></td>
+        <td class='✅'>✅</td><td class='✅'>✅</td><td class='✅'>✅</td><td class='✅'>✅</td>
+        <td class="score">4.00</td>
+        <td class="total">1.000</td>
+        <td class="adv">交付物里不能留 TODO/占位符——那说明还没做完</td>
+      </tr>
+      <tr>
+        <td class="rank">2</td>
+        <td class="name">wechatgroup</td>
+        <td><div class="bar"><i style="width:60%"></i></div>
+            <span>2/5</span></td>
+        <td class='⚠️'>⚠️</td><td class='✅'>✅</td><td class='✅'>✅</td><td class='⚠️'>⚠️</td>
+        <td class="score">3.00</td>
+        <td class="total">0.690</td>
+        <td class="adv">补一节「安装」，写清 `pip install -r requirements.txt` / 拷贝到哪个目录 / 如何验证装上了&lt;br&gt;补「适用范围与不适用场景」，让使用者知道边界在哪</td>
+      </tr>
+      <tr>
+        <td class="rank">3</td>
+        <td class="name">Elite20TA</td>
+        <td><div class="bar"><i style="width:50%"></i></div>
+            <span>2/5</span></td>
+        <td class='✅'>✅</td><td class='✅'>✅</td><td class='⚠️'>⚠️</td><td class='❌'>❌</td>
+        <td class="score">2.60</td>
+        <td class="total">0.590</td>
+        <td class="adv">给出「保存为 xxx.py 后执行 `python3 xxx.py &lt;输入&gt;`」这样的完整命令行&lt;br&gt;明确写出「预期输出是什么」，否则使用者在不知道自己有没有做对</td>
+      </tr></tbody></table>
+<div class="foot">由 skill-evaluator 自动生成（规则引擎，每条判定可回溯到文件:行号）。
+综合分 = 完整性×40% + 质量分×60%。</div>
+</div></body></html>
