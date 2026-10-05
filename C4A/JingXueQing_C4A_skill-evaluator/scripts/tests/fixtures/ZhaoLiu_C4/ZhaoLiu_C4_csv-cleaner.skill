@@ -1,0 +1,8 @@
+---
+name: csv-cleaner
+description: 清洗 CSV 中的空值与重复行
+---
+# csv-cleaner
+```bash
+python3 clean.py data.csv -o clean.csv
+```
