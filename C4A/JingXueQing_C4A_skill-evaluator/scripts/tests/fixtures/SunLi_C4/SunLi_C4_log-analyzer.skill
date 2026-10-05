@@ -1,0 +1,8 @@
+---
+name: log-analyzer
+description: 分析服务器日志找错误
+---
+# log-analyzer
+```bash
+python3 log_analyzer.py
+```
