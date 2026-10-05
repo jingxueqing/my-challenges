@@ -1,0 +1,8 @@
+---
+name: pdf-splitter
+description: 按页码区间拆分 PDF
+---
+# pdf-splitter
+```bash
+python3 split.py input.pdf 1 3 -o out/
+```
