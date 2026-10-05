@@ -1,0 +1,16 @@
+---
+name: meeting-notes
+description: 把会议转写文本整理成结构化纪要
+---
+
+# meeting-notes
+
+## Workflow
+1. 读取输入文件
+2. 解析发言人
+3. 抽取待办
+
+## 运行
+```bash
+python3 scripts/notes.py <input.txt> -o <output.md>
+```
