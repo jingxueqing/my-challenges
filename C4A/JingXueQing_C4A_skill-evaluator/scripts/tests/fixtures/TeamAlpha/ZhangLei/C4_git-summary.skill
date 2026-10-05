@@ -1,0 +1,7 @@
+---
+name: git-summary
+description: 汇总 git 提交历史
+---
+```bash
+python3 summary.py <repo>
+```
