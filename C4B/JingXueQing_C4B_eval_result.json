@@ -1,0 +1,928 @@
+{
+  "total_assertions": 135,
+  "passed": 135,
+  "failed": 0,
+  "cases_total": 27,
+  "cases_passed": 27,
+  "duration_sec": 13.68,
+  "results": [
+    {
+      "id": "T01",
+      "name": "违规标签清除",
+      "pass": 14,
+      "fail": 0,
+      "total": 14,
+      "cases": [
+        {
+          "name": "无 <script",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "无 <style",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "无 <iframe",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "无 <div",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "无 <h1",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "无 <svg",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "无 <video",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "无 class=",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "无 id=",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "无 onclick=",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "style 属性内无 position/float/flex/grid",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "style 属性内无 @media",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "正文提及 position:absolute 的文字仍保留（不被误删）",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "正文提及 @media 的文字仍保留（不被误删）",
+          "ok": true,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "T02",
+      "name": "代码块换行保留（回归 B1）",
+      "pass": 7,
+      "fail": 0,
+      "total": 7,
+      "cases": [
+        {
+          "name": "代码块存在",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "代码块用 pre-wrap 保留换行",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "保留第 2 行",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "保留第 3 行缩进",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "未把换行渲染成 <br>（用 pre-wrap 而非 br）",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "缩进空格被保留（4 空格起首的行）",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "行首缩进在嵌套标签前后都保留",
+          "ok": true,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "T03",
+      "name": "嵌套行内元素保留（回归 B2）",
+      "pass": 5,
+      "fail": 0,
+      "total": 5,
+      "cases": [
+        {
+          "name": "加粗文本存在",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "加粗内行内代码未丢失",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "加粗内链接未丢失",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "链接 href 保留原值",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "斜体内行内代码未丢失",
+          "ok": true,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "T04",
+      "name": "多段引用保留（回归 B3）",
+      "pass": 4,
+      "fail": 0,
+      "total": 4,
+      "cases": [
+        {
+          "name": "引用块存在",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "第一段保留",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "第二段保留",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "第二段未被合并掉（blockquote 内 ≥2 个 p）",
+          "ok": true,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "T05",
+      "name": "分隔线保留（回归 B4）",
+      "pass": 2,
+      "fail": 0,
+      "total": 2,
+      "cases": [
+        {
+          "name": "分隔线存在",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "未用 <hr> 标签（不在公众号白名单，改用 p 承载）",
+          "ok": true,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "T06",
+      "name": "内联 div 不劈段落（回归 B5）",
+      "pass": 5,
+      "fail": 0,
+      "total": 5,
+      "cases": [
+        {
+          "name": "内联 div 降级为 span，未劈开段落",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "div 内容 未丢失",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "前文未丢失",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "后文未丢失",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "未出现段落被劈开的迹象（starter 的 BUG 形态）",
+          "ok": true,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "T07",
+      "name": "本地图 base64 内嵌（回归 B7）",
+      "pass": 4,
+      "fail": 0,
+      "total": 4,
+      "cases": [
+        {
+          "name": "本地图已转 base64",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "无残留相对路径",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "图片有 max-width",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "图片块级居中",
+          "ok": true,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "T08",
+      "name": "SVG 拒绝嵌入（回归 B7b）",
+      "pass": 2,
+      "fail": 0,
+      "total": 2,
+      "cases": [
+        {
+          "name": "SVG 未被嵌入（data:image/svg 不应出现）",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "SVG 未生成 <svg> 标签",
+          "ok": true,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "T09",
+      "name": "嵌套列表层级（回归 B8/B9）",
+      "pass": 3,
+      "fail": 0,
+      "total": 3,
+      "cases": [
+        {
+          "name": "列表存在",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "嵌套层级保留（内层 ul 在 li 内部）",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "ul 自身有样式（缩进可控）",
+          "ok": true,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "T10",
+      "name": "中英文自动间距（新增 B10）",
+      "pass": 5,
+      "fail": 0,
+      "total": 5,
+      "cases": [
+        {
+          "name": "插入了 thin space (U+2009)",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "中文+英文边界已处理",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "数字前也加了间距",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "全角标点前不加多余间距（回归：不能把标点当汉字）",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "冒号前不加多余间距",
+          "ok": true,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "T11",
+      "name": "Callout 提示框（新增）",
+      "pass": 9,
+      "fail": 0,
+      "total": 9,
+      "cases": [
+        {
+          "name": "note 框生成",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "tip 框生成",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "warn 框生成",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "danger 框生成",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "key 框生成",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "callout 用 p 而非 div",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "自定义标题生效",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "callout 内 markdown 生效（加粗保留）",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "callout 标签文字生效（知识/实践/注意/踩坑/重点）",
+          "ok": true,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "T12",
+      "name": "自动目录（新增）",
+      "pass": 5,
+      "fail": 0,
+      "total": 5,
+      "cases": [
+        {
+          "name": "目录标题存在",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "h2 条目被收集",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "h3 条目被收集",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "目录在正文之前（索引早于第一个 h2）",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "诚实标注了 id 锚点限制",
+          "ok": true,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "T13",
+      "name": "页脚版权（新增）",
+      "pass": 5,
+      "fail": 0,
+      "total": 5,
+      "cases": [
+        {
+          "name": "页脚分隔线",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "自定义页脚文字",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "作者信息",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "日期信息",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "署名工具名",
+          "ok": true,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "T14",
+      "name": "文章元数据（新增）",
+      "pass": 5,
+      "fail": 0,
+      "total": 5,
+      "cases": [
+        {
+          "name": "作者被渲染",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "标签被渲染",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "摘要被渲染",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "h1 标签不出现在正文（不违规）",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "h1 标题文本改由 meta 标题块承载（只出现一次）",
+          "ok": true,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "T15",
+      "name": "多主题系统（新增）",
+      "pass": 5,
+      "fail": 0,
+      "total": 5,
+      "cases": [
+        {
+          "name": "ink 主题色生效",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "forest 主题色生效",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "amber 主题色生效",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "mono 主题色生效",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "四套主题输出互不相同",
+          "ok": true,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "T16",
+      "name": "标题自动编号",
+      "pass": 3,
+      "fail": 0,
+      "total": 3,
+      "cases": [
+        {
+          "name": "h2 编号为 1. 2.",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "h3 编号为 1.1",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "--no-number 生效",
+          "ok": true,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "T17",
+      "name": "Word 输入（表格/列表）",
+      "pass": 7,
+      "fail": 0,
+      "total": 7,
+      "cases": [
+        {
+          "name": "转换成功",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "标题被识别",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "正文被识别",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "表格被识别",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "表头 th 存在",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "列表被识别",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "无违规标签",
+          "ok": true,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "T18",
+      "name": "边界情况（空/GBK/不存在）",
+      "pass": 5,
+      "fail": 0,
+      "total": 5,
+      "cases": [
+        {
+          "name": "空文件不崩溃",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "空文件给出警告",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "文件不存在时报错退出",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "错误信息清晰",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "GBK 编码文件可读",
+          "ok": true,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "T19",
+      "name": "批量转换（新增）",
+      "pass": 4,
+      "fail": 0,
+      "total": 4,
+      "cases": [
+        {
+          "name": "批量退出码为 0",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "生成 3 个预览页",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "生成 3 个纯内容页",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "输出汇总表",
+          "ok": true,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "T20",
+      "name": "合规体检器（新增）",
+      "pass": 3,
+      "fail": 0,
+      "total": 3,
+      "cases": [
+        {
+          "name": "--audit 不生成文件",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "合规时退出码 0",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "输出 ✅ 全部通过",
+          "ok": true,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "T21",
+      "name": "主题列表 CLI",
+      "pass": 6,
+      "fail": 0,
+      "total": 6,
+      "cases": [
+        {
+          "name": "退出码 0",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "列出 ink",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "列出 forest",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "列出 amber",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "列出 mono",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "每套主题有说明",
+          "ok": true,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "T22",
+      "name": "幂等性（可验证）",
+      "pass": 1,
+      "fail": 0,
+      "total": 1,
+      "cases": [
+        {
+          "name": "两次转换输出完全一致",
+          "ok": true,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "T23",
+      "name": "长文 5000+ 字",
+      "pass": 3,
+      "fail": 0,
+      "total": 3,
+      "cases": [
+        {
+          "name": "长文转换成功",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "字数统计合理（>1000）",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "目录收集 60 条",
+          "ok": true,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "T24",
+      "name": "代码语法高亮",
+      "pass": 5,
+      "fail": 0,
+      "total": 5,
+      "cases": [
+        {
+          "name": "高亮开启时生成彩色 span",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "高亮 span 不是字面量（未被二次转义）",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "--no-highlight 关闭彩色",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "高亮后无 <html> 外壳注入",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "高亮后无 body 外壳残留",
+          "ok": true,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "T27",
+      "name": "代码内 div 不被改写（回归 P1）",
+      "pass": 5,
+      "fail": 0,
+      "total": 5,
+      "cases": [
+        {
+          "name": "行内代码里的 <div> 保持原样",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "行内代码里的 </div> 保持原样",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "真实 div 仍被降级为 span（前文<span>…</span>后文）",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "代码块里的 <div> 保持原样",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "代码块里 div 仍是 div 而非 span",
+          "ok": true,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "T28",
+      "name": "callout 不吞标题（回归 P2）",
+      "pass": 6,
+      "fail": 0,
+      "total": 6,
+      "cases": [
+        {
+          "name": "两个 callout 都渲染了",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": ":::key 未泄漏到正文",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "小节标题没被吞进 callout（h2 存在）",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "两个小节标题都在",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "callout 框内不含块级标题（未被吞）",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "key 框正常渲染（含 ⭐ 重点）",
+          "ok": true,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "T29",
+      "name": "safe_code 抗 CSS 剥离",
+      "pass": 7,
+      "fail": 0,
+      "total": 7,
+      "cases": [
+        {
+          "name": "safe 模式生成了 <br />",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "safe 模式用 padding-left 表达缩进",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "safe 模式保留 white-space（双保险）",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "剥离 CSS 后换行仍存活（不塌成一行）",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "剥离 CSS 后代码内容完整",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "剥离 CSS 后深层缩进内容不丢",
+          "ok": true,
+          "note": ""
+        },
+        {
+          "name": "普通模式未生成为每行 span（对照）",
+          "ok": true,
+          "note": ""
+        }
+      ]
+    }
+  ]
+}
