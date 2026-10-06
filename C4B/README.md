@@ -22,16 +22,16 @@
 
 | # | 挑战要求 | 文件 | 状态 |
 |---|---------|------|------|
-| 1 | **定制后的技能包** | `wechat-publisher-pro.zip` (81 KB) | ✅ 已通过官方 `package_skill.py` 校验 |
-| 2 | **文章源文件** | `JingXueQing_C4B_文章源文件.md` (11.8 KB) | ✅ 约 2719 字 |
-| 3 | **转换后的 HTML** | `JingXueQing_C4B_output.html` (91 KB)<br>`JingXueQing_C4B_output.body.html` (91 KB) | ✅ 合规体检 0 高危 |
-| 4 | **教学说明** | `JingXueQing_C4B_教学说明.md` (8.7 KB) | ✅ 含安装/参数/排错手册 |
-| 5 | **⚡ AI 日志** | `JingXueQing_C4B_AI日志.md` (21 KB) | ✅ 含 8 轮迭代、5 个自造 bug |
-| 6 | **拿来说明** | `JingXueQing_C4B_拿来说明.md` (8 KB) | ✅ 12 个缺陷全部实测复现 |
+| 1 | **定制后的技能包** | `wechat-publisher-pro.zip` (83.9 KB) | ✅ 按交付规范手动整理；解压后实测 27/27 用例全绿 |
+| 2 | **文章源文件** | `JingXueQing_C4B_文章源文件.md` (11.6 KB) | ✅ 约 2719 字 |
+| 3 | **转换后的 HTML** | `JingXueQing_C4B_output.html` (90.1 KB)<br>`JingXueQing_C4B_output.body.html` (89.1 KB) | ✅ 合规体检 0 高危 |
+| 4 | **教学说明** | `JingXueQing_C4B_教学说明.md` (9.8 KB) | ✅ 含安装/参数/排错手册 |
+| 5 | **⚡ AI 日志** | `JingXueQing_C4B_AI日志.md` (23.9 KB) | ✅ 含 12 轮迭代、10 个自造 bug |
+| 6 | **拿来说明** | `JingXueQing_C4B_拿来说明.md` (11.0 KB) | ✅ 12 个缺陷全部实测复现 |
 | 7 | **文章链接** | `JingXueQing_C4B_文章链接.md` | ✅ **已发布**，含线上链接 + 真实环境验证记录 |
-| + | AAR 复盘（额外） | `JingXueQing_C4B_AAR复盘.md` (12 KB) | ✅ |
-| + | eval 机读结果（额外） | `JingXueQing_C4B_eval_result.json` (17 KB) | ✅ 117/117 |
-| + | 封面图（额外） | `cover.png` (33 KB) | ✅ 900×383 |
+| + | AAR 复盘（额外） | `JingXueQing_C4B_AAR复盘.md` (14.4 KB) | ✅ |
+| + | eval 机读结果（额外） | `JingXueQing_C4B_eval_result.json` (19.0 KB) | ✅ 135/135 |
+| + | 封面图（额外） | `cover.png` (32.2 KB) | ✅ 900×383 |
 | + | 探针对比（额外） | `附_探针对比_starter原版.html`<br>`附_探针对比_改造后.html` | ✅ 直击证据 |
 
 ---
@@ -47,7 +47,7 @@ cd wechat-publisher-pro
 python3 -m venv .venv && source .venv/bin/activate
 pip install markdown beautifulsoup4 python-docx lxml pygments
 
-# 3. 跑测试（预期 24/24）
+# 3. 跑测试（预期 27/27）
 python tests/eval_suite.py
 
 # 4. 转换文章
@@ -59,7 +59,7 @@ python scripts/wechat_publisher.py \
 python scripts/wechat_publisher.py ../JingXueQing_C4B_文章源文件.md --audit
 ```
 
-**已验证**：从 `.zip` 全新解压后，eval 仍是 117/117 通过、24/24 用例全绿。
+**已验证**：从 `.zip` 全新解压后，eval 仍是 135/135 通过、27/27 用例全绿。
 
 ---
 
@@ -69,7 +69,7 @@ python scripts/wechat_publisher.py ../JingXueQing_C4B_文章源文件.md --audit
 > 后来把自己写错的 5 个 bug 的过程也写进去了，其中一个是 BeautifulSoup 会静默吃掉代码缩进，**我的测试当时是绿的**。
 > **文章已发布**：https://mp.weixin.qq.com/s/alqul0Zf-F2hfSQNkaEIPA
 > 真实发布又帮我逮到 5 个新问题——其中一个特别讽刺：我那篇讲 div 缺陷的文章，读者看到的标签名被我的转换器改成了 span。**事实被改错了，而且改得很隐蔽。**
-> 技能已打包，26 个用例 / 128 条断言全绿，合规体检 0 高危。
+> 技能已打包，27 个用例 / 135 条断言全绿，合规体检 0 高危。
 
 ---
 
@@ -77,9 +77,9 @@ python scripts/wechat_publisher.py ../JingXueQing_C4B_文章源文件.md --audit
 
 | 项目 | starter | 改造后 | 来源 |
 |------|---------|--------|------|
-| 转换器行数 | 383 | 1503 | `wc -l` |
-| eval 用例 / 断言 | 0 | **26 / 128** | 实跑 |
-| 迭代轮次 | — | 8 轮（首轮 25%） | 会话记录 |
+| 转换器行数 | 383 | 1518 | `wc -l` |
+| eval 用例 / 断言 | 0 | **27 / 135** | 实跑 |
+| 迭代轮次 | — | 12 轮（首轮 25%） | 会话记录 |
 | 修的缺陷 | — | 12 个 | `tests/fixtures` 可复现 |
 | 自己写错的 bug | — | **10 个**（5 个 + 发布后 5 个） | 会话记录 |
 | 新增能力 | — | 12 项 | SKILL.md 对照 |
@@ -111,7 +111,7 @@ span.string = tag.get_text()   # ← 三个致命 bug 全是这一行
 
 ### 3. 绿色的测试 ≠ 正确的功能
 
-5 个自造 bug 里，**4 个在被发现时断言是绿的**。
+首发那 5 个自造 bug 里，**4 个在被发现时断言是绿的**；发布后的 5 个里还有 3 个（P1/P2/P5）是 27 个用例全绿时溜过去的。
 两个是靠"逐行打印真实输出"发现的，不是靠断言。
 
 > 测试只能验证"你想到要验证的东西"。

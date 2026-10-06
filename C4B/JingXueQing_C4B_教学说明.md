@@ -54,7 +54,7 @@ python scripts/wechat_publisher.py --list-themes
 python tests/eval_suite.py
 ```
 
-预期输出 `用例通过率 24/24`。
+预期输出 `用例通过率 27/27`。
 
 ---
 
@@ -321,7 +321,7 @@ python tests/eval_suite.py --verbose
 wechat-publisher-pro/
 ├── SKILL.md                          # 技能主文件（AI 读这个）
 ├── scripts/
-│   └── wechat_publisher.py           # 转换器（唯一入口，1419 行）
+│   └── wechat_publisher.py           # 转换器（唯一入口，1518 行）
 ├── references/
 │   ├── wechat_restrictions.md        # 公众号 HTML 限制速查
 │   ├── wechat_styles.md              # 样式取值速查
@@ -330,7 +330,7 @@ wechat-publisher-pro/
 │   ├── demo_article.md               # 演示全部扩展语法
 │   └── assets/demo.png
 └── tests/
-    ├── eval_suite.py                 # 24 用例 / 117 断言
+    ├── eval_suite.py                 # 27 用例 / 135 断言
     └── fixtures/                     # 19 个测试样本
 ```
 

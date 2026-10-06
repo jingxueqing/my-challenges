@@ -147,7 +147,7 @@ python scripts/wechat_publisher.py article.md --audit
 ## Testing
 
 ```bash
-python tests/eval_suite.py              # 24 用例 / 117 断言
+python tests/eval_suite.py              # 27 用例 / 135 断言
 python tests/eval_suite.py --verbose    # 逐条明细
 python tests/eval_suite.py --json r.json # 机读结果
 python tests/eval_suite.py --only T07   # 跑单个用例
@@ -194,7 +194,7 @@ wechat-publisher-pro/
 ├── examples/
 │   └── demo_article.md           # 演示全部扩展语法
 └── tests/
-    ├── eval_suite.py             # 24 用例 / 117 断言
+    ├── eval_suite.py             # 27 用例 / 135 断言
     └── fixtures/                 # 测试样本
 ```
 
