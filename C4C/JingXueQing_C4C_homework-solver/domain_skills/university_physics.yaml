@@ -1,0 +1,212 @@
+# ============================================================
+# T-box: 大学物理（University Physics）
+# ============================================================
+# Oracle sources:
+#   - Halliday, Resnick & Walker, Fundamentals of Physics
+#   - Serway, Physics for Scientists and Engineers
+#
+# ⚠️ 核心设计原则：**标签锚定的量提取**
+#   绝不允许"按数字出现顺序"猜测物理量。
+#   找不到带标签的物理量 → 诚实失败，而不是给出一个
+#   看起来专业但数值错误的答案。
+#
+#   真实教训：初版按顺序取数，在"质量 2 kg、受力 10 N"上
+#   把 2 当成 F、10 当成 m，得出 a=0.2 m/s²（正确值 5 m/s²）。
+# ============================================================
+
+domain: university_physics
+version: "1.0"
+
+oracle_sources:
+  - type: textbook
+    ref: "Halliday/Resnick/Walker, Fundamentals of Physics (11th ed.)"
+    authority: primary
+    distilled_knowledge:
+      - "牛顿第二定律 F=ma 为矢量式，各分量独立成立"
+      - "自由落体：初速为零的匀加速，h=½gt²，v²=2gh（与质量无关）"
+      - "动能 E_k=½mv²；功-能定理 W_net = ΔE_k"
+      - "库仑定律 F=kq₁q₂/r²，k=8.99×10⁹ N·m²/C²"
+      - "欧姆定律 I=V/R；串联分压、并联分流"
+      - "理想气体状态方程 PV=nRT，R=8.314 J/(mol·K)"
+      - "功率 P=Fv（力与速度同向）；P=dW/dt"
+
+  - type: study_guide
+    ref: "物理量纲分析与解题检查清单"
+    authority: secondary
+    distilled_knowledge:
+      - "量纲齐次性检查：公式两侧量纲必须相同，这是抓错公式的利器"
+      - "国际单位制基本量：m(质量) s(时间) A(电流) K(温度) mol(物质的量)"
+      - "解题三查：一查已知量与单位、二查公式适用条件、三查结果量纲"
+      - "常见量纲：N=kg·m/s²，J=N·m，W=J/s，Pa=N/m²，C=A·s，V=J/C"
+
+concepts:
+  - id: mech_kinematics
+    type: concept
+    name: "运动学"
+    formal: "位置-速度-加速度关系；匀加速：v=v₀+at，x=v₀t+½at²，v²=v₀²+2aΔx"
+    keywords: [运动学, 速度, 加速度, 位移, kinematics, velocity, acceleration]
+
+  - id: mech_newton
+    type: concept
+    name: "牛顿运动定律"
+    formal: "F=ma（矢量）；自由落体 a=g≈9.8 m/s²（与质量无关）"
+    prerequisites: [mech_kinematics]
+    keywords: [牛顿, 合力, 外力, newton, force]
+
+  - id: mech_energy
+    type: concept
+    name: "功与能"
+    formal: "E_k=½mv²；E_p=mgh；W_net=ΔE_k；P=Fv=dW/dt"
+    prerequisites: [mech_newton]
+    keywords: [动能, 势能, 功, 功率, 能量, energy, work, power]
+
+  - id: free_fall
+    type: concept
+    name: "自由落体与抛体"
+    formal: "h=½gt²；v=gt；上下对称"
+    prerequisites: [mech_kinematics]
+    keywords: [自由落体, 落体, 抛体, 上抛, free fall, projectile]
+
+  - id: em_coulomb
+    type: concept
+    name: "库仑定律（静电）"
+    formal: "F=kq₁q₂/r²，方向沿连线；k=8.99×10⁹ N·m²/C²"
+    keywords: [库仑, 电荷, 静电, coulomb, charge]
+
+  - id: em_ohm
+    type: concept
+    name: "欧姆定律与电路"
+    formal: "I=V/R；R=ρL/A；P=VI=I²R=V²/R"
+    prerequisites: [em_coulomb]
+    keywords: [欧姆, 电压, 电流, 电阻, 电路, ohm, voltage, current, resistance]
+
+  - id: thermo_ideal_gas
+    type: concept
+    name: "理想气体"
+    formal: "PV=nRT；等温过程 PV=常量；等容 P/T=常量"
+    keywords: [理想气体, 状态方程, 压强, 体积, 温度, ideal gas, pressure]
+
+solution_methods:
+  - id: phy_free_fall
+    type: solution_method
+    concept: free_fall
+    name: "自由落体求解"
+    applies_when: "题面含自由落体/落体/竖直上抛，且能定位高度 h"
+    tool: sympy_formula
+    formula: "h = ½ g t², v = g t"
+    validation: "量纲齐次性检查 h = ½[g][t]²"
+
+  - id: phy_newton2
+    type: solution_method
+    concept: mech_newton
+    name: "牛顿第二定律"
+    applies_when: "题面同时含【合力 F】与【质量 m】标签"
+    tool: sympy_formula
+    formula: "a = F/m"
+    validation: "量纲齐次性检查 N = kg·m/s²"
+    required_labels: [F, m]
+    on_missing_label: "fail_honestly"
+
+  - id: phy_kinetic
+    type: solution_method
+    concept: mech_energy
+    name: "动能"
+    applies_when: "题面含动能，且能定位 m 与 v"
+    tool: sympy_formula
+    formula: "E_k = ½ m v²"
+    required_labels: [m, v]
+    on_missing_label: "fail_honestly"
+
+  - id: phy_coulomb
+    type: solution_method
+    concept: em_coulomb
+    name: "库仑定律"
+    applies_when: "题面含库仑，且能定位 q₁、q₂、r"
+    tool: sympy_formula
+    formula: "F = k q₁q₂/r²"
+    required_labels: [q1, q2, r]
+    on_missing_label: "fail_honestly"
+
+  - id: phy_ohm
+    type: solution_method
+    concept: em_ohm
+    name: "欧姆定律"
+    applies_when: "题面含欧姆/电压+电阻，且能定位 V 与 R"
+    tool: sympy_formula
+    formula: "I = V/R"
+    required_labels: [V, R]
+    on_missing_label: "fail_honestly"
+
+  - id: phy_ideal_gas
+    type: solution_method
+    concept: thermo_ideal_gas
+    name: "理想气体状态方程"
+    applies_when: "题面含理想气体，且能定位 P、V、n"
+    tool: sympy_formula
+    formula: "T = PV/(nR)"
+    required_labels: [P, Vn, n]
+    on_missing_label: "fail_honestly"
+
+  - id: phy_power
+    type: solution_method
+    concept: mech_energy
+    name: "功率"
+    applies_when: "题面含功率，且能定位 F 与 v"
+    tool: sympy_formula
+    formula: "P = Fv"
+    required_labels: [F, v]
+    on_missing_label: "fail_honestly"
+
+classification_rules:
+  - priority: 100
+    pattern:
+      text_contains: ["自由落体", "落体", "竖直上抛", "抛体"]
+    maps_to: free_fall
+    solver: phy_free_fall
+  - priority: 95
+    pattern:
+      text_contains: ["库仑", "coulomb"]
+    maps_to: em_coulomb
+    solver: phy_coulomb
+  - priority: 90
+    pattern:
+      text_contains: ["欧姆", "ohm"]
+    maps_to: em_ohm
+    solver: phy_ohm
+  - priority: 85
+    pattern:
+      text_contains: ["理想气体", "ideal gas"]
+    maps_to: thermo_ideal_gas
+    solver: phy_ideal_gas
+  - priority: 80
+    pattern:
+      text_contains: ["牛顿第二定律", "合力"]
+    maps_to: mech_newton
+    solver: phy_newton2
+  - priority: 70
+    pattern:
+      text_contains: ["动能", "kinetic energy"]
+    maps_to: mech_energy
+    solver: phy_kinetic
+  - priority: 60
+    pattern:
+      text_contains: ["功率", "power"]
+    maps_to: mech_energy
+    solver: phy_power
+
+validation_rules:
+  - id: v_dimension
+    applies_to: [phy_free_fall, phy_newton2, phy_kinetic, phy_coulomb, phy_ohm, phy_power]
+    rule: |
+      检查所用公式的量纲齐次性：公式左侧单位量纲 == 右侧各因子量纲之和。
+      该检查与输入数值无关，因此能识别"用错公式"这类错误。
+  - id: v_label_presence
+    applies_to: all
+    rule: "求解前必须确认所有必需物理量都已按标签定位，否则拒绝求解"
+
+known_limitations:
+  - "多物体/多过程复合问题需人工审阅"
+  - "矢量运算与方向判断未完整实现"
+  - "转动、振动、波、热力学过程未覆盖"
+  - "涉及摩擦因子的动力学未实现"
+  - "光学与近代物理未覆盖"

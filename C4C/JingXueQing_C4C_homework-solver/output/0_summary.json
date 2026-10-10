@@ -1,0 +1,32 @@
+{
+  "total": 12,
+  "solved": 10,
+  "solve_rate": 83.3,
+  "verified_pass": 9,
+  "verification_failed": 0,
+  "routes": {
+    "sympy": 10,
+    "none": 2
+  },
+  "llm": {
+    "vendor": "none",
+    "ready": false,
+    "mode": "disabled"
+  },
+  "pdf": {
+    "pages": 7,
+    "path": "output/homework.pdf",
+    "size_bytes": 296061,
+    "backend": "mathtext"
+  },
+  "elapsed_sec": 22.45,
+  "outputs": [
+    "0_summary.json",
+    "1_ingested.json",
+    "2_parsed.json",
+    "3_solutions.json",
+    "homework.pdf",
+    "homework.tex",
+    "verification_report.md"
+  ]
+}

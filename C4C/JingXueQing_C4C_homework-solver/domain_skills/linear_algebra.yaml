@@ -1,0 +1,256 @@
+# ============================================================
+# T-box: 线性代数（Linear Algebra）
+# ============================================================
+# Oracle sources:
+#   - Strang, Introduction to Linear Algebra, 5th ed.（MIT 18.06）
+#   - Lay, Linear Algebra and Its Applications（判定与消元法部分）
+#
+# 本文件定义领域本体：概念节点、解题方法、分类规则。
+# 运行时求解器据此把题目路由到 solve_extended.py 中的实现。
+# ============================================================
+
+domain: linear_algebra
+version: "1.0"
+
+oracle_sources:
+  - type: textbook
+    ref: "Strang, Introduction to Linear Algebra (5th ed.), MIT 18.06"
+    authority: primary
+    distilled_knowledge:
+      - "四个基本子空间：列空间、行空间、零空间、左零空间"
+      - "可逆 ⟺ 列满秩 ⟺ 行满秩 ⟺ 零空间平凡 ⟺ 特征值全非零"
+      - "det(A-λI) 是特征多项式，根即特征值"
+      - "可对角化 ⟺ 有 n 个线性无关特征向量"
+      - "实对称矩阵必可正交对角化 A = QΛQ^T"
+      - "奇异值 σ_i 是 A^TA 特征值的平方根"
+      - "Gram-Schmidt：投影分解 a = (a·q̂)q̂ + a⊥"
+  - type: study_guide
+    ref: "线性代数解题要点：消元法为主轴，几何解释为验证"
+    authority: secondary
+    distilled_knowledge:
+      - "考试陷阱：'求特征值'常需先化简矩阵；数值上避免消元误差"
+      - "det = 0 是奇异的充要条件，不能靠观察矩阵形状判断"
+      - "线性相关 ⟺ 存在 Ax=0 的非零解 ⟺ 秩 < 列数"
+
+# ────────────────────────────────────────────────────────────
+# 概念节点
+# ────────────────────────────────────────────────────────────
+concepts:
+  - id: matrix_basics
+    type: concept
+    name: "矩阵与线性变换"
+    formal: "矩阵 A 是线性变换在标准基下的表示；Ax=b 的可解性由列空间决定。"
+    keywords: [矩阵, 线性变换, 线性映射, matrix, transformation]
+
+  - id: determinant
+    type: concept
+    name: "行列式"
+    formal: "det(A) = ±(超平行体体积)；A 可逆 ⟺ det(A) ≠ 0；det(AB)=det(A)det(B)。"
+    keywords: [行列式, determinant]
+
+  - id: rank
+    type: concept
+    name: "矩阵的秩"
+    formal: "秩 = 行阶梯形中非零行数 = 阶梯形中非零列数 = 线性无关的最大向量个数。"
+    prerequisites: [matrix_basics]
+    keywords: [秩, rank]
+
+  - id: inverse
+    type: concept
+    name: "逆矩阵"
+    formal: "A^{-1} 满足 AA^{-1}=A^{-1}A=I；存在当且仅当 det(A)≠0。"
+    prerequisites: [determinant]
+    keywords: [逆矩阵, 求逆, inverse]
+
+  - id: eigenvalues
+    type: concept
+    name: "特征值与特征向量"
+    formal: "Av=λv (v≠0) ⟺ (A-λI)v=0 有非零解 ⟺ det(A-λI)=0。λ 为特征值，v 为特征向量。"
+    prerequisites: [determinant, matrix_basics]
+    keywords: [特征值, 特征向量, eigenvalue, eigenvector, 特征多项式]
+    detail: "由 Av=λv 两边左乘 v^T 并用 v^Tv=1，得 v^TAv=λ；由 det(A-λI)=0 直接解出 λ。"
+
+  - id: diagonalization
+    type: concept
+    name: "对角化与相似变换"
+    formal: "A=PDP^{-1}；P 的列为特征向量。存在 P ⟺ 有 n 个线性无关特征向量。"
+    prerequisites: [eigenvalues]
+    keywords: [对角化, 相似, diagonaliz, similarity]
+    detail: "实对称矩阵必可正交对角化：Q^TQ=I，A=QΛQ^T。"
+
+  - id: linear_independence
+    type: concept
+    name: "线性无关与相关性"
+    formal: "Ax=0 只有零解 ⟺ 列向量线性无关 ⟺ rank(A)=列数。"
+    prerequisites: [matrix_basics]
+    keywords: [线性无关, 线性相关, 线性依赖, linearly independent, linearly dependent]
+
+  - id: orthogonality
+    type: concept
+    name: "正交性与标准正交基"
+    formal: "Gram-Schmidt：a2 = a2 - proj_u1(a2)；正交向量归一化得标准正交基。"
+    prerequisites: [linear_independence]
+    keywords: [正交, 标准正交, 正交化, gram, schmidt, orthonormal]
+    detail: "验证 Q^TQ = I。"
+
+  - id: trace
+    type: concept
+    name: "迹"
+    formal: "tr(A) = Σ a_ii = Σ λ_i（重数计）。"
+    keywords: [迹, trace]
+
+  - id: svd
+    type: concept
+    name: "奇异值分解"
+    formal: "A = UΣV^T；σ_i^2 是 A^TA 的特征值。用于低秩近似。"
+    prerequisites: [orthogonality]
+    keywords: [奇异值, svd, singular value]
+
+# ────────────────────────────────────────────────────────────
+# 解题方法（求解器）
+# ────────────────────────────────────────────────────────────
+solution_methods:
+  - id: la_eigen
+    type: solution_method
+    concept: eigenvalues
+    name: "特征值-特征向量求解"
+    applies_when: "题目给矩阵并要求特征值/特征向量/对角化"
+    tool: sympy
+    input_schema:
+      matrix: "LaTeX bmatrix 或 [[a,b],[c,d]]"
+    output_form: "特征值集合 + 各特征值对应的特征向量张成空间"
+    validation: "代回验证 Av = λv"
+
+  - id: la_det_rank
+    type: solution_method
+    concept: determinant
+    name: "行列式与秩"
+    applies_when: "求 det 或 rank（可同时求）"
+    tool: sympy
+    output_form: "det(A)=..., rank(A)=..."
+
+  - id: la_inverse
+    type: solution_method
+    concept: inverse
+    name: "逆矩阵"
+    applies_when: "求逆矩阵"
+    tool: sympy
+    output_form: "A^{-1} 的显式矩阵"
+    validation: "验证 AA^{-1} = I"
+
+  - id: la_diagonalize
+    type: solution_method
+    concept: diagonalization
+    name: "对角化"
+    applies_when: "判断可否对角化并给出 P、D"
+    tool: sympy
+    validation: "验证 A = PDP^{-1}"
+
+  - id: la_gram_schmidt
+    type: solution_method
+    concept: orthogonality
+    name: "Gram-Schmidt 正交化"
+    applies_when: "把向量组化为标准正交基"
+    tool: sympy
+    validation: "验证 Q^TQ = I"
+
+  - id: la_independence
+    type: solution_method
+    concept: linear_independence
+    name: "线性相关性判定"
+    applies_when: "判断一组向量线性无关/线性相关"
+    tool: sympy
+    validation: "比较 rank 与向量个数"
+
+  - id: la_svd
+    type: solution_method
+    concept: svd
+    name: "奇异值分解"
+    applies_when: "求奇异值/SVD"
+    tool: sympy
+
+# ────────────────────────────────────────────────────────────
+# 分类规则（按优先级降序匹配）
+# ────────────────────────────────────────────────────────────
+classification_rules:
+  - priority: 100
+    pattern:
+      text_contains: ["特征向量"]
+    maps_to: eigenvalues
+    solver: la_eigen
+    reason: "出现『特征向量』→ 特征值求解器"
+
+  - priority: 95
+    pattern:
+      text_contains: ["特征值", "eigenvalue"]
+    maps_to: eigenvalues
+    solver: la_eigen
+    reason: "出现『特征值』→ 特征值求解器"
+
+  - priority: 90
+    pattern:
+      text_contains: ["对角化", "diagonaliz"]
+    maps_to: diagonalization
+    solver: la_diagonalize
+    reason: "出现『对角化』→ 对角化求解器"
+
+  - priority: 85
+    pattern:
+      text_contains: ["奇异值", "svd"]
+    maps_to: svd
+    solver: la_svd
+    reason: "出现『奇异值』→ SVD"
+
+  - priority: 80
+    pattern:
+      text_contains: ["逆矩阵", "inverse"]
+    maps_to: inverse
+    solver: la_inverse
+    reason: "出现『逆矩阵』→ 逆矩阵求解器"
+
+  - priority: 70
+    pattern:
+      text_contains: ["正交化", "标准正交", "gram"]
+    maps_to: orthogonality
+    solver: la_gram_schmidt
+    reason: "出现『正交化』→ Gram-Schmidt"
+
+  - priority: 60
+    pattern:
+      text_contains: ["线性无关", "线性相关"]
+    maps_to: linear_independence
+    solver: la_independence
+    reason: "出现『线性无关/相关』→ 秩判定"
+
+  - priority: 50
+    pattern:
+      text_contains: ["行列式", "秩", "determinant", "rank"]
+    maps_to: determinant
+    solver: la_det_rank
+    reason: "出现『行列式/秩』→ det+rank"
+
+# ────────────────────────────────────────────────────────────
+# 验证规则
+# ────────────────────────────────────────────────────────────
+validation_rules:
+  - id: v_eigen
+    applies_to: la_eigen
+    rule: "构造 Av 与 λv，差必须为零向量"
+  - id: v_inverse
+    applies_to: la_inverse
+    rule: "AA^{-1} 必须等于单位阵"
+  - id: v_orthonormal
+    applies_to: la_gram_schmidt
+    rule: "Q^TQ 必须等于单位阵"
+  - id: v_diagonalize
+    applies_to: la_diagonalize
+    rule: "AP = PD"
+
+# ────────────────────────────────────────────────────────────
+# 已知边界
+# ────────────────────────────────────────────────────────────
+known_limitations:
+  - "抽象线性空间（无限维）题目未覆盖"
+  - " Jordan 标准形、极小多项式未实现"
+  - " 参数矩阵（如 t 为参数）的讨论未实现"
+  - " 复数域上的特殊情形未单独处理"

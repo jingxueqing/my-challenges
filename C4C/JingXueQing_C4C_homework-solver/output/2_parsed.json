@@ -1,0 +1,222 @@
+[
+  {
+    "id": "1",
+    "text": "设矩阵\n\n$$A = \\begin{bmatrix} 4 & 1 \\\\ 2 & 3 \\end{bmatrix}$$\n\n求 $A$ 的行列式 $\\det(A)$ 与秩 $\\operatorname{rank}(A)$，并判断 $A$ 是否可逆。\n\n---",
+    "math_expressions": [
+      {
+        "type": "display",
+        "latex": "A = \\begin{bmatrix} 4 & 1 \\\\ 2 & 3 \\end{bmatrix}"
+      },
+      {
+        "type": "inline",
+        "latex": "A"
+      },
+      {
+        "type": "inline",
+        "latex": "\\det(A)"
+      },
+      {
+        "type": "inline",
+        "latex": "\\operatorname{rank}(A)"
+      },
+      {
+        "type": "inline",
+        "latex": "A"
+      }
+    ],
+    "type": "conceptual",
+    "sub_problems": []
+  },
+  {
+    "id": "2",
+    "text": "设\n\n$$A = \\begin{bmatrix} 2 & 1 \\\\ 1 & 2 \\end{bmatrix}$$\n\n求 $A$ 的全部特征值与对应特征向量，并判断 $A$ 是否可以对角化。\n\n---",
+    "math_expressions": [
+      {
+        "type": "display",
+        "latex": "A = \\begin{bmatrix} 2 & 1 \\\\ 1 & 2 \\end{bmatrix}"
+      },
+      {
+        "type": "inline",
+        "latex": "A"
+      },
+      {
+        "type": "inline",
+        "latex": "A"
+      }
+    ],
+    "type": "conceptual",
+    "sub_problems": []
+  },
+  {
+    "id": "3",
+    "text": "求矩阵\n\n$$B = \\begin{bmatrix} 1 & 2 \\\\ 2 & 1 \\end{bmatrix}$$\n\n的逆矩阵 $B^{-1}$，并验证 $BB^{-1} = I$。\n\n---",
+    "math_expressions": [
+      {
+        "type": "display",
+        "latex": "B = \\begin{bmatrix} 1 & 2 \\\\ 2 & 1 \\end{bmatrix}"
+      },
+      {
+        "type": "inline",
+        "latex": "B^{-1}"
+      },
+      {
+        "type": "inline",
+        "latex": "BB^{-1} = I"
+      }
+    ],
+    "type": "conceptual",
+    "sub_problems": []
+  },
+  {
+    "id": "4",
+    "text": "判断向量组\n\n$$\\mathbf{v}_1 = \\begin{bmatrix} 1 \\\\ 2 \\\\ 3 \\end{bmatrix}, \\quad\n  \\mathbf{v}_2 = \\begin{bmatrix} 2 \\\\ 4 \\\\ 6 \\end{bmatrix}, \\quad\n  \\mathbf{v}_3 = \\begin{bmatrix} 1 \\\\ 0 \\\\ 1 \\end{bmatrix}$$\n\n是否线性无关，并说明理由。\n\n---",
+    "math_expressions": [
+      {
+        "type": "display",
+        "latex": "\\mathbf{v}_1 = \\begin{bmatrix} 1 \\\\ 2 \\\\ 3 \\end{bmatrix}, \\quad\n  \\mathbf{v}_2 = \\begin{bmatrix} 2 \\\\ 4 \\\\ 6 \\end{bmatrix}, \\quad\n  \\mathbf{v}_3 = \\begin{bmatrix} 1 \\\\ 0 \\\\ 1 \\end{bmatrix}"
+      }
+    ],
+    "type": "conceptual",
+    "sub_problems": []
+  },
+  {
+    "id": "5",
+    "text": "解一阶常微分方程\n\n$$y' + 2y = 0$$\n\n求其通解。\n\n---",
+    "math_expressions": [
+      {
+        "type": "display",
+        "latex": "y' + 2y = 0"
+      }
+    ],
+    "type": "conceptual",
+    "sub_problems": []
+  },
+  {
+    "id": "6",
+    "text": "解二阶常系数齐次线性微分方程\n\n$$y'' + y = 0$$\n\n求其通解。\n\n---",
+    "math_expressions": [
+      {
+        "type": "display",
+        "latex": "y'' + y = 0"
+      }
+    ],
+    "type": "conceptual",
+    "sub_problems": []
+  },
+  {
+    "id": "7",
+    "text": "一质量为 $2\\,\\mathrm{kg}$ 的物体受到合力 $F = 10\\,\\mathrm{N}$ 的作用，\n求该物体的加速度 $a$（用牛顿第二定律）。\n\n---",
+    "math_expressions": [
+      {
+        "type": "inline",
+        "latex": "2\\,\\mathrm{kg}"
+      },
+      {
+        "type": "inline",
+        "latex": "F = 10\\,\\mathrm{N}"
+      },
+      {
+        "type": "inline",
+        "latex": "a"
+      }
+    ],
+    "type": "conceptual",
+    "sub_problems": []
+  },
+  {
+    "id": "8",
+    "text": "电路中电压 $U = 220\\,\\mathrm{V}$ 加在电阻 $R = 55\\,\\mathrm{ohm}$ 两端，\n求通过电阻的电流 $I$（用欧姆定律）。\n\n---",
+    "math_expressions": [
+      {
+        "type": "inline",
+        "latex": "U = 220\\,\\mathrm{V}"
+      },
+      {
+        "type": "inline",
+        "latex": "R = 55\\,\\mathrm{ohm}"
+      },
+      {
+        "type": "inline",
+        "latex": "I"
+      }
+    ],
+    "type": "conceptual",
+    "sub_problems": []
+  },
+  {
+    "id": "9",
+    "text": "两个点电荷 $q_1 = 2\\,\\mathrm{C}$ 与 $q_2 = 3\\,\\mathrm{C}$ 相距 $r = 1\\,\\mathrm{m}$，\n求它们之间的库仑力大小。\n\n---",
+    "math_expressions": [
+      {
+        "type": "inline",
+        "latex": "q_1 = 2\\,\\mathrm{C}"
+      },
+      {
+        "type": "inline",
+        "latex": "q_2 = 3\\,\\mathrm{C}"
+      },
+      {
+        "type": "inline",
+        "latex": "r = 1\\,\\mathrm{m}"
+      }
+    ],
+    "type": "conceptual",
+    "sub_problems": []
+  },
+  {
+    "id": "10",
+    "text": "一个物体从 $h = 45\\,\\mathrm{m}$ 高处自由落下，\n求它落地所需的时间与落地速度（取 $g = 9.8\\,\\mathrm{m/s^2}$）。\n\n---",
+    "math_expressions": [
+      {
+        "type": "inline",
+        "latex": "h = 45\\,\\mathrm{m}"
+      },
+      {
+        "type": "inline",
+        "latex": "g = 9.8\\,\\mathrm{m/s^2}"
+      }
+    ],
+    "type": "conceptual",
+    "sub_problems": []
+  },
+  {
+    "id": "11",
+    "text": "（超出当前求解器支持范围，用于测试诚实失败行为）\n请证明：对任意 $n \\times n$ 可逆矩阵 $A$，其特征值均不为零。\n\n---",
+    "math_expressions": [
+      {
+        "type": "inline",
+        "latex": "n \\times n"
+      },
+      {
+        "type": "inline",
+        "latex": "A"
+      }
+    ],
+    "type": "conceptual",
+    "sub_problems": []
+  },
+  {
+    "id": "12",
+    "text": "设某区间上的分段函数为\n\n$$f(x) = \\begin{cases} x^2 & x < 0 \\\\ -x & x \\ge 0 \\end{cases}$$\n\n求 $\\lim_{x \\to 0} f(x)$，并判断 $f$ 在 $x = 0$ 处是否连续。",
+    "math_expressions": [
+      {
+        "type": "display",
+        "latex": "f(x) = \\begin{cases} x^2 & x < 0 \\\\ -x & x \\ge 0 \\end{cases}"
+      },
+      {
+        "type": "inline",
+        "latex": "\\lim_{x \\to 0} f(x)"
+      },
+      {
+        "type": "inline",
+        "latex": "f"
+      },
+      {
+        "type": "inline",
+        "latex": "x = 0"
+      }
+    ],
+    "type": "conceptual",
+    "sub_problems": []
+  }
+]

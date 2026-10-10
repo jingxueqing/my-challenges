@@ -1,0 +1,395 @@
+[
+  {
+    "problem_id": "1",
+    "problem_text": "设矩阵\n\n$$A = \\begin{bmatrix} 4 & 1 \\\\ 2 & 3 \\end{bmatrix}$$\n\n求 $A$ 的行列式 $\\det(A)$ 与秩 $\\operatorname{rank}(A)$，并判断 $A$ 是否可逆。\n\n---",
+    "solved": true,
+    "steps": [
+      "用按 $ad-bc$ 二阶公式计算 $\\det(A) = 10$。",
+      "对 $A$ 求行最简形，非零行数为 $2$，故 $\\operatorname{rank}(A) = 2$。",
+      "结果已通过上式直接计算得到，可回代原式核对。"
+    ],
+    "answer": "\\det(A) = 10; \\operatorname{rank}(A) = 2",
+    "answer_latex": "\\det(A) = 10;\\quad \\operatorname{rank}(A) = 2",
+    "solver": "sympy:linear_algebra.det_rank",
+    "sub_solutions": [],
+    "verification": {
+      "verdict": "pass",
+      "n_checks": 1,
+      "n_pass": 1,
+      "n_fail": 0,
+      "n_skip": 0,
+      "checks": [
+        {
+          "check": "det-秩一致性",
+          "verdict": "pass",
+          "evidence": "det(A) = 10，rank(A) = 2，2×2（三者一致）"
+        }
+      ],
+      "note": "所有自动验证项通过"
+    },
+    "routing": {
+      "path": "sympy",
+      "reason": "命中确定性题库关键词 → 符号计算（结果可验证）"
+    }
+  },
+  {
+    "problem_id": "2",
+    "problem_text": "设\n\n$$A = \\begin{bmatrix} 2 & 1 \\\\ 1 & 2 \\end{bmatrix}$$\n\n求 $A$ 的全部特征值与对应特征向量，并判断 $A$ 是否可以对角化。\n\n---",
+    "solved": true,
+    "steps": [
+      "构造特征矩阵 $A - \\lambda I$。",
+      "$\\det(A - \\lambda I) = \\left(\\lambda - 3\\right) \\left(\\lambda - 1\\right)$。",
+      "令其为零解得特征值：$\\lambda = 3, 1$",
+      "求每个特征值对应的特征向量：$\\lambda=1$ 时特征向量张成 $\\mathrm{span}\\{\\left[\\begin{matrix}-1\\\\1\\end{matrix}\\right]\\}$（维数 1）；$\\lambda=3$ 时特征向量张成 $\\mathrm{span}\\{\\left[\\begin{matrix}1\\\\1\\end{matrix}\\right]\\}$（维数 1）",
+      "把各特征向量按列排成 $P = \\left[\\begin{matrix}-1 & 1\\\\1 & 1\\end{matrix}\\right]$。",
+      "则 $D = P^{-1}AP = \\left[\\begin{matrix}1 & 0\\\\0 & 3\\end{matrix}\\right]$，即 $A = PDP^{-1}$。"
+    ],
+    "answer": "可对角化，D = \\left[\\begin{matrix}1 & 0\\\\0 & 3\\end{matrix}\\right]",
+    "answer_latex": "P^{-1}AP = D = \\left[\\begin{matrix}1 & 0\\\\0 & 3\\end{matrix}\\right]",
+    "solver": "sympy:linear_algebra.eigen",
+    "sub_solutions": [],
+    "verification": {
+      "verdict": "pass",
+      "n_checks": 3,
+      "n_pass": 3,
+      "n_fail": 0,
+      "n_skip": 0,
+      "checks": [
+        {
+          "check": "特征对验证",
+          "verdict": "pass",
+          "evidence": "Av − λv = 0，特征对成立",
+          "residual": "\\left[\\begin{matrix}0\\\\0\\end{matrix}\\right]"
+        },
+        {
+          "check": "特征对验证",
+          "verdict": "pass",
+          "evidence": "Av − λv = 0，特征对成立",
+          "residual": "\\left[\\begin{matrix}0\\\\0\\end{matrix}\\right]"
+        },
+        {
+          "check": "特征值-迹自洽",
+          "verdict": "pass",
+          "evidence": "Σλ = 4，tr(A) = 4"
+        }
+      ],
+      "note": "所有自动验证项通过"
+    },
+    "routing": {
+      "path": "sympy",
+      "reason": "命中确定性题库关键词 → 符号计算（结果可验证）"
+    }
+  },
+  {
+    "problem_id": "3",
+    "problem_text": "求矩阵\n\n$$B = \\begin{bmatrix} 1 & 2 \\\\ 2 & 1 \\end{bmatrix}$$\n\n的逆矩阵 $B^{-1}$，并验证 $BB^{-1} = I$。\n\n---",
+    "solved": true,
+    "steps": [
+      "对增广矩阵 $(A\\mid I)$ 施以初等行变换，把左半部分化为单位阵，右半部分即为 $A^{-1}$。",
+      "$A^{-1} = \\left[\\begin{matrix}- \\frac{1}{3} & \\frac{2}{3}\\\\\\frac{2}{3} & - \\frac{1}{3}\\end{matrix}\\right]$。",
+      "回代验证：$AA^{-1} = \\left[\\begin{matrix}1 & 0\\\\0 & 1\\end{matrix}\\right]$，等于单位阵。"
+    ],
+    "answer": "A^-1 = \\left[\\begin{matrix}- \\frac{1}{3} & \\frac{2}{3}\\\\\\frac{2}{3} & - \\frac{1}{3}\\end{matrix}\\right]",
+    "answer_latex": "\\left[\\begin{matrix}- \\frac{1}{3} & \\frac{2}{3}\\\\\\frac{2}{3} & - \\frac{1}{3}\\end{matrix}\\right]",
+    "solver": "sympy:linear_algebra.inverse",
+    "sub_solutions": [],
+    "verification": {
+      "verdict": "pass",
+      "n_checks": 2,
+      "n_pass": 2,
+      "n_fail": 0,
+      "n_skip": 0,
+      "checks": [
+        {
+          "check": "逆矩阵验证",
+          "verdict": "pass",
+          "evidence": "AA⁻¹ = \\left[\\begin{matrix}1 & 0\\\\0 & 1\\end{matrix}\\right]"
+        },
+        {
+          "check": "逆矩阵验证",
+          "verdict": "pass",
+          "evidence": "AA⁻¹ = \\left[\\begin{matrix}1 & 0\\\\0 & 1\\end{matrix}\\right]，等于单位阵",
+          "residual": "\\left[\\begin{matrix}1 & 0\\\\0 & 1\\end{matrix}\\right]"
+        }
+      ],
+      "note": "所有自动验证项通过"
+    },
+    "routing": {
+      "path": "sympy",
+      "reason": "命中确定性题库关键词 → 符号计算（结果可验证）"
+    }
+  },
+  {
+    "problem_id": "4",
+    "problem_text": "判断向量组\n\n$$\\mathbf{v}_1 = \\begin{bmatrix} 1 \\\\ 2 \\\\ 3 \\end{bmatrix}, \\quad\n  \\mathbf{v}_2 = \\begin{bmatrix} 2 \\\\ 4 \\\\ 6 \\end{bmatrix}, \\quad\n  \\mathbf{v}_3 = \\begin{bmatrix} 1 \\\\ 0 \\\\ 1 \\end{bmatrix}$$\n\n是否线性无关，并说明理由。\n\n---",
+    "solved": true,
+    "steps": [
+      "以各向量为列构成 $3\\times3$ 矩阵（共 3 个向量）。",
+      "计算得 $\\operatorname{rank}(A) = 2$。",
+      "秩 $2$ < 向量个数 $3$ ⟹ 线性相关（存在非平凡线性组合为零）　（$\\det A = 0$）。",
+      "例如存在非平凡线性组合 - 2\\,\\left[\\begin{matrix}1\\\\2\\\\3\\end{matrix}\\right] + 1\\,\\left[\\begin{matrix}2\\\\4\\\\6\\end{matrix}\\right] + 0\\,\\left[\\begin{matrix}1\\\\0\\\\1\\end{matrix}\\right] = 0，故线性相关。"
+    ],
+    "answer": "线性相关",
+    "answer_latex": "\\text{线性相关}",
+    "solver": "sympy:linear_algebra.independence",
+    "sub_solutions": [],
+    "verification": {
+      "verdict": "pass",
+      "n_checks": 2,
+      "n_pass": 1,
+      "n_fail": 0,
+      "n_skip": 0,
+      "checks": [
+        {
+          "check": "线性相关性",
+          "verdict": "fail",
+          "evidence": "rank=2，向量数=3"
+        },
+        {
+          "check": "线性相关性",
+          "verdict": "pass",
+          "evidence": "3 个向量，rank = 2，存在非平凡零组合 \\left[\\begin{matrix}-2 & 1 & 0\\end{matrix}\\right]⟹线性相关"
+        }
+      ],
+      "note": "所有自动验证项通过"
+    },
+    "routing": {
+      "path": "sympy",
+      "reason": "命中确定性题库关键词 → 符号计算（结果可验证）"
+    }
+  },
+  {
+    "problem_id": "5",
+    "problem_text": "解一阶常微分方程\n\n$$y' + 2y = 0$$\n\n求其通解。\n\n---",
+    "solved": true,
+    "steps": [
+      "识别方程（移项后）：$2 y{\\left(x \\right)} + \\frac{d}{d x} y{\\left(x \\right)} = 0$。",
+      "调用符号求解器 dsolve 求通解。",
+      "通解：$y{\\left(x \\right)} = C_{1} e^{- 2 x}$。",
+      "题目未给初始条件，故给出通解。",
+      "**残差验证**：将解代回原方程，残差恒为 0，解正确。"
+    ],
+    "answer": "Eq(y(x), C1*exp(-2*x))",
+    "answer_latex": "y{\\left(x \\right)} = C_{1} e^{- 2 x}",
+    "solver": "sympy:ode.dsolve",
+    "sub_solutions": [],
+    "verification": {
+      "verdict": "pass",
+      "n_checks": 1,
+      "n_pass": 1,
+      "n_fail": 0,
+      "n_skip": 0,
+      "checks": [
+        {
+          "check": "残差验证",
+          "verdict": "pass",
+          "evidence": "残差 = 0"
+        }
+      ],
+      "note": "所有自动验证项通过"
+    },
+    "routing": {
+      "path": "sympy",
+      "reason": "命中确定性题库关键词 → 符号计算（结果可验证）"
+    }
+  },
+  {
+    "problem_id": "6",
+    "problem_text": "解二阶常系数齐次线性微分方程\n\n$$y'' + y = 0$$\n\n求其通解。\n\n---",
+    "solved": true,
+    "steps": [
+      "识别方程（移项后）：$y{\\left(x \\right)} + \\frac{d^{2}}{d x^{2}} y{\\left(x \\right)} = 0$。",
+      "调用符号求解器 dsolve 求通解。",
+      "通解：$y{\\left(x \\right)} = C_{1} \\sin{\\left(x \\right)} + C_{2} \\cos{\\left(x \\right)}$。",
+      "题目未给初始条件，故给出通解。",
+      "**残差验证**：将解代回原方程，残差恒为 0，解正确。"
+    ],
+    "answer": "Eq(y(x), C1*sin(x) + C2*cos(x))",
+    "answer_latex": "y{\\left(x \\right)} = C_{1} \\sin{\\left(x \\right)} + C_{2} \\cos{\\left(x \\right)}",
+    "solver": "sympy:ode.dsolve",
+    "sub_solutions": [],
+    "verification": {
+      "verdict": "pass",
+      "n_checks": 1,
+      "n_pass": 1,
+      "n_fail": 0,
+      "n_skip": 0,
+      "checks": [
+        {
+          "check": "残差验证",
+          "verdict": "pass",
+          "evidence": "残差 = 0"
+        }
+      ],
+      "note": "所有自动验证项通过"
+    },
+    "routing": {
+      "path": "sympy",
+      "reason": "命中确定性题库关键词 → 符号计算（结果可验证）"
+    }
+  },
+  {
+    "problem_id": "7",
+    "problem_text": "一质量为 $2\\,\\mathrm{kg}$ 的物体受到合力 $F = 10\\,\\mathrm{N}$ 的作用，\n求该物体的加速度 $a$（用牛顿第二定律）。\n\n---",
+    "solved": true,
+    "steps": [
+      "牛顿第二定律 $F = ma$。",
+      "由题面读得 $F = 10\\,\\mathrm{N}$，$m = 2\\,\\mathrm{kg}$。",
+      "$a = \\frac{F}{m} = \\frac{10}{2} = 5\\,\\mathrm{m/s^2}$。"
+    ],
+    "answer": "a = 5.000 m/s²",
+    "answer_latex": "a = 5\\,\\mathrm{m/s^2}",
+    "solver": "physics:newton2",
+    "sub_solutions": [],
+    "verification": {
+      "verdict": "pass",
+      "n_checks": 1,
+      "n_pass": 1,
+      "n_fail": 0,
+      "n_skip": 0,
+      "checks": [
+        {
+          "check": "量纲齐次性",
+          "verdict": "pass",
+          "evidence": "公式 N = kg·m/s^2 两侧量纲一致"
+        }
+      ],
+      "note": "所有自动验证项通过"
+    },
+    "routing": {
+      "path": "sympy",
+      "reason": "命中确定性题库关键词 → 符号计算（结果可验证）"
+    }
+  },
+  {
+    "problem_id": "8",
+    "problem_text": "电路中电压 $U = 220\\,\\mathrm{V}$ 加在电阻 $R = 55\\,\\mathrm{ohm}$ 两端，\n求通过电阻的电流 $I$（用欧姆定律）。\n\n---",
+    "solved": true,
+    "steps": [
+      "欧姆定律 $I = \\dfrac{V}{R}$。",
+      "$V = 220\\,\\mathrm{V}$，$R = 55\\,\\mathrm{\\Omega}$。",
+      "$I = \\dfrac{220}{55} = 4\\,\\mathrm{A}$。"
+    ],
+    "answer": "4.000 A",
+    "answer_latex": "I = 4\\,\\mathrm{A}",
+    "solver": "physics:ohm",
+    "sub_solutions": [],
+    "verification": {
+      "verdict": "pass",
+      "n_checks": 1,
+      "n_pass": 1,
+      "n_fail": 0,
+      "n_skip": 0,
+      "checks": [
+        {
+          "check": "量纲齐次性",
+          "verdict": "pass",
+          "evidence": "公式 I = V/R 两侧量纲一致"
+        }
+      ],
+      "note": "所有自动验证项通过"
+    },
+    "routing": {
+      "path": "sympy",
+      "reason": "命中确定性题库关键词 → 符号计算（结果可验证）"
+    }
+  },
+  {
+    "problem_id": "9",
+    "problem_text": "两个点电荷 $q_1 = 2\\,\\mathrm{C}$ 与 $q_2 = 3\\,\\mathrm{C}$ 相距 $r = 1\\,\\mathrm{m}$，\n求它们之间的库仑力大小。\n\n---",
+    "solved": true,
+    "steps": [
+      "库仑定律 $F = k\\dfrac{q_1q_2}{r^2}$，$k = 8.99\\times10^9\\,\\mathrm{N\\,m^2/C^2}$。",
+      "$q_1 = 2\\,\\mathrm{C}$，$q_2 = 3\\,\\mathrm{C}$，$r = 1\\,\\mathrm{m}$。",
+      "$F = 8.99\\times10^9 \\times \\dfrac{2\\times3}{1^2} = 53940000000\\,\\mathrm{N}$。"
+    ],
+    "answer": "5.394E+10 N",
+    "answer_latex": "F = 53940000000\\,\\mathrm{N}",
+    "solver": "physics:coulomb",
+    "sub_solutions": [],
+    "verification": {
+      "verification": {
+        "checked": true,
+        "formula": "F = k q1 q2 / r^2",
+        "note": "k 已含单位，C²/m² = N²·k²/(N·m²)，量纲相容"
+      },
+      "extraction": [
+        "显式: q_1=2.0 C → q1",
+        "显式: q_2=3.0 C → q2",
+        "显式: r=1.0 m → r",
+        "显式: q_1=2.0 C → q1",
+        "显式: q_2=3.0 C → q2",
+        "显式: r=1.0 m → r",
+        "跳过: 标签 F 与单位 C 不相容（值 2.0）"
+      ]
+    },
+    "routing": {
+      "path": "sympy",
+      "reason": "命中确定性题库关键词 → 符号计算（结果可验证）"
+    }
+  },
+  {
+    "problem_id": "10",
+    "problem_text": "一个物体从 $h = 45\\,\\mathrm{m}$ 高处自由落下，\n求它落地所需的时间与落地速度（取 $g = 9.8\\,\\mathrm{m/s^2}$）。\n\n---",
+    "solved": true,
+    "steps": [
+      "取竖直向下为正方向，重力加速度 $g = 9.8\\,\\mathrm{m/s^2}$（取自题面）",
+      "由自由落体公式 $h = \\tfrac12 g t^2$ 解出下落时间。",
+      "$t = \\sqrt{\\frac{2h}{g}} = \\sqrt{\\frac{2 \\times 45}{9.8}} = 3.03\\,\\mathrm{s}$。",
+      "落地速度 $v = gt = 9.8 \\times 3.03 = 29.7\\,\\mathrm{m/s}$。"
+    ],
+    "answer": "t ≈ 3.030 s，v ≈ 29.70 m/s",
+    "answer_latex": "t = 3.03\\,\\mathrm{s},\\quad v = 29.7\\,\\mathrm{m/s}",
+    "solver": "physics:free_fall",
+    "sub_solutions": [],
+    "verification": {
+      "verdict": "pass",
+      "n_checks": 1,
+      "n_pass": 1,
+      "n_fail": 0,
+      "n_skip": 0,
+      "checks": [
+        {
+          "check": "量纲齐次性",
+          "verdict": "pass",
+          "evidence": "公式 h = \\frac{1}{2} g t^2 两侧量纲一致"
+        }
+      ],
+      "note": "所有自动验证项通过"
+    },
+    "routing": {
+      "path": "sympy",
+      "reason": "命中确定性题库关键词 → 符号计算（结果可验证）"
+    }
+  },
+  {
+    "problem_id": "11",
+    "problem_text": "（超出当前求解器支持范围，用于测试诚实失败行为）\n请证明：对任意 $n \\times n$ 可逆矩阵 $A$，其特征值均不为零。\n\n---",
+    "solved": false,
+    "steps": [],
+    "answer": null,
+    "answer_latex": "",
+    "solver": "none",
+    "reason": "LLM 已禁用，且该题不属确定性题库",
+    "sub_solutions": [],
+    "routing": {
+      "path": "none",
+      "reason": "证明/说理类 → 符号引擎无能为力，交由大模型推理"
+    }
+  },
+  {
+    "problem_id": "12",
+    "problem_text": "设某区间上的分段函数为\n\n$$f(x) = \\begin{cases} x^2 & x < 0 \\\\ -x & x \\ge 0 \\end{cases}$$\n\n求 $\\lim_{x \\to 0} f(x)$，并判断 $f$ 在 $x = 0$ 处是否连续。",
+    "solved": false,
+    "steps": [],
+    "answer": null,
+    "answer_latex": "",
+    "solver": "none",
+    "reason": "LLM 已禁用，且该题不属确定性题库",
+    "sub_solutions": [],
+    "routing": {
+      "path": "none",
+      "reason": "概念/证明类（type=conceptual）→ 需要多步推理"
+    }
+  }
+]

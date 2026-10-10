@@ -1,0 +1,134 @@
+# ============================================================
+# T-box: 常微分方程（Ordinary Differential Equations）
+# ============================================================
+# Oracle sources:
+#   - Boyce & DiPrima, Elementary Differential Equations (2nd order linear)
+#   - 常微分方程标准教材：可分离变量、线性方程、常系数线性方程
+#
+# 关键设计：解必须通过**残差验证**（代回原方程残差为 0）才允许输出。
+# ============================================================
+
+domain: differential_equations
+version: "1.0"
+
+oracle_sources:
+  - type: textbook
+    ref: "Boyce & DiPrima, Elementary Differential Equations and Boundary Value Problems"
+    authority: primary
+    distilled_knowledge:
+      - "一阶可分离：dy/g(y)=dx/f(x)，分离后两侧积分"
+      - "一阶线性：y'+p(x)y=q(x)，积分因子 μ=e^{∫p dx}"
+      - "二阶常系数齐次：特征方程 r²+pr+q=0，根为实/复，重根需 x 因子"
+      - "实根 r₁,r₂ → y=c₁e^{r₁x}+c₂e^{r₂x}；复根 α±βi → e^{αx}(c₁cos βx+c₂sin βx)"
+      - "重根 r → y=(c₁+c₂x)e^{rx}"
+      - "非齐次：y=y_h+y_p，待定系数法或参数变易法"
+  - type: study_guide
+    ref: "常微分方程解题要点与常见错误"
+    authority: secondary
+    distilled_knowledge:
+      - "分离变量时丢解：y=0 或使分母为零的常值解必须单独检验"
+      - "特征根重数与通解中 x 的幂次一一对应"
+      - "初值问题的解唯一性：f 与 ∂f/∂y 在初值点邻域连续"
+      - "考试陷阱：把 y''+y=0 误读为 y=0"
+
+concepts:
+  - id: ode_first_order_separable
+    type: concept
+    name: "一阶可分离方程"
+    formal: "dy/dx = f(x)g(y) ⟹ ∫dy/g(y) = ∫f(x)dx + C（另需检验 g(y)=0 的常值解）"
+    keywords: [可分离, separable]
+
+  - id: ode_first_order_linear
+    type: concept
+    name: "一阶线性方程"
+    formal: "y'+p(x)y=q(x)，积分因子 μ(x)=e^{∫p(x)dx}，通解 y=μ^{-1}(∫μq dx + C)"
+    keywords: [一阶线性, 积分因子, linear, integrating factor]
+
+  - id: ode_second_order
+    type: concept
+    name: "二阶常系数线性齐次方程"
+    formal: "ay''+by'+cy=0；特征方程 ar²+br+c=0"
+    prerequisites: [ode_first_order_linear]
+    keywords: [二阶, 常系数, 特征方程, characteristic]
+
+  - id: ode_nonhomogeneous
+    type: concept
+    name: "非齐次线性方程"
+    formal: "y = y_h + y_p；y_p 由待定系数法或参数变易法求出"
+    prerequisites: [ode_second_order]
+    keywords: [非齐次, particular, 特解]
+
+  - id: ode_initial_value
+    type: concept
+    name: "初值问题"
+    formal: "给出 y(x₀)=y₀（及必要的 y'(x₀)=y₁）确定特解"
+    prerequisites: [ode_second_order]
+    keywords: [初始条件, 初值, initial condition]
+
+  - id: ode_laplace
+    type: concept
+    name: "拉普拉斯变换法"
+    formal: "L{y'}=sY-s·y(0)；把初值问题化为代数方程后反变换"
+    prerequisites: [ode_first_order_linear]
+    keywords: [拉普拉斯, 变换, laplace]
+    status: "未实现（规划中）"
+
+solution_methods:
+  - id: ode_dsolve
+    type: solution_method
+    concept: ode_second_order
+    name: "符号通解求解 + 残差验证"
+    applies_when: "题目给出任意常系数/可分离/一阶线性 ODE"
+    tool: sympy
+    implementation: "scripts/solve_extended.py :: solve_ode_extended"
+    output_form: "通解（必要时含特解）"
+    validation: "把解代回原方程，残差必须为 0"
+
+classification_rules:
+  - priority: 100
+    pattern:
+      text_contains: ["拉普拉斯", "laplace"]
+    maps_to: ode_laplace
+    solver: null
+    reason: "拉普拉斯法尚未实现，将回退到 dsolve 或转 LLM"
+  - priority: 90
+    pattern:
+      text_contains: ["二阶", "常系数", "特征方程"]
+    maps_to: ode_second_order
+    solver: ode_dsolve
+  - priority: 80
+    pattern:
+      text_contains: ["一阶线性", "积分因子"]
+    maps_to: ode_first_order_linear
+    solver: ode_dsolve
+  - priority: 70
+    pattern:
+      text_contains: ["可分离"]
+    maps_to: ode_first_order_separable
+    solver: ode_dsolve
+  - priority: 60
+    pattern:
+      text_contains: ["初始条件", "初值"]
+    maps_to: ode_initial_value
+    solver: ode_dsolve
+  - priority: 50
+    pattern:
+      text_contains: ["微分方程", "通解", "特解", "dsolve"]
+    maps_to: ode_second_order
+    solver: ode_dsolve
+
+validation_rules:
+  - id: v_ode_residual
+    applies_to: ode_dsolve
+    rule: |
+      把求解结果代入原方程左端，减右端，simplify 后必须 == 0。
+      ⚠️ 这是必需关卡：实测曾出现 dsolve 返回 y=C1-2xy
+      （形式正确但代回残差不为零）的错误答案，
+      若无此验证，错误会直接流入最终 PDF。
+    severity: blocking
+
+known_limitations:
+  - "拉普拉斯变换法未实现"
+  - "偏微分方程未覆盖"
+  - "非线性自治系统的相图未实现"
+  - "分段/非光滑系数区间讨论未实现"

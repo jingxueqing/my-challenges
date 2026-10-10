@@ -1,0 +1,34 @@
+# C4C 作业自动求解与排版 —— 依赖清单
+#
+# 安装：pip install -r requirements.txt
+#
+# 说明：核心求解链路只需 sympy + pyyaml；
+# PDF 生成需要 matplotlib（用于无 LaTeX 环境下的 mathtext 后端）。
+
+# ── 必需 ──
+sympy>=1.12          # 符号计算：线代 / ODE / 微积分
+pyyaml>=6.0          # domain_skills 的 T-box 本体定义
+matplotlib>=3.7      # PDF 渲染（mathtext 后端）+ 图形绘制
+
+# ── 可选：多格式摄入 ──
+pdfplumber>=0.9      # 文本型 PDF 提取
+python-docx>=0.8     # Word 文档提取
+pypdf>=4.0           # PDF 备用提取器
+
+# ── 可选：扫描件 OCR（数学公式识别率低，不建议依赖）──
+# pytesseract>=0.3
+# Pillow>=10.0
+# pdf2image>=1.16
+# 另需本机安装 tesseract OCR 及 chi_sim 语言包
+
+# ── 说明：不需要任何大模型 SDK ──
+# Qwen / Kimi / DeepSeek 均通过 OpenAI 兼容的 /chat/completions 端点调用，
+# 本项目用标准库 urllib 实现，零第三方依赖、零版本冲突，便于教学场景分发。
+#
+# API key 通过环境变量提供：
+#   export DASHSCOPE_API_KEY=...   # Qwen3.6
+#   export MOONSHOT_API_KEY=...    # Kimi K2.5
+#   export DEEPSEEK_API_KEY=...    # DeepSeek
+#
+# 未配置 key 时不会伪造模型输出，自动降级为本地确定性后端，
+# 并在结果中如实标注 backend=local, degraded=True。
