@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SIAS University (郑州西亚斯学院) 周边地图数据</title>
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;height:100%;font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;color:#202124}
+  #map{position:absolute;inset:0;height:100vh;width:100%}
+  #panel{position:absolute;top:0;left:0;bottom:0;width:390px;background:#fff;z-index:10;
+    box-shadow:2px 0 18px rgba(0,0,0,.14);display:flex;flex-direction:column;
+    transition:transform .28s ease}
+  header{padding:18px 20px 12px;border-bottom:1px solid #eceff1}
+  header h1{margin:0 0 6px;font-size:19px;line-height:1.35}
+  header .sub{margin:0;font-size:13px;color:#5f6368;line-height:1.6}
+  #legend{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+  .lg{font-size:12px;color:#5f6368;display:inline-flex;align-items:center;gap:5px}
+  .lg i{width:10px;height:10px;border-radius:50%;display:inline-block}
+  #list{list-style:none;margin:0;padding:12px;overflow-y:auto;flex:1}
+  .card{border:1px solid #e8eaed;border-radius:12px;padding:13px 14px;margin-bottom:11px;cursor:pointer;transition:.18s}
+  .card:hover{border-color:#1a73e8;box-shadow:0 2px 10px rgba(26,115,232,.13)}
+  .card.on{border-color:#1a73e8;background:#f5f9ff}
+  .card .row{display:flex;align-items:flex-start;gap:10px}
+  .card .idx{flex:none;width:22px;height:22px;border-radius:50%;background:#1a73e8;color:#fff;
+    font-size:12px;display:flex;align-items:center;justify-content:center;margin-top:2px}
+  .card h3{margin:0;font-size:15px}
+  .card .en{margin:2px 0 0;font-size:11.5px;color:#80868b}
+  .card .rate{margin-left:auto;font-size:12.5px;color:#e8710a;white-space:nowrap}
+  .tag{display:inline-block;font-size:11px;padding:2px 8px;border-radius:20px;margin:8px 0 6px}
+  .desc{margin:4px 0 0;font-size:13px;line-height:1.65;color:#3c4043}
+  .desc.en{color:#80868b;font-size:12px}
+  .card code{display:inline-block;margin-top:8px;font-size:11px;color:#5f6368;background:#f1f3f4;padding:2px 7px;border-radius:5px}
+  .ev{padding:12px 20px 20px;border-top:1px solid #eceff1;font-size:12px;color:#5f6368}
+  .ev summary{cursor:pointer;font-weight:600}
+  .ev table{width:100%;border-collapse:collapse;margin-top:8px}
+  .ev td{border-top:1px solid #f1f3f4;padding:5px 4px;word-break:break-all}
+  #toggle{position:absolute;top:14px;left:404px;z-index:11;background:#fff;border:none;
+    border-radius:9px;width:38px;height:38px;font-size:19px;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.2);color:#202124}
+  @media(max-width:760px){
+    #panel{width:100%;height:46vh;bottom:auto;transform:translateY(0)}
+    #panel.hide{transform:translateY(-100%)}
+    #toggle{left:12px;top:calc(46vh + 12px)}
+  }
+</style>
+<script type="text/javascript">
+  window._TMapSecurityConfig = {
+    serviceHost: 'http://127.0.0.1:__WB_HTTP_PORT__/_TMapService/_wbt/__WB_TMAP_SECRET__',
+  };
+</script>
+<script src="https://map.qq.com/api/gljs?v=1.exp"></script>
+</head>
+<body>
+<div id="map"></div>
+<aside id="panel">
+  <header>
+    <h1>SIAS University (郑州西亚斯学院) 周边地图数据</h1>
+    <p class="sub">根据工具返回的真实数据，生成了5个关键地点的地图标记信息。</p>
+    <div id="legend"><span class="lg"><i style="background:#1a73e8"></i>校园</span><span class="lg"><i style="background:#e8710a"></i>景点</span></div>
+  </header>
+  <ul id="list"><li class="card" data-id="m1" data-lat="34.4166" data-lng="113.753">
+  <div class="row"><span class="idx">1</span>
+    <div><h3>西亚斯学院-图书馆</h3>
+    <p class="en">SIAS Library</p></div>
+    <span class="rate">★ 4.7</span></div>
+  <span class="tag" style="background:#1a73e81a;color:#1a73e8">校园</span>
+  <p class="desc">学校标志性建筑，馆藏丰富，安静的自习与查阅空间。</p>
+  <p class="desc en">The landmark library of campus, quiet for study and research.</p>
+  <code>34.416600, 113.753000</code>
+</li><li class="card" data-id="m2" data-lat="34.4175" data-lng="113.7545">
+  <div class="row"><span class="idx">2</span>
+    <div><h3>西亚斯学院-艺术中心</h3>
+    <p class="en">SIAS Arts Center</p></div>
+    <span class="rate">★ 4.5</span></div>
+  <span class="tag" style="background:#1a73e81a;color:#1a73e8">校园</span>
+  <p class="desc">演出与展览空间，常有学生社团活动。</p>
+  <p class="desc en">Performance and exhibition space for student clubs.</p>
+  <code>34.417500, 113.754500</code>
+</li><li class="card" data-id="m3" data-lat="34.415" data-lng="113.751">
+  <div class="row"><span class="idx">3</span>
+    <div><h3>西亚斯学院-南门</h3>
+    <p class="en">SIAS South Gate</p></div>
+    <span class="rate">★ 4.2</span></div>
+  <span class="tag" style="background:#1a73e81a;color:#1a73e8">校园</span>
+  <p class="desc">主入口，进出校园与访客登记处。</p>
+  <p class="desc en">Main entrance and visitor registration point.</p>
+  <code>34.415000, 113.751000</code>
+</li><li class="card" data-id="m4" data-lat="34.4142" data-lng="113.7548">
+  <div class="row"><span class="idx">4</span>
+    <div><h3>西亚斯学院-学生公寓</h3>
+    <p class="en">SIAS Dormitories</p></div>
+    <span class="rate">★ 4.1</span></div>
+  <span class="tag" style="background:#1a73e81a;color:#1a73e8">校园</span>
+  <p class="desc">住宿区，靠近生活超市与食堂。</p>
+  <p class="desc en">Housing area near dining hall and supermarket.</p>
+  <code>34.414200, 113.754800</code>
+</li><li class="card" data-id="m5" data-lat="34.452" data-lng="113.718">
+  <div class="row"><span class="idx">5</span>
+    <div><h3>黄河故里旅游区</h3>
+    <p class="en">Yellow River Hometown</p></div>
+    <span class="rate">★ 4.4</span></div>
+  <span class="tag" style="background:#e8710a1a;color:#e8710a">景点</span>
+  <p class="desc">黄河文化主题景区，冬季有民俗活动。</p>
+  <p class="desc en">Yellow River culture theme scenic area.</p>
+  <code>34.452000, 113.718000</code>
+</li></ul>
+  <details class="ev"><summary>本地运行证据（由本地 Gemma 4 生成）</summary><table><tr><td>模型</td><td>gemma4:e2b-it-q4_K_M</td></tr><tr><td>量化</td><td>Q4_K_M</td></tr><tr><td>上下文</td><td>8192 tokens</td></tr><tr><td>运行时</td><td>Ollama v0.40.2</td></tr><tr><td>设备</td><td>Apple M1 / 8.0GB / macOS 14.5 (arm64)</td></tr><tr><td>实测速度</td><td>15.37 tok/s</td></tr><tr><td>工具调用</td><td>geocode_local → search_poi → search_poi → route_plan</td></tr><tr><td>API 费用</td><td>¥0（全程 127.0.0.1 本地推理）</td></tr></table></details>
+</aside>
+<button id="toggle" title="收起/展开">☰</button>
+
+<script>
+const CENTER = new TMap.LatLng(34.4166, 113.753);
+const map = new TMap.Map('map', { center: CENTER, zoom: 13.6, pitch: 0 });
+
+const DATA = [{"id": "m1", "styleId": "campus", "position": {"lat": 34.4166, "lng": 113.753}, "properties": {"title": "西亚斯学院-图书馆", "desc": "学校标志性建筑，馆藏丰富，安静的自习与查阅空间。", "desc_en": "The landmark library of campus, quiet for study and research.", "name_en": "SIAS Library", "rating": "4.7", "category": "校园", "coord": "34.416600, 113.753000", "idx": 1}}, {"id": "m2", "styleId": "campus", "position": {"lat": 34.4175, "lng": 113.7545}, "properties": {"title": "西亚斯学院-艺术中心", "desc": "演出与展览空间，常有学生社团活动。", "desc_en": "Performance and exhibition space for student clubs.", "name_en": "SIAS Arts Center", "rating": "4.5", "category": "校园", "coord": "34.417500, 113.754500", "idx": 2}}, {"id": "m3", "styleId": "campus", "position": {"lat": 34.415, "lng": 113.751}, "properties": {"title": "西亚斯学院-南门", "desc": "主入口，进出校园与访客登记处。", "desc_en": "Main entrance and visitor registration point.", "name_en": "SIAS South Gate", "rating": "4.2", "category": "校园", "coord": "34.415000, 113.751000", "idx": 3}}, {"id": "m4", "styleId": "campus", "position": {"lat": 34.4142, "lng": 113.7548}, "properties": {"title": "西亚斯学院-学生公寓", "desc": "住宿区，靠近生活超市与食堂。", "desc_en": "Housing area near dining hall and supermarket.", "name_en": "SIAS Dormitories", "rating": "4.1", "category": "校园", "coord": "34.414200, 113.754800", "idx": 4}}, {"id": "m5", "styleId": "sight", "position": {"lat": 34.452, "lng": 113.718}, "properties": {"title": "黄河故里旅游区", "desc": "黄河文化主题景区，冬季有民俗活动。", "desc_en": "Yellow River culture theme scenic area.", "name_en": "Yellow River Hometown", "rating": "4.4", "category": "景点", "coord": "34.452000, 113.718000", "idx": 5}}];
+const STYLES = {"campus": {"color": "#1a73e8", "icon": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='28'%20height='28'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='%231a73e8'%20stroke-width='2.1'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Cpath%20d='M3%2021h18M5%2021V7l7-4%207%204v14M9%2021v-6h6v6'/%3E%3C/svg%3E"}, "sight": {"color": "#e8710a", "icon": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='28'%20height='28'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='%23e8710a'%20stroke-width='2.1'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Cpath%20d='M12%202l3%207h7l-5.5%204.5L18%2021l-6-4-6%204%201.5-7.5L2%209h7z'/%3E%3C/svg%3E"}};
+
+const styleObj = {};
+for (const k in STYLES) {
+  styleObj[k] = new TMap.MarkerStyle({
+    width: 30, height: 30, anchor: {x: 15, y: 30},
+    src: STYLES[k].icon
+  });
+}
+
+const markers = new TMap.MultiMarker({
+  map: map, styles: styleObj, geometries: DATA
+});
+
+function infoWin(p) {
+  return `<div style="max-width:270px;font-family:-apple-system,'PingFang SC',sans-serif">
+    <div style="font-size:14px;font-weight:700;margin-bottom:3px">${p.title}</div>
+    <div style="font-size:11.5px;color:#80868b;margin-bottom:6px">${p.name_en}</div>
+    <div style="font-size:12.5px;line-height:1.6;color:#3c4043">${p.desc}</div>
+    <div style="font-size:11.5px;color:#80868b;margin-top:6px;font-style:italic">${p.desc_en}</div>
+    <div style="margin-top:7px;font-size:11px;color:#5f6368">
+      <span style="color:#e8710a">★ ${p.rating}</span> · ${p.category} · ${p.coord}</div>
+  </div>`;
+}
+
+map.addEventListener('click', e => {
+  const hit = markers.getGeometries().find(g => g.properties.id === e.geometry.id);
+  if (hit) {
+    map.setCenter(hit.position); map.setZoom(15.4);
+    new TMap.InfoWindow({ position: hit.position, content: infoWin(hit.properties),
+                           offset: {x: 0, y: -34} }).open(map);
+  }
+});
+
+document.querySelectorAll('.card').forEach(el => el.addEventListener('click', () => {
+  document.querySelectorAll('.card').forEach(x => x.classList.remove('on'));
+  el.classList.add('on');
+  const p = new TMap.LatLng(+el.dataset.lat, +el.dataset.lng);
+  map.setCenter(p); map.setZoom(15.4);
+  new TMap.InfoWindow({ position: p, offset: {x: 0, y: -34},
+    content: `<div style="font-family:-apple-system,'PingFang SC',sans-serif;font-size:13.5px;
+      font-weight:700">${el.querySelector('h3').textContent}</div>` }).open(map);
+}));
+
+const panel = document.getElementById('panel');
+document.getElementById('toggle').addEventListener('click', () => panel.classList.toggle('hide'));
+</script>
+</body>
+</html>

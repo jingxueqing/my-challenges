@@ -1,0 +1,27 @@
+{
+  "requirement": "统计 1 到 100 之间的质数个数，并把前 5 个质数列出来，用 JSON 输出",
+  "result": {
+    "ok": true,
+    "explanation": "This script iterates through numbers from 1 to 100 to identify prime numbers using a trial division method. It counts the total number of primes found and collects the first five primes. Finally, it formats these results into a single-line JSON output.",
+    "stdout": "{\"prime_count\": 25, \"first_five_primes\": [2, 3, 5, 7, 11]}",
+    "latency_ms": 5079,
+    "attempts": 1,
+    "code_lines": 31
+  },
+  "perf": {
+    "calls": 1,
+    "total_eval_tokens": 976,
+    "total_ms": 53405,
+    "mean_tok_per_s": 18.28,
+    "per_call": [
+      {
+        "model": "gemma4:e2b-it-q4_K_M",
+        "prompt_tokens": 157,
+        "eval_tokens": 976,
+        "total_ms": 53405,
+        "load_ms": 19,
+        "tok_per_s": 18.28
+      }
+    ]
+  }
+}

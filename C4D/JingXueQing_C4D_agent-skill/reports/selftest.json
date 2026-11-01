@@ -1,0 +1,41 @@
+{
+  "passed": 7,
+  "total": 7,
+  "checks": [
+    {
+      "label": "geocode_local 命中",
+      "pass": true,
+      "detail": "conf=0.5"
+    },
+    {
+      "label": "reverse_geocode 合理",
+      "pass": true,
+      "detail": "西亚斯学院-图书馆"
+    },
+    {
+      "label": "search_poi 命中",
+      "pass": true,
+      "detail": "count=1"
+    },
+    {
+      "label": "route_plan 计算",
+      "pass": true,
+      "detail": "1.421km / 17.8min"
+    },
+    {
+      "label": "score_poi 可解释",
+      "pass": true,
+      "detail": "score=96.1"
+    },
+    {
+      "label": "haversine 精度",
+      "pass": true,
+      "detail": "实测 111.20km（理论 111.19）"
+    },
+    {
+      "label": "非法参数抛错",
+      "pass": true,
+      "detail": ""
+    }
+  ]
+}

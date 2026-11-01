@@ -1,0 +1,46 @@
+{
+  "model": "gemma4:e2b-it-q4_K_M",
+  "quant": "Q4_K_M",
+  "task": "请规划一条从西亚斯学院出发的一日路线，包含至少 4 个地点，并说明每一段的距离。先调用工具获取真实坐标。",
+  "rows": [
+    {
+      "num_ctx": 1024,
+      "model": "gemma4:e2b-it-q4_K_M",
+      "ok": true,
+      "mean_tok_per_s": 14.43,
+      "first_call_ms": 53090,
+      "markers": 0,
+      "tool_ok": 2,
+      "tool_calls": 2,
+      "wall_seconds": 240.08
+    },
+    {
+      "num_ctx": 2048,
+      "model": "gemma4:e2b-it-q4_K_M",
+      "ok": false,
+      "error": "RuntimeError: 结构化输出在3 轮内失败：模型返回空字符串"
+    },
+    {
+      "num_ctx": 4096,
+      "model": "gemma4:e2b-it-q4_K_M",
+      "ok": true,
+      "mean_tok_per_s": 19.27,
+      "first_call_ms": 52902,
+      "markers": 5,
+      "tool_ok": 4,
+      "tool_calls": 4,
+      "wall_seconds": 244.75
+    },
+    {
+      "num_ctx": 8192,
+      "model": "gemma4:e2b-it-q4_K_M",
+      "ok": true,
+      "mean_tok_per_s": 12.91,
+      "first_call_ms": 55809,
+      "markers": 5,
+      "tool_ok": 4,
+      "tool_calls": 4,
+      "wall_seconds": 338.28
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+time=2026-10-10T17:41:56.215+08:00 level=INFO source=routes.go:2435 msg="Listening on 127.0.0.1:11434 (version 0.40.2)"
+time=2026-10-10T17:42:21.857+08:00 level=INFO source=types.go:32 msg="inference compute" id=0 filter_id=0 library=Metal compute=0.0 name=MTL0 description="Apple M1" libdirs="" driver=0.0 pci_id="" type=iGPU total="5.3 GiB" available="5.3 GiB"

@@ -1,0 +1,21 @@
+{
+  "is_campus_photo": true,
+  "scene": "大学校园建筑",
+  "scene_zh": "教学楼或行政楼",
+  "guess_category": "nature",
+  "confidence": 0.85,
+  "tags": [
+    "教学楼",
+    "行政楼",
+    "砖建筑",
+    "大学建筑"
+  ],
+  "_stat": {
+    "model": "gemma4:e2b-it-q4_K_M",
+    "prompt_tokens": 311,
+    "eval_tokens": 600,
+    "total_ms": 48481,
+    "load_ms": 53,
+    "tok_per_s": 12.38
+  }
+}
