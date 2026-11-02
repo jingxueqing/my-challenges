@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Elite 20 提交数据仪表盘</title>
+<meta name="description" content="课程提交数据仪表盘：谁提交了什么、什么时候提交、每个挑战缺了什么">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand-row">
+      <div class="brand-mark">C6A</div>
+      <div class="brand-text">
+        <h1>Elite 20 提交数据仪表盘</h1>
+        <p>数据生成于 <span class="num" id="gen-time">—</span> ｜ <span id="ds-brief"></span> ｜ 全部来自本机真实提交包</p>
+      </div>
+      <div class="top-tools">
+        <label class="search">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4.2-4.2"/></svg>
+          <input id="q" type="search" placeholder="搜学生 / 挑战 / 缺失项…" autocomplete="off" aria-label="搜索">
+          <span class="kbd">/</span>
+        </label>
+      </div>
+    </div>
+    <nav class="tabs" role="tablist">
+      <button role="tab" data-tab="overview" aria-selected="true">总览</button>
+      <button role="tab" data-tab="students">按学生</button>
+      <button role="tab" data-tab="challenges">按挑战</button>
+      <button role="tab" data-tab="timeline">时间线</button>
+      <button role="tab" data-tab="missing">缺失项</button>
+      <button role="tab" data-tab="method">方法与口径</button>
+    </nav>
+    <div id="filters" style="display:none;gap:6px;padding:10px 0 12px;align-items:center">
+      <button class="chip pill complete" data-status="all" aria-pressed="true">全部</button>
+      <button class="chip pill complete" data-status="complete" aria-pressed="false">只看完整</button>
+      <button class="chip pill partial" data-status="partial" aria-pressed="false">只看缺件</button>
+      <span style="font-size:11.5px;color:var(--muted);margin-left:6px">筛选只作用于记录列表，不改动总览矩阵</span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div id="view" class="view active"></div>
+</main>
+
+<footer class="foot">
+  <span>C6A 提交数据仪表盘 · 纯静态页面，零依赖</span>
+  <span>快捷键：<span class="kbd">/</span> 搜索 · <span class="kbd">Esc</span> 关闭详情</span>
+  <span>数据与 Excel 由同一份 submissions.json 生成，口径一致</span>
+</footer>
+
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="drawer" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="drawer-title">
+  <header>
+    <div>
+      <h2 id="drawer-title">记录详情</h2>
+      <div class="sub" id="drawer-sub"></div>
+    </div>
+    <button class="close" id="drawer-close" aria-label="关闭">✕</button>
+  </header>
+  <div class="body" id="drawer-body"></div>
+</aside>
+
+<script id="c6a-data" type="application/json">/*__C6A_DATA__*/</script>
+<script src="assets/app.js"></script>
+</body>
+</html>

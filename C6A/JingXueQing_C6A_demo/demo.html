@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>C6A demo ｜ 提交数据仪表盘演示</title>
+<style>
+:root{--bg:#0f1420;--card:#182031;--line:#28324a;--tx:#e8edf7;--mut:#93a1bd;--acc:#5b9dff;--ok:#37d39b}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.7 -apple-system,"PingFang SC","Microsoft YaHei",sans-serif}
+.wrap{max-width:1080px;margin:0 auto;padding:40px 24px 72px}
+h1{font-size:28px;margin:0 0 8px;letter-spacing:.5px}
+.sub{color:var(--mut);font-size:14px;margin-bottom:28px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin:0 0 32px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.stat b{display:block;font-size:24px;color:var(--acc);line-height:1.2}
+.stat span{font-size:12px;color:var(--mut)}
+.cta{display:inline-block;background:var(--acc);color:#06101f;font-weight:600;text-decoration:none;
+     padding:11px 20px;border-radius:10px;margin:0 10px 32px 0}
+.cta.ghost{background:transparent;color:var(--acc);border:1px solid var(--acc)}
+h2{font-size:18px;margin:36px 0 16px;padding-left:10px;border-left:3px solid var(--acc)}
+figure{margin:0 0 28px;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+figure img{display:block;width:100%;height:auto;border-bottom:1px solid var(--line)}
+figcaption{padding:14px 18px}
+figcaption b{color:var(--ok);font-size:14px}
+figcaption p{margin:6px 0 0;color:var(--mut);font-size:14px}
+.note{background:#141b2b;border:1px solid var(--line);border-left:3px solid var(--ok);
+      border-radius:10px;padding:14px 18px;color:var(--mut);font-size:14px;margin:28px 0}
+code{background:#0b1220;padding:2px 6px;border-radius:5px;color:#a8c7fa;font-size:13px}
+footer{margin-top:44px;padding-top:20px;border-top:1px solid var(--line);color:var(--mut);font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>C6A demo ｜ 提交数据仪表盘演示</h1>
+  <div class="sub">JingXueQing（景雪晴）｜ 学号 2024102110351 ｜ 挑战 <code>ch-20260717031528-w43gy7</code></div>
+
+  <div class="stats">
+    <div class="stat"><b>19</b><span>提交包</span></div>
+    <div class="stat"><b>3</b><span>学生</span></div>
+    <div class="stat"><b>20</b><span>挑战</span></div>
+    <div class="stat"><b>16</b><span>交付记录</span></div>
+    <div class="stat"><b>264</b><span>文件</span></div>
+    <div class="stat"><b>90%</b><span>平均完整度</span></div>
+  </div>
+
+  <a class="cta" href="../JingXueQing_C6A_仪表盘/index.html">▶ 打开交互式仪表盘</a>
+  <a class="cta ghost" href="../README_提交说明.md">提交说明</a>
+
+  <div class="note">
+    这个 demo 页是<strong>零依赖走查入口</strong>：不用装 Node、不用起服务器，双击就能看完 7 个核心界面。
+    真正可点、可筛选、可导出的页面在 <code>JingXueQing_C6A_仪表盘/index.html</code>。
+  </div>
+
+  <h2>7 屏走查</h2>
+
+  <figure>
+    <img src="../JingXueQing_C6A_screenshots/01_总览.png" alt="总览">
+    <figcaption><b>01 总览</b><p>一眼看全：总包数、学生数、平均完整度，以及「谁在哪个挑战上缺东西」的热力图。</p></figcaption>
+  </figure>
+
+  <figure>
+    <img src="../JingXueQing_C6A_screenshots/02_按学生.png" alt="按学生">
+    <figcaption><b>02 按学生</b><p>切到单个人：他交了哪几个挑战、每个包完整度多少、缺哪些必交项。</p></figcaption>
+  </figure>
+
+  <figure>
+    <img src="../JingXueQing_C6A_screenshots/03_按挑战.png" alt="按挑战">
+    <figcaption><b>03 按挑战</b><p>切到单个挑战：谁交了、谁没交、各自的完整度分布，方便判断整体进度。</p></figcaption>
+  </figure>
+
+  <figure>
+    <img src="../JingXueQing_C6A_screenshots/04_时间线.png" alt="时间线">
+    <figcaption><b>04 时间线</b><p>按提交时间排序，看的是<strong>节奏</strong>：谁卡在截止前、哪几天集中交。</p></figcaption>
+  </figure>
+
+  <figure>
+    <img src="../JingXueQing_C6A_screenshots/05_缺失项.png" alt="缺失项">
+    <figcaption><b>05 缺失项</b><p>把所有「应该交但没交」的项拉成一张清单，可以直接照着催。</p></figcaption>
+  </figure>
+
+  <figure>
+    <img src="../JingXueQing_C6A_screenshots/06_方法与口径.png" alt="方法与口径">
+    <figcaption><b>06 方法与口径</b><p>数据怎么来的、完整度怎么算的、哪些是推断、哪些是实测——口径写在页面里，不靠口头解释。</p></figcaption>
+  </figure>
+
+  <figure>
+    <img src="../JingXueQing_C6A_screenshots/07_记录详情.png" alt="记录详情">
+    <figcaption><b>07 记录详情</b><p>点任意格子下钻到单条记录：这个包里到底有哪些文件、命中/遗漏了哪几条必交项。</p></figcaption>
+  </figure>
+
+  <footer>
+    演示用截图来自本机实跑结果；数据源与重算方式见 <code>JingXueQing_C6A_数据说明.md</code> 与 <code>JingXueQing_C6A_教学说明.md</code>。<br>
+    JingXueQing ｜ C6A 提交数据仪表盘
+  </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+{
+  "schema_version": "c6a-1.0",
+  "roots": [
+    {
+      "path": "/Users/jingxueqing/Desktop/挑战的产物",
+      "label": "本机交付目录（JingXueQing 全部挑战交付物）",
+      "kind": "delivery_root"
+    },
+    {
+      "path": "/Users/jingxueqing/Desktop/挑战的产物/C4A-交付_JingXueQing_技能提交自动评审器_另版含真实评审输入/真实评审输入",
+      "label": "C4A 评审输入（其余同学的真实 C4 提交）",
+      "kind": "review_input_root"
+    },
+    {
+      "path": "/Users/jingxueqing/Desktop",
+      "label": "桌面根（C6A 交付包已从交付目录移出，单独登记）",
+      "kind": "delivery_root",
+      "include_only": [
+        "C6A-交付_JingXueQing_提交数据仪表盘"
+      ]
+    }
+  ],
+  "challenge_doc_root": "/Users/jingxueqing/Desktop/我的挑战",
+  "max_depth": 2,
+  "ignore_dirs": [
+    ".git",
+    "node_modules",
+    "__pycache__",
+    ".venv",
+    "venv",
+    ".idea",
+    ".vscode",
+    ".DS_Store",
+    "work",
+    "evidence",
+    "logs",
+    "corpus",
+    "course-zh",
+    "pipeline",
+    "samples",
+    "scripts",
+    "tests",
+    "评审产物",
+    "评审输入样例",
+    "可选补充",
+    "真实评审输入",
+    "评审输入",
+    "review_input"
+  ],
+  "ignore_file_globs": [
+    "*.pyc",
+    ".DS_Store",
+    "*.tmp"
+  ],
+  "student_aliases": {
+    "jingxueqing": "JingXueQing",
+    "JingXueQing": "JingXueQing",
+    "景雪晴": "JingXueQing",
+    "wechatgroup": "WeChatGroup",
+    "WeChatGroup": "WeChatGroup",
+    "elite20ta": "Elite20TA",
+    "Elite20TA": "Elite20TA"
+  },
+  "students": {
+    "JingXueQing": {
+      "name_pinyin": "jingxueqing",
+      "student_id": "2024102110351",
+      "major": "AI+X 实验班",
+      "note": "本人；数据来自本机交付目录"
+    },
+    "WeChatGroup": {
+      "name_pinyin": "wechatgroup",
+      "student_id": "",
+      "major": "AI+X 实验班",
+      "note": "群聊账号名的提交包（C4A 真实评审输入里出现），非真实姓名"
+    },
+    "Elite20TA": {
+      "name_pinyin": "elite20ta",
+      "student_id": "",
+      "major": "AI+X 实验班",
+      "note": "助教/示例账号提交包（C4A 真实评审输入里出现），非真实姓名"
+    }
+  },
+  "folder_owner_patches": {
+    "C1-交付_stanford-vibe-coding-zh": {
+      "student": "JingXueQing",
+      "challenge": "C1",
+      "reason": "文件夹名未含姓名（写成 stanford-vibe-coding-zh），按本机交付目录归属本人补丁"
+    },
+    "C4-提交_JingXueQing_ai-log-forge": {
+      "student": "JingXueQing",
+      "challenge": "C4",
+      "reason": "文件夹名为「提交」而非「交付」前缀，按目录内文件名规范归属"
+    }
+  },
+  "review_integration": {
+    "enabled": true,
+    "source": "/Users/jingxueqing/Desktop/挑战的产物/C4A-交付_JingXueQing_技能提交自动评审器_另版含真实评审输入/评审输出/评审结果.json",
+    "challenge": "C4",
+    "note": "复用 C4A 技能的真实评审结果，给学生×挑战补上质量分（C6A Level 4「评审集成」）"
+  }
+}

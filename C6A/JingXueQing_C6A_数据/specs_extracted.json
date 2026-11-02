@@ -1,0 +1,794 @@
+{
+  "C10": {
+    "challenge_id": "C10",
+    "title": "Build Your Own Agent（构建你的长期智能体 第二大脑）",
+    "source_file": "/Users/jingxueqing/Desktop/我的挑战/挑战_C10 Build Your Own Agent（构建你的长期智能体 第二大脑）_4cwlrx_完整资料/CHALLENGE.md",
+    "items": [
+      {
+        "label": "系统架构说明",
+        "pattern": "姓名_C10_architecture.md",
+        "required": true,
+        "source_line": 284,
+        "source_text": "| 系统架构说明 | `姓名_C10_architecture.md` | 五层架构 + 设计决策 |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "Demo",
+        "pattern": "姓名_C10_demo.mp4",
+        "required": true,
+        "source_line": 285,
+        "source_text": "| Demo | `姓名_C10_demo.mp4` 或录屏 | Agent 执行一次完整 KSTAR 循环 |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "Skill 库",
+        "pattern": "姓名_C10_skills/",
+        "required": true,
+        "source_line": 286,
+        "source_text": "| Skill 库 | `姓名_C10_skills/` | 至少 5 个真实使用过的 Skill |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "使用记录",
+        "pattern": "姓名_C10_usage_log.md",
+        "required": true,
+        "source_line": 287,
+        "source_text": "| 使用记录 | `姓名_C10_usage_log.md` | 真实使用场景 + 实际效果 |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "系统级 AAR",
+        "pattern": "姓名_C10_AAR.md",
+        "required": true,
+        "source_line": 288,
+        "source_text": "| 系统级 AAR | `姓名_C10_AAR.md` | 整个系统的反思：什么设计对了、什么错了 |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "⚡ AI 日志",
+        "pattern": "姓名_C10_AI日志.md",
+        "required": true,
+        "source_line": 289,
+        "source_text": "| ⚡ AI 日志 | `姓名_C10_AI日志.md` | 构建过程的 AI 使用记录 |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "拿来说明",
+        "pattern": "姓名_C10_拿来说明.md",
+        "required": true,
+        "source_line": 290,
+        "source_text": "| 拿来说明 | `姓名_C10_拿来说明.md` | 参考来源 |",
+        "origin": "challenge_doc"
+      }
+    ],
+    "origin": "auto_extracted"
+  },
+  "C10H": {
+    "challenge_id": "C10H",
+    "title": "安装并驾驭 Hermes Agent",
+    "source_file": "/Users/jingxueqing/Desktop/我的挑战/挑战_C10H 安装并驾驭 Hermes Agent_rnur5a_完整资料/CHALLENGE.md",
+    "items": [
+      {
+        "label": "安装记录",
+        "pattern": "姓名_C10H_安装记录.md",
+        "required": true,
+        "source_line": 260,
+        "source_text": "| 安装记录 | `姓名_C10H_安装记录.md` | 安装过程截图 + 遇到的问题 + 解决方法 |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "使用演示",
+        "pattern": "姓名_C10H_demo.mp4",
+        "required": true,
+        "source_line": 261,
+        "source_text": "| 使用演示 | `姓名_C10H_demo.mp4` 或截图 | CLI 对话 + 平台接入 + 技能演示 |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "配置说明",
+        "pattern": "姓名_C10H_配置说明.md",
+        "required": true,
+        "source_line": 262,
+        "source_text": "| 配置说明 | `姓名_C10H_配置说明.md` | LLM 选择、平台配置、SOUL.md 定制 |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "技能文件",
+        "pattern": "姓名_C10H_自定义技能/",
+        "required": false,
+        "source_line": 263,
+        "source_text": "| 技能文件 | `姓名_C10H_自定义技能/` | 自定义创建的技能（如有） |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "⚡ AI 日志（必须）",
+        "pattern": "姓名_C10H_AI日志.md",
+        "required": true,
+        "source_line": 264,
+        "source_text": "| ⚡ AI 日志（必须） | `姓名_C10H_AI日志.md` | 安装和配置过程中的 AI 使用记录。**无此项无法评审。** |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "拿来说明",
+        "pattern": "姓名_C10H_拿来说明.md",
+        "required": true,
+        "source_line": 265,
+        "source_text": "| 拿来说明 | `姓名_C10H_拿来说明.md` | 从 Hermes Agent 拿了什么、自己做了什么 |",
+        "origin": "challenge_doc"
+      }
+    ],
+    "origin": "auto_extracted"
+  },
+  "C2A": {
+    "challenge_id": "C2A",
+    "title": "C9：衡量 AGI 的认知能力",
+    "source_file": "/Users/jingxueqing/Desktop/我的挑战/挑战_C2A C9：衡量 AGI 的认知能力_tlg70p_完整资料/CHALLENGE.md",
+    "items": [
+      {
+        "label": "提案正文",
+        "pattern": "姓名_C2A_proposal.md",
+        "required": true,
+        "source_line": 102,
+        "source_text": "| 提案正文 | `姓名_C2A_proposal.md` 或 `.pdf` | 800–1500 字，含以上四部分 |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "⚡ AI 日志",
+        "pattern": "姓名_C2A_AI日志.md",
+        "required": true,
+        "source_line": 103,
+        "source_text": "| ⚡ AI 日志 | `姓名_C2A_AI日志.md` | 论文精读、方案构思、写作过程中的 AI 使用记录 |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "拿来说明",
+        "pattern": "姓名_C2A_拿来说明.md",
+        "required": true,
+        "source_line": 104,
+        "source_text": "| 拿来说明 | `姓名_C2A_拿来说明.md` | 参考了哪些已有 benchmark、论文、框架（可合并到提案中） |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "Benchmark 代码",
+        "pattern": "姓名_C9_benchmark/",
+        "required": true,
+        "source_line": 180,
+        "source_text": "| Benchmark 代码 | `姓名_C9_benchmark/` 或 GitHub 链接 | 完整代码 + README |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "任务说明文档",
+        "pattern": "姓名_C9_task说明.md",
+        "required": true,
+        "source_line": 181,
+        "source_text": "| 任务说明文档 | `姓名_C9_task说明.md` | 评估任务描述 + 评分标准 |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "测试结果",
+        "pattern": "姓名_C9_测试结果.md",
+        "required": true,
+        "source_line": 182,
+        "source_text": "| 测试结果 | `姓名_C9_测试结果.md` | 至少一个模型的测试数据 |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "反思报告",
+        "pattern": "姓名_C9_反思报告.md",
+        "required": true,
+        "source_line": 183,
+        "source_text": "| 反思报告 | `姓名_C9_反思报告.md` | 500–800 字 |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "⚡ AI 日志",
+        "pattern": "姓名_C9_AI日志.md",
+        "required": true,
+        "source_line": 184,
+        "source_text": "| ⚡ AI 日志 | `姓名_C9_AI日志.md` | 开发全过程 AI 使用记录 |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "拿来说明",
+        "pattern": "姓名_C9_拿来说明.md",
+        "required": true,
+        "source_line": 185,
+        "source_text": "| 拿来说明 | `姓名_C9_拿来说明.md` | 参考的 benchmark、代码、论文 |",
+        "origin": "challenge_doc"
+      }
+    ],
+    "origin": "auto_extracted"
+  },
+  "C2G": {
+    "challenge_id": "C2G",
+    "title": "参数高尔夫 —— 极限约束下的语言模型训练",
+    "source_file": "/Users/jingxueqing/Desktop/我的挑战/挑战_C2G 参数高尔夫 —— 极限约束下的语言模型训练_b8wyg0_完整资料/CHALLENGE.md",
+    "items": [
+      {
+        "label": "Level 1",
+        "pattern": "姓名_C2G_方案草案.md",
+        "required": true,
+        "source_line": 251,
+        "source_text": "| **Level 1** | **$25** 算力券（约 1–2 次完整 8×H100 跑） | 提交 `姓名_C2G_方案草案.md`（≥ 500 字） |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "方案设计文档",
+        "pattern": "姓名_C2G_方案设计.md",
+        "required": true,
+        "source_line": 300,
+        "source_text": "| **方案设计文档** | `姓名_C2G_方案设计.md` | 目标 Level、技术选型、实验矩阵（在方案草案基础上扩展） |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "训练代码",
+        "pattern": "姓名_C2G_train_gpt.py",
+        "required": true,
+        "source_line": 301,
+        "source_text": "| **训练代码** | `姓名_C2G_train_gpt.py` | 最终提交的训练脚本 |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "16MB Artifact",
+        "pattern": "姓名_C2G_submission.tar.gz",
+        "required": true,
+        "source_line": 302,
+        "source_text": "| **16MB Artifact** | `姓名_C2G_submission.tar.gz` | 含代码 + 压缩权重 + tokenizer |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "提交元数据",
+        "pattern": "姓名_C2G_submission.json",
+        "required": true,
+        "source_line": 303,
+        "source_text": "| **提交元数据** | `姓名_C2G_submission.json` | BPB、训练时间、硬件、seed |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "训练日志",
+        "pattern": "姓名_C2G_logs/",
+        "required": true,
+        "source_line": 304,
+        "source_text": "| **训练日志** | `姓名_C2G_logs/` | 至少 3 个独立 seed 的完整日志 |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "消融实验报告",
+        "pattern": "姓名_C2G_ablation.md",
+        "required": true,
+        "source_line": 305,
+        "source_text": "| **消融实验报告** | `姓名_C2G_ablation.md` | 每个组件的单独贡献 + 组合效应 |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "BPB 对比表",
+        "pattern": "姓名_C2G_leaderboard.md",
+        "required": true,
+        "source_line": 306,
+        "source_text": "| **BPB 对比表** | `姓名_C2G_leaderboard.md` | 你的方案 vs baseline vs 当前 SOTA |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "⚡ AI 日志（必须）",
+        "pattern": "姓名_C2G_AI日志.md",
+        "required": true,
+        "source_line": 307,
+        "source_text": "| **⚡ AI 日志（必须）** | `姓名_C2G_AI日志.md` | 开发全过程 AI 使用记录。**无此项无法评审。** |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "拿来说明",
+        "pattern": "姓名_C2G_拿来说明.md",
+        "required": true,
+        "source_line": 308,
+        "source_text": "| **拿来说明** | `姓名_C2G_拿来说明.md` | 从 nanoGPT / 官方 repo / 历史 top 方案拿了什么、改了什么 |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "（Level 4 额外）",
+        "pattern": "姓名_C2G_tech_report.pdf",
+        "required": false,
+        "source_line": 309,
+        "source_text": "| **（Level 4 额外）** | `姓名_C2G_tech_report.pdf` | 6+ 页英文技术报告，格式参考 NeurIPS workshop |",
+        "origin": "challenge_doc"
+      }
+    ],
+    "origin": "auto_extracted"
+  },
+  "C4": {
+    "challenge_id": "C4",
+    "title": "技能分享与传播",
+    "source_file": "/Users/jingxueqing/Desktop/我的挑战/挑战_C4 技能分享与传播_4cdgor_完整资料/CHALLENGE.md",
+    "items": [
+      {
+        "label": "Skill 说明文档",
+        "pattern": "姓名_C4_skill说明.md",
+        "required": true,
+        "source_line": 46,
+        "source_text": "| Skill 说明文档 | `姓名_C4_skill说明.md` | 解决什么问题、使用场景、输入输出、使用步骤、真实案例 |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "可执行内容",
+        "pattern": "姓名_C4_技能名.skill",
+        "required": true,
+        "source_line": 47,
+        "source_text": "| 可执行内容 | `姓名_C4_技能名.skill` 或 `.py` 或 `.md` | 可安装的 .skill 包 / prompt / 代码 / workflow |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "Demo",
+        "pattern": "姓名_C4_demo.mp4",
+        "required": true,
+        "source_line": 48,
+        "source_text": "| Demo | `姓名_C4_demo.mp4` 或截图 | 视频、截图、或 live demo |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "教学说明",
+        "pattern": "姓名_C4_教学说明.md",
+        "required": true,
+        "source_line": 49,
+        "source_text": "| 教学说明 | `姓名_C4_教学说明.md` | 如何上手、常见坑、优化技巧——关键是**教别人用** |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "⚡ AI 日志",
+        "pattern": "姓名_C4_AI日志.md",
+        "required": true,
+        "source_line": 50,
+        "source_text": "| ⚡ AI 日志 | `姓名_C4_AI日志.md` | 用了什么 AI、怎么指挥的、迭代了几轮、你做了什么 |",
+        "origin": "challenge_doc"
+      }
+    ],
+    "origin": "auto_extracted"
+  },
+  "C4A": {
+    "challenge_id": "C4A",
+    "title": "技能提交自动评审",
+    "source_file": "/Users/jingxueqing/Desktop/我的挑战/挑战_C4A 技能提交自动评审_5jvqje_完整资料/CHALLENGE.md",
+    "items": [
+      {
+        "label": "方案设计文档",
+        "pattern": "姓名_C4A_方案设计.md",
+        "required": true,
+        "source_line": 179,
+        "source_text": "| 方案设计文档 | `姓名_C4A_方案设计.md` | 你的架构设计、评审维度定义、技术选型理由 |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "可安装技能包",
+        "pattern": "姓名_C4A_skill-evaluator.skill",
+        "required": true,
+        "source_line": 180,
+        "source_text": "| 可安装技能包 | `姓名_C4A_skill-evaluator.skill` 或源码目录 | 可运行的技能（.skill 包 / Python 脚本 / SKILL.md） |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "真实评审报告",
+        "pattern": "姓名_C4A_评审报告.md",
+        "required": true,
+        "source_line": 181,
+        "source_text": "| 真实评审报告 | `姓名_C4A_评审报告.md` | 用你的技能对至少 3 份真实 C4 提交生成的评审结果 |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "教学说明",
+        "pattern": "姓名_C4A_教学说明.md",
+        "required": true,
+        "source_line": 182,
+        "source_text": "| 教学说明 | `姓名_C4A_教学说明.md` | 怎么安装、怎么用、输入什么得到什么 |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "⚡ AI 日志",
+        "pattern": "姓名_C4A_AI日志.md",
+        "required": true,
+        "source_line": 183,
+        "source_text": "| ⚡ AI 日志 | `姓名_C4A_AI日志.md` | 开发全过程的 AI 使用记录 |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "拿来说明",
+        "pattern": "姓名_C4A_拿来说明.md",
+        "required": true,
+        "source_line": 184,
+        "source_text": "| 拿来说明 | `姓名_C4A_拿来说明.md` | 从 wechat-doc-mapper 拿了什么、改了什么、为什么 |",
+        "origin": "challenge_doc"
+      }
+    ],
+    "origin": "auto_extracted"
+  },
+  "C4B": {
+    "challenge_id": "C4B",
+    "title": "公众号文章生成技能",
+    "source_file": "/Users/jingxueqing/Desktop/我的挑战/挑战_C4B 公众号文章生成技能_bp05rs_完整资料/CHALLENGE.md",
+    "items": [
+      {
+        "label": "定制后的技能包",
+        "pattern": "姓名_C4B_wechat-publisher.skill",
+        "required": true,
+        "source_line": 222,
+        "source_text": "| 定制后的技能包 | `姓名_C4B_wechat-publisher.skill` 或源码目录 | 你改造后的技能（.skill 包或目录） |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "公众号文章链接",
+        "pattern": "姓名_C4B_文章链接.md",
+        "required": true,
+        "source_line": 223,
+        "source_text": "| 公众号文章链接 | `姓名_C4B_文章链接.md` | 真实发布的公众号文章 URL + 截图 |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "文章源文件",
+        "pattern": "姓名_C4B_文章源文件.md",
+        "required": true,
+        "source_line": 224,
+        "source_text": "| 文章源文件 | `姓名_C4B_文章源文件.md` 或 `.docx` | 转换前的原始内容 |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "转换后的 HTML",
+        "pattern": "姓名_C4B_output.html",
+        "required": true,
+        "source_line": 225,
+        "source_text": "| 转换后的 HTML | `姓名_C4B_output.html` | 技能生成的 WeChat HTML |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "教学说明",
+        "pattern": "姓名_C4B_教学说明.md",
+        "required": true,
+        "source_line": 226,
+        "source_text": "| 教学说明 | `姓名_C4B_教学说明.md` | 怎么安装、怎么用你的技能 |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "⚡ AI 日志（必须）",
+        "pattern": "姓名_C4B_AI日志.md",
+        "required": true,
+        "source_line": 227,
+        "source_text": "| ⚡ AI 日志（必须） | `姓名_C4B_AI日志.md` | 包含 skill-creator 使用过程的完整记录。**无此项无法评审。** |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "拿来说明",
+        "pattern": "姓名_C4B_拿来说明.md",
+        "required": true,
+        "source_line": 228,
+        "source_text": "| 拿来说明 | `姓名_C4B_拿来说明.md` | 从 starter kit 拿了什么、改了什么、为什么 |",
+        "origin": "challenge_doc"
+      }
+    ],
+    "origin": "auto_extracted"
+  },
+  "C4C": {
+    "challenge_id": "C4C",
+    "title": "作业自动求解与排版",
+    "source_file": "/Users/jingxueqing/Desktop/我的挑战/挑战_C4C 作业自动求解与排版_k82c4m_完整资料/CHALLENGE.md",
+    "items": [
+      {
+        "label": "方案设计文档",
+        "pattern": "姓名_C4C_方案设计.md",
+        "required": true,
+        "source_line": 395,
+        "source_text": "| 方案设计文档 | `姓名_C4C_方案设计.md` | 架构、**选用哪个国产模型及原因**、目标课程、求解策略 |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "可运行技能包",
+        "pattern": "姓名_C4C_homework-solver.skill",
+        "required": true,
+        "source_line": 396,
+        "source_text": "| 可运行技能包 | `姓名_C4C_homework-solver.skill` 或源码 | 完整的流水线代码（在国产模型上可运行） |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "真实作业测试",
+        "pattern": "姓名_C4C_作业原件.*",
+        "required": true,
+        "source_line": 397,
+        "source_text": "| 真实作业测试 | `姓名_C4C_作业原件.*` + `姓名_C4C_output.pdf` | 用真实作业（**非微积分极限**）测试的输入输出对 |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "正确性验证",
+        "pattern": "姓名_C4C_验证报告.md",
+        "required": true,
+        "source_line": 398,
+        "source_text": "| 正确性验证 | `姓名_C4C_验证报告.md` | 答案与标准答案的对比（至少 5 道题）+ **与 Claude 基线对比** |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "教学说明",
+        "pattern": "姓名_C4C_教学说明.md",
+        "required": true,
+        "source_line": 399,
+        "source_text": "| 教学说明 | `姓名_C4C_教学说明.md` | 怎么安装、怎么用、支持哪些课程 |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "⚡ AI 日志（必须）",
+        "pattern": "姓名_C4C_AI日志.md",
+        "required": true,
+        "source_line": 400,
+        "source_text": "| ⚡ AI 日志（必须） | `姓名_C4C_AI日志.md` | 开发全过程 AI 使用记录。**无此项无法评审。** |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "拿来说明",
+        "pattern": "姓名_C4C_拿来说明.md",
+        "required": true,
+        "source_line": 401,
+        "source_text": "| 拿来说明 | `姓名_C4C_拿来说明.md` | 从 starter kit 拿了什么、用了哪些库、**Claude 版本与国产模型版本的差异** |",
+        "origin": "challenge_doc"
+      }
+    ],
+    "origin": "auto_extracted"
+  },
+  "C5": {
+    "challenge_id": "C5",
+    "title": "GitHub Repository",
+    "source_file": "/Users/jingxueqing/Desktop/我的挑战/挑战_C5 GitHub Repository_ihozqu_完整资料/CHALLENGE.md",
+    "items": [
+      {
+        "label": "Repo 链接",
+        "pattern": "姓名_C5_repo链接.md",
+        "required": true,
+        "source_line": 257,
+        "source_text": "| Repo 链接 | `姓名_C5_repo链接.md` | GitHub URL + 一句话项目说明 |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "README 截图",
+        "pattern": "姓名_C5_readme截图.png",
+        "required": false,
+        "source_line": 258,
+        "source_text": "| README 截图 | `姓名_C5_readme截图.png` | 可选，展示 README 渲染效果 |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "⚡ AI 日志",
+        "pattern": "姓名_C5_AI日志.md",
+        "required": true,
+        "source_line": 259,
+        "source_text": "| ⚡ AI 日志 | `姓名_C5_AI日志.md` | 开发过程中的 AI 使用记录（也放在 repo 内的 AI_LOG.md） |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "拿来说明",
+        "pattern": "姓名_C5_拿来说明.md",
+        "required": true,
+        "source_line": 260,
+        "source_text": "| 拿来说明 | `姓名_C5_拿来说明.md` | 借鉴来源（也放在 repo 内的 ATTRIBUTION.md） |",
+        "origin": "challenge_doc"
+      }
+    ],
+    "origin": "auto_extracted"
+  },
+  "C6": {
+    "challenge_id": "C6",
+    "title": "Web Application",
+    "source_file": "/Users/jingxueqing/Desktop/我的挑战/挑战_C6 Web Application_qqqx60_完整资料/CHALLENGE.md",
+    "items": [
+      {
+        "label": "可访问网址",
+        "pattern": "姓名_C6_app链接.md",
+        "required": true,
+        "source_line": 298,
+        "source_text": "| 可访问网址 | `姓名_C6_app链接.md` | 部署后的 URL + 一句话产品说明 |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "Demo 视频",
+        "pattern": "姓名_C6_demo.mp4",
+        "required": false,
+        "source_line": 299,
+        "source_text": "| Demo 视频 | `姓名_C6_demo.mp4` | 30–60 秒演示核心功能（建议用录屏工具） |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "GitHub repo",
+        "pattern": "姓名_C6_repo链接.md",
+        "required": true,
+        "source_line": 300,
+        "source_text": "| GitHub repo | `姓名_C6_repo链接.md` | 源码地址（与 C5 联动） |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "⚡ AI 日志",
+        "pattern": "姓名_C6_AI日志.md",
+        "required": true,
+        "source_line": 301,
+        "source_text": "| ⚡ AI 日志 | `姓名_C6_AI日志.md` | 开发全过程的 AI 使用记录 |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "拿来说明",
+        "pattern": "姓名_C6_拿来说明.md",
+        "required": true,
+        "source_line": 302,
+        "source_text": "| 拿来说明 | `姓名_C6_拿来说明.md` | 借鉴来源 |",
+        "origin": "challenge_doc"
+      }
+    ],
+    "origin": "auto_extracted"
+  },
+  "C7": {
+    "challenge_id": "C7",
+    "title": "内容传播",
+    "source_file": "/Users/jingxueqing/Desktop/我的挑战/挑战_C7 内容传播_sfz852_完整资料/CHALLENGE.md",
+    "items": [
+      {
+        "label": "文章链接",
+        "pattern": "姓名_C7_文章标题.md",
+        "required": true,
+        "source_line": 208,
+        "source_text": "| 文章链接 | `姓名_C7_文章标题.md` | 平台链接 + 一句话内容摘要 |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "传播数据",
+        "pattern": "姓名_C7_数据截图.png",
+        "required": true,
+        "source_line": 209,
+        "source_text": "| 传播数据 | `姓名_C7_数据截图.png` | 发布后截图：阅读量、点赞、评论等 |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "⚡ AI 日志",
+        "pattern": "姓名_C7_AI日志.md",
+        "required": true,
+        "source_line": 210,
+        "source_text": "| ⚡ AI 日志 | `姓名_C7_AI日志.md` | 写作全过程的 AI 使用记录 |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "拿来说明",
+        "pattern": "姓名_C7_拿来说明.md",
+        "required": true,
+        "source_line": 211,
+        "source_text": "| 拿来说明 | `姓名_C7_拿来说明.md` | 参考了哪些文章/结构/方法 |",
+        "origin": "challenge_doc"
+      }
+    ],
+    "origin": "auto_extracted"
+  },
+  "C8": {
+    "challenge_id": "C8",
+    "title": "Real-World Project Execution（真实项目落地）",
+    "source_file": "/Users/jingxueqing/Desktop/我的挑战/挑战_C8 Real-World Project Execution（真实项目落地）_7vw0rn_完整资料/CHALLENGE.md",
+    "items": [
+      {
+        "label": "项目申请书",
+        "pattern": "姓名_C8_proposal.md",
+        "required": true,
+        "source_line": 131,
+        "source_text": "| 项目申请书 | `姓名_C8_proposal.md` | 完整申请（含以下全部 5 个部分） |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "早期验证物",
+        "pattern": "姓名_C8_demo.*",
+        "required": true,
+        "source_line": 132,
+        "source_text": "| 早期验证物 | `姓名_C8_demo.*` | GitHub repo / Demo / 文档 / 原型（至少一个） |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "⚡ AI 日志",
+        "pattern": "姓名_C8_AI日志.md",
+        "required": true,
+        "source_line": 133,
+        "source_text": "| ⚡ AI 日志 | `姓名_C8_AI日志.md` | Proposal 写作过程的 AI 使用记录 |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "拿来说明",
+        "pattern": "姓名_C8_拿来说明.md",
+        "required": true,
+        "source_line": 134,
+        "source_text": "| 拿来说明 | `姓名_C8_拿来说明.md` | 参考来源 |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "周产出物",
+        "pattern": "姓名_C8_W周次_产出描述.*",
+        "required": true,
+        "source_line": 420,
+        "source_text": "| 周产出物 | `姓名_C8_W周次_产出描述.*` | 本周可验证的交付物 |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "AAR 报告",
+        "pattern": "姓名_C8_AAR_W周次.md",
+        "required": true,
+        "source_line": 421,
+        "source_text": "| AAR 报告 | `姓名_C8_AAR_W周次.md` | R̂ vs R + 失败分析 + 下周计划 |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "⚡ AI 日志",
+        "pattern": "姓名_C8_W周次_AI日志.md",
+        "required": true,
+        "source_line": 422,
+        "source_text": "| ⚡ AI 日志 | `姓名_C8_W周次_AI日志.md` | 本周 AI 使用记录 |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "拿来更新",
+        "pattern": "姓名_C8_W周次_拿来更新.md",
+        "required": true,
+        "source_line": 423,
+        "source_text": "| 拿来更新 | `姓名_C8_W周次_拿来更新.md` | 本周发现的新参考来源 |",
+        "origin": "challenge_doc"
+      }
+    ],
+    "origin": "auto_extracted"
+  },
+  "C9": {
+    "challenge_id": "C9",
+    "title": "Self-Initiated Project（自驱项目）",
+    "source_file": "/Users/jingxueqing/Desktop/我的挑战/挑战_C9 Self-Initiated Project（自驱项目）_t2892g_完整资料/CHALLENGE.md",
+    "items": [
+      {
+        "label": "项目申请书",
+        "pattern": "姓名_C9_proposal.md",
+        "required": true,
+        "source_line": 88,
+        "source_text": "| 项目申请书 | `姓名_C9_proposal.md` | 完整 5 部分（见下） |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "MVP 验证物",
+        "pattern": "姓名_C9_mvp.*",
+        "required": true,
+        "source_line": 89,
+        "source_text": "| MVP 验证物 | `姓名_C9_mvp.*` | 第一周能展示的东西（必须有） |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "⚡ AI 日志",
+        "pattern": "姓名_C9_AI日志.md",
+        "required": true,
+        "source_line": 90,
+        "source_text": "| ⚡ AI 日志 | `姓名_C9_AI日志.md` | Proposal 写作过程 |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "拿来说明",
+        "pattern": "姓名_C9_拿来说明.md",
+        "required": true,
+        "source_line": 91,
+        "source_text": "| 拿来说明 | `姓名_C9_拿来说明.md` | 参考来源 |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "周产出物",
+        "pattern": "姓名_C9_W周次_产出描述.*",
+        "required": true,
+        "source_line": 385,
+        "source_text": "| 周产出物 | `姓名_C9_W周次_产出描述.*` | 本周可展示的东西 |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "AAR 报告",
+        "pattern": "姓名_C9_AAR_W周次.md",
+        "required": true,
+        "source_line": 386,
+        "source_text": "| AAR 报告 | `姓名_C9_AAR_W周次.md` | 含动力检查 |",
+        "origin": "challenge_doc"
+      },
+      {
+        "label": "⚡ AI 日志",
+        "pattern": "姓名_C9_W周次_AI日志.md",
+        "required": true,
+        "source_line": 387,
+        "source_text": "| ⚡ AI 日志 | `姓名_C9_W周次_AI日志.md` | 本周 AI 使用 |",
+        "origin": "challenge_doc"
+      }
+    ],
+    "origin": "auto_extracted"
+  }
+}
