@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>第二大脑 · 运行看板</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#1f2328;--mut:#6b7280;--line:#e5e7eb;--blue:#2f6feb}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);
+font:14px/1.65 -apple-system,"PingFang SC","Helvetica Neue",Arial,sans-serif}
+.wrap{max-width:1060px;margin:0 auto;padding:32px 20px 60px}
+h1{font-size:22px;margin:0 0 4px}h2{font-size:15px;margin:28px 0 10px;color:#111}
+.sub{color:var(--mut);font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-top:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.card .k{color:var(--mut);font-size:12px}.card .v{font-size:24px;font-weight:600;margin-top:2px}
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);
+border-radius:10px;overflow:hidden}
+th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left;font-size:13px;vertical-align:top}
+th{background:#fafbfc;color:var(--mut);font-weight:500}
+tr:last-child td{border-bottom:0}.num{text-align:right;font-variant-numeric:tabular-nums}
+.tag{display:inline-block;padding:1px 8px;border-radius:999px;font-size:12px;background:#eef1f5;color:#475569}
+.tag.ok{background:#e7f6ec;color:#137333}.tag.warn{background:#fff4e5;color:#a15c00}
+.tag.bad{background:#fdeceb;color:#b3261e}.tag.off{background:#f1f2f4;color:#8b8f96}
+code{background:#f1f3f5;padding:1px 5px;border-radius:4px;font-size:12.5px}
+.note{background:#eef4ff;border:1px solid #d5e2ff;border-radius:10px;padding:12px 14px;margin-top:22px;font-size:13px}
+footer{margin-top:28px;color:var(--mut);font-size:12px}
+</style></head><body><div class="wrap">
+<h1>第二大脑 · 运行看板</h1>
+<div class="sub">KSTAR Agent OS ｜ 生成时间 2026-11-05 21:51 ｜ 数据源：memory/ + skills/ + logs/</div>
+<div class="grid">
+<div class="card"><div class="k">L1 原始笔记</div><div class="v">13</div></div>
+<div class="card"><div class="k">L2 KSTAR 经验</div><div class="v">11</div></div>
+<div class="card"><div class="k">L3 Skill（active）</div><div class="v">6</div></div>
+<div class="card"><div class="k">KSTAR 循环执行</div><div class="v">1</div></div>
+<div class="card"><div class="k">平均 ΔR</div><div class="v">+0.177</div></div>
+<div class="card"><div class="k">高估次数（ΔR&gt;0.2）</div><div class="v">5</div></div>
+</div>
+<h2>ΔR 走势（左→右按日期）</h2>
+<div class="card" style="padding:8px 10px"><svg viewBox="0 0 640 110" width="100%" height="110"><line x1="18" y1="61.5" x2="622" y2="61.5" stroke="#c9d1d9" stroke-dasharray="4 3"/><polyline fill="none" stroke="#2f6feb" stroke-width="2" points="18.0,58.9 78.4,48.5 138.8,52.8 199.2,18.0 259.6,39.8 320.0,31.1 380.4,35.4 440.8,92.0 501.2,48.5 561.6,22.4 622.0,59.8"/><circle cx="18.0" cy="58.9" r="3" fill="#2f6feb"/><circle cx="78.4" cy="48.5" r="3" fill="#2f6feb"/><circle cx="138.8" cy="52.8" r="3" fill="#2f6feb"/><circle cx="199.2" cy="18.0" r="3" fill="#2f6feb"/><circle cx="259.6" cy="39.8" r="3" fill="#2f6feb"/><circle cx="320.0" cy="31.1" r="3" fill="#2f6feb"/><circle cx="380.4" cy="35.4" r="3" fill="#2f6feb"/><circle cx="440.8" cy="92.0" r="3" fill="#2f6feb"/><circle cx="501.2" cy="48.5" r="3" fill="#2f6feb"/><circle cx="561.6" cy="22.4" r="3" fill="#2f6feb"/><circle cx="622.0" cy="59.8" r="3" fill="#2f6feb"/></svg>
+<div class="sub" style="margin-top:6px">虚线 = ΔR 0 轴。点在 0 上方 = 我高估了自己；下方 = 低估。</div></div>
+<h2>Skill 健康度</h2>
+<table><thead><tr><th>Skill</th><th>状态</th><th>版本</th><th class="num">系统内调用</th>
+<th class="num">回填使用</th><th class="num">平均 ΔR</th><th>最近使用</th></tr></thead>
+<tbody><tr><td><code>measure-before-fix</code></td><td><span class='tag ok'>active</span></td><td>v4</td><td class='num'>2</td><td class='num'>6</td><td class='num'>0.29</td><td>2026-11-05</td></tr>
+<tr><td><code>narrow-first-mvp</code></td><td><span class='tag ok'>active</span></td><td>v3</td><td class='num'>2</td><td class='num'>4</td><td class='num'>0.02</td><td>2026-11-05</td></tr>
+<tr><td><code>scope-probe-first</code></td><td><span class='tag ok'>active</span></td><td>v2</td><td class='num'>2</td><td class='num'>3</td><td class='num'>0.05</td><td>2026-11-05</td></tr>
+<tr><td><code>aar-delta-r</code></td><td><span class='tag ok'>active</span></td><td>v2</td><td class='num'>1</td><td class='num'>4</td><td class='num'>0.35</td><td>2026-11-05</td></tr>
+<tr><td><code>deliverable-pack</code></td><td><span class='tag ok'>active</span></td><td>v2</td><td class='num'>1</td><td class='num'>5</td><td class='num'>0.12</td><td>2026-11-05</td></tr>
+<tr><td><code>evidence-labeled-log</code></td><td><span class='tag ok'>active</span></td><td>v2</td><td class='num'>1</td><td class='num'>4</td><td class='num'>0.23</td><td>2026-11-05</td></tr></tbody></table>
+<h2>KSTAR 经验库</h2>
+<table><thead><tr><th>ID</th><th>日期</th><th>情境</th><th class="num">R̂</th><th class="num">R</th>
+<th class="num">ΔR</th><th>判定</th></tr></thead><tbody><tr><td>EP-2026-09-25-01</td><td>2026-09-25</td><td>C1 课程资料包：先做「尸体解剖」，再动手翻译</td><td class='num'>0.95</td><td class='num'>0.92</td><td class='num'><span class='tag ok'>0.03</span></td><td>命中</td></tr>
+<tr><td>EP-2026-09-29-02</td><td>2026-09-29</td><td>C2 论文：把「不做什么」写进方法里</td><td class='num'>1.0</td><td class='num'>0.85</td><td class='num'><span class='tag warn'>0.15</span></td><td>轻度高估</td></tr>
+<tr><td>EP-2026-10-05-03</td><td>2026-10-05</td><td>C4D 本地 Agent：先问机器，再问模型</td><td class='num'>0.9</td><td class='num'>0.8</td><td class='num'><span class='tag warn'>0.10</span></td><td>轻度高估</td></tr>
+<tr><td>EP-2026-10-31-05</td><td>2026-10-31</td><td>C8 提交口径：数字对不上，功能再全也没人用</td><td class='num'>0.9</td><td class='num'>0.4</td><td class='num'><span class='tag bad'>0.50</span></td><td>显著高估</td></tr>
+<tr><td>EP-2026-10-31-06</td><td>2026-10-31</td><td>C8 预警聚合：吵的东西等于没有</td><td class='num'>0.8</td><td class='num'>0.55</td><td class='num'><span class='tag bad'>0.25</span></td><td>显著高估</td></tr>
+<tr><td>EP-2026-10-31-07</td><td>2026-10-31</td><td>C8 把 4 周压成 1 天：砍掉的不是时间，是反馈</td><td class='num'>0.9</td><td class='num'>0.55</td><td class='num'><span class='tag bad'>0.35</span></td><td>显著高估</td></tr>
+<tr><td>EP-2026-11-02-04</td><td>2026-11-02</td><td>C7 内容传播：发布是别人的权限，不是我的能力</td><td class='num'>0.9</td><td class='num'>0.6</td><td class='num'><span class='tag bad'>0.30</span></td><td>显著高估</td></tr>
+<tr><td>EP-2026-11-04-08</td><td>2026-11-04</td><td>C9 先做 200 行单文件：40 分钟证明闭环成立</td><td class='num'>0.6</td><td class='num'>0.95</td><td class='num'><span class='tag bad'>-0.35</span></td><td>低估</td></tr>
+<tr><td>EP-2026-11-04-09</td><td>2026-11-04</td><td>C9 一天 9 次失败：AI 的代码"看起来优雅"，但没跑过真实句子</td><td class='num'>0.85</td><td class='num'>0.7</td><td class='num'><span class='tag warn'>0.15</span></td><td>轻度高估</td></tr>
+<tr><td>EP-2026-11-04-10</td><td>2026-11-04</td><td>C9 移动端"还在溢出"：我拿错了尺子</td><td class='num'>0.9</td><td class='num'>0.45</td><td class='num'><span class='tag bad'>0.45</span></td><td>显著高估</td></tr>
+<tr><td>EP-2026-11-05-01</td><td>2026-11-05</td><td>C10 系统构建：一次会话建成，并第一次被自己使用</td><td class='num'>0.88</td><td class='num'>0.86</td><td class='num'><span class='tag ok'>0.02</span></td><td>命中</td></tr></tbody></table>
+<div class="note">这份看板由 <code>python3 scripts/kstar.py dash</code> 从磁盘上的 Markdown 实时生成，
+不是手工维护的截图。删掉本文件、重跑命令，内容会原样重建。</div>
+<footer>skills: aar-delta-r · deliverable-pack · evidence-labeled-log · measure-before-fix · narrow-first-mvp · scope-probe-first</footer>
+</div></body></html>
