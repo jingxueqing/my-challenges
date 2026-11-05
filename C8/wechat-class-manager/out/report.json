@@ -1,0 +1,241 @@
+{
+  "period": {
+    "start": "2026-10-20T20:40:41+08:00",
+    "end": "2026-11-03T20:40:41+08:00",
+    "days": 14
+  },
+  "messages": 268,
+  "active_students": 18,
+  "class_size": 20,
+  "submissions": 44,
+  "artifacts": 307,
+  "complete": 36,
+  "needs_revision": 7,
+  "cells": 400,
+  "fill_rate": 0.11,
+  "qa_kept": 48,
+  "qa_answer_rate": 0.787,
+  "alerts": {
+    "missing_artifacts": 7,
+    "unanswered_question": 4,
+    "engagement_drop": 2,
+    "silent_student": 2,
+    "low_submission_rate": 1,
+    "naming_violation": 1
+  },
+  "alert_total": 17,
+  "intents": {
+    "submission": 72,
+    "question": 61,
+    "answer": 44,
+    "social": 36,
+    "announcement": 27,
+    "discussion": 25,
+    "resource": 3
+  },
+  "top5": [
+    {
+      "nickname": "景雪晴",
+      "score": 83.4
+    },
+    {
+      "nickname": "周嘉懿",
+      "score": 44.3
+    },
+    {
+      "nickname": "何承翰",
+      "score": 44.1
+    },
+    {
+      "nickname": "吴昊天",
+      "score": 43.5
+    },
+    {
+      "nickname": "林一舟",
+      "score": 39.3
+    }
+  ],
+  "by_challenge": {
+    "C1": {
+      "name": "课程资料获取与翻译",
+      "zone": "Course Material Acquisition & Translation",
+      "submitted": 3,
+      "complete": 2,
+      "expected": 20,
+      "rate_all": 0.15,
+      "due": null
+    },
+    "C2": {
+      "name": "AI for Math 论文",
+      "zone": "AI4Math Paper",
+      "submitted": 4,
+      "complete": 1,
+      "expected": 20,
+      "rate_all": 0.2,
+      "due": null
+    },
+    "C2A": {
+      "name": "衡量 AGI 的认知能力",
+      "zone": "Measuring AGI Cognitive Capability",
+      "submitted": 1,
+      "complete": 1,
+      "expected": 20,
+      "rate_all": 0.05,
+      "due": null
+    },
+    "C2G": {
+      "name": "参数高尔夫 · 极限约束下的语言模型训练",
+      "zone": "Parameter Golf",
+      "submitted": 1,
+      "complete": 1,
+      "expected": 20,
+      "rate_all": 0.05,
+      "due": null
+    },
+    "C3": {
+      "name": "群内高质量参与",
+      "zone": "High-quality Group Participation",
+      "submitted": 1,
+      "complete": 1,
+      "expected": 20,
+      "rate_all": 0.05,
+      "due": null
+    },
+    "C3C": {
+      "name": "双人协作与技能迁移",
+      "zone": "Pair Collaboration",
+      "submitted": 0,
+      "complete": 0,
+      "expected": 20,
+      "rate_all": 0.0,
+      "due": null
+    },
+    "C4": {
+      "name": "技能分享与传播",
+      "zone": "Skill Sharing",
+      "submitted": 1,
+      "complete": 1,
+      "expected": 20,
+      "rate_all": 0.05,
+      "due": null
+    },
+    "C4A": {
+      "name": "技能提交自动评审",
+      "zone": "Automated Skill Submission Review",
+      "submitted": 4,
+      "complete": 3,
+      "expected": 20,
+      "rate_all": 0.2,
+      "due": null
+    },
+    "C4B": {
+      "name": "公众号文章生成技能",
+      "zone": "WeChat Article Generation Skill",
+      "submitted": 2,
+      "complete": 2,
+      "expected": 20,
+      "rate_all": 0.1,
+      "due": null
+    },
+    "C4C": {
+      "name": "作业自动求解与排版",
+      "zone": "Homework Solver & Typesetting",
+      "submitted": 1,
+      "complete": 1,
+      "expected": 20,
+      "rate_all": 0.05,
+      "due": null
+    },
+    "C4D": {
+      "name": "本地大模型 Agent 技能",
+      "zone": "Local LLM Agent Skill",
+      "submitted": 3,
+      "complete": 3,
+      "expected": 20,
+      "rate_all": 0.15,
+      "due": null
+    },
+    "C5": {
+      "name": "GitHub Repository",
+      "zone": "GitHub Repository",
+      "submitted": 5,
+      "complete": 5,
+      "expected": 20,
+      "rate_all": 0.25,
+      "due": null
+    },
+    "C5A": {
+      "name": "GitHub 入门与仓库理解",
+      "zone": "GitHub Basics",
+      "submitted": 1,
+      "complete": 1,
+      "expected": 20,
+      "rate_all": 0.05,
+      "due": null
+    },
+    "C6": {
+      "name": "Web Application",
+      "zone": "Web Application",
+      "submitted": 2,
+      "complete": 2,
+      "expected": 20,
+      "rate_all": 0.1,
+      "due": null
+    },
+    "C6A": {
+      "name": "提交数据仪表盘",
+      "zone": "Submission Dashboard",
+      "submitted": 4,
+      "complete": 4,
+      "expected": 20,
+      "rate_all": 0.2,
+      "due": null
+    },
+    "C7": {
+      "name": "内容传播",
+      "zone": "Content Distribution",
+      "submitted": 4,
+      "complete": 4,
+      "expected": 20,
+      "rate_all": 0.2,
+      "due": null
+    },
+    "C8": {
+      "name": "真实项目落地",
+      "zone": "Real-World Project Execution",
+      "submitted": 7,
+      "complete": 4,
+      "expected": 20,
+      "rate_all": 0.35,
+      "due": "2026-12-31"
+    },
+    "C9": {
+      "name": "自驱项目",
+      "zone": "Self-Initiated Project",
+      "submitted": 0,
+      "complete": 0,
+      "expected": 20,
+      "rate_all": 0.0,
+      "due": null
+    },
+    "C10": {
+      "name": "构建你的长期智能体（第二大脑）",
+      "zone": "Build Your Own Agent",
+      "submitted": 0,
+      "complete": 0,
+      "expected": 20,
+      "rate_all": 0.0,
+      "due": null
+    },
+    "C10H": {
+      "name": "安装并驾驭 Hermes Agent",
+      "zone": "Hermes Agent",
+      "submitted": 0,
+      "complete": 0,
+      "expected": 20,
+      "rate_all": 0.0,
+      "due": null
+    }
+  },
+  "generated_at": "2026-11-04T14:54:03"
+}

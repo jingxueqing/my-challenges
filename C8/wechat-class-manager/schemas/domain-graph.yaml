@@ -1,0 +1,81 @@
+# 领域模型（Property Graph Schema）
+# 节点 = 实体，边 = 关系。和 wcm/ingest.py 一一对应，改这里要同步改代码。
+
+version: 1
+backend: sqlite-property-graph
+storage: out/graph.db
+
+nodes:
+  Student:
+    key: "student:{wxid}"
+    properties:
+      wxid: string
+      name: string
+      major: string
+      enrollment_date: date
+      is_real: boolean
+      msg_count: int
+      engagement_score: float     # 0-100
+      skill_tags: [string]
+      risk_flags: [string]
+  Challenge:
+    key: "challenge:{id}"
+    properties:
+      id: string                  # C1, C2A, C3C, C4B ...
+      name_cn: string
+      name_en: string
+      due_date: date?
+      required: [string]          # deliverable / proposal / demo / ailog / notes / aar
+      submitted: int
+      rate: float
+  Submission:
+    key: "submission:{wxid}:{challenge}"
+    properties:
+      student_id: string
+      challenge: string
+      status: "reviewing|accepted|needs_revision"
+      completeness: float
+      kinds: [string]
+      missing: [string]
+      artifact_count: int
+      sources: ["wechat"|"disk"]
+  Message:
+    key: "message:{msg_id}"
+    properties:
+      timestamp: datetime
+      sender: string
+      type: "text|image|file|voice|link|system"
+      intent: string
+      confidence: float
+      challenge: string?
+      link_method: string
+      content: string
+  QAPair:
+    key: "qa:{hash}"
+    properties:
+      question: string
+      answer: string
+      quality_score: float
+      resolved: boolean
+      tags: [string]
+      latency_seconds: int
+  Report:
+    key: "report:{date}"
+    properties:
+      type: "weekly"
+      period: object
+      snapshot: object
+  Teacher:
+    key: "teacher:{wxid}"
+    properties:
+      name: string
+      role: string
+
+edges:
+  SENT:        Student|Teacher -> Message        # 谁发了什么
+  TAGGED_WITH: Message -> Challenge              # 这条消息在讨论哪个挑战
+  SUBMITTED:   Student -> Submission             # 谁提交了什么
+  ABOUT:       Submission -> Challenge
+  ASKED:       Student -> QAPair
+  ANSWERED:    Student -> QAPair
+  MENTORED:    Student -> Student                # 由「回答了谁的问题」推断

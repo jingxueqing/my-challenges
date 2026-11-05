@@ -1,0 +1,1052 @@
+{
+  "window_days": 7,
+  "as_of": "2026-11-03T20:40:41+08:00",
+  "profiles": [
+    {
+      "id": "student:wxid_jxq2024",
+      "wxid": "wxid_jxq2024",
+      "nickname": "景雪晴",
+      "major": "工商管理",
+      "is_real": true,
+      "msg_count": 21,
+      "week_msgs": 11,
+      "prev_week_msgs": 10,
+      "delta_ratio": 0.1,
+      "intents": {
+        "answer": 11,
+        "discussion": 4,
+        "submission": 4,
+        "question": 1,
+        "social": 1
+      },
+      "active_days": 12,
+      "active_dates": [
+        "2026-10-21",
+        "2026-10-22",
+        "2026-10-23",
+        "2026-10-24",
+        "2026-10-25",
+        "2026-10-26",
+        "2026-10-28",
+        "2026-10-30",
+        "2026-10-31",
+        "2026-11-01",
+        "2026-11-02",
+        "2026-11-03"
+      ],
+      "first_ts": "2026-10-21T19:44:44+08:00",
+      "last_ts": "2026-11-03T20:20:29+08:00",
+      "silence_days": 0,
+      "questions_asked": 1,
+      "answers_given": 11,
+      "qa_answered": 12,
+      "helped_and_thanked": 1,
+      "submissions": 15,
+      "accepted": 15,
+      "needs_revision": 0,
+      "challenges": [
+        "C1",
+        "C2",
+        "C2A",
+        "C2G",
+        "C4",
+        "C4A",
+        "C4B",
+        "C4C",
+        "C4D",
+        "C5",
+        "C5A",
+        "C6",
+        "C6A",
+        "C7",
+        "C8"
+      ],
+      "missing_items": 0,
+      "skill_tags": [
+        "C1",
+        "C2",
+        "C2A",
+        "C2G",
+        "C4",
+        "C4A",
+        "C4B",
+        "C4C"
+      ],
+      "engagement_score": 83.4,
+      "risk_flags": [],
+      "rank": 1
+    },
+    {
+      "id": "student:wxid_zhoujy",
+      "wxid": "wxid_zhoujy",
+      "nickname": "周嘉懿",
+      "major": "电子信息工程",
+      "is_real": false,
+      "msg_count": 12,
+      "week_msgs": 5,
+      "prev_week_msgs": 7,
+      "delta_ratio": -0.29,
+      "intents": {
+        "answer": 5,
+        "discussion": 3,
+        "submission": 2,
+        "question": 1,
+        "social": 1
+      },
+      "active_days": 8,
+      "active_dates": [
+        "2026-10-21",
+        "2026-10-22",
+        "2026-10-24",
+        "2026-10-26",
+        "2026-10-27",
+        "2026-10-29",
+        "2026-11-01",
+        "2026-11-03"
+      ],
+      "first_ts": "2026-10-21T14:31:00+08:00",
+      "last_ts": "2026-11-03T19:31:15+08:00",
+      "silence_days": 0,
+      "questions_asked": 1,
+      "answers_given": 5,
+      "qa_answered": 5,
+      "helped_and_thanked": 1,
+      "submissions": 1,
+      "accepted": 1,
+      "needs_revision": 0,
+      "challenges": [
+        "C4D"
+      ],
+      "missing_items": 0,
+      "skill_tags": [
+        "C4D",
+        "agent",
+        "ollama",
+        "上下文",
+        "仓库",
+        "记忆",
+        "群里",
+        "自驱"
+      ],
+      "engagement_score": 44.3,
+      "risk_flags": [],
+      "rank": 2
+    },
+    {
+      "id": "student:wxid_hech",
+      "wxid": "wxid_hech",
+      "nickname": "何承翰",
+      "major": "计算机科学与技术",
+      "is_real": false,
+      "msg_count": 18,
+      "week_msgs": 11,
+      "prev_week_msgs": 7,
+      "delta_ratio": 0.57,
+      "intents": {
+        "submission": 6,
+        "question": 5,
+        "social": 3,
+        "answer": 2,
+        "discussion": 2
+      },
+      "active_days": 10,
+      "active_dates": [
+        "2026-10-21",
+        "2026-10-22",
+        "2026-10-23",
+        "2026-10-25",
+        "2026-10-26",
+        "2026-10-28",
+        "2026-10-30",
+        "2026-11-01",
+        "2026-11-02",
+        "2026-11-03"
+      ],
+      "first_ts": "2026-10-21T09:12:31+08:00",
+      "last_ts": "2026-11-03T11:00:42+08:00",
+      "silence_days": 0,
+      "questions_asked": 5,
+      "answers_given": 2,
+      "qa_answered": 2,
+      "helped_and_thanked": 1,
+      "submissions": 2,
+      "accepted": 2,
+      "needs_revision": 0,
+      "challenges": [
+        "C5",
+        "C8"
+      ],
+      "missing_items": 0,
+      "skill_tags": [
+        "C5",
+        "C8",
+        "仓库"
+      ],
+      "engagement_score": 44.1,
+      "risk_flags": [],
+      "rank": 3
+    },
+    {
+      "id": "student:wxid_wuht",
+      "wxid": "wxid_wuht",
+      "nickname": "吴昊天",
+      "major": "数据科学",
+      "is_real": false,
+      "msg_count": 15,
+      "week_msgs": 7,
+      "prev_week_msgs": 8,
+      "delta_ratio": -0.12,
+      "intents": {
+        "submission": 9,
+        "social": 2,
+        "answer": 2,
+        "resource": 1,
+        "question": 1
+      },
+      "active_days": 7,
+      "active_dates": [
+        "2026-10-21",
+        "2026-10-24",
+        "2026-10-26",
+        "2026-10-29",
+        "2026-10-31",
+        "2026-11-01",
+        "2026-11-02"
+      ],
+      "first_ts": "2026-10-21T09:40:01+08:00",
+      "last_ts": "2026-11-02T11:20:40+08:00",
+      "silence_days": 1,
+      "questions_asked": 1,
+      "answers_given": 2,
+      "qa_answered": 2,
+      "helped_and_thanked": 0,
+      "submissions": 3,
+      "accepted": 3,
+      "needs_revision": 0,
+      "challenges": [
+        "C4A",
+        "C6A",
+        "C8"
+      ],
+      "missing_items": 0,
+      "skill_tags": [
+        "C4A",
+        "C6A",
+        "C8",
+        "第二大脑"
+      ],
+      "engagement_score": 43.5,
+      "risk_flags": [],
+      "rank": 4
+    },
+    {
+      "id": "student:wxid_linyz",
+      "wxid": "wxid_linyz",
+      "nickname": "林一舟",
+      "major": "计算机科学与技术",
+      "is_real": false,
+      "msg_count": 16,
+      "week_msgs": 9,
+      "prev_week_msgs": 7,
+      "delta_ratio": 0.29,
+      "intents": {
+        "submission": 6,
+        "question": 3,
+        "discussion": 3,
+        "social": 2,
+        "answer": 2
+      },
+      "active_days": 7,
+      "active_dates": [
+        "2026-10-21",
+        "2026-10-22",
+        "2026-10-25",
+        "2026-10-26",
+        "2026-10-28",
+        "2026-10-31",
+        "2026-11-01"
+      ],
+      "first_ts": "2026-10-21T08:52:13+08:00",
+      "last_ts": "2026-11-01T20:20:42+08:00",
+      "silence_days": 2,
+      "questions_asked": 3,
+      "answers_given": 2,
+      "qa_answered": 4,
+      "helped_and_thanked": 0,
+      "submissions": 2,
+      "accepted": 2,
+      "needs_revision": 0,
+      "challenges": [
+        "C5",
+        "C8"
+      ],
+      "missing_items": 0,
+      "skill_tags": [
+        "C5",
+        "C8",
+        "commit",
+        "量化",
+        "参与",
+        "结对",
+        "提问"
+      ],
+      "engagement_score": 39.3,
+      "risk_flags": [],
+      "rank": 5
+    },
+    {
+      "id": "student:wxid_chenxy",
+      "wxid": "wxid_chenxy",
+      "nickname": "陈心怡",
+      "major": "视觉传达设计",
+      "is_real": false,
+      "msg_count": 14,
+      "week_msgs": 6,
+      "prev_week_msgs": 8,
+      "delta_ratio": -0.25,
+      "intents": {
+        "submission": 5,
+        "question": 3,
+        "social": 2,
+        "discussion": 2,
+        "answer": 2
+      },
+      "active_days": 7,
+      "active_dates": [
+        "2026-10-21",
+        "2026-10-22",
+        "2026-10-25",
+        "2026-10-26",
+        "2026-10-29",
+        "2026-10-31",
+        "2026-11-03"
+      ],
+      "first_ts": "2026-10-21T10:05:14+08:00",
+      "last_ts": "2026-11-03T20:40:41+08:00",
+      "silence_days": 0,
+      "questions_asked": 3,
+      "answers_given": 2,
+      "qa_answered": 3,
+      "helped_and_thanked": 0,
+      "submissions": 2,
+      "accepted": 2,
+      "needs_revision": 0,
+      "challenges": [
+        "C6",
+        "C7"
+      ],
+      "missing_items": 0,
+      "skill_tags": [
+        "C6",
+        "C7",
+        "公众号",
+        "图表",
+        "结对"
+      ],
+      "engagement_score": 37.6,
+      "risk_flags": [],
+      "rank": 6
+    },
+    {
+      "id": "student:wxid_sunl",
+      "wxid": "wxid_sunl",
+      "nickname": "孙乐",
+      "major": "汉语言文学",
+      "is_real": false,
+      "msg_count": 15,
+      "week_msgs": 6,
+      "prev_week_msgs": 9,
+      "delta_ratio": -0.33,
+      "intents": {
+        "social": 5,
+        "question": 4,
+        "submission": 4,
+        "discussion": 1,
+        "answer": 1
+      },
+      "active_days": 9,
+      "active_dates": [
+        "2026-10-21",
+        "2026-10-22",
+        "2026-10-24",
+        "2026-10-26",
+        "2026-10-27",
+        "2026-10-29",
+        "2026-10-30",
+        "2026-11-01",
+        "2026-11-03"
+      ],
+      "first_ts": "2026-10-21T14:20:24+08:00",
+      "last_ts": "2026-11-03T09:21:01+08:00",
+      "silence_days": 0,
+      "questions_asked": 4,
+      "answers_given": 1,
+      "qa_answered": 1,
+      "helped_and_thanked": 0,
+      "submissions": 2,
+      "accepted": 2,
+      "needs_revision": 0,
+      "challenges": [
+        "C4D",
+        "C6A"
+      ],
+      "missing_items": 0,
+      "skill_tags": [
+        "C4D",
+        "C6A"
+      ],
+      "engagement_score": 36.3,
+      "risk_flags": [],
+      "rank": 7
+    },
+    {
+      "id": "student:wxid_fengyr",
+      "wxid": "wxid_fengyr",
+      "nickname": "冯亦然",
+      "major": "英语",
+      "is_real": false,
+      "msg_count": 14,
+      "week_msgs": 8,
+      "prev_week_msgs": 6,
+      "delta_ratio": 0.33,
+      "intents": {
+        "question": 6,
+        "submission": 4,
+        "social": 2,
+        "discussion": 1,
+        "answer": 1
+      },
+      "active_days": 8,
+      "active_dates": [
+        "2026-10-22",
+        "2026-10-24",
+        "2026-10-25",
+        "2026-10-26",
+        "2026-10-28",
+        "2026-10-29",
+        "2026-10-30",
+        "2026-11-02"
+      ],
+      "first_ts": "2026-10-22T20:05:49+08:00",
+      "last_ts": "2026-11-02T14:02:00+08:00",
+      "silence_days": 1,
+      "questions_asked": 6,
+      "answers_given": 1,
+      "qa_answered": 1,
+      "helped_and_thanked": 0,
+      "submissions": 2,
+      "accepted": 1,
+      "needs_revision": 1,
+      "challenges": [
+        "C3",
+        "C8"
+      ],
+      "missing_items": 2,
+      "skill_tags": [
+        "C3",
+        "发言"
+      ],
+      "engagement_score": 29.4,
+      "risk_flags": [
+        "1 项提交缺件：C8"
+      ],
+      "rank": 8
+    },
+    {
+      "id": "student:wxid_tangsh",
+      "wxid": "wxid_tangsh",
+      "nickname": "唐思涵",
+      "major": "工商管理",
+      "is_real": false,
+      "msg_count": 10,
+      "week_msgs": 3,
+      "prev_week_msgs": 7,
+      "delta_ratio": -0.57,
+      "intents": {
+        "question": 3,
+        "discussion": 2,
+        "submission": 2,
+        "answer": 2,
+        "resource": 1
+      },
+      "active_days": 6,
+      "active_dates": [
+        "2026-10-22",
+        "2026-10-24",
+        "2026-10-27",
+        "2026-10-29",
+        "2026-10-30",
+        "2026-11-02"
+      ],
+      "first_ts": "2026-10-22T15:30:18+08:00",
+      "last_ts": "2026-11-02T19:40:11+08:00",
+      "silence_days": 1,
+      "questions_asked": 3,
+      "answers_given": 2,
+      "qa_answered": 1,
+      "helped_and_thanked": 1,
+      "submissions": 1,
+      "accepted": 1,
+      "needs_revision": 0,
+      "challenges": [
+        "C4B"
+      ],
+      "missing_items": 0,
+      "skill_tags": [
+        "C4B",
+        "公众号"
+      ],
+      "engagement_score": 28.1,
+      "risk_flags": [
+        "活跃度下降 57%"
+      ],
+      "rank": 9
+    },
+    {
+      "id": "student:wxid_guoyq",
+      "wxid": "wxid_guoyq",
+      "nickname": "郭雅琪",
+      "major": "会计学",
+      "is_real": false,
+      "msg_count": 11,
+      "week_msgs": 5,
+      "prev_week_msgs": 6,
+      "delta_ratio": -0.17,
+      "intents": {
+        "submission": 6,
+        "discussion": 2,
+        "question": 2,
+        "answer": 1
+      },
+      "active_days": 7,
+      "active_dates": [
+        "2026-10-22",
+        "2026-10-23",
+        "2026-10-24",
+        "2026-10-27",
+        "2026-10-28",
+        "2026-10-29",
+        "2026-11-02"
+      ],
+      "first_ts": "2026-10-22T10:12:43+08:00",
+      "last_ts": "2026-11-02T09:30:31+08:00",
+      "silence_days": 1,
+      "questions_asked": 2,
+      "answers_given": 1,
+      "qa_answered": 1,
+      "helped_and_thanked": 0,
+      "submissions": 2,
+      "accepted": 1,
+      "needs_revision": 0,
+      "challenges": [
+        "C1",
+        "C4A"
+      ],
+      "missing_items": 0,
+      "skill_tags": [
+        "C1",
+        "翻译"
+      ],
+      "engagement_score": 25.8,
+      "risk_flags": [],
+      "rank": 10
+    },
+    {
+      "id": "student:wxid_gaoyf",
+      "wxid": "wxid_gaoyf",
+      "nickname": "高宇飞",
+      "major": "人工智能",
+      "is_real": false,
+      "msg_count": 8,
+      "week_msgs": 3,
+      "prev_week_msgs": 5,
+      "delta_ratio": -0.4,
+      "intents": {
+        "question": 3,
+        "answer": 2,
+        "submission": 2,
+        "social": 1
+      },
+      "active_days": 5,
+      "active_dates": [
+        "2026-10-23",
+        "2026-10-25",
+        "2026-10-27",
+        "2026-10-28",
+        "2026-10-30"
+      ],
+      "first_ts": "2026-10-23T13:50:18+08:00",
+      "last_ts": "2026-10-30T11:21:18+08:00",
+      "silence_days": 4,
+      "questions_asked": 3,
+      "answers_given": 2,
+      "qa_answered": 2,
+      "helped_and_thanked": 0,
+      "submissions": 1,
+      "accepted": 1,
+      "needs_revision": 0,
+      "challenges": [
+        "C6A"
+      ],
+      "missing_items": 0,
+      "skill_tags": [
+        "C6A",
+        "部署"
+      ],
+      "engagement_score": 25.3,
+      "risk_flags": [],
+      "rank": 11
+    },
+    {
+      "id": "student:wxid_pengxy",
+      "wxid": "wxid_pengxy",
+      "nickname": "彭心语",
+      "major": "新闻传播",
+      "is_real": false,
+      "msg_count": 14,
+      "week_msgs": 7,
+      "prev_week_msgs": 7,
+      "delta_ratio": 0.0,
+      "intents": {
+        "question": 6,
+        "submission": 5,
+        "discussion": 2,
+        "social": 1
+      },
+      "active_days": 8,
+      "active_dates": [
+        "2026-10-22",
+        "2026-10-23",
+        "2026-10-24",
+        "2026-10-25",
+        "2026-10-27",
+        "2026-10-29",
+        "2026-10-30",
+        "2026-11-02"
+      ],
+      "first_ts": "2026-10-22T14:00:18+08:00",
+      "last_ts": "2026-11-02T10:22:11+08:00",
+      "silence_days": 1,
+      "questions_asked": 6,
+      "answers_given": 0,
+      "qa_answered": 0,
+      "helped_and_thanked": 0,
+      "submissions": 2,
+      "accepted": 1,
+      "needs_revision": 1,
+      "challenges": [
+        "C7",
+        "C8"
+      ],
+      "missing_items": 1,
+      "skill_tags": [
+        "C7"
+      ],
+      "engagement_score": 25.2,
+      "risk_flags": [
+        "1 项提交缺件：C8",
+        "只问不答"
+      ],
+      "rank": 12
+    },
+    {
+      "id": "student:wxid_majl",
+      "wxid": "wxid_majl",
+      "nickname": "马嘉乐",
+      "major": "软件工程",
+      "is_real": false,
+      "msg_count": 11,
+      "week_msgs": 5,
+      "prev_week_msgs": 6,
+      "delta_ratio": -0.17,
+      "intents": {
+        "submission": 5,
+        "question": 3,
+        "social": 3
+      },
+      "active_days": 8,
+      "active_dates": [
+        "2026-10-22",
+        "2026-10-23",
+        "2026-10-25",
+        "2026-10-27",
+        "2026-10-28",
+        "2026-10-29",
+        "2026-11-01",
+        "2026-11-02"
+      ],
+      "first_ts": "2026-10-22T10:30:45+08:00",
+      "last_ts": "2026-11-02T16:45:30+08:00",
+      "silence_days": 1,
+      "questions_asked": 3,
+      "answers_given": 0,
+      "qa_answered": 0,
+      "helped_and_thanked": 0,
+      "submissions": 3,
+      "accepted": 1,
+      "needs_revision": 2,
+      "challenges": [
+        "C1",
+        "C2",
+        "C4A"
+      ],
+      "missing_items": 2,
+      "skill_tags": [
+        "C4A"
+      ],
+      "engagement_score": 22.6,
+      "risk_flags": [
+        "2 项提交缺件：C1、C2",
+        "只问不答"
+      ],
+      "rank": 13
+    },
+    {
+      "id": "student:wxid_xufy",
+      "wxid": "wxid_xufy",
+      "nickname": "徐方雨",
+      "major": "市场营销",
+      "is_real": false,
+      "msg_count": 11,
+      "week_msgs": 4,
+      "prev_week_msgs": 7,
+      "delta_ratio": -0.43,
+      "intents": {
+        "question": 4,
+        "submission": 4,
+        "social": 1,
+        "resource": 1,
+        "discussion": 1
+      },
+      "active_days": 7,
+      "active_dates": [
+        "2026-10-21",
+        "2026-10-22",
+        "2026-10-23",
+        "2026-10-25",
+        "2026-10-27",
+        "2026-10-29",
+        "2026-11-01"
+      ],
+      "first_ts": "2026-10-21T19:30:39+08:00",
+      "last_ts": "2026-11-01T17:54:34+08:00",
+      "silence_days": 2,
+      "questions_asked": 4,
+      "answers_given": 0,
+      "qa_answered": 0,
+      "helped_and_thanked": 0,
+      "submissions": 2,
+      "accepted": 1,
+      "needs_revision": 1,
+      "challenges": [
+        "C2",
+        "C7"
+      ],
+      "missing_items": 1,
+      "skill_tags": [
+        "C7"
+      ],
+      "engagement_score": 21.6,
+      "risk_flags": [
+        "1 项提交缺件：C2",
+        "只问不答"
+      ],
+      "rank": 14
+    },
+    {
+      "id": "student:wxid_dengzl",
+      "wxid": "wxid_dengzl",
+      "nickname": "邓子龙",
+      "major": "网络工程",
+      "is_real": false,
+      "msg_count": 10,
+      "week_msgs": 4,
+      "prev_week_msgs": 6,
+      "delta_ratio": -0.33,
+      "intents": {
+        "question": 4,
+        "submission": 4,
+        "social": 2
+      },
+      "active_days": 7,
+      "active_dates": [
+        "2026-10-23",
+        "2026-10-24",
+        "2026-10-25",
+        "2026-10-27",
+        "2026-10-29",
+        "2026-10-30",
+        "2026-11-02"
+      ],
+      "first_ts": "2026-10-23T10:50:20+08:00",
+      "last_ts": "2026-11-02T11:00:20+08:00",
+      "silence_days": 1,
+      "questions_asked": 4,
+      "answers_given": 0,
+      "qa_answered": 0,
+      "helped_and_thanked": 0,
+      "submissions": 2,
+      "accepted": 1,
+      "needs_revision": 1,
+      "challenges": [
+        "C2",
+        "C5"
+      ],
+      "missing_items": 1,
+      "skill_tags": [
+        "C5"
+      ],
+      "engagement_score": 20.8,
+      "risk_flags": [
+        "1 项提交缺件：C2",
+        "只问不答"
+      ],
+      "rank": 15
+    },
+    {
+      "id": "student:wxid_zhaomx",
+      "wxid": "wxid_zhaomx",
+      "nickname": "赵明轩",
+      "major": "软件工程",
+      "is_real": false,
+      "msg_count": 10,
+      "week_msgs": 3,
+      "prev_week_msgs": 7,
+      "delta_ratio": -0.57,
+      "intents": {
+        "submission": 4,
+        "social": 3,
+        "question": 2,
+        "discussion": 1
+      },
+      "active_days": 4,
+      "active_dates": [
+        "2026-10-21",
+        "2026-10-24",
+        "2026-10-26",
+        "2026-10-31"
+      ],
+      "first_ts": "2026-10-21T09:03:23+08:00",
+      "last_ts": "2026-10-31T15:29:10+08:00",
+      "silence_days": 3,
+      "questions_asked": 2,
+      "answers_given": 0,
+      "qa_answered": 0,
+      "helped_and_thanked": 0,
+      "submissions": 2,
+      "accepted": 1,
+      "needs_revision": 1,
+      "challenges": [
+        "C5",
+        "C8"
+      ],
+      "missing_items": 2,
+      "skill_tags": [
+        "C5"
+      ],
+      "engagement_score": 17.8,
+      "risk_flags": [
+        "活跃度下降 57%",
+        "1 项提交缺件：C8"
+      ],
+      "rank": 16
+    },
+    {
+      "id": "student:wxid_qiuzw",
+      "wxid": "wxid_qiuzw",
+      "nickname": "邱志伟",
+      "major": "信息管理",
+      "is_real": false,
+      "msg_count": 7,
+      "week_msgs": 3,
+      "prev_week_msgs": 4,
+      "delta_ratio": -0.25,
+      "intents": {
+        "question": 3,
+        "social": 3,
+        "answer": 1
+      },
+      "active_days": 5,
+      "active_dates": [
+        "2026-10-23",
+        "2026-10-25",
+        "2026-10-28",
+        "2026-10-30",
+        "2026-11-03"
+      ],
+      "first_ts": "2026-10-23T09:20:31+08:00",
+      "last_ts": "2026-11-03T10:00:50+08:00",
+      "silence_days": 0,
+      "questions_asked": 3,
+      "answers_given": 1,
+      "qa_answered": 0,
+      "helped_and_thanked": 0,
+      "submissions": 0,
+      "accepted": 0,
+      "needs_revision": 0,
+      "challenges": [],
+      "missing_items": 0,
+      "skill_tags": [],
+      "engagement_score": 15.3,
+      "risk_flags": [
+        "只问不答"
+      ],
+      "rank": 17
+    },
+    {
+      "id": "student:wxid_yanghs",
+      "wxid": "wxid_yanghs",
+      "nickname": "杨海森",
+      "major": "统计学",
+      "is_real": false,
+      "msg_count": 8,
+      "week_msgs": 4,
+      "prev_week_msgs": 4,
+      "delta_ratio": 0.0,
+      "intents": {
+        "question": 4,
+        "social": 3,
+        "discussion": 1
+      },
+      "active_days": 7,
+      "active_dates": [
+        "2026-10-23",
+        "2026-10-25",
+        "2026-10-26",
+        "2026-10-29",
+        "2026-10-30",
+        "2026-10-31",
+        "2026-11-03"
+      ],
+      "first_ts": "2026-10-23T20:10:38+08:00",
+      "last_ts": "2026-11-03T14:30:03+08:00",
+      "silence_days": 0,
+      "questions_asked": 4,
+      "answers_given": 0,
+      "qa_answered": 0,
+      "helped_and_thanked": 0,
+      "submissions": 0,
+      "accepted": 0,
+      "needs_revision": 0,
+      "challenges": [],
+      "missing_items": 0,
+      "skill_tags": [],
+      "engagement_score": 14.0,
+      "risk_flags": [
+        "只问不答"
+      ],
+      "rank": 18
+    },
+    {
+      "id": "student:wxid_luoxr",
+      "wxid": "wxid_luoxr",
+      "nickname": "罗欣然",
+      "major": "数字媒体艺术",
+      "is_real": false,
+      "msg_count": 2,
+      "week_msgs": 0,
+      "prev_week_msgs": 2,
+      "delta_ratio": -1.0,
+      "intents": {
+        "social": 1,
+        "question": 1
+      },
+      "active_days": 2,
+      "active_dates": [
+        "2026-10-21",
+        "2026-10-24"
+      ],
+      "first_ts": "2026-10-21T15:02:37+08:00",
+      "last_ts": "2026-10-24T09:30:33+08:00",
+      "silence_days": 10,
+      "questions_asked": 1,
+      "answers_given": 0,
+      "qa_answered": 0,
+      "helped_and_thanked": 0,
+      "submissions": 0,
+      "accepted": 0,
+      "needs_revision": 0,
+      "challenges": [],
+      "missing_items": 0,
+      "skill_tags": [],
+      "engagement_score": 3.8,
+      "risk_flags": [
+        "沉默 10 天",
+        "活跃度下降 100%"
+      ],
+      "rank": 19
+    },
+    {
+      "id": "student:wxid_xiemq",
+      "wxid": "wxid_xiemq",
+      "nickname": "谢梦琪",
+      "major": "电子商务",
+      "is_real": false,
+      "msg_count": 2,
+      "week_msgs": 0,
+      "prev_week_msgs": 2,
+      "delta_ratio": -1.0,
+      "intents": {
+        "question": 2
+      },
+      "active_days": 2,
+      "active_dates": [
+        "2026-10-23",
+        "2026-10-27"
+      ],
+      "first_ts": "2026-10-23T13:00:47+08:00",
+      "last_ts": "2026-10-27T10:00:24+08:00",
+      "silence_days": 7,
+      "questions_asked": 2,
+      "answers_given": 0,
+      "qa_answered": 0,
+      "helped_and_thanked": 0,
+      "submissions": 0,
+      "accepted": 0,
+      "needs_revision": 0,
+      "challenges": [],
+      "missing_items": 0,
+      "skill_tags": [],
+      "engagement_score": 3.8,
+      "risk_flags": [
+        "沉默 7 天",
+        "活跃度下降 100%"
+      ],
+      "rank": 20
+    }
+  ],
+  "active_count": 20,
+  "silent_count": 2,
+  "top5": [
+    {
+      "nickname": "景雪晴",
+      "score": 83.4,
+      "msgs": 21,
+      "answers": 11
+    },
+    {
+      "nickname": "周嘉懿",
+      "score": 44.3,
+      "msgs": 12,
+      "answers": 5
+    },
+    {
+      "nickname": "何承翰",
+      "score": 44.1,
+      "msgs": 18,
+      "answers": 2
+    },
+    {
+      "nickname": "吴昊天",
+      "score": 43.5,
+      "msgs": 15,
+      "answers": 2
+    },
+    {
+      "nickname": "林一舟",
+      "score": 39.3,
+      "msgs": 16,
+      "answers": 2
+    }
+  ]
+}

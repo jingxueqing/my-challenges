@@ -1,0 +1,1668 @@
+{
+  "count": 14,
+  "root": "/Users/jingxueqing/Desktop/挑战的产物",
+  "owner": "JingXueQing",
+  "submissions": [
+    {
+      "student": "wxid_jxq2024",
+      "student_nickname": "景雪晴",
+      "challenge": "C1",
+      "artifact_kinds": [
+        "aar",
+        "ailog",
+        "deliverable"
+      ],
+      "artifact_count": 6,
+      "bytes": 34252,
+      "artifacts": [
+        {
+          "kind": "aar",
+          "file": "C1-交付_stanford-vibe-coding-zh/AAR.md",
+          "bytes": 7335,
+          "mtime": "2026-09-27 22:42:55"
+        },
+        {
+          "kind": "ailog",
+          "file": "C1-交付_stanford-vibe-coding-zh/AI日志.md",
+          "bytes": 9193,
+          "mtime": "2026-09-27 22:42:31"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C1-交付_stanford-vibe-coding-zh/README.md",
+          "bytes": 9153,
+          "mtime": "2026-09-27 22:42:01"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C1-交付_stanford-vibe-coding-zh/eduseed-config-2024102110351-2.json",
+          "bytes": 1978,
+          "mtime": "2026-09-28 11:44:51"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C1-交付_stanford-vibe-coding-zh/run_all.sh",
+          "bytes": 2185,
+          "mtime": "2026-09-27 21:42:42"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C1-交付_stanford-vibe-coding-zh/术语表.md",
+          "bytes": 4408,
+          "mtime": "2026-09-27 22:25:37"
+        }
+      ],
+      "source": "fs_scan",
+      "root": "/Users/jingxueqing/Desktop/挑战的产物",
+      "latest_mtime": "2026-09-28 11:44:51"
+    },
+    {
+      "student": "wxid_jxq2024",
+      "student_nickname": "景雪晴",
+      "challenge": "C2",
+      "artifact_kinds": [
+        "aar",
+        "ailog",
+        "deliverable",
+        "notes"
+      ],
+      "artifact_count": 8,
+      "bytes": 1054030,
+      "artifacts": [
+        {
+          "kind": "deliverable",
+          "file": "C2-交付_JingXueQing_AI4Math论文/AI4Math_Reliability_submission.zip",
+          "bytes": 506967,
+          "mtime": "2026-09-29 11:05:00"
+        },
+        {
+          "kind": "ailog",
+          "file": "C2-交付_JingXueQing_AI4Math论文/AI协作日志.md",
+          "bytes": 12358,
+          "mtime": "2026-09-29 11:04:59"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C2-交付_JingXueQing_AI4Math论文/BUILD_REPORT.txt",
+          "bytes": 873,
+          "mtime": "2026-09-29 11:05:00"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C2-交付_JingXueQing_AI4Math论文/README.md",
+          "bytes": 3548,
+          "mtime": "2026-09-29 11:04:59"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C2-交付_JingXueQing_AI4Math论文/paper.pdf",
+          "bytes": 478423,
+          "mtime": "2026-09-29 11:04:59"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C2-交付_JingXueQing_AI4Math论文/paper.tex",
+          "bytes": 33539,
+          "mtime": "2026-09-29 11:04:59"
+        },
+        {
+          "kind": "notes",
+          "file": "C2-交付_JingXueQing_AI4Math论文/references.bib",
+          "bytes": 9840,
+          "mtime": "2026-09-29 11:04:59"
+        },
+        {
+          "kind": "aar",
+          "file": "C2-交付_JingXueQing_AI4Math论文/七维AAR.md",
+          "bytes": 8482,
+          "mtime": "2026-09-29 11:04:59"
+        }
+      ],
+      "source": "fs_scan",
+      "root": "/Users/jingxueqing/Desktop/挑战的产物",
+      "latest_mtime": "2026-09-29 11:05:00"
+    },
+    {
+      "student": "wxid_jxq2024",
+      "student_nickname": "景雪晴",
+      "challenge": "C2A",
+      "artifact_kinds": [
+        "aar",
+        "ailog",
+        "deliverable",
+        "notes",
+        "proposal"
+      ],
+      "artifact_count": 8,
+      "bytes": 51263,
+      "artifacts": [
+        {
+          "kind": "aar",
+          "file": "C2A-交付_JingXueQing_AttnScope/JingXueQing_C2A_AAR.md",
+          "bytes": 6617,
+          "mtime": "2026-10-03 19:06:40"
+        },
+        {
+          "kind": "ailog",
+          "file": "C2A-交付_JingXueQing_AttnScope/JingXueQing_C2A_AI日志.md",
+          "bytes": 9529,
+          "mtime": "2026-10-03 19:06:40"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C2A-交付_JingXueQing_AttnScope/JingXueQing_C2A_benchmark/README.md",
+          "bytes": 7383,
+          "mtime": "2026-10-03 19:06:40"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C2A-交付_JingXueQing_AttnScope/JingXueQing_C2A_benchmark/requirements.txt",
+          "bytes": 173,
+          "mtime": "2026-10-03 19:06:40"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C2A-交付_JingXueQing_AttnScope/JingXueQing_C2A_benchmark/run_eval.py",
+          "bytes": 4245,
+          "mtime": "2026-10-03 19:06:40"
+        },
+        {
+          "kind": "proposal",
+          "file": "C2A-交付_JingXueQing_AttnScope/JingXueQing_C2A_proposal.md",
+          "bytes": 9120,
+          "mtime": "2026-10-03 19:06:40"
+        },
+        {
+          "kind": "notes",
+          "file": "C2A-交付_JingXueQing_AttnScope/JingXueQing_C2A_拿来说明.md",
+          "bytes": 12145,
+          "mtime": "2026-10-03 19:06:40"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C2A-交付_JingXueQing_AttnScope/README_提交说明.md",
+          "bytes": 2051,
+          "mtime": "2026-10-03 19:06:40"
+        }
+      ],
+      "source": "fs_scan",
+      "root": "/Users/jingxueqing/Desktop/挑战的产物",
+      "latest_mtime": "2026-10-03 19:06:40"
+    },
+    {
+      "student": "wxid_jxq2024",
+      "student_nickname": "景雪晴",
+      "challenge": "C2G",
+      "artifact_kinds": [
+        "aar",
+        "ailog",
+        "deliverable",
+        "notes"
+      ],
+      "artifact_count": 29,
+      "bytes": 1771354,
+      "artifacts": [
+        {
+          "kind": "ailog",
+          "file": "C2G-交付_JingXueQing_参数高尔夫/JingXueQing_C2G_AI日志.md",
+          "bytes": 16877,
+          "mtime": "2026-10-03 23:45:20"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C2G-交付_JingXueQing_参数高尔夫/JingXueQing_C2G_ablation.md",
+          "bytes": 14186,
+          "mtime": "2026-10-03 23:44:32"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C2G-交付_JingXueQing_参数高尔夫/JingXueQing_C2G_leaderboard.md",
+          "bytes": 9855,
+          "mtime": "2026-10-03 23:44:48"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C2G-交付_JingXueQing_参数高尔夫/JingXueQing_C2G_submission.json",
+          "bytes": 7398,
+          "mtime": "2026-10-03 23:46:18"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C2G-交付_JingXueQing_参数高尔夫/JingXueQing_C2G_submission.tar.gz",
+          "bytes": 66445,
+          "mtime": "2026-10-03 23:50:18"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C2G-交付_JingXueQing_参数高尔夫/JingXueQing_C2G_verify_bpb.py",
+          "bytes": 6000,
+          "mtime": "2026-10-03 23:04:53"
+        },
+        {
+          "kind": "notes",
+          "file": "C2G-交付_JingXueQing_参数高尔夫/JingXueQing_C2G_拿来说明.md",
+          "bytes": 11423,
+          "mtime": "2026-10-03 22:53:59"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C2G-交付_JingXueQing_参数高尔夫/JingXueQing_C2G_方案设计.md",
+          "bytes": 16612,
+          "mtime": "2026-10-03 23:46:03"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C2G-交付_JingXueQing_参数高尔夫/README_提交说明.md",
+          "bytes": 9440,
+          "mtime": "2026-10-03 23:45:50"
+        },
+        {
+          "kind": "aar",
+          "file": "C2G-交付_JingXueQing_参数高尔夫_全量版/JingXueQing_C2G_AAR.md",
+          "bytes": 13557,
+          "mtime": "2026-10-04 19:09:03"
+        },
+        {
+          "kind": "ailog",
+          "file": "C2G-交付_JingXueQing_参数高尔夫_全量版/JingXueQing_C2G_AI日志.md",
+          "bytes": 16877,
+          "mtime": "2026-10-03 23:45:20"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C2G-交付_JingXueQing_参数高尔夫_全量版/JingXueQing_C2G_ablation.md",
+          "bytes": 16675,
+          "mtime": "2026-10-04 19:10:06"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C2G-交付_JingXueQing_参数高尔夫_全量版/JingXueQing_C2G_leaderboard.md",
+          "bytes": 9855,
+          "mtime": "2026-10-03 23:44:48"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C2G-交付_JingXueQing_参数高尔夫_全量版/JingXueQing_C2G_logs/README.md",
+          "bytes": 6353,
+          "mtime": "2026-10-04 19:09:34"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C2G-交付_JingXueQing_参数高尔夫_全量版/JingXueQing_C2G_logs/real_seed0.log",
+          "bytes": 3522,
+          "mtime": "2026-10-04 18:57:47"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C2G-交付_JingXueQing_参数高尔夫_全量版/JingXueQing_C2G_logs/real_seed1234.log",
+          "bytes": 3544,
+          "mtime": "2026-10-04 19:05:33"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C2G-交付_JingXueQing_参数高尔夫_全量版/JingXueQing_C2G_logs/real_seed42.log",
+          "bytes": 3527,
+          "mtime": "2026-10-04 18:51:18"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C2G-交付_JingXueQing_参数高尔夫_全量版/JingXueQing_C2G_logs/smoke_seed0.log",
+          "bytes": 1691,
+          "mtime": "2026-10-03 23:43:58"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C2G-交付_JingXueQing_参数高尔夫_全量版/JingXueQing_C2G_logs/smoke_seed1234.log",
+          "bytes": 1705,
+          "mtime": "2026-10-03 23:44:07"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C2G-交付_JingXueQing_参数高尔夫_全量版/JingXueQing_C2G_logs/smoke_seed42.log",
+          "bytes": 2261,
+          "mtime": "2026-10-03 23:43:58"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C2G-交付_JingXueQing_参数高尔夫_全量版/JingXueQing_C2G_submission.json",
+          "bytes": 11991,
+          "mtime": "2026-10-04 19:06:49"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C2G-交付_JingXueQing_参数高尔夫_全量版/JingXueQing_C2G_submission.tar.gz",
+          "bytes": 1408593,
+          "mtime": "2026-10-04 19:06:49"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C2G-交付_JingXueQing_参数高尔夫_全量版/JingXueQing_C2G_tokenizer.json",
+          "bytes": 299,
+          "mtime": "2026-10-04 19:06:49"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C2G-交付_JingXueQing_参数高尔夫_全量版/JingXueQing_C2G_train_gpt.py",
+          "bytes": 50771,
+          "mtime": "2026-10-03 23:32:04"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C2G-交付_JingXueQing_参数高尔夫_全量版/JingXueQing_C2G_verify_bpb.py",
+          "bytes": 6000,
+          "mtime": "2026-10-03 23:04:53"
+        },
+        {
+          "kind": "notes",
+          "file": "C2G-交付_JingXueQing_参数高尔夫_全量版/JingXueQing_C2G_拿来说明.md",
+          "bytes": 11423,
+          "mtime": "2026-10-03 22:53:59"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C2G-交付_JingXueQing_参数高尔夫_全量版/JingXueQing_C2G_方案草案.md",
+          "bytes": 14527,
+          "mtime": "2026-10-03 22:02:22"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C2G-交付_JingXueQing_参数高尔夫_全量版/JingXueQing_C2G_方案设计.md",
+          "bytes": 16612,
+          "mtime": "2026-10-03 23:46:03"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C2G-交付_JingXueQing_参数高尔夫_全量版/README_提交说明.md",
+          "bytes": 13335,
+          "mtime": "2026-10-04 19:08:42"
+        }
+      ],
+      "source": "fs_scan",
+      "root": "/Users/jingxueqing/Desktop/挑战的产物",
+      "latest_mtime": "2026-10-04 19:10:06"
+    },
+    {
+      "student": "wxid_jxq2024",
+      "student_nickname": "景雪晴",
+      "challenge": "C4",
+      "artifact_kinds": [
+        "aar",
+        "ailog",
+        "deliverable",
+        "demo"
+      ],
+      "artifact_count": 42,
+      "bytes": 2358459,
+      "artifacts": [
+        {
+          "kind": "deliverable",
+          "file": "C4-提交_JingXueQing_ai-log-forge/C4上传包_JingXueQing.zip",
+          "bytes": 363184,
+          "mtime": "2026-10-04 18:36:21"
+        },
+        {
+          "kind": "aar",
+          "file": "C4-提交_JingXueQing_ai-log-forge/JingXueQing_C4_AAR.md",
+          "bytes": 7161,
+          "mtime": "2026-10-04 18:30:57"
+        },
+        {
+          "kind": "ailog",
+          "file": "C4-提交_JingXueQing_ai-log-forge/JingXueQing_C4_AI日志.md",
+          "bytes": 10390,
+          "mtime": "2026-10-03 20:45:04"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4-提交_JingXueQing_ai-log-forge/JingXueQing_C4_ai-log-forge.skill",
+          "bytes": 23293,
+          "mtime": "2026-10-03 20:40:30"
+        },
+        {
+          "kind": "demo",
+          "file": "C4-提交_JingXueQing_ai-log-forge/JingXueQing_C4_demo.html",
+          "bytes": 10240,
+          "mtime": "2026-10-03 20:46:30"
+        },
+        {
+          "kind": "demo",
+          "file": "C4-提交_JingXueQing_ai-log-forge/JingXueQing_C4_demo_01_终端实录.png",
+          "bytes": 135062,
+          "mtime": "2026-10-03 20:53:08"
+        },
+        {
+          "kind": "demo",
+          "file": "C4-提交_JingXueQing_ai-log-forge/JingXueQing_C4_demo_02_体检闭环.png",
+          "bytes": 64520,
+          "mtime": "2026-10-03 20:53:08"
+        },
+        {
+          "kind": "demo",
+          "file": "C4-提交_JingXueQing_ai-log-forge/JingXueQing_C4_demo_03_体检前后.png",
+          "bytes": 127415,
+          "mtime": "2026-10-03 20:53:08"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4-提交_JingXueQing_ai-log-forge/JingXueQing_C4_skill说明.md",
+          "bytes": 10081,
+          "mtime": "2026-10-03 20:42:12"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4-提交_JingXueQing_ai-log-forge/JingXueQing_C4_交付物自检.md",
+          "bytes": 4587,
+          "mtime": "2026-10-04 18:31:34"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4-提交_JingXueQing_ai-log-forge/JingXueQing_C4_教学说明.md",
+          "bytes": 10274,
+          "mtime": "2026-10-03 20:43:17"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4-提交_JingXueQing_ai-log-forge/README_提交说明.md",
+          "bytes": 2910,
+          "mtime": "2026-10-04 18:31:44"
+        },
+        {
+          "kind": "aar",
+          "file": "C4-提交_JingXueQing_ai-log-forge/samples/Demo_C4_AAR.md",
+          "bytes": 1452,
+          "mtime": "2026-10-03 20:53:51"
+        },
+        {
+          "kind": "ailog",
+          "file": "C4-提交_JingXueQing_ai-log-forge/samples/Demo_C4_AI日志.md",
+          "bytes": 7658,
+          "mtime": "2026-10-03 20:53:51"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器/评审输入样例/Elite20TA_C4_skill-explainer/Elite20TA_C4_skill-explainer.skill",
+          "bytes": 6225,
+          "mtime": "2026-10-04 20:13:51"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器/评审输入样例/JingXueQing_C4_ai-log-forge/C4上传包_JingXueQing.zip",
+          "bytes": 363184,
+          "mtime": "2026-10-04 20:13:53"
+        },
+        {
+          "kind": "aar",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器/评审输入样例/JingXueQing_C4_ai-log-forge/JingXueQing_C4_AAR.md",
+          "bytes": 7161,
+          "mtime": "2026-10-04 20:13:53"
+        },
+        {
+          "kind": "ailog",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器/评审输入样例/JingXueQing_C4_ai-log-forge/JingXueQing_C4_AI日志.md",
+          "bytes": 10390,
+          "mtime": "2026-10-04 20:13:53"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器/评审输入样例/JingXueQing_C4_ai-log-forge/JingXueQing_C4_ai-log-forge.skill",
+          "bytes": 23293,
+          "mtime": "2026-10-04 20:13:53"
+        },
+        {
+          "kind": "demo",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器/评审输入样例/JingXueQing_C4_ai-log-forge/JingXueQing_C4_demo.html",
+          "bytes": 10240,
+          "mtime": "2026-10-04 20:13:53"
+        },
+        {
+          "kind": "demo",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器/评审输入样例/JingXueQing_C4_ai-log-forge/JingXueQing_C4_demo_01_终端实录.png",
+          "bytes": 135062,
+          "mtime": "2026-10-04 20:13:53"
+        },
+        {
+          "kind": "demo",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器/评审输入样例/JingXueQing_C4_ai-log-forge/JingXueQing_C4_demo_02_体检闭环.png",
+          "bytes": 64520,
+          "mtime": "2026-10-04 20:13:53"
+        },
+        {
+          "kind": "demo",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器/评审输入样例/JingXueQing_C4_ai-log-forge/JingXueQing_C4_demo_03_体检前后.png",
+          "bytes": 127415,
+          "mtime": "2026-10-04 20:13:53"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器/评审输入样例/JingXueQing_C4_ai-log-forge/JingXueQing_C4_skill说明.md",
+          "bytes": 10081,
+          "mtime": "2026-10-04 20:13:53"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器/评审输入样例/JingXueQing_C4_ai-log-forge/JingXueQing_C4_交付物自检.md",
+          "bytes": 4587,
+          "mtime": "2026-10-04 20:13:53"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器/评审输入样例/JingXueQing_C4_ai-log-forge/JingXueQing_C4_教学说明.md",
+          "bytes": 10274,
+          "mtime": "2026-10-04 20:13:53"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器/评审输入样例/JingXueQing_C4_ai-log-forge/README_提交说明.md",
+          "bytes": 2910,
+          "mtime": "2026-10-04 20:13:53"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器/评审输入样例/WeChatGroup_C4_wechat-doc-mapper/WeChatGroup_C4_wechat-doc-mapper.skill",
+          "bytes": 14774,
+          "mtime": "2026-10-04 20:13:51"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器_另版含真实评审输入/真实评审输入/Elite20TA_C4_skill-explainer/Elite20TA_C4_skill-explainer.skill",
+          "bytes": 6225,
+          "mtime": "2026-10-04 20:13:51"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器_另版含真实评审输入/真实评审输入/JingXueQing_C4_ai-log-forge/C4上传包_JingXueQing.zip",
+          "bytes": 363184,
+          "mtime": "2026-10-04 20:13:53"
+        },
+        {
+          "kind": "aar",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器_另版含真实评审输入/真实评审输入/JingXueQing_C4_ai-log-forge/JingXueQing_C4_AAR.md",
+          "bytes": 7161,
+          "mtime": "2026-10-04 20:13:53"
+        },
+        {
+          "kind": "ailog",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器_另版含真实评审输入/真实评审输入/JingXueQing_C4_ai-log-forge/JingXueQing_C4_AI日志.md",
+          "bytes": 10390,
+          "mtime": "2026-10-04 20:13:53"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器_另版含真实评审输入/真实评审输入/JingXueQing_C4_ai-log-forge/JingXueQing_C4_ai-log-forge.skill",
+          "bytes": 23293,
+          "mtime": "2026-10-04 20:13:53"
+        },
+        {
+          "kind": "demo",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器_另版含真实评审输入/真实评审输入/JingXueQing_C4_ai-log-forge/JingXueQing_C4_demo.html",
+          "bytes": 10240,
+          "mtime": "2026-10-04 20:13:53"
+        },
+        {
+          "kind": "demo",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器_另版含真实评审输入/真实评审输入/JingXueQing_C4_ai-log-forge/JingXueQing_C4_demo_01_终端实录.png",
+          "bytes": 135062,
+          "mtime": "2026-10-04 20:13:53"
+        },
+        {
+          "kind": "demo",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器_另版含真实评审输入/真实评审输入/JingXueQing_C4_ai-log-forge/JingXueQing_C4_demo_02_体检闭环.png",
+          "bytes": 64520,
+          "mtime": "2026-10-04 20:13:53"
+        },
+        {
+          "kind": "demo",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器_另版含真实评审输入/真实评审输入/JingXueQing_C4_ai-log-forge/JingXueQing_C4_demo_03_体检前后.png",
+          "bytes": 127415,
+          "mtime": "2026-10-04 20:13:53"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器_另版含真实评审输入/真实评审输入/JingXueQing_C4_ai-log-forge/JingXueQing_C4_skill说明.md",
+          "bytes": 10081,
+          "mtime": "2026-10-04 20:13:53"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器_另版含真实评审输入/真实评审输入/JingXueQing_C4_ai-log-forge/JingXueQing_C4_交付物自检.md",
+          "bytes": 4587,
+          "mtime": "2026-10-04 20:13:53"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器_另版含真实评审输入/真实评审输入/JingXueQing_C4_ai-log-forge/JingXueQing_C4_教学说明.md",
+          "bytes": 10274,
+          "mtime": "2026-10-04 20:13:53"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器_另版含真实评审输入/真实评审输入/JingXueQing_C4_ai-log-forge/README_提交说明.md",
+          "bytes": 2910,
+          "mtime": "2026-10-04 20:13:53"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器_另版含真实评审输入/真实评审输入/WeChatGroup_C4_wechat-doc-mapper/WeChatGroup_C4_wechat-doc-mapper.skill",
+          "bytes": 14774,
+          "mtime": "2026-10-04 20:13:51"
+        }
+      ],
+      "source": "fs_scan",
+      "root": "/Users/jingxueqing/Desktop/挑战的产物",
+      "latest_mtime": "2026-10-04 20:13:53"
+    },
+    {
+      "student": "wxid_jxq2024",
+      "student_nickname": "景雪晴",
+      "challenge": "C4A",
+      "artifact_kinds": [
+        "aar",
+        "ailog",
+        "deliverable",
+        "notes"
+      ],
+      "artifact_count": 16,
+      "bytes": 234002,
+      "artifacts": [
+        {
+          "kind": "aar",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器/JingXueQing_C4A_AAR.md",
+          "bytes": 7843,
+          "mtime": "2026-10-05 11:13:18"
+        },
+        {
+          "kind": "ailog",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器/JingXueQing_C4A_AI日志.md",
+          "bytes": 11410,
+          "mtime": "2026-10-05 11:13:30"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器/JingXueQing_C4A_skill-evaluator.skill",
+          "bytes": 51050,
+          "mtime": "2026-10-04 20:28:28"
+        },
+        {
+          "kind": "notes",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器/JingXueQing_C4A_拿来说明.md",
+          "bytes": 8469,
+          "mtime": "2026-10-04 20:22:59"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器/JingXueQing_C4A_教学说明.md",
+          "bytes": 9765,
+          "mtime": "2026-10-04 20:25:30"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器/JingXueQing_C4A_方案设计.md",
+          "bytes": 13639,
+          "mtime": "2026-10-04 20:23:48"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器/JingXueQing_C4A_评审报告.md",
+          "bytes": 8419,
+          "mtime": "2026-10-05 11:13:18"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器/README_提交说明.md",
+          "bytes": 6957,
+          "mtime": "2026-10-05 11:12:49"
+        },
+        {
+          "kind": "aar",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器_另版含真实评审输入/JingXueQing_C4A_AAR.md",
+          "bytes": 7843,
+          "mtime": "2026-10-04 20:27:05"
+        },
+        {
+          "kind": "ailog",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器_另版含真实评审输入/JingXueQing_C4A_AI日志.md",
+          "bytes": 11413,
+          "mtime": "2026-10-04 20:24:49"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器_另版含真实评审输入/JingXueQing_C4A_skill-evaluator.skill",
+          "bytes": 51050,
+          "mtime": "2026-10-04 20:28:28"
+        },
+        {
+          "kind": "notes",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器_另版含真实评审输入/JingXueQing_C4A_拿来说明.md",
+          "bytes": 8469,
+          "mtime": "2026-10-04 20:22:59"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器_另版含真实评审输入/JingXueQing_C4A_教学说明.md",
+          "bytes": 9765,
+          "mtime": "2026-10-04 20:25:30"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器_另版含真实评审输入/JingXueQing_C4A_方案设计.md",
+          "bytes": 13639,
+          "mtime": "2026-10-04 20:23:48"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器_另版含真实评审输入/JingXueQing_C4A_评审报告.md",
+          "bytes": 8419,
+          "mtime": "2026-10-04 20:26:31"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器_另版含真实评审输入/README_提交说明.md",
+          "bytes": 5852,
+          "mtime": "2026-10-04 20:27:26"
+        }
+      ],
+      "source": "fs_scan",
+      "root": "/Users/jingxueqing/Desktop/挑战的产物",
+      "latest_mtime": "2026-10-05 11:13:30"
+    },
+    {
+      "student": "wxid_jxq2024",
+      "student_nickname": "景雪晴",
+      "challenge": "C4B",
+      "artifact_kinds": [
+        "aar",
+        "ailog",
+        "deliverable",
+        "notes"
+      ],
+      "artifact_count": 17,
+      "bytes": 606744,
+      "artifacts": [
+        {
+          "kind": "aar",
+          "file": "C4B-交付_JingXueQing_公众号文章生成技能/JingXueQing_C4B_AAR复盘.md",
+          "bytes": 14767,
+          "mtime": "2026-10-06 12:38:41"
+        },
+        {
+          "kind": "ailog",
+          "file": "C4B-交付_JingXueQing_公众号文章生成技能/JingXueQing_C4B_AI日志.md",
+          "bytes": 24429,
+          "mtime": "2026-10-06 12:38:41"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4B-交付_JingXueQing_公众号文章生成技能/JingXueQing_C4B_eval_result.json",
+          "bytes": 19497,
+          "mtime": "2026-10-06 12:49:57"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4B-交付_JingXueQing_公众号文章生成技能/JingXueQing_C4B_output.body.html",
+          "bytes": 91280,
+          "mtime": "2026-10-06 12:45:13"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4B-交付_JingXueQing_公众号文章生成技能/JingXueQing_C4B_output.html",
+          "bytes": 92230,
+          "mtime": "2026-10-06 12:45:13"
+        },
+        {
+          "kind": "notes",
+          "file": "C4B-交付_JingXueQing_公众号文章生成技能/JingXueQing_C4B_拿来说明.md",
+          "bytes": 11183,
+          "mtime": "2026-10-06 12:38:03"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4B-交付_JingXueQing_公众号文章生成技能/JingXueQing_C4B_教学说明.md",
+          "bytes": 10035,
+          "mtime": "2026-10-06 12:50:16"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4B-交付_JingXueQing_公众号文章生成技能/JingXueQing_C4B_文章源文件.md",
+          "bytes": 11929,
+          "mtime": "2026-10-06 12:31:16"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4B-交付_JingXueQing_公众号文章生成技能/JingXueQing_C4B_文章链接.md",
+          "bytes": 6838,
+          "mtime": "2026-10-06 13:28:33"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4B-交付_JingXueQing_公众号文章生成技能/README_提交说明.md",
+          "bytes": 5425,
+          "mtime": "2026-10-06 13:27:45"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4B-交付_JingXueQing_公众号文章生成技能/cover.png",
+          "bytes": 32980,
+          "mtime": "2026-10-05 12:09:13"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4B-交付_JingXueQing_公众号文章生成技能/wechat-publisher-pro.zip",
+          "bytes": 85903,
+          "mtime": "2026-10-06 12:49:57"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4B-交付_JingXueQing_公众号文章生成技能/发布操作清单.md",
+          "bytes": 4116,
+          "mtime": "2026-10-06 13:27:45"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4B-交付_JingXueQing_公众号文章生成技能/附_对比版_高亮代码.body.html",
+          "bytes": 90848,
+          "mtime": "2026-10-06 12:49:43"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4B-交付_JingXueQing_公众号文章生成技能/附_对比版_高亮代码.html",
+          "bytes": 91805,
+          "mtime": "2026-10-06 12:49:43"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4B-交付_JingXueQing_公众号文章生成技能/附_探针对比_starter原版.html",
+          "bytes": 4169,
+          "mtime": "2026-10-05 12:37:12"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4B-交付_JingXueQing_公众号文章生成技能/附_探针对比_改造后.html",
+          "bytes": 9310,
+          "mtime": "2026-10-05 12:37:12"
+        }
+      ],
+      "source": "fs_scan",
+      "root": "/Users/jingxueqing/Desktop/挑战的产物",
+      "latest_mtime": "2026-10-06 13:28:33"
+    },
+    {
+      "student": "wxid_jxq2024",
+      "student_nickname": "景雪晴",
+      "challenge": "C4C",
+      "artifact_kinds": [
+        "aar",
+        "ailog",
+        "deliverable",
+        "notes"
+      ],
+      "artifact_count": 11,
+      "bytes": 406914,
+      "artifacts": [
+        {
+          "kind": "aar",
+          "file": "C4C-交付_JingXueQing_作业自动求解与排版/JingXueQing_C4C_AAR复盘.md",
+          "bytes": 12857,
+          "mtime": "2026-10-07 15:56:23"
+        },
+        {
+          "kind": "ailog",
+          "file": "C4C-交付_JingXueQing_作业自动求解与排版/JingXueQing_C4C_AI日志.md",
+          "bytes": 19712,
+          "mtime": "2026-10-07 15:55:11"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4C-交付_JingXueQing_作业自动求解与排版/JingXueQing_C4C_homework-solver/SKILL.md",
+          "bytes": 11932,
+          "mtime": "2026-10-07 15:57:35"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4C-交付_JingXueQing_作业自动求解与排版/JingXueQing_C4C_homework-solver/requirements.txt",
+          "bytes": 1395,
+          "mtime": "2026-10-07 15:57:35"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4C-交付_JingXueQing_作业自动求解与排版/JingXueQing_C4C_output.pdf",
+          "bytes": 296061,
+          "mtime": "2026-10-07 15:56:43"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4C-交付_JingXueQing_作业自动求解与排版/JingXueQing_C4C_作业原件.md",
+          "bytes": 2213,
+          "mtime": "2026-10-07 15:56:43"
+        },
+        {
+          "kind": "notes",
+          "file": "C4C-交付_JingXueQing_作业自动求解与排版/JingXueQing_C4C_拿来说明.md",
+          "bytes": 12464,
+          "mtime": "2026-10-07 15:53:04"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4C-交付_JingXueQing_作业自动求解与排版/JingXueQing_C4C_教学说明.md",
+          "bytes": 11000,
+          "mtime": "2026-10-07 15:52:22"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4C-交付_JingXueQing_作业自动求解与排版/JingXueQing_C4C_方案设计.md",
+          "bytes": 17806,
+          "mtime": "2026-10-06 12:55:36"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4C-交付_JingXueQing_作业自动求解与排版/JingXueQing_C4C_验证报告.md",
+          "bytes": 13628,
+          "mtime": "2026-10-06 12:56:40"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4C-交付_JingXueQing_作业自动求解与排版/README_提交说明.md",
+          "bytes": 7846,
+          "mtime": "2026-10-07 15:57:18"
+        }
+      ],
+      "source": "fs_scan",
+      "root": "/Users/jingxueqing/Desktop/挑战的产物",
+      "latest_mtime": "2026-10-07 15:57:35"
+    },
+    {
+      "student": "wxid_jxq2024",
+      "student_nickname": "景雪晴",
+      "challenge": "C4D",
+      "artifact_kinds": [
+        "ailog",
+        "deliverable",
+        "notes"
+      ],
+      "artifact_count": 18,
+      "bytes": 642533,
+      "artifacts": [
+        {
+          "kind": "ailog",
+          "file": "C4D-交付_JingXueQing_本地大模型Agent技能/JingXueQing_C4D_AI日志.md",
+          "bytes": 13866,
+          "mtime": "2026-10-10 19:30:53"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4D-交付_JingXueQing_本地大模型Agent技能/JingXueQing_C4D_agent-skill/README.md",
+          "bytes": 5405,
+          "mtime": "2026-10-10 19:30:53"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4D-交付_JingXueQing_本地大模型Agent技能/JingXueQing_C4D_agent-skill/SKILL.md",
+          "bytes": 4837,
+          "mtime": "2026-10-10 19:30:53"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4D-交付_JingXueQing_本地大模型Agent技能/JingXueQing_C4D_agent-skill/make_evidence.py",
+          "bytes": 12026,
+          "mtime": "2026-10-10 19:30:53"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4D-交付_JingXueQing_本地大模型Agent技能/JingXueQing_C4D_agent-skill/run_agent.py",
+          "bytes": 17239,
+          "mtime": "2026-10-10 19:30:53"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4D-交付_JingXueQing_本地大模型Agent技能/JingXueQing_C4D_map.html",
+          "bytes": 11454,
+          "mtime": "2026-10-10 19:30:53"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4D-交付_JingXueQing_本地大模型Agent技能/JingXueQing_C4D_output_screenshots/01_doctor.png",
+          "bytes": 79653,
+          "mtime": "2026-10-10 19:30:53"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4D-交付_JingXueQing_本地大模型Agent技能/JingXueQing_C4D_output_screenshots/02_selftest.png",
+          "bytes": 56000,
+          "mtime": "2026-10-10 19:30:53"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4D-交付_JingXueQing_本地大模型Agent技能/JingXueQing_C4D_output_screenshots/03_agent_trace.png",
+          "bytes": 174799,
+          "mtime": "2026-10-10 19:30:53"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4D-交付_JingXueQing_本地大模型Agent技能/JingXueQing_C4D_output_screenshots/04_codegen.png",
+          "bytes": 41110,
+          "mtime": "2026-10-10 19:30:53"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4D-交付_JingXueQing_本地大模型Agent技能/JingXueQing_C4D_output_screenshots/05_vision.png",
+          "bytes": 38974,
+          "mtime": "2026-10-10 19:30:53"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4D-交付_JingXueQing_本地大模型Agent技能/JingXueQing_C4D_output_screenshots/06_ctxbench.png",
+          "bytes": 84258,
+          "mtime": "2026-10-10 19:30:53"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4D-交付_JingXueQing_本地大模型Agent技能/JingXueQing_C4D_output_screenshots/07_tests.png",
+          "bytes": 50758,
+          "mtime": "2026-10-10 19:30:53"
+        },
+        {
+          "kind": "notes",
+          "file": "C4D-交付_JingXueQing_本地大模型Agent技能/JingXueQing_C4D_拿来说明.md",
+          "bytes": 9177,
+          "mtime": "2026-10-10 19:30:53"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4D-交付_JingXueQing_本地大模型Agent技能/JingXueQing_C4D_教学说明.md",
+          "bytes": 8184,
+          "mtime": "2026-10-10 19:30:53"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4D-交付_JingXueQing_本地大模型Agent技能/JingXueQing_C4D_方案设计.md",
+          "bytes": 11428,
+          "mtime": "2026-10-10 19:30:53"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4D-交付_JingXueQing_本地大模型Agent技能/JingXueQing_C4D_验证报告.md",
+          "bytes": 16645,
+          "mtime": "2026-10-10 19:30:53"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C4D-交付_JingXueQing_本地大模型Agent技能/README_提交说明.md",
+          "bytes": 6720,
+          "mtime": "2026-10-10 19:30:53"
+        }
+      ],
+      "source": "fs_scan",
+      "root": "/Users/jingxueqing/Desktop/挑战的产物",
+      "latest_mtime": "2026-10-10 19:30:53"
+    },
+    {
+      "student": "wxid_jxq2024",
+      "student_nickname": "景雪晴",
+      "challenge": "C5",
+      "artifact_kinds": [
+        "ailog",
+        "deliverable",
+        "notes"
+      ],
+      "artifact_count": 7,
+      "bytes": 15973,
+      "artifacts": [
+        {
+          "kind": "deliverable",
+          "file": "C5-交付_JingXueQing_sias-local-map-agent/README_提交说明.md",
+          "bytes": 6741,
+          "mtime": "2026-11-01 17:39:17"
+        },
+        {
+          "kind": "ailog",
+          "file": "C5-交付_JingXueQing_sias-local-map-agent/sias-local-map-agent/submission/JingXueQing_C5_AI日志.md",
+          "bytes": 1299,
+          "mtime": "2026-11-01 17:38:41"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C5-交付_JingXueQing_sias-local-map-agent/sias-local-map-agent/submission/JingXueQing_C5_repo链接.md",
+          "bytes": 1799,
+          "mtime": "2026-11-01 17:38:41"
+        },
+        {
+          "kind": "notes",
+          "file": "C5-交付_JingXueQing_sias-local-map-agent/sias-local-map-agent/submission/JingXueQing_C5_拿来说明.md",
+          "bytes": 1518,
+          "mtime": "2026-11-01 17:38:41"
+        },
+        {
+          "kind": "ailog",
+          "file": "C5-交付_JingXueQing_sias-local-map-agent/submission/JingXueQing_C5_AI日志.md",
+          "bytes": 1299,
+          "mtime": "2026-11-01 17:38:08"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C5-交付_JingXueQing_sias-local-map-agent/submission/JingXueQing_C5_repo链接.md",
+          "bytes": 1799,
+          "mtime": "2026-11-01 17:38:08"
+        },
+        {
+          "kind": "notes",
+          "file": "C5-交付_JingXueQing_sias-local-map-agent/submission/JingXueQing_C5_拿来说明.md",
+          "bytes": 1518,
+          "mtime": "2026-11-01 17:38:08"
+        }
+      ],
+      "source": "fs_scan",
+      "root": "/Users/jingxueqing/Desktop/挑战的产物",
+      "latest_mtime": "2026-11-01 17:39:17"
+    },
+    {
+      "student": "wxid_jxq2024",
+      "student_nickname": "景雪晴",
+      "challenge": "C5A",
+      "artifact_kinds": [
+        "aar",
+        "ailog",
+        "deliverable"
+      ],
+      "artifact_count": 26,
+      "bytes": 2235877,
+      "artifacts": [
+        {
+          "kind": "aar",
+          "file": "C5A-交付_JingXueQing_neoskills仓库分析/JingXueQing_C5A_AAR.md",
+          "bytes": 10375,
+          "mtime": "2026-11-01 20:11:07"
+        },
+        {
+          "kind": "ailog",
+          "file": "C5A-交付_JingXueQing_neoskills仓库分析/JingXueQing_C5A_AI日志.md",
+          "bytes": 14333,
+          "mtime": "2026-11-01 19:12:04"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C5A-交付_JingXueQing_neoskills仓库分析/JingXueQing_C5A_GitHub账号.txt",
+          "bytes": 1753,
+          "mtime": "2026-11-01 18:31:45"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C5A-交付_JingXueQing_neoskills仓库分析/JingXueQing_C5A_screenshots/01_clone.png",
+          "bytes": 69270,
+          "mtime": "2026-11-01 20:10:45"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C5A-交付_JingXueQing_neoskills仓库分析/JingXueQing_C5A_screenshots/02_pytest_172_passed.png",
+          "bytes": 39476,
+          "mtime": "2026-11-01 20:10:46"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C5A-交付_JingXueQing_neoskills仓库分析/JingXueQing_C5A_screenshots/03_cli_help.png",
+          "bytes": 87940,
+          "mtime": "2026-11-01 20:10:46"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C5A-交付_JingXueQing_neoskills仓库分析/JingXueQing_C5A_screenshots/04_ontology_init_load_validate.png",
+          "bytes": 40233,
+          "mtime": "2026-11-01 20:10:46"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C5A-交付_JingXueQing_neoskills仓库分析/JingXueQing_C5A_screenshots/05_repro_belongs_to_error.png",
+          "bytes": 89317,
+          "mtime": "2026-11-01 20:10:47"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C5A-交付_JingXueQing_neoskills仓库分析/JingXueQing_C5A_screenshots/06_doctor_ruff.png",
+          "bytes": 35919,
+          "mtime": "2026-11-01 20:10:47"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C5A-交付_JingXueQing_neoskills仓库分析/JingXueQing_C5A_screenshots/07_branch_and_status.png",
+          "bytes": 34115,
+          "mtime": "2026-11-01 20:10:47"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C5A-交付_JingXueQing_neoskills仓库分析/JingXueQing_C5A_screenshots/08_commit_history.png",
+          "bytes": 63488,
+          "mtime": "2026-11-01 20:10:48"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C5A-交付_JingXueQing_neoskills仓库分析/JingXueQing_C5A_screenshots/09_diff_stat.png",
+          "bytes": 63358,
+          "mtime": "2026-11-01 20:10:48"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C5A-交付_JingXueQing_neoskills仓库分析/JingXueQing_C5A_screenshots/10_regression_after_change.png",
+          "bytes": 45654,
+          "mtime": "2026-11-01 20:10:48"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C5A-交付_JingXueQing_neoskills仓库分析/JingXueQing_C5A_screenshots/11_github_push_and_pr.png",
+          "bytes": 95291,
+          "mtime": "2026-11-01 20:10:49"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C5A-交付_JingXueQing_neoskills仓库分析/JingXueQing_C5A_screenshots/12_web_profile_home.png",
+          "bytes": 235413,
+          "mtime": "2026-11-01 17:39:18"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C5A-交付_JingXueQing_neoskills仓库分析/JingXueQing_C5A_screenshots/13_web_my_repo_readme.png",
+          "bytes": 254325,
+          "mtime": "2026-11-01 17:47:15"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C5A-交付_JingXueQing_neoskills仓库分析/JingXueQing_C5A_screenshots/14_web_fork_neoskills.png",
+          "bytes": 215777,
+          "mtime": "2026-11-01 17:48:48"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C5A-交付_JingXueQing_neoskills仓库分析/JingXueQing_C5A_screenshots/15_web_pr_overview.png",
+          "bytes": 305859,
+          "mtime": "2026-11-01 18:06:33"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C5A-交付_JingXueQing_neoskills仓库分析/JingXueQing_C5A_screenshots/16_web_pr_files_changed.png",
+          "bytes": 312327,
+          "mtime": "2026-11-01 18:52:34"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C5A-交付_JingXueQing_neoskills仓库分析/JingXueQing_C5A_screenshots/17_web_branch_commits.png",
+          "bytes": 162744,
+          "mtime": "2026-11-01 18:43:06"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C5A-交付_JingXueQing_neoskills仓库分析/JingXueQing_C5A_screenshots/README.md",
+          "bytes": 3938,
+          "mtime": "2026-11-01 20:11:00"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C5A-交付_JingXueQing_neoskills仓库分析/JingXueQing_C5A_仓库分析.md",
+          "bytes": 10555,
+          "mtime": "2026-10-31 22:33:45"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C5A-交付_JingXueQing_neoskills仓库分析/JingXueQing_C5A_深度分析.md",
+          "bytes": 21951,
+          "mtime": "2026-10-31 22:34:23"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C5A-交付_JingXueQing_neoskills仓库分析/README_提交说明.md",
+          "bytes": 8169,
+          "mtime": "2026-11-01 20:10:53"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C5A-交付_JingXueQing_neoskills仓库分析/contribution/JingXueQing_C5A_PR描述.md",
+          "bytes": 3370,
+          "mtime": "2026-10-31 22:34:57"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C5A-交付_JingXueQing_neoskills仓库分析/contribution/JingXueQing_C5A_完整改动.diff",
+          "bytes": 10927,
+          "mtime": "2026-10-31 22:29:26"
+        }
+      ],
+      "source": "fs_scan",
+      "root": "/Users/jingxueqing/Desktop/挑战的产物",
+      "latest_mtime": "2026-11-01 20:11:07"
+    },
+    {
+      "student": "wxid_jxq2024",
+      "student_nickname": "景雪晴",
+      "challenge": "C6",
+      "artifact_kinds": [
+        "aar",
+        "ailog",
+        "deliverable",
+        "demo",
+        "notes"
+      ],
+      "artifact_count": 8,
+      "bytes": 1146413,
+      "artifacts": [
+        {
+          "kind": "aar",
+          "file": "C6-交付_JingXueQing_公众号创作台/JingXueQing_C6_AAR.md",
+          "bytes": 11015,
+          "mtime": "2026-11-02 19:30:32"
+        },
+        {
+          "kind": "ailog",
+          "file": "C6-交付_JingXueQing_公众号创作台/JingXueQing_C6_AI日志.md",
+          "bytes": 21646,
+          "mtime": "2026-11-02 18:25:14"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C6-交付_JingXueQing_公众号创作台/JingXueQing_C6_app链接.md",
+          "bytes": 4906,
+          "mtime": "2026-11-02 18:28:08"
+        },
+        {
+          "kind": "demo",
+          "file": "C6-交付_JingXueQing_公众号创作台/JingXueQing_C6_demo.mp4",
+          "bytes": 996824,
+          "mtime": "2026-11-01 20:33:22"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C6-交付_JingXueQing_公众号创作台/JingXueQing_C6_repo链接.md",
+          "bytes": 7008,
+          "mtime": "2026-11-02 18:25:25"
+        },
+        {
+          "kind": "notes",
+          "file": "C6-交付_JingXueQing_公众号创作台/JingXueQing_C6_拿来说明.md",
+          "bytes": 4735,
+          "mtime": "2026-11-02 09:48:32"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C6-交付_JingXueQing_公众号创作台/JingXueQing_C6_源码.bundle",
+          "bytes": 90641,
+          "mtime": "2026-11-02 18:24:00"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C6-交付_JingXueQing_公众号创作台/README_提交说明.md",
+          "bytes": 9638,
+          "mtime": "2026-11-02 18:24:43"
+        }
+      ],
+      "source": "fs_scan",
+      "root": "/Users/jingxueqing/Desktop/挑战的产物",
+      "latest_mtime": "2026-11-02 19:30:32"
+    },
+    {
+      "student": "wxid_jxq2024",
+      "student_nickname": "景雪晴",
+      "challenge": "C6A",
+      "artifact_kinds": [
+        "aar",
+        "ailog",
+        "deliverable",
+        "demo",
+        "notes"
+      ],
+      "artifact_count": 34,
+      "bytes": 5299069,
+      "artifacts": [
+        {
+          "kind": "aar",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_AAR.md",
+          "bytes": 8129,
+          "mtime": "2026-11-02 21:57:44"
+        },
+        {
+          "kind": "ailog",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_AI日志.md",
+          "bytes": 13895,
+          "mtime": "2026-11-02 20:39:38"
+        },
+        {
+          "kind": "demo",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_demo/README_demo.md",
+          "bytes": 890,
+          "mtime": "2026-11-02 20:49:46"
+        },
+        {
+          "kind": "demo",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_demo/demo.html",
+          "bytes": 5196,
+          "mtime": "2026-11-02 20:40:57"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_pipeline/config.json",
+          "bytes": 3074,
+          "mtime": "2026-11-02 20:39:38"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_pipeline/digest.py",
+          "bytes": 4008,
+          "mtime": "2026-11-02 20:39:38"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_pipeline/make_excel.py",
+          "bytes": 16041,
+          "mtime": "2026-11-02 20:39:38"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_pipeline/make_site.py",
+          "bytes": 1879,
+          "mtime": "2026-11-02 20:39:38"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_pipeline/pipeline.py",
+          "bytes": 28730,
+          "mtime": "2026-11-02 20:39:38"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_pipeline/run.py",
+          "bytes": 4150,
+          "mtime": "2026-11-02 20:39:38"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_pipeline/spec_extract.py",
+          "bytes": 5752,
+          "mtime": "2026-11-02 20:39:38"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_pipeline/specs.py",
+          "bytes": 14588,
+          "mtime": "2026-11-02 20:39:38"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_report.xlsx",
+          "bytes": 21007,
+          "mtime": "2026-11-02 19:39:53"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_screenshots/01_总览.png",
+          "bytes": 862208,
+          "mtime": "2026-11-02 19:54:09"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_screenshots/02_按学生.png",
+          "bytes": 477981,
+          "mtime": "2026-11-02 19:54:20"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_screenshots/03_按挑战.png",
+          "bytes": 597865,
+          "mtime": "2026-11-02 19:54:22"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_screenshots/04_时间线.png",
+          "bytes": 468923,
+          "mtime": "2026-11-02 19:54:24"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_screenshots/05_缺失项.png",
+          "bytes": 243081,
+          "mtime": "2026-11-02 19:54:36"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_screenshots/06_方法与口径.png",
+          "bytes": 911604,
+          "mtime": "2026-11-02 19:54:48"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_screenshots/07_记录详情.png",
+          "bytes": 848187,
+          "mtime": "2026-11-02 20:05:05"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_仪表盘/data.json",
+          "bytes": 226773,
+          "mtime": "2026-11-02 19:39:54"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_仪表盘/index.html",
+          "bytes": 150680,
+          "mtime": "2026-11-02 19:39:54"
+        },
+        {
+          "kind": "notes",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_拿来说明.md",
+          "bytes": 5810,
+          "mtime": "2026-11-02 20:39:38"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_教学说明.md",
+          "bytes": 7468,
+          "mtime": "2026-11-02 20:39:38"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_数据/challenge_stats.csv",
+          "bytes": 1290,
+          "mtime": "2026-11-02 19:39:53"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_数据/files.csv",
+          "bytes": 33113,
+          "mtime": "2026-11-02 19:39:53"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_数据/matrix.csv",
+          "bytes": 425,
+          "mtime": "2026-11-02 19:39:53"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_数据/records.csv",
+          "bytes": 1916,
+          "mtime": "2026-11-02 19:39:53"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_数据/specs.json",
+          "bytes": 48728,
+          "mtime": "2026-11-02 19:39:53"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_数据/specs_extracted.json",
+          "bytes": 30402,
+          "mtime": "2026-11-01 18:37:19"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_数据/submissions.json",
+          "bytes": 226773,
+          "mtime": "2026-11-02 19:39:53"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_数据说明.md",
+          "bytes": 5641,
+          "mtime": "2026-11-02 20:42:18"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_方案设计.md",
+          "bytes": 15272,
+          "mtime": "2026-11-02 20:39:38"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/README_提交说明.md",
+          "bytes": 7590,
+          "mtime": "2026-11-02 20:39:38"
+        }
+      ],
+      "source": "fs_scan",
+      "root": "/Users/jingxueqing/Desktop/挑战的产物",
+      "latest_mtime": "2026-11-02 21:57:44"
+    },
+    {
+      "student": "wxid_jxq2024",
+      "student_nickname": "景雪晴",
+      "challenge": "C7",
+      "artifact_kinds": [
+        "aar",
+        "ailog",
+        "deliverable",
+        "notes"
+      ],
+      "artifact_count": 5,
+      "bytes": 48775,
+      "artifacts": [
+        {
+          "kind": "aar",
+          "file": "C7-交付_JingXueQing_内容传播/JingXueQing_C7_AAR.md",
+          "bytes": 12618,
+          "mtime": "2026-11-02 19:25:54"
+        },
+        {
+          "kind": "ailog",
+          "file": "C7-交付_JingXueQing_内容传播/JingXueQing_C7_AI日志.md",
+          "bytes": 16773,
+          "mtime": "2026-11-02 19:25:54"
+        },
+        {
+          "kind": "notes",
+          "file": "C7-交付_JingXueQing_内容传播/JingXueQing_C7_拿来说明.md",
+          "bytes": 6971,
+          "mtime": "2026-11-02 18:31:32"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C7-交付_JingXueQing_内容传播/JingXueQing_C7_文章链接.md",
+          "bytes": 3989,
+          "mtime": "2026-11-02 19:25:54"
+        },
+        {
+          "kind": "deliverable",
+          "file": "C7-交付_JingXueQing_内容传播/README_提交说明.md",
+          "bytes": 8424,
+          "mtime": "2026-11-02 19:25:54"
+        }
+      ],
+      "source": "fs_scan",
+      "root": "/Users/jingxueqing/Desktop/挑战的产物",
+      "latest_mtime": "2026-11-02 19:25:54"
+    }
+  ]
+}

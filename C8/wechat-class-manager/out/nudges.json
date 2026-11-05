@@ -1,0 +1,178 @@
+{
+  "private": [
+    {
+      "to": "赵明轩",
+      "items": [
+        {
+          "channel": "private",
+          "text": "赵明轩，这周群里没怎么看到你，是不是在做大件？卡在哪可以发出来，别自己闷着。",
+          "reason": "赵明轩 本周发言 3 条，上周 7 条，下降 57%",
+          "alert_id": "engagement_drop:wxid_zhaomx"
+        },
+        {
+          "channel": "private",
+          "text": "赵明轩，你的 C8 我这边只收到 ailog, proposal，还差 demo、拿来说明。补齐后按 姓名_C8_内容.md 命名发群里就行。",
+          "reason": "赵明轩 的 C8 缺 2 件：早期验证物, 拿来说明",
+          "alert_id": "missing_artifacts:wxid_zhaomx:C8"
+        }
+      ],
+      "count": 2,
+      "wxid": "wxid_zhaomx"
+    },
+    {
+      "to": "马嘉乐",
+      "items": [
+        {
+          "channel": "private",
+          "text": "马嘉乐，你的 C1 我这边只收到 deliverable，还差 AI 日志。补齐后按 姓名_C1_内容.md 命名发群里就行。",
+          "reason": "马嘉乐 的 C1 缺 1 件：AI 日志",
+          "alert_id": "missing_artifacts:wxid_majl:C1"
+        },
+        {
+          "channel": "private",
+          "text": "马嘉乐，你的 C2 我这边只收到 ailog, deliverable，还差 拿来说明。补齐后按 姓名_C2_内容.md 命名发群里就行。",
+          "reason": "马嘉乐 的 C2 缺 1 件：拿来说明",
+          "alert_id": "missing_artifacts:wxid_majl:C2"
+        }
+      ],
+      "count": 2,
+      "wxid": "wxid_majl"
+    },
+    {
+      "to": "唐思涵",
+      "items": [
+        {
+          "channel": "private",
+          "text": "唐思涵，这周群里没怎么看到你，是不是在做大件？卡在哪可以发出来，别自己闷着。",
+          "reason": "唐思涵 本周发言 3 条，上周 7 条，下降 57%",
+          "alert_id": "engagement_drop:wxid_tangsh"
+        }
+      ],
+      "count": 1,
+      "wxid": "wxid_tangsh"
+    },
+    {
+      "to": "邓子龙",
+      "items": [
+        {
+          "channel": "private",
+          "text": "邓子龙，你的 C2 我这边只收到 ailog, deliverable，还差 拿来说明。补齐后按 姓名_C2_内容.md 命名发群里就行。",
+          "reason": "邓子龙 的 C2 缺 1 件：拿来说明",
+          "alert_id": "missing_artifacts:wxid_dengzl:C2"
+        }
+      ],
+      "count": 1,
+      "wxid": "wxid_dengzl"
+    },
+    {
+      "to": "冯亦然",
+      "items": [
+        {
+          "channel": "private",
+          "text": "冯亦然，你的 C8 我这边只收到 ailog, proposal，还差 demo、拿来说明。补齐后按 姓名_C8_内容.md 命名发群里就行。",
+          "reason": "冯亦然 的 C8 缺 2 件：早期验证物, 拿来说明",
+          "alert_id": "missing_artifacts:wxid_fengyr:C8"
+        }
+      ],
+      "count": 1,
+      "wxid": "wxid_fengyr"
+    },
+    {
+      "to": "彭心语",
+      "items": [
+        {
+          "channel": "private",
+          "text": "彭心语，你的 C8 我这边只收到 ailog, notes, proposal，还差 demo。补齐后按 姓名_C8_内容.md 命名发群里就行。",
+          "reason": "彭心语 的 C8 缺 1 件：早期验证物",
+          "alert_id": "missing_artifacts:wxid_pengxy:C8"
+        }
+      ],
+      "count": 1,
+      "wxid": "wxid_pengxy"
+    },
+    {
+      "to": "徐方雨",
+      "items": [
+        {
+          "channel": "private",
+          "text": "徐方雨，你的 C2 我这边只收到 ailog, deliverable，还差 拿来说明。补齐后按 姓名_C2_内容.md 命名发群里就行。",
+          "reason": "徐方雨 的 C2 缺 1 件：拿来说明",
+          "alert_id": "missing_artifacts:wxid_xufy:C2"
+        }
+      ],
+      "count": 1,
+      "wxid": "wxid_xufy"
+    },
+    {
+      "to": "罗欣然",
+      "items": [
+        {
+          "channel": "private",
+          "text": "罗欣然，看你有一阵没在群里出现了，是不是课业或者别的事卡住了？有需要跟我说一声，进度可以商量。",
+          "reason": "罗欣然 已 10 天零发言（最后一条 2026-10-24 09:30）",
+          "alert_id": "silent_student:wxid_luoxr"
+        }
+      ],
+      "count": 1,
+      "wxid": "wxid_luoxr"
+    },
+    {
+      "to": "谢梦琪",
+      "items": [
+        {
+          "channel": "private",
+          "text": "谢梦琪，看你有一阵没在群里出现了，是不是课业或者别的事卡住了？有需要跟我说一声，进度可以商量。",
+          "reason": "谢梦琪 已 7 天零发言（最后一条 2026-10-27 10:00）",
+          "alert_id": "silent_student:wxid_xiemq"
+        }
+      ],
+      "count": 1,
+      "wxid": "wxid_xiemq"
+    },
+    {
+      "to": "郭雅琪",
+      "items": [
+        {
+          "channel": "private",
+          "text": "郭雅琪，C4A 的文件收到，但命名我这边归档不了。麻烦按 姓名_C4A_内容.md 重新发一次，内容不用改。",
+          "reason": "郭雅琪 的 C4A 提交文件命名不规范",
+          "alert_id": "naming_violation:wxid_guoyq:C4A"
+        }
+      ],
+      "count": 1,
+      "wxid": "wxid_guoyq"
+    }
+  ],
+  "group": [
+    {
+      "channel": "group",
+      "text": "【进度同步】目前提交率偏低的挑战：C2A（5%）、C2G（5%）、C3（5%）、C4（5%）。如果大家是卡在同一个点上，明天周会我们集中解决一次。",
+      "reason": "15 个挑战提交率低于 30%，最低 C2A（5%）",
+      "alert_id": "low_submission_rate:class"
+    },
+    {
+      "channel": "group",
+      "text": "【接一下这个问题】邓子龙 在群里问：「有没有更简单的做法？」，已经 244 小时没人回。谁踩过这个坑，帮忙答一句。",
+      "reason": "邓子龙 的提问已经 244 小时没人回答：「有没有更简单的做法？」",
+      "alert_id": "unanswered_question:m00235"
+    },
+    {
+      "channel": "group",
+      "text": "【接一下这个问题】马嘉乐 在群里问：「有没有更简单的做法？」，已经 153 小时没人回。谁踩过这个坑，帮忙答一句。",
+      "reason": "马嘉乐 的提问已经 153 小时没人回答：「有没有更简单的做法？」",
+      "alert_id": "unanswered_question:m00250"
+    },
+    {
+      "channel": "group",
+      "text": "【接一下这个问题】林一舟 在群里问：「有同学一起结对吗？」，已经 73 小时没人回。谁踩过这个坑，帮忙答一句。",
+      "reason": "林一舟 的提问已经 73 小时没人回答：「有同学一起结对吗？」",
+      "alert_id": "unanswered_question:m00259"
+    },
+    {
+      "channel": "group",
+      "text": "【接一下这个问题】徐方雨 在群里问：「有没有更简单的做法？」，已经 50 小时没人回。谁踩过这个坑，帮忙答一句。",
+      "reason": "徐方雨 的提问已经 50 小时没人回答：「有没有更简单的做法？」",
+      "alert_id": "unanswered_question:m00265"
+    }
+  ]
+}

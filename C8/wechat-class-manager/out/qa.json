@@ -1,0 +1,1757 @@
+{
+  "total_questions": 61,
+  "answered": 48,
+  "kept": 48,
+  "unanswered_count": 13,
+  "answer_rate": 0.787,
+  "avg_quality": 0.549,
+  "top_tags": {
+    "C8": 12,
+    "C3": 6,
+    "C5": 4,
+    "C4B": 4,
+    "C6A": 4,
+    "C2": 3,
+    "仓库": 3,
+    "C4D": 3,
+    "公众号": 3,
+    "AAR": 3
+  },
+  "pairs": [
+    {
+      "qa_id": "qa:884796f130",
+      "question": "C2 论文的参考文献格式，学校要求 GB/T 7714，但 latex 模板是 APA，怎么改？",
+      "question_ts": "2026-10-23T10:50:20+08:00",
+      "question_msg_id": "m00041",
+      "asker": {
+        "wechat_id": "wxid_dengzl",
+        "nickname": "邓子龙"
+      },
+      "answer": "换 biblatex 的 gb7714-2015 样式就行，\\usepackage[style=gb7714-2015]{biblatex}。",
+      "answer_ts": "2026-10-23T11:20:11+08:00",
+      "answer_msg_id": "m00042",
+      "answerer": {
+        "wechat_id": "wxid_jxq2024",
+        "nickname": "景雪晴"
+      },
+      "latency_seconds": 1791,
+      "challenge": "C2",
+      "topic_tags": [
+        "C2",
+        "论文"
+      ],
+      "quality_score": 0.75,
+      "resolved": true,
+      "evidence": {
+        "cited_by_reply": true,
+        "thanks_from_asker": false,
+        "index_gap": 1
+      }
+    },
+    {
+      "qa_id": "qa:7213f1bcf7",
+      "question": "老师，我的仓库建好了但 push 一直失败，提示权限不足。",
+      "question_ts": "2026-10-23T09:20:31+08:00",
+      "question_msg_id": "m00036",
+      "asker": {
+        "wechat_id": "wxid_qiuzw",
+        "nickname": "邱志伟"
+      },
+      "answer": "大概率是 SSH key 没加，或者你用的是 HTTPS 但贴了 token 到密码框。",
+      "answer_ts": "2026-10-23T09:35:33+08:00",
+      "answer_msg_id": "m00037",
+      "answerer": {
+        "wechat_id": "wxid_hech",
+        "nickname": "何承翰"
+      },
+      "latency_seconds": 902,
+      "challenge": "C5",
+      "topic_tags": [
+        "C5",
+        "仓库"
+      ],
+      "quality_score": 0.7,
+      "resolved": true,
+      "evidence": {
+        "cited_by_reply": true,
+        "thanks_from_asker": true,
+        "index_gap": 1
+      }
+    },
+    {
+      "qa_id": "qa:c16fa65b66",
+      "question": "C4D 的 agent 一直复读我的话，是不是温度调太低了？",
+      "question_ts": "2026-10-24T14:15:50+08:00",
+      "question_msg_id": "m00061",
+      "asker": {
+        "wechat_id": "wxid_sunl",
+        "nickname": "孙乐"
+      },
+      "answer": "复读一般是 prompt 里没有明确任务，模型只能顺着你说，加一句「你的任务是…」。",
+      "answer_ts": "2026-10-24T14:32:49+08:00",
+      "answer_msg_id": "m00062",
+      "answerer": {
+        "wechat_id": "wxid_zhoujy",
+        "nickname": "周嘉懿"
+      },
+      "latency_seconds": 1019,
+      "challenge": "C4D",
+      "topic_tags": [
+        "C4D",
+        "agent"
+      ],
+      "quality_score": 0.7,
+      "resolved": true,
+      "evidence": {
+        "cited_by_reply": true,
+        "thanks_from_asker": true,
+        "index_gap": 1
+      }
+    },
+    {
+      "qa_id": "qa:134094ad07",
+      "question": "C4B 的样式粘到公众号之后段落间距全变了，有人遇到吗？",
+      "question_ts": "2026-10-27T20:00:38+08:00",
+      "question_msg_id": "m00118",
+      "asker": {
+        "wechat_id": "wxid_pengxy",
+        "nickname": "彭心语"
+      },
+      "answer": "微信会吃掉 margin，用 padding 或者空段落顶。",
+      "answer_ts": "2026-10-27T20:25:43+08:00",
+      "answer_msg_id": "m00119",
+      "answerer": {
+        "wechat_id": "wxid_tangsh",
+        "nickname": "唐思涵"
+      },
+      "latency_seconds": 1505,
+      "challenge": "C4B",
+      "topic_tags": [
+        "C4B",
+        "公众号"
+      ],
+      "quality_score": 0.7,
+      "resolved": true,
+      "evidence": {
+        "cited_by_reply": true,
+        "thanks_from_asker": true,
+        "index_gap": 1
+      }
+    },
+    {
+      "qa_id": "qa:0be06d3e36",
+      "question": "问一下 C8 的 AAR 是每周都要交吗？还是一共一份？",
+      "question_ts": "2026-10-28T14:00:44+08:00",
+      "question_msg_id": "m00131",
+      "asker": {
+        "wechat_id": "wxid_hech",
+        "nickname": "何承翰"
+      },
+      "answer": "每周一份，命名 AAR_W1、AAR_W2，连续两周不交直接移出项目。",
+      "answer_ts": "2026-10-28T14:20:10+08:00",
+      "answer_msg_id": "m00132",
+      "answerer": {
+        "wechat_id": "wxid_teacher_neolaf",
+        "nickname": "班主任 · 李老师"
+      },
+      "latency_seconds": 1166,
+      "challenge": "C8",
+      "topic_tags": [
+        "C8",
+        "AAR"
+      ],
+      "quality_score": 0.7,
+      "resolved": true,
+      "evidence": {
+        "cited_by_reply": true,
+        "thanks_from_asker": true,
+        "index_gap": 1
+      }
+    },
+    {
+      "qa_id": "qa:273410d14e",
+      "question": "请问 C8 的 demo 一定要能跑起来吗？还是截个架构图就行？",
+      "question_ts": "2026-10-21T08:52:13+08:00",
+      "question_msg_id": "m00003",
+      "asker": {
+        "wechat_id": "wxid_linyz",
+        "nickname": "林一舟"
+      },
+      "answer": "要能跑。哪怕只跑通一个 Level，也比一张漂亮的架构图有说服力。",
+      "answer_ts": "2026-10-21T09:01:20+08:00",
+      "answer_msg_id": "m00004",
+      "answerer": {
+        "wechat_id": "wxid_teacher_neolaf",
+        "nickname": "班主任 · 李老师"
+      },
+      "latency_seconds": 547,
+      "challenge": "C8",
+      "topic_tags": [
+        "C8"
+      ],
+      "quality_score": 0.6,
+      "resolved": true,
+      "evidence": {
+        "cited_by_reply": true,
+        "thanks_from_asker": false,
+        "index_gap": 2
+      }
+    },
+    {
+      "qa_id": "qa:687770b3b5",
+      "question": "C5 的仓库是公开还是私有？我这边的项目有点商业信息。",
+      "question_ts": "2026-10-21T09:03:23+08:00",
+      "question_msg_id": "m00005",
+      "asker": {
+        "wechat_id": "wxid_zhaomx",
+        "nickname": "赵明轩"
+      },
+      "answer": "公开的，README 里要写清楚复现命令和依赖版本，私有仓库老师打不开。",
+      "answer_ts": "2026-10-21T09:12:31+08:00",
+      "answer_msg_id": "m00006",
+      "answerer": {
+        "wechat_id": "wxid_hech",
+        "nickname": "何承翰"
+      },
+      "latency_seconds": 548,
+      "challenge": "C5",
+      "topic_tags": [
+        "C5",
+        "仓库"
+      ],
+      "quality_score": 0.6,
+      "resolved": true,
+      "evidence": {
+        "cited_by_reply": true,
+        "thanks_from_asker": false,
+        "index_gap": 1
+      }
+    },
+    {
+      "qa_id": "qa:9e6cda4431",
+      "question": "有人跑过 ollama 吗？我这台 8G 内存的 Air 一加载 gemma 就风扇狂转。",
+      "question_ts": "2026-10-21T14:20:24+08:00",
+      "question_msg_id": "m00010",
+      "asker": {
+        "wechat_id": "wxid_sunl",
+        "nickname": "孙乐"
+      },
+      "answer": "别用默认上下文长度，改成 2048 再试，显存和内存占用会小一半。",
+      "answer_ts": "2026-10-21T14:31:00+08:00",
+      "answer_msg_id": "m00011",
+      "answerer": {
+        "wechat_id": "wxid_zhoujy",
+        "nickname": "周嘉懿"
+      },
+      "latency_seconds": 636,
+      "challenge": "C4D",
+      "topic_tags": [
+        "C4D",
+        "ollama",
+        "上下文"
+      ],
+      "quality_score": 0.6,
+      "resolved": true,
+      "evidence": {
+        "cited_by_reply": true,
+        "thanks_from_asker": false,
+        "index_gap": 1
+      }
+    },
+    {
+      "qa_id": "qa:4080fdf580",
+      "question": "C2 的论文选题还没定，有没有人一起讨论下 AI4Math 的可靠性？",
+      "question_ts": "2026-10-21T19:30:39+08:00",
+      "question_msg_id": "m00015",
+      "asker": {
+        "wechat_id": "wxid_xufy",
+        "nickname": "徐方雨"
+      },
+      "answer": "我 C2 做的是可复核性框架，核心是把「模型自己说对」和「真的对」分开验证。",
+      "answer_ts": "2026-10-21T19:44:44+08:00",
+      "answer_msg_id": "m00016",
+      "answerer": {
+        "wechat_id": "wxid_jxq2024",
+        "nickname": "景雪晴"
+      },
+      "latency_seconds": 845,
+      "challenge": "C2",
+      "topic_tags": [
+        "C2",
+        "论文",
+        "讨论",
+        "选题"
+      ],
+      "quality_score": 0.6,
+      "resolved": true,
+      "evidence": {
+        "cited_by_reply": false,
+        "thanks_from_asker": false,
+        "index_gap": 1
+      }
+    },
+    {
+      "qa_id": "qa:75a5e8d1e8",
+      "question": "老师，B 线要求会写 SQL 吗？我只会 Python 调库。",
+      "question_ts": "2026-10-22T09:28:01+08:00",
+      "question_msg_id": "m00019",
+      "asker": {
+        "wechat_id": "wxid_hech",
+        "nickname": "何承翰"
+      },
+      "answer": "需要一点 SQL，但 agent 会帮你写，你要能看懂并改。",
+      "answer_ts": "2026-10-22T09:45:28+08:00",
+      "answer_msg_id": "m00020",
+      "answerer": {
+        "wechat_id": "wxid_teacher_neolaf",
+        "nickname": "班主任 · 李老师"
+      },
+      "latency_seconds": 1047,
+      "challenge": "C8",
+      "topic_tags": [
+        "C8",
+        "agent"
+      ],
+      "quality_score": 0.6,
+      "resolved": true,
+      "evidence": {
+        "cited_by_reply": true,
+        "thanks_from_asker": false,
+        "index_gap": 1
+      }
+    },
+    {
+      "qa_id": "qa:4c169e85a7",
+      "question": "公众号封面尺寸到底用 900×383 还是 2.35:1？我 C4B 的模板一直提示尺寸不对。",
+      "question_ts": "2026-10-22T14:00:18+08:00",
+      "question_msg_id": "m00026",
+      "asker": {
+        "wechat_id": "wxid_pengxy",
+        "nickname": "彭心语"
+      },
+      "answer": "我用的是 900×383，微信后台会自动裁切，标题别放最上面。",
+      "answer_ts": "2026-10-22T14:20:44+08:00",
+      "answer_msg_id": "m00027",
+      "answerer": {
+        "wechat_id": "wxid_chenxy",
+        "nickname": "陈心怡"
+      },
+      "latency_seconds": 1226,
+      "challenge": "C4B",
+      "topic_tags": [
+        "C4B",
+        "公众号"
+      ],
+      "quality_score": 0.6,
+      "resolved": true,
+      "evidence": {
+        "cited_by_reply": true,
+        "thanks_from_asker": false,
+        "index_gap": 1
+      }
+    },
+    {
+      "qa_id": "qa:c916da2168",
+      "question": "C4B 那个技能能不能直接接公众号后台？我不想每次都手动粘。",
+      "question_ts": "2026-10-22T15:30:18+08:00",
+      "question_msg_id": "m00028",
+      "asker": {
+        "wechat_id": "wxid_tangsh",
+        "nickname": "唐思涵"
+      },
+      "answer": "接口申请周期很长，我最后是生成带样式的 HTML，粘贴到编辑器里样式基本不丢。",
+      "answer_ts": "2026-10-22T15:52:13+08:00",
+      "answer_msg_id": "m00029",
+      "answerer": {
+        "wechat_id": "wxid_jxq2024",
+        "nickname": "景雪晴"
+      },
+      "latency_seconds": 1315,
+      "challenge": "C4B",
+      "topic_tags": [
+        "C4B",
+        "技能",
+        "公众号"
+      ],
+      "quality_score": 0.6,
+      "resolved": true,
+      "evidence": {
+        "cited_by_reply": true,
+        "thanks_from_asker": false,
+        "index_gap": 1
+      }
+    },
+    {
+      "qa_id": "qa:25b4608809",
+      "question": "编译报错了，说找不到样式文件。",
+      "question_ts": "2026-10-23T11:26:47+08:00",
+      "question_msg_id": "m00043",
+      "asker": {
+        "wechat_id": "wxid_dengzl",
+        "nickname": "邓子龙"
+      },
+      "answer": "要把 gb7714-2015.bbx 和 .cbx 放进工程目录，或者用 texlive 全量安装。",
+      "answer_ts": "2026-10-23T11:40:26+08:00",
+      "answer_msg_id": "m00044",
+      "answerer": {
+        "wechat_id": "wxid_jxq2024",
+        "nickname": "景雪晴"
+      },
+      "latency_seconds": 819,
+      "challenge": "C2",
+      "topic_tags": [
+        "C2",
+        "安装"
+      ],
+      "quality_score": 0.6,
+      "resolved": true,
+      "evidence": {
+        "cited_by_reply": true,
+        "thanks_from_asker": false,
+        "index_gap": 1
+      }
+    },
+    {
+      "qa_id": "qa:07235d559e",
+      "question": "问一下 C6 部署上去之后链接会不会过期？",
+      "question_ts": "2026-10-23T13:00:47+08:00",
+      "question_msg_id": "m00045",
+      "asker": {
+        "wechat_id": "wxid_xiemq",
+        "nickname": "谢梦琪"
+      },
+      "answer": "我 C6 部署的链接放了两周还能打开，应该不会过期，但免费额度有请求限制。",
+      "answer_ts": "2026-10-23T14:30:13+08:00",
+      "answer_msg_id": "m00046",
+      "answerer": {
+        "wechat_id": "wxid_gaoyf",
+        "nickname": "高宇飞"
+      },
+      "latency_seconds": 5366,
+      "challenge": "C6",
+      "topic_tags": [
+        "C6",
+        "部署"
+      ],
+      "quality_score": 0.6,
+      "resolved": true,
+      "evidence": {
+        "cited_by_reply": true,
+        "thanks_from_asker": false,
+        "index_gap": 2
+      }
+    },
+    {
+      "qa_id": "qa:79ddd0f2c4",
+      "question": "C5 的 commit 历史要不要整理？我这有 30 多个 wip commit。",
+      "question_ts": "2026-10-25T09:30:48+08:00",
+      "question_msg_id": "m00069",
+      "asker": {
+        "wechat_id": "wxid_qiuzw",
+        "nickname": "邱志伟"
+      },
+      "answer": "不用整理，真实历史反而好，但 README 要能让人看懂你在做什么。",
+      "answer_ts": "2026-10-25T09:50:42+08:00",
+      "answer_msg_id": "m00070",
+      "answerer": {
+        "wechat_id": "wxid_linyz",
+        "nickname": "林一舟"
+      },
+      "latency_seconds": 1194,
+      "challenge": "C5",
+      "topic_tags": [
+        "C5",
+        "commit"
+      ],
+      "quality_score": 0.6,
+      "resolved": true,
+      "evidence": {
+        "cited_by_reply": true,
+        "thanks_from_asker": false,
+        "index_gap": 1
+      }
+    },
+    {
+      "qa_id": "qa:4f03516d76",
+      "question": "问个偏工程的问题：C6A 的仪表盘数据从哪来？手动导还是自动扫？",
+      "question_ts": "2026-10-25T20:00:39+08:00",
+      "question_msg_id": "m00082",
+      "asker": {
+        "wechat_id": "wxid_gaoyf",
+        "nickname": "高宇飞"
+      },
+      "answer": "自动扫文件夹最省事，但命名不规范就扫不出来，所以我先做了一层命名检查。",
+      "answer_ts": "2026-10-25T20:20:23+08:00",
+      "answer_msg_id": "m00083",
+      "answerer": {
+        "wechat_id": "wxid_jxq2024",
+        "nickname": "景雪晴"
+      },
+      "latency_seconds": 1184,
+      "challenge": "C6A",
+      "topic_tags": [
+        "C6A",
+        "仪表盘"
+      ],
+      "quality_score": 0.6,
+      "resolved": true,
+      "evidence": {
+        "cited_by_reply": true,
+        "thanks_from_asker": false,
+        "index_gap": 1
+      }
+    },
+    {
+      "qa_id": "qa:77c5a3b6fb",
+      "question": "数据桥接是指从微信里把消息捞出来吗？这个不是有封号风险？",
+      "question_ts": "2026-10-28T19:15:19+08:00",
+      "question_msg_id": "m00135",
+      "asker": {
+        "wechat_id": "wxid_linyz",
+        "nickname": "林一舟"
+      },
+      "answer": "只读本地数据库、不登录不群发，风险比爬网页低，但我会把写回做成默认关闭。",
+      "answer_ts": "2026-10-28T19:30:01+08:00",
+      "answer_msg_id": "m00136",
+      "answerer": {
+        "wechat_id": "wxid_jxq2024",
+        "nickname": "景雪晴"
+      },
+      "latency_seconds": 882,
+      "challenge": "C8",
+      "topic_tags": [
+        "C8"
+      ],
+      "quality_score": 0.6,
+      "resolved": true,
+      "evidence": {
+        "cited_by_reply": true,
+        "thanks_from_asker": false,
+        "index_gap": 1
+      }
+    },
+    {
+      "qa_id": "qa:8f311e8d56",
+      "question": "C10 第二大脑那个，记忆到底存在哪？本地文件还是向量库？",
+      "question_ts": "2026-10-29T14:00:16+08:00",
+      "question_msg_id": "m00143",
+      "asker": {
+        "wechat_id": "wxid_yanghs",
+        "nickname": "杨海森"
+      },
+      "answer": "小规模本地 markdown 就够，上千条再上向量库，别一上来就搞复杂。",
+      "answer_ts": "2026-10-29T14:30:00+08:00",
+      "answer_msg_id": "m00144",
+      "answerer": {
+        "wechat_id": "wxid_wuht",
+        "nickname": "吴昊天"
+      },
+      "latency_seconds": 1784,
+      "challenge": "C10",
+      "topic_tags": [
+        "C10",
+        "第二大脑"
+      ],
+      "quality_score": 0.6,
+      "resolved": true,
+      "evidence": {
+        "cited_by_reply": true,
+        "thanks_from_asker": false,
+        "index_gap": 2
+      }
+    },
+    {
+      "qa_id": "qa:7b129d9e4f",
+      "question": "C10 的记忆如果只存本地，换电脑就没了，这个怎么解决？",
+      "question_ts": "2026-11-01T10:30:15+08:00",
+      "question_msg_id": "m00184",
+      "asker": {
+        "wechat_id": "wxid_sunl",
+        "nickname": "孙乐"
+      },
+      "answer": "放 git 私有仓库，或者定时导出加密包，两种都行。",
+      "answer_ts": "2026-11-01T10:55:25+08:00",
+      "answer_msg_id": "m00185",
+      "answerer": {
+        "wechat_id": "wxid_zhoujy",
+        "nickname": "周嘉懿"
+      },
+      "latency_seconds": 1510,
+      "challenge": "C10",
+      "topic_tags": [
+        "C10",
+        "仓库",
+        "记忆"
+      ],
+      "quality_score": 0.6,
+      "resolved": true,
+      "evidence": {
+        "cited_by_reply": true,
+        "thanks_from_asker": false,
+        "index_gap": 2
+      }
+    },
+    {
+      "qa_id": "qa:5b9ca6e90f",
+      "question": "问个收尾问题：周报里要不要写下周计划？",
+      "question_ts": "2026-11-03T20:00:11+08:00",
+      "question_msg_id": "m00220",
+      "asker": {
+        "wechat_id": "wxid_chenxy",
+        "nickname": "陈心怡"
+      },
+      "answer": "要，而且下周计划要能被检验，写「继续优化」等于没写。",
+      "answer_ts": "2026-11-03T20:20:29+08:00",
+      "answer_msg_id": "m00221",
+      "answerer": {
+        "wechat_id": "wxid_jxq2024",
+        "nickname": "景雪晴"
+      },
+      "latency_seconds": 1218,
+      "challenge": "C4D",
+      "topic_tags": [
+        "C4D"
+      ],
+      "quality_score": 0.6,
+      "resolved": true,
+      "evidence": {
+        "cited_by_reply": true,
+        "thanks_from_asker": true,
+        "index_gap": 1
+      }
+    },
+    {
+      "qa_id": "qa:f777989137",
+      "question": "截图我发群里了",
+      "question_ts": "2026-10-24T12:41:29+08:00",
+      "question_msg_id": "m00236",
+      "asker": {
+        "wechat_id": "wxid_fengyr",
+        "nickname": "冯亦然"
+      },
+      "answer": "复读一般是 prompt 里没有明确任务，模型只能顺着你说，加一句「你的任务是…」。",
+      "answer_ts": "2026-10-24T14:32:49+08:00",
+      "answer_msg_id": "m00062",
+      "answerer": {
+        "wechat_id": "wxid_zhoujy",
+        "nickname": "周嘉懿"
+      },
+      "latency_seconds": 6680,
+      "challenge": "C3",
+      "topic_tags": [
+        "C3",
+        "群里"
+      ],
+      "quality_score": 0.55,
+      "resolved": true,
+      "evidence": {
+        "cited_by_reply": false,
+        "thanks_from_asker": false,
+        "index_gap": 2
+      }
+    },
+    {
+      "qa_id": "qa:a3fd573241",
+      "question": "截图我发群里了",
+      "question_ts": "2026-10-28T18:56:16+08:00",
+      "question_msg_id": "m00251",
+      "asker": {
+        "wechat_id": "wxid_gaoyf",
+        "nickname": "高宇飞"
+      },
+      "answer": "只读本地数据库、不登录不群发，风险比爬网页低，但我会把写回做成默认关闭。",
+      "answer_ts": "2026-10-28T19:30:01+08:00",
+      "answer_msg_id": "m00136",
+      "answerer": {
+        "wechat_id": "wxid_jxq2024",
+        "nickname": "景雪晴"
+      },
+      "latency_seconds": 2025,
+      "challenge": "C3",
+      "topic_tags": [
+        "C3",
+        "群里"
+      ],
+      "quality_score": 0.55,
+      "resolved": true,
+      "evidence": {
+        "cited_by_reply": false,
+        "thanks_from_asker": false,
+        "index_gap": 4
+      }
+    },
+    {
+      "qa_id": "qa:44d26e9782",
+      "question": "C1 翻译那篇 Stanford 的课，术语表要单独交吗？",
+      "question_ts": "2026-10-22T10:30:45+08:00",
+      "question_msg_id": "m00023",
+      "asker": {
+        "wechat_id": "wxid_majl",
+        "nickname": "马嘉乐"
+      },
+      "answer": "要，术语表附在正文后面，老师说要能对得上原文页码。",
+      "answer_ts": "2026-10-22T10:41:15+08:00",
+      "answer_msg_id": "m00024",
+      "answerer": {
+        "wechat_id": "wxid_guoyq",
+        "nickname": "郭雅琪"
+      },
+      "latency_seconds": 630,
+      "challenge": "C1",
+      "topic_tags": [
+        "C1",
+        "翻译"
+      ],
+      "quality_score": 0.5,
+      "resolved": true,
+      "evidence": {
+        "cited_by_reply": true,
+        "thanks_from_asker": false,
+        "index_gap": 1
+      }
+    },
+    {
+      "qa_id": "qa:ff46e8d2bf",
+      "question": "有没有人觉得 C3 的「高质量参与」很难量化？我感觉就是让大家多说话。",
+      "question_ts": "2026-10-22T20:05:49+08:00",
+      "question_msg_id": "m00031",
+      "asker": {
+        "wechat_id": "wxid_fengyr",
+        "nickname": "冯亦然"
+      },
+      "answer": "算，但最好带上你自己的尝试，别只问不试。",
+      "answer_ts": "2026-10-22T20:40:35+08:00",
+      "answer_msg_id": "m00034",
+      "answerer": {
+        "wechat_id": "wxid_linyz",
+        "nickname": "林一舟"
+      },
+      "latency_seconds": 2086,
+      "challenge": "C3",
+      "topic_tags": [
+        "C3",
+        "量化",
+        "参与"
+      ],
+      "quality_score": 0.5,
+      "resolved": true,
+      "evidence": {
+        "cited_by_reply": false,
+        "thanks_from_asker": false,
+        "index_gap": 3
+      }
+    },
+    {
+      "qa_id": "qa:b48a364881",
+      "question": "统计口径问一下：C6A 的提交率分母是全班人数还是已报名人数？",
+      "question_ts": "2026-10-23T20:10:38+08:00",
+      "question_msg_id": "m00048",
+      "asker": {
+        "wechat_id": "wxid_yanghs",
+        "nickname": "杨海森"
+      },
+      "answer": "我按全班人数算的，报名人数会让完成率虚高，验收时说不清。",
+      "answer_ts": "2026-10-23T20:35:14+08:00",
+      "answer_msg_id": "m00049",
+      "answerer": {
+        "wechat_id": "wxid_jxq2024",
+        "nickname": "景雪晴"
+      },
+      "latency_seconds": 1476,
+      "challenge": "C6A",
+      "topic_tags": [
+        "C6A",
+        "统计",
+        "验收"
+      ],
+      "quality_score": 0.5,
+      "resolved": true,
+      "evidence": {
+        "cited_by_reply": true,
+        "thanks_from_asker": false,
+        "index_gap": 1
+      }
+    },
+    {
+      "qa_id": "qa:22efdc4994",
+      "question": "老师，我文件名写的是「最终版」，现在改还来得及吗？",
+      "question_ts": "2026-10-24T09:30:33+08:00",
+      "question_msg_id": "m00054",
+      "asker": {
+        "wechat_id": "wxid_luoxr",
+        "nickname": "罗欣然"
+      },
+      "answer": "重新发一次，改成规范命名，旧的我不收。",
+      "answer_ts": "2026-10-24T09:42:00+08:00",
+      "answer_msg_id": "m00055",
+      "answerer": {
+        "wechat_id": "wxid_teacher_neolaf",
+        "nickname": "班主任 · 李老师"
+      },
+      "latency_seconds": 687,
+      "challenge": "C5",
+      "topic_tags": [
+        "C5"
+      ],
+      "quality_score": 0.5,
+      "resolved": true,
+      "evidence": {
+        "cited_by_reply": true,
+        "thanks_from_asker": false,
+        "index_gap": 1
+      }
+    },
+    {
+      "qa_id": "qa:b22cf163b3",
+      "question": "C7 内容传播的阅读量要截图吗？我发在小红书只有 200 多浏览。",
+      "question_ts": "2026-10-25T14:00:47+08:00",
+      "question_msg_id": "m00078",
+      "asker": {
+        "wechat_id": "wxid_xufy",
+        "nickname": "徐方雨"
+      },
+      "answer": "要截图，200 也算，重点是你能说清为什么这个选题没人看。",
+      "answer_ts": "2026-10-25T14:25:46+08:00",
+      "answer_msg_id": "m00079",
+      "answerer": {
+        "wechat_id": "wxid_teacher_neolaf",
+        "nickname": "班主任 · 李老师"
+      },
+      "latency_seconds": 1499,
+      "challenge": "C7",
+      "topic_tags": [
+        "C7",
+        "传播",
+        "选题"
+      ],
+      "quality_score": 0.5,
+      "resolved": true,
+      "evidence": {
+        "cited_by_reply": true,
+        "thanks_from_asker": false,
+        "index_gap": 1
+      }
+    },
+    {
+      "qa_id": "qa:e57350b4ae",
+      "question": "那如果消息和文件对不上怎么办？",
+      "question_ts": "2026-10-25T20:40:04+08:00",
+      "question_msg_id": "m00084",
+      "asker": {
+        "wechat_id": "wxid_gaoyf",
+        "nickname": "高宇飞"
+      },
+      "answer": "以文件为准，消息只用来补时间线，这是我踩过坑之后的结论。",
+      "answer_ts": "2026-10-25T20:55:10+08:00",
+      "answer_msg_id": "m00085",
+      "answerer": {
+        "wechat_id": "wxid_jxq2024",
+        "nickname": "景雪晴"
+      },
+      "latency_seconds": 906,
+      "challenge": "C6A",
+      "topic_tags": [
+        "C6A"
+      ],
+      "quality_score": 0.5,
+      "resolved": true,
+      "evidence": {
+        "cited_by_reply": true,
+        "thanks_from_asker": false,
+        "index_gap": 1
+      }
+    },
+    {
+      "qa_id": "qa:8074623ae5",
+      "question": "C3C 双人协作必须两个人一起交吗？我一个人能不能算两份？",
+      "question_ts": "2026-10-26T11:00:10+08:00",
+      "question_msg_id": "m00092",
+      "asker": {
+        "wechat_id": "wxid_fengyr",
+        "nickname": "冯亦然"
+      },
+      "answer": "不行，C3C 考的是协作过程，一个人做两份没有协作痕迹。",
+      "answer_ts": "2026-10-26T11:20:06+08:00",
+      "answer_msg_id": "m00093",
+      "answerer": {
+        "wechat_id": "wxid_teacher_neolaf",
+        "nickname": "班主任 · 李老师"
+      },
+      "latency_seconds": 1196,
+      "challenge": "C3C",
+      "topic_tags": [
+        "C3C",
+        "双人"
+      ],
+      "quality_score": 0.5,
+      "resolved": true,
+      "evidence": {
+        "cited_by_reply": true,
+        "thanks_from_asker": false,
+        "index_gap": 1
+      }
+    },
+    {
+      "qa_id": "qa:6996a6b015",
+      "question": "C6A 的图表用什么做的？我想做得好看一点但不会前端。",
+      "question_ts": "2026-10-26T15:30:40+08:00",
+      "question_msg_id": "m00098",
+      "asker": {
+        "wechat_id": "wxid_yanghs",
+        "nickname": "杨海森"
+      },
+      "answer": "用现成的图表库直接嵌，别自己画 SVG，费时间还丑。",
+      "answer_ts": "2026-10-26T15:50:24+08:00",
+      "answer_msg_id": "m00099",
+      "answerer": {
+        "wechat_id": "wxid_chenxy",
+        "nickname": "陈心怡"
+      },
+      "latency_seconds": 1184,
+      "challenge": "C6A",
+      "topic_tags": [
+        "C6A",
+        "图表"
+      ],
+      "quality_score": 0.5,
+      "resolved": true,
+      "evidence": {
+        "cited_by_reply": true,
+        "thanks_from_asker": false,
+        "index_gap": 1
+      }
+    },
+    {
+      "qa_id": "qa:55a936f461",
+      "question": "老师，如果我的项目这周只有文档没有代码，算不算产出？",
+      "question_ts": "2026-10-26T20:35:33+08:00",
+      "question_msg_id": "m00104",
+      "asker": {
+        "wechat_id": "wxid_zhaomx",
+        "nickname": "赵明轩"
+      },
+      "answer": "算，前提是这份文档别人能拿去用，不是写给自己看的。",
+      "answer_ts": "2026-10-26T20:50:07+08:00",
+      "answer_msg_id": "m00105",
+      "answerer": {
+        "wechat_id": "wxid_teacher_neolaf",
+        "nickname": "班主任 · 李老师"
+      },
+      "latency_seconds": 874,
+      "challenge": "C8",
+      "topic_tags": [
+        "C8"
+      ],
+      "quality_score": 0.5,
+      "resolved": true,
+      "evidence": {
+        "cited_by_reply": true,
+        "thanks_from_asker": false,
+        "index_gap": 1
+      }
+    },
+    {
+      "qa_id": "qa:1352331697",
+      "question": "C6 部署的域名能不能自定义？我老板觉得默认域名不好看。",
+      "question_ts": "2026-10-27T10:00:24+08:00",
+      "question_msg_id": "m00108",
+      "asker": {
+        "wechat_id": "wxid_xiemq",
+        "nickname": "谢梦琪"
+      },
+      "answer": "免费版一般不能绑自定义域名，可以先忍着。",
+      "answer_ts": "2026-10-27T10:30:06+08:00",
+      "answer_msg_id": "m00109",
+      "answerer": {
+        "wechat_id": "wxid_gaoyf",
+        "nickname": "高宇飞"
+      },
+      "latency_seconds": 1782,
+      "challenge": "C6",
+      "topic_tags": [
+        "C6",
+        "部署"
+      ],
+      "quality_score": 0.5,
+      "resolved": true,
+      "evidence": {
+        "cited_by_reply": true,
+        "thanks_from_asker": false,
+        "index_gap": 1
+      }
+    },
+    {
+      "qa_id": "qa:5df080b97b",
+      "question": "早期验证物可以是文档吗？我不太会写代码。",
+      "question_ts": "2026-10-28T09:30:34+08:00",
+      "question_msg_id": "m00123",
+      "asker": {
+        "wechat_id": "wxid_fengyr",
+        "nickname": "冯亦然"
+      },
+      "answer": "可以，技术方案或系统架构图都算，但必须是你自己画的。",
+      "answer_ts": "2026-10-28T09:45:13+08:00",
+      "answer_msg_id": "m00124",
+      "answerer": {
+        "wechat_id": "wxid_teacher_neolaf",
+        "nickname": "班主任 · 李老师"
+      },
+      "latency_seconds": 879,
+      "challenge": "C8",
+      "topic_tags": [
+        "C8"
+      ],
+      "quality_score": 0.5,
+      "resolved": true,
+      "evidence": {
+        "cited_by_reply": true,
+        "thanks_from_asker": false,
+        "index_gap": 1
+      }
+    },
+    {
+      "qa_id": "qa:499ff92504",
+      "question": "C9 自驱项目大家打算做什么？我完全没有想法。",
+      "question_ts": "2026-10-29T10:00:18+08:00",
+      "question_msg_id": "m00139",
+      "asker": {
+        "wechat_id": "wxid_sunl",
+        "nickname": "孙乐"
+      },
+      "answer": "从你已经在做的工具里挑一个继续打磨，比新开一个坑靠谱。",
+      "answer_ts": "2026-10-29T10:25:43+08:00",
+      "answer_msg_id": "m00140",
+      "answerer": {
+        "wechat_id": "wxid_zhoujy",
+        "nickname": "周嘉懿"
+      },
+      "latency_seconds": 1525,
+      "challenge": "C9",
+      "topic_tags": [
+        "C9",
+        "自驱"
+      ],
+      "quality_score": 0.5,
+      "resolved": true,
+      "evidence": {
+        "cited_by_reply": true,
+        "thanks_from_asker": false,
+        "index_gap": 1
+      }
+    },
+    {
+      "qa_id": "qa:3ba07ab5d5",
+      "question": "C3 的参与记录怎么证明？光靠自己说不太好吧。",
+      "question_ts": "2026-10-30T10:30:26+08:00",
+      "question_msg_id": "m00155",
+      "asker": {
+        "wechat_id": "wxid_pengxy",
+        "nickname": "彭心语"
+      },
+      "answer": "导一份群聊记录，把你发言的时间点标出来，老师能核对。",
+      "answer_ts": "2026-10-30T10:50:04+08:00",
+      "answer_msg_id": "m00156",
+      "answerer": {
+        "wechat_id": "wxid_fengyr",
+        "nickname": "冯亦然"
+      },
+      "latency_seconds": 1178,
+      "challenge": "C3",
+      "topic_tags": [
+        "C3",
+        "发言"
+      ],
+      "quality_score": 0.5,
+      "resolved": true,
+      "evidence": {
+        "cited_by_reply": true,
+        "thanks_from_asker": false,
+        "index_gap": 1
+      }
+    },
+    {
+      "qa_id": "qa:3ca02d4c37",
+      "question": "C10H 的 Hermes 装不上，卡在依赖冲突，有人成功过吗？",
+      "question_ts": "2026-10-30T14:00:22+08:00",
+      "question_msg_id": "m00159",
+      "asker": {
+        "wechat_id": "wxid_tangsh",
+        "nickname": "唐思涵"
+      },
+      "answer": "我用虚拟环境装的，系统 Python 千万别动。",
+      "answer_ts": "2026-10-30T15:30:12+08:00",
+      "answer_msg_id": "m00160",
+      "answerer": {
+        "wechat_id": "wxid_sunl",
+        "nickname": "孙乐"
+      },
+      "latency_seconds": 5390,
+      "challenge": "C10H",
+      "topic_tags": [
+        "C10H"
+      ],
+      "quality_score": 0.5,
+      "resolved": true,
+      "evidence": {
+        "cited_by_reply": true,
+        "thanks_from_asker": false,
+        "index_gap": 1
+      }
+    },
+    {
+      "qa_id": "qa:20ef49795b",
+      "question": "C8 的 demo 我用视频可以吗？代码实在跑不起来。",
+      "question_ts": "2026-10-31T14:20:28+08:00",
+      "question_msg_id": "m00173",
+      "asker": {
+        "wechat_id": "wxid_chenxy",
+        "nickname": "陈心怡"
+      },
+      "answer": "视频可以是补充，不能替代，至少要有能运行的东西。",
+      "answer_ts": "2026-10-31T14:45:09+08:00",
+      "answer_msg_id": "m00174",
+      "answerer": {
+        "wechat_id": "wxid_teacher_neolaf",
+        "nickname": "班主任 · 李老师"
+      },
+      "latency_seconds": 1481,
+      "challenge": "C8",
+      "topic_tags": [
+        "C8"
+      ],
+      "quality_score": 0.5,
+      "resolved": true,
+      "evidence": {
+        "cited_by_reply": true,
+        "thanks_from_asker": false,
+        "index_gap": 1
+      }
+    },
+    {
+      "qa_id": "qa:cb29f0c7d5",
+      "question": "C8 中期检查要准备什么？PPT 还是文档？",
+      "question_ts": "2026-11-01T14:00:12+08:00",
+      "question_msg_id": "m00188",
+      "asker": {
+        "wechat_id": "wxid_majl",
+        "nickname": "马嘉乐"
+      },
+      "answer": "文档优先，能当场演示的加演示，PPT 不是必须。",
+      "answer_ts": "2026-11-01T14:20:35+08:00",
+      "answer_msg_id": "m00189",
+      "answerer": {
+        "wechat_id": "wxid_teacher_neolaf",
+        "nickname": "班主任 · 李老师"
+      },
+      "latency_seconds": 1223,
+      "challenge": "C8",
+      "topic_tags": [
+        "C8"
+      ],
+      "quality_score": 0.5,
+      "resolved": true,
+      "evidence": {
+        "cited_by_reply": true,
+        "thanks_from_asker": false,
+        "index_gap": 2
+      }
+    },
+    {
+      "qa_id": "qa:89386030aa",
+      "question": "AAR 里要写失败经验吗？我怕写得难看。",
+      "question_ts": "2026-11-02T09:30:31+08:00",
+      "question_msg_id": "m00196",
+      "asker": {
+        "wechat_id": "wxid_guoyq",
+        "nickname": "郭雅琪"
+      },
+      "answer": "必须写，没有失败分析的 AAR 我打回去重写。",
+      "answer_ts": "2026-11-02T09:50:00+08:00",
+      "answer_msg_id": "m00197",
+      "answerer": {
+        "wechat_id": "wxid_teacher_neolaf",
+        "nickname": "班主任 · 李老师"
+      },
+      "latency_seconds": 1169,
+      "challenge": "C8",
+      "topic_tags": [
+        "C8",
+        "AAR"
+      ],
+      "quality_score": 0.5,
+      "resolved": true,
+      "evidence": {
+        "cited_by_reply": true,
+        "thanks_from_asker": false,
+        "index_gap": 1
+      }
+    },
+    {
+      "qa_id": "qa:9aafa7e391",
+      "question": "C8 demo 我用 notebook 可以吗？不太会打包。",
+      "question_ts": "2026-11-02T11:00:20+08:00",
+      "question_msg_id": "m00201",
+      "asker": {
+        "wechat_id": "wxid_dengzl",
+        "nickname": "邓子龙"
+      },
+      "answer": "可以，但要有 README 说明怎么跑，装什么依赖。",
+      "answer_ts": "2026-11-02T11:20:40+08:00",
+      "answer_msg_id": "m00202",
+      "answerer": {
+        "wechat_id": "wxid_wuht",
+        "nickname": "吴昊天"
+      },
+      "latency_seconds": 1220,
+      "challenge": "C8",
+      "topic_tags": [
+        "C8"
+      ],
+      "quality_score": 0.5,
+      "resolved": true,
+      "evidence": {
+        "cited_by_reply": true,
+        "thanks_from_asker": false,
+        "index_gap": 1
+      }
+    },
+    {
+      "qa_id": "qa:df64cec3f9",
+      "question": "我的 demo 是个文档，不知道算不算。",
+      "question_ts": "2026-11-02T14:02:00+08:00",
+      "question_msg_id": "m00205",
+      "asker": {
+        "wechat_id": "wxid_fengyr",
+        "nickname": "冯亦然"
+      },
+      "answer": "算，架构图画清楚就行。",
+      "answer_ts": "2026-11-02T14:20:22+08:00",
+      "answer_msg_id": "m00206",
+      "answerer": {
+        "wechat_id": "wxid_teacher_neolaf",
+        "nickname": "班主任 · 李老师"
+      },
+      "latency_seconds": 1102,
+      "challenge": "C8",
+      "topic_tags": [
+        "C8"
+      ],
+      "quality_score": 0.5,
+      "resolved": true,
+      "evidence": {
+        "cited_by_reply": true,
+        "thanks_from_asker": false,
+        "index_gap": 1
+      }
+    },
+    {
+      "qa_id": "qa:62e4ee469d",
+      "question": "问一下大家，C10 的上下文超了怎么办？我只能塞 8k。",
+      "question_ts": "2026-11-02T19:40:11+08:00",
+      "question_msg_id": "m00207",
+      "asker": {
+        "wechat_id": "wxid_tangsh",
+        "nickname": "唐思涵"
+      },
+      "answer": "分层摘要，把旧对话压成一段事实清单，只保留结论不保留过程。",
+      "answer_ts": "2026-11-02T20:00:01+08:00",
+      "answer_msg_id": "m00208",
+      "answerer": {
+        "wechat_id": "wxid_jxq2024",
+        "nickname": "景雪晴"
+      },
+      "latency_seconds": 1190,
+      "challenge": "C10",
+      "topic_tags": [
+        "C10",
+        "摘要",
+        "上下文"
+      ],
+      "quality_score": 0.5,
+      "resolved": true,
+      "evidence": {
+        "cited_by_reply": true,
+        "thanks_from_asker": false,
+        "index_gap": 1
+      }
+    },
+    {
+      "qa_id": "qa:cf3801bea4",
+      "question": "有同学一起结对吗？",
+      "question_ts": "2026-10-22T18:42:04+08:00",
+      "question_msg_id": "m00229",
+      "asker": {
+        "wechat_id": "wxid_xufy",
+        "nickname": "徐方雨"
+      },
+      "answer": "算，但最好带上你自己的尝试，别只问不试。",
+      "answer_ts": "2026-10-22T20:40:35+08:00",
+      "answer_msg_id": "m00034",
+      "answerer": {
+        "wechat_id": "wxid_linyz",
+        "nickname": "林一舟"
+      },
+      "latency_seconds": 7111,
+      "challenge": "C3C",
+      "topic_tags": [
+        "C3C",
+        "结对"
+      ],
+      "quality_score": 0.45,
+      "resolved": true,
+      "evidence": {
+        "cited_by_reply": false,
+        "thanks_from_asker": false,
+        "index_gap": 4
+      }
+    },
+    {
+      "qa_id": "qa:2c4716e791",
+      "question": "那我这周的提问算不算？",
+      "question_ts": "2026-10-22T20:31:20+08:00",
+      "question_msg_id": "m00033",
+      "asker": {
+        "wechat_id": "wxid_fengyr",
+        "nickname": "冯亦然"
+      },
+      "answer": "算，但最好带上你自己的尝试，别只问不试。",
+      "answer_ts": "2026-10-22T20:40:35+08:00",
+      "answer_msg_id": "m00034",
+      "answerer": {
+        "wechat_id": "wxid_linyz",
+        "nickname": "林一舟"
+      },
+      "latency_seconds": 555,
+      "challenge": "C3",
+      "topic_tags": [
+        "C3",
+        "提问"
+      ],
+      "quality_score": 0.45,
+      "resolved": true,
+      "evidence": {
+        "cited_by_reply": true,
+        "thanks_from_asker": false,
+        "index_gap": 1
+      }
+    },
+    {
+      "qa_id": "qa:2f123aa05a",
+      "question": "个人订阅号是不是就没戏了？",
+      "question_ts": "2026-10-24T19:20:47+08:00",
+      "question_msg_id": "m00065",
+      "asker": {
+        "wechat_id": "wxid_pengxy",
+        "nickname": "彭心语"
+      },
+      "answer": "个人号可以复制粘贴，样式做对就行，接口不用强求。",
+      "answer_ts": "2026-10-24T19:35:29+08:00",
+      "answer_msg_id": "m00066",
+      "answerer": {
+        "wechat_id": "wxid_jxq2024",
+        "nickname": "景雪晴"
+      },
+      "latency_seconds": 882,
+      "challenge": "C4B",
+      "topic_tags": [
+        "C4B"
+      ],
+      "quality_score": 0.45,
+      "resolved": true,
+      "evidence": {
+        "cited_by_reply": true,
+        "thanks_from_asker": false,
+        "index_gap": 1
+      }
+    },
+    {
+      "qa_id": "qa:da1a0a2fc9",
+      "question": "有同学一起结对吗？",
+      "question_ts": "2026-10-26T13:57:23+08:00",
+      "question_msg_id": "m00244",
+      "asker": {
+        "wechat_id": "wxid_wuht",
+        "nickname": "吴昊天"
+      },
+      "answer": "用现成的图表库直接嵌，别自己画 SVG，费时间还丑。",
+      "answer_ts": "2026-10-26T15:50:24+08:00",
+      "answer_msg_id": "m00099",
+      "answerer": {
+        "wechat_id": "wxid_chenxy",
+        "nickname": "陈心怡"
+      },
+      "latency_seconds": 6781,
+      "challenge": "C3C",
+      "topic_tags": [
+        "C3C",
+        "结对",
+        "图表"
+      ],
+      "quality_score": 0.45,
+      "resolved": true,
+      "evidence": {
+        "cited_by_reply": false,
+        "thanks_from_asker": false,
+        "index_gap": 6
+      }
+    },
+    {
+      "qa_id": "qa:5d10197af1",
+      "question": "今天的会我迟到五分钟",
+      "question_ts": "2026-11-02T09:28:00+08:00",
+      "question_msg_id": "m00267",
+      "asker": {
+        "wechat_id": "wxid_guoyq",
+        "nickname": "郭雅琪"
+      },
+      "answer": "必须写，没有失败分析的 AAR 我打回去重写。",
+      "answer_ts": "2026-11-02T09:50:00+08:00",
+      "answer_msg_id": "m00197",
+      "answerer": {
+        "wechat_id": "wxid_teacher_neolaf",
+        "nickname": "班主任 · 李老师"
+      },
+      "latency_seconds": 1320,
+      "challenge": "C8",
+      "topic_tags": [
+        "C8",
+        "AAR"
+      ],
+      "quality_score": 0.45,
+      "resolved": true,
+      "evidence": {
+        "cited_by_reply": false,
+        "thanks_from_asker": false,
+        "index_gap": 2
+      }
+    },
+    {
+      "qa_id": "qa:dbe7af42f8",
+      "question": "截图我发群里了",
+      "question_ts": "2026-11-02T13:11:15+08:00",
+      "question_msg_id": "m00266",
+      "asker": {
+        "wechat_id": "wxid_hech",
+        "nickname": "何承翰"
+      },
+      "answer": "算，架构图画清楚就行。",
+      "answer_ts": "2026-11-02T14:20:22+08:00",
+      "answer_msg_id": "m00206",
+      "answerer": {
+        "wechat_id": "wxid_teacher_neolaf",
+        "nickname": "班主任 · 李老师"
+      },
+      "latency_seconds": 4147,
+      "challenge": "C3",
+      "topic_tags": [
+        "C3",
+        "群里"
+      ],
+      "quality_score": 0.45,
+      "resolved": true,
+      "evidence": {
+        "cited_by_reply": false,
+        "thanks_from_asker": false,
+        "index_gap": 4
+      }
+    }
+  ],
+  "top_pairs": [
+    {
+      "qa_id": "qa:884796f130",
+      "question": "C2 论文的参考文献格式，学校要求 GB/T 7714，但 latex 模板是 APA，怎么改？",
+      "question_ts": "2026-10-23T10:50:20+08:00",
+      "question_msg_id": "m00041",
+      "asker": {
+        "wechat_id": "wxid_dengzl",
+        "nickname": "邓子龙"
+      },
+      "answer": "换 biblatex 的 gb7714-2015 样式就行，\\usepackage[style=gb7714-2015]{biblatex}。",
+      "answer_ts": "2026-10-23T11:20:11+08:00",
+      "answer_msg_id": "m00042",
+      "answerer": {
+        "wechat_id": "wxid_jxq2024",
+        "nickname": "景雪晴"
+      },
+      "latency_seconds": 1791,
+      "challenge": "C2",
+      "topic_tags": [
+        "C2",
+        "论文"
+      ],
+      "quality_score": 0.75,
+      "resolved": true,
+      "evidence": {
+        "cited_by_reply": true,
+        "thanks_from_asker": false,
+        "index_gap": 1
+      }
+    },
+    {
+      "qa_id": "qa:7213f1bcf7",
+      "question": "老师，我的仓库建好了但 push 一直失败，提示权限不足。",
+      "question_ts": "2026-10-23T09:20:31+08:00",
+      "question_msg_id": "m00036",
+      "asker": {
+        "wechat_id": "wxid_qiuzw",
+        "nickname": "邱志伟"
+      },
+      "answer": "大概率是 SSH key 没加，或者你用的是 HTTPS 但贴了 token 到密码框。",
+      "answer_ts": "2026-10-23T09:35:33+08:00",
+      "answer_msg_id": "m00037",
+      "answerer": {
+        "wechat_id": "wxid_hech",
+        "nickname": "何承翰"
+      },
+      "latency_seconds": 902,
+      "challenge": "C5",
+      "topic_tags": [
+        "C5",
+        "仓库"
+      ],
+      "quality_score": 0.7,
+      "resolved": true,
+      "evidence": {
+        "cited_by_reply": true,
+        "thanks_from_asker": true,
+        "index_gap": 1
+      }
+    },
+    {
+      "qa_id": "qa:c16fa65b66",
+      "question": "C4D 的 agent 一直复读我的话，是不是温度调太低了？",
+      "question_ts": "2026-10-24T14:15:50+08:00",
+      "question_msg_id": "m00061",
+      "asker": {
+        "wechat_id": "wxid_sunl",
+        "nickname": "孙乐"
+      },
+      "answer": "复读一般是 prompt 里没有明确任务，模型只能顺着你说，加一句「你的任务是…」。",
+      "answer_ts": "2026-10-24T14:32:49+08:00",
+      "answer_msg_id": "m00062",
+      "answerer": {
+        "wechat_id": "wxid_zhoujy",
+        "nickname": "周嘉懿"
+      },
+      "latency_seconds": 1019,
+      "challenge": "C4D",
+      "topic_tags": [
+        "C4D",
+        "agent"
+      ],
+      "quality_score": 0.7,
+      "resolved": true,
+      "evidence": {
+        "cited_by_reply": true,
+        "thanks_from_asker": true,
+        "index_gap": 1
+      }
+    },
+    {
+      "qa_id": "qa:134094ad07",
+      "question": "C4B 的样式粘到公众号之后段落间距全变了，有人遇到吗？",
+      "question_ts": "2026-10-27T20:00:38+08:00",
+      "question_msg_id": "m00118",
+      "asker": {
+        "wechat_id": "wxid_pengxy",
+        "nickname": "彭心语"
+      },
+      "answer": "微信会吃掉 margin，用 padding 或者空段落顶。",
+      "answer_ts": "2026-10-27T20:25:43+08:00",
+      "answer_msg_id": "m00119",
+      "answerer": {
+        "wechat_id": "wxid_tangsh",
+        "nickname": "唐思涵"
+      },
+      "latency_seconds": 1505,
+      "challenge": "C4B",
+      "topic_tags": [
+        "C4B",
+        "公众号"
+      ],
+      "quality_score": 0.7,
+      "resolved": true,
+      "evidence": {
+        "cited_by_reply": true,
+        "thanks_from_asker": true,
+        "index_gap": 1
+      }
+    },
+    {
+      "qa_id": "qa:0be06d3e36",
+      "question": "问一下 C8 的 AAR 是每周都要交吗？还是一共一份？",
+      "question_ts": "2026-10-28T14:00:44+08:00",
+      "question_msg_id": "m00131",
+      "asker": {
+        "wechat_id": "wxid_hech",
+        "nickname": "何承翰"
+      },
+      "answer": "每周一份，命名 AAR_W1、AAR_W2，连续两周不交直接移出项目。",
+      "answer_ts": "2026-10-28T14:20:10+08:00",
+      "answer_msg_id": "m00132",
+      "answerer": {
+        "wechat_id": "wxid_teacher_neolaf",
+        "nickname": "班主任 · 李老师"
+      },
+      "latency_seconds": 1166,
+      "challenge": "C8",
+      "topic_tags": [
+        "C8",
+        "AAR"
+      ],
+      "quality_score": 0.7,
+      "resolved": true,
+      "evidence": {
+        "cited_by_reply": true,
+        "thanks_from_asker": true,
+        "index_gap": 1
+      }
+    }
+  ],
+  "unanswered": [
+    {
+      "msg_id": "m00228",
+      "question": "刚跑通，确实是这样",
+      "asker": {
+        "wechat_id": "wxid_zhoujy",
+        "nickname": "周嘉懿"
+      },
+      "timestamp": "2026-10-22T11:25:00+08:00",
+      "challenge": "C1",
+      "age_hours": null
+    },
+    {
+      "msg_id": "m00235",
+      "question": "有没有更简单的做法？",
+      "asker": {
+        "wechat_id": "wxid_dengzl",
+        "nickname": "邓子龙"
+      },
+      "timestamp": "2026-10-24T16:24:49+08:00",
+      "challenge": null,
+      "age_hours": null
+    },
+    {
+      "msg_id": "m00237",
+      "question": "今天的会我迟到五分钟",
+      "asker": {
+        "wechat_id": "wxid_pengxy",
+        "nickname": "彭心语"
+      },
+      "timestamp": "2026-10-24T19:58:02+08:00",
+      "challenge": "C4B",
+      "age_hours": null
+    },
+    {
+      "msg_id": "m00243",
+      "question": "刚跑通，确实是这样",
+      "asker": {
+        "wechat_id": "wxid_chenxy",
+        "nickname": "陈心怡"
+      },
+      "timestamp": "2026-10-26T17:40:38+08:00",
+      "challenge": null,
+      "age_hours": null
+    },
+    {
+      "msg_id": "m00250",
+      "question": "有没有更简单的做法？",
+      "asker": {
+        "wechat_id": "wxid_majl",
+        "nickname": "马嘉乐"
+      },
+      "timestamp": "2026-10-28T11:39:02+08:00",
+      "challenge": "C8",
+      "age_hours": null
+    },
+    {
+      "msg_id": "m00149",
+      "question": "标题里带具体数字和场景的打开率高很多，我自己测是这样。",
+      "asker": {
+        "wechat_id": "wxid_pengxy",
+        "nickname": "彭心语"
+      },
+      "timestamp": "2026-10-29T20:15:30+08:00",
+      "challenge": "C7",
+      "age_hours": null
+    },
+    {
+      "msg_id": "m00258",
+      "question": "刚跑通，确实是这样",
+      "asker": {
+        "wechat_id": "wxid_jxq2024",
+        "nickname": "景雪晴"
+      },
+      "timestamp": "2026-10-30T12:55:03+08:00",
+      "challenge": null,
+      "age_hours": null
+    },
+    {
+      "msg_id": "m00163",
+      "question": "拿来说明和 demo 明天补，先占个位置。",
+      "asker": {
+        "wechat_id": "wxid_hech",
+        "nickname": "何承翰"
+      },
+      "timestamp": "2026-10-30T19:02:47+08:00",
+      "challenge": "C8",
+      "age_hours": null
+    },
+    {
+      "msg_id": "m00259",
+      "question": "有同学一起结对吗？",
+      "asker": {
+        "wechat_id": "wxid_linyz",
+        "nickname": "林一舟"
+      },
+      "timestamp": "2026-10-31T19:12:06+08:00",
+      "challenge": "C3C",
+      "age_hours": null
+    },
+    {
+      "msg_id": "m00265",
+      "question": "有没有更简单的做法？",
+      "asker": {
+        "wechat_id": "wxid_xufy",
+        "nickname": "徐方雨"
+      },
+      "timestamp": "2026-11-01T17:54:34+08:00",
+      "challenge": null,
+      "age_hours": null
+    },
+    {
+      "msg_id": "m00212",
+      "question": "我下周开始补，这周确实没怎么动。",
+      "asker": {
+        "wechat_id": "wxid_qiuzw",
+        "nickname": "邱志伟"
+      },
+      "timestamp": "2026-11-03T10:00:50+08:00",
+      "challenge": null,
+      "age_hours": null
+    },
+    {
+      "msg_id": "m00215",
+      "question": "补完了，四件套齐了。",
+      "asker": {
+        "wechat_id": "wxid_hech",
+        "nickname": "何承翰"
+      },
+      "timestamp": "2026-11-03T11:00:42+08:00",
+      "challenge": "C8",
+      "age_hours": null
+    },
+    {
+      "msg_id": "m00217",
+      "question": "接手这件事我深有体会，我上周看别人代码看了一下午才明白。",
+      "asker": {
+        "wechat_id": "wxid_yanghs",
+        "nickname": "杨海森"
+      },
+      "timestamp": "2026-11-03T14:30:03+08:00",
+      "challenge": null,
+      "age_hours": null
+    }
+  ],
+  "min_quality": 0.35
+}

@@ -1,0 +1,274 @@
+{
+  "total": 268,
+  "correct": 246,
+  "accuracy": 0.9179,
+  "macro_f1": 0.878,
+  "per_class": {
+    "submission": {
+      "support": 72,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "question": {
+      "support": 45,
+      "precision": 0.738,
+      "recall": 1.0,
+      "f1": 0.849
+    },
+    "answer": {
+      "support": 41,
+      "precision": 0.909,
+      "recall": 0.976,
+      "f1": 0.941
+    },
+    "discussion": {
+      "support": 36,
+      "precision": 0.96,
+      "recall": 0.667,
+      "f1": 0.787
+    },
+    "announcement": {
+      "support": 26,
+      "precision": 0.963,
+      "recall": 1.0,
+      "f1": 0.981
+    },
+    "resource": {
+      "support": 6,
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.667
+    },
+    "social": {
+      "support": 42,
+      "precision": 1.0,
+      "recall": 0.857,
+      "f1": 0.923
+    }
+  },
+  "confusion": {
+    "submission": {
+      "submission": 72,
+      "question": 0,
+      "answer": 0,
+      "discussion": 0,
+      "announcement": 0,
+      "resource": 0,
+      "social": 0
+    },
+    "question": {
+      "submission": 0,
+      "question": 45,
+      "answer": 0,
+      "discussion": 0,
+      "announcement": 0,
+      "resource": 0,
+      "social": 0
+    },
+    "answer": {
+      "submission": 0,
+      "question": 0,
+      "answer": 40,
+      "discussion": 0,
+      "announcement": 1,
+      "resource": 0,
+      "social": 0
+    },
+    "discussion": {
+      "submission": 0,
+      "question": 10,
+      "answer": 2,
+      "discussion": 24,
+      "announcement": 0,
+      "resource": 0,
+      "social": 0
+    },
+    "announcement": {
+      "submission": 0,
+      "question": 0,
+      "answer": 0,
+      "discussion": 0,
+      "announcement": 26,
+      "resource": 0,
+      "social": 0
+    },
+    "resource": {
+      "submission": 0,
+      "question": 3,
+      "answer": 0,
+      "discussion": 0,
+      "announcement": 0,
+      "resource": 3,
+      "social": 0
+    },
+    "social": {
+      "submission": 0,
+      "question": 3,
+      "answer": 2,
+      "discussion": 1,
+      "announcement": 0,
+      "resource": 0,
+      "social": 36
+    }
+  },
+  "errors": [
+    {
+      "msg_id": "m00015",
+      "content": "C2 的论文选题还没定，有没有人一起讨论下 AI4Math 的可靠性？",
+      "predicted": "question",
+      "gold": "discussion",
+      "confidence": 0.83
+    },
+    {
+      "msg_id": "m00016",
+      "content": "我 C2 做的是可复核性框架，核心是把「模型自己说对」和「真的对」分开验证。",
+      "predicted": "answer",
+      "gold": "discussion",
+      "confidence": 0.521
+    },
+    {
+      "msg_id": "m00228",
+      "content": "刚跑通，确实是这样",
+      "predicted": "question",
+      "gold": "discussion",
+      "confidence": 0.187
+    },
+    {
+      "msg_id": "m00031",
+      "content": "有没有人觉得 C3 的「高质量参与」很难量化？我感觉就是让大家多说话。",
+      "predicted": "question",
+      "gold": "discussion",
+      "confidence": 0.452
+    },
+    {
+      "msg_id": "m00038",
+      "content": "确实是 token 过期了，重新生成后推上去了，谢谢！",
+      "predicted": "answer",
+      "gold": "social",
+      "confidence": 0.269
+    },
+    {
+      "msg_id": "m00236",
+      "content": "截图我发群里了",
+      "predicted": "question",
+      "gold": "resource",
+      "confidence": 0.187
+    },
+    {
+      "msg_id": "m00237",
+      "content": "今天的会我迟到五分钟",
+      "predicted": "question",
+      "gold": "social",
+      "confidence": 0.187
+    },
+    {
+      "msg_id": "m00094",
+      "content": "那我找个人结对。",
+      "predicted": "discussion",
+      "gold": "social",
+      "confidence": 0.327
+    },
+    {
+      "msg_id": "m00243",
+      "content": "刚跑通，确实是这样",
+      "predicted": "question",
+      "gold": "discussion",
+      "confidence": 0.187
+    },
+    {
+      "msg_id": "m00251",
+      "content": "截图我发群里了",
+      "predicted": "question",
+      "gold": "resource",
+      "confidence": 0.187
+    },
+    {
+      "msg_id": "m00252",
+      "content": "今天的会我迟到五分钟",
+      "predicted": "answer",
+      "gold": "social",
+      "confidence": 0.569
+    },
+    {
+      "msg_id": "m00149",
+      "content": "标题里带具体数字和场景的打开率高很多，我自己测是这样。",
+      "predicted": "question",
+      "gold": "discussion",
+      "confidence": 0.218
+    },
+    {
+      "msg_id": "m00258",
+      "content": "刚跑通，确实是这样",
+      "predicted": "question",
+      "gold": "discussion",
+      "confidence": 0.187
+    },
+    {
+      "msg_id": "m00163",
+      "content": "拿来说明和 demo 明天补，先占个位置。",
+      "predicted": "question",
+      "gold": "discussion",
+      "confidence": 0.187
+    },
+    {
+      "msg_id": "m00172",
+      "content": "可以，但要在群里留痕，别消失。",
+      "predicted": "announcement",
+      "gold": "answer",
+      "confidence": 0.285
+    },
+    {
+      "msg_id": "m00264",
+      "content": "这个方案成本有点高吧",
+      "predicted": "answer",
+      "gold": "discussion",
+      "confidence": 0.457
+    },
+    {
+      "msg_id": "m00267",
+      "content": "今天的会我迟到五分钟",
+      "predicted": "question",
+      "gold": "social",
+      "confidence": 0.187
+    },
+    {
+      "msg_id": "m00266",
+      "content": "截图我发群里了",
+      "predicted": "question",
+      "gold": "resource",
+      "confidence": 0.187
+    },
+    {
+      "msg_id": "m00205",
+      "content": "我的 demo 是个文档，不知道算不算。",
+      "predicted": "question",
+      "gold": "discussion",
+      "confidence": 0.304
+    },
+    {
+      "msg_id": "m00212",
+      "content": "我下周开始补，这周确实没怎么动。",
+      "predicted": "question",
+      "gold": "social",
+      "confidence": 0.304
+    },
+    {
+      "msg_id": "m00215",
+      "content": "补完了，四件套齐了。",
+      "predicted": "question",
+      "gold": "discussion",
+      "confidence": 0.187
+    },
+    {
+      "msg_id": "m00217",
+      "content": "接手这件事我深有体会，我上周看别人代码看了一下午才明白。",
+      "predicted": "question",
+      "gold": "discussion",
+      "confidence": 0.218
+    }
+  ],
+  "error_count": 22,
+  "note": "在 data/fixtures/labels.jsonl（人工标注的合成回放集）上测量；真实微信群的准确率尚未测量，见 docs/数据说明.md",
+  "mode": "rule+context"
+}

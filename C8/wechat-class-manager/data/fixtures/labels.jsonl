@@ -1,0 +1,268 @@
+{"msg_id": "m00001", "intent": "announcement", "challenge": "C8", "sender": "wxid_teacher_neolaf", "nickname": "班主任 · 李老师"}
+{"msg_id": "m00002", "intent": "announcement", "challenge": "C8", "sender": "wxid_teacher_neolaf", "nickname": "班主任 · 李老师"}
+{"msg_id": "m00003", "intent": "question", "challenge": "C8", "sender": "wxid_linyz", "nickname": "林一舟"}
+{"msg_id": "m00223", "intent": "social", "challenge": null, "sender": "wxid_linyz", "nickname": "林一舟"}
+{"msg_id": "m00004", "intent": "answer", "challenge": "C8", "sender": "wxid_teacher_neolaf", "nickname": "班主任 · 李老师"}
+{"msg_id": "m00005", "intent": "question", "challenge": "C5", "sender": "wxid_zhaomx", "nickname": "赵明轩"}
+{"msg_id": "m00006", "intent": "answer", "challenge": "C5", "sender": "wxid_hech", "nickname": "何承翰"}
+{"msg_id": "m00007", "intent": "discussion", "challenge": "C5", "sender": "wxid_zhaomx", "nickname": "赵明轩"}
+{"msg_id": "m00008", "intent": "resource", "challenge": "C5", "sender": "wxid_wuht", "nickname": "吴昊天"}
+{"msg_id": "m00009", "intent": "social", "challenge": null, "sender": "wxid_chenxy", "nickname": "陈心怡"}
+{"msg_id": "m00225", "intent": "discussion", "challenge": null, "sender": "wxid_chenxy", "nickname": "陈心怡"}
+{"msg_id": "m00010", "intent": "question", "challenge": "C4D", "sender": "wxid_sunl", "nickname": "孙乐"}
+{"msg_id": "m00011", "intent": "answer", "challenge": "C4D", "sender": "wxid_zhoujy", "nickname": "周嘉懿"}
+{"msg_id": "m00012", "intent": "discussion", "challenge": "C4D", "sender": "wxid_sunl", "nickname": "孙乐"}
+{"msg_id": "m00013", "intent": "discussion", "challenge": "C4D", "sender": "wxid_zhoujy", "nickname": "周嘉懿"}
+{"msg_id": "m00014", "intent": "social", "challenge": null, "sender": "wxid_luoxr", "nickname": "罗欣然"}
+{"msg_id": "m00224", "intent": "social", "challenge": null, "sender": "wxid_zhaomx", "nickname": "赵明轩"}
+{"msg_id": "m00015", "intent": "discussion", "challenge": "C2", "sender": "wxid_xufy", "nickname": "徐方雨"}
+{"msg_id": "m00016", "intent": "discussion", "challenge": "C2", "sender": "wxid_jxq2024", "nickname": "景雪晴"}
+{"msg_id": "m00226", "intent": "social", "challenge": null, "sender": "wxid_wuht", "nickname": "吴昊天"}
+{"msg_id": "m00017", "intent": "announcement", "challenge": "C8", "sender": "wxid_teacher_neolaf", "nickname": "班主任 · 李老师"}
+{"msg_id": "m00018", "intent": "announcement", "challenge": "C8", "sender": "wxid_teacher_neolaf", "nickname": "班主任 · 李老师"}
+{"msg_id": "m00019", "intent": "question", "challenge": "C8", "sender": "wxid_hech", "nickname": "何承翰"}
+{"msg_id": "m00020", "intent": "answer", "challenge": "C8", "sender": "wxid_teacher_neolaf", "nickname": "班主任 · 李老师"}
+{"msg_id": "m00021", "intent": "submission", "challenge": "C1", "sender": "wxid_guoyq", "nickname": "郭雅琪"}
+{"msg_id": "m00022", "intent": "submission", "challenge": "C1", "sender": "wxid_guoyq", "nickname": "郭雅琪"}
+{"msg_id": "m00023", "intent": "question", "challenge": "C1", "sender": "wxid_majl", "nickname": "马嘉乐"}
+{"msg_id": "m00024", "intent": "answer", "challenge": "C1", "sender": "wxid_guoyq", "nickname": "郭雅琪"}
+{"msg_id": "m00025", "intent": "submission", "challenge": "C1", "sender": "wxid_majl", "nickname": "马嘉乐"}
+{"msg_id": "m00228", "intent": "discussion", "challenge": null, "sender": "wxid_zhoujy", "nickname": "周嘉懿"}
+{"msg_id": "m00026", "intent": "question", "challenge": "C4B", "sender": "wxid_pengxy", "nickname": "彭心语"}
+{"msg_id": "m00027", "intent": "answer", "challenge": "C4B", "sender": "wxid_chenxy", "nickname": "陈心怡"}
+{"msg_id": "m00230", "intent": "social", "challenge": null, "sender": "wxid_hech", "nickname": "何承翰"}
+{"msg_id": "m00227", "intent": "social", "challenge": null, "sender": "wxid_sunl", "nickname": "孙乐"}
+{"msg_id": "m00028", "intent": "question", "challenge": "C4B", "sender": "wxid_tangsh", "nickname": "唐思涵"}
+{"msg_id": "m00029", "intent": "answer", "challenge": "C4B", "sender": "wxid_jxq2024", "nickname": "景雪晴"}
+{"msg_id": "m00030", "intent": "discussion", "challenge": "C4B", "sender": "wxid_tangsh", "nickname": "唐思涵"}
+{"msg_id": "m00229", "intent": "question", "challenge": "C3C", "sender": "wxid_xufy", "nickname": "徐方雨"}
+{"msg_id": "m00031", "intent": "discussion", "challenge": "C3", "sender": "wxid_fengyr", "nickname": "冯亦然"}
+{"msg_id": "m00032", "intent": "discussion", "challenge": "C3", "sender": "wxid_linyz", "nickname": "林一舟"}
+{"msg_id": "m00033", "intent": "question", "challenge": "C3", "sender": "wxid_fengyr", "nickname": "冯亦然"}
+{"msg_id": "m00034", "intent": "answer", "challenge": "C3", "sender": "wxid_linyz", "nickname": "林一舟"}
+{"msg_id": "m00035", "intent": "announcement", "challenge": "C5", "sender": "wxid_teacher_neolaf", "nickname": "班主任 · 李老师"}
+{"msg_id": "m00036", "intent": "question", "challenge": "C5", "sender": "wxid_qiuzw", "nickname": "邱志伟"}
+{"msg_id": "m00037", "intent": "answer", "challenge": "C5", "sender": "wxid_hech", "nickname": "何承翰"}
+{"msg_id": "m00038", "intent": "social", "challenge": "C5", "sender": "wxid_qiuzw", "nickname": "邱志伟"}
+{"msg_id": "m00039", "intent": "submission", "challenge": "C2", "sender": "wxid_xufy", "nickname": "徐方雨"}
+{"msg_id": "m00231", "intent": "discussion", "challenge": null, "sender": "wxid_guoyq", "nickname": "郭雅琪"}
+{"msg_id": "m00040", "intent": "submission", "challenge": "C2", "sender": "wxid_xufy", "nickname": "徐方雨"}
+{"msg_id": "m00041", "intent": "question", "challenge": "C2", "sender": "wxid_dengzl", "nickname": "邓子龙"}
+{"msg_id": "m00042", "intent": "answer", "challenge": "C2", "sender": "wxid_jxq2024", "nickname": "景雪晴"}
+{"msg_id": "m00043", "intent": "question", "challenge": "C2", "sender": "wxid_dengzl", "nickname": "邓子龙"}
+{"msg_id": "m00044", "intent": "answer", "challenge": "C2", "sender": "wxid_jxq2024", "nickname": "景雪晴"}
+{"msg_id": "m00045", "intent": "question", "challenge": "C6", "sender": "wxid_xiemq", "nickname": "谢梦琪"}
+{"msg_id": "m00233", "intent": "social", "challenge": null, "sender": "wxid_gaoyf", "nickname": "高宇飞"}
+{"msg_id": "m00046", "intent": "answer", "challenge": "C6", "sender": "wxid_gaoyf", "nickname": "高宇飞"}
+{"msg_id": "m00047", "intent": "discussion", "challenge": "C4B", "sender": "wxid_pengxy", "nickname": "彭心语"}
+{"msg_id": "m00232", "intent": "social", "challenge": null, "sender": "wxid_majl", "nickname": "马嘉乐"}
+{"msg_id": "m00048", "intent": "question", "challenge": "C6A", "sender": "wxid_yanghs", "nickname": "杨海森"}
+{"msg_id": "m00049", "intent": "answer", "challenge": "C6A", "sender": "wxid_jxq2024", "nickname": "景雪晴"}
+{"msg_id": "m00050", "intent": "discussion", "challenge": "C6A", "sender": "wxid_yanghs", "nickname": "杨海森"}
+{"msg_id": "m00051", "intent": "submission", "challenge": "C5", "sender": "wxid_zhaomx", "nickname": "赵明轩"}
+{"msg_id": "m00052", "intent": "submission", "challenge": "C5", "sender": "wxid_zhaomx", "nickname": "赵明轩"}
+{"msg_id": "m00234", "intent": "discussion", "challenge": null, "sender": "wxid_tangsh", "nickname": "唐思涵"}
+{"msg_id": "m00053", "intent": "announcement", "challenge": null, "sender": "wxid_teacher_neolaf", "nickname": "班主任 · 李老师"}
+{"msg_id": "m00054", "intent": "question", "challenge": null, "sender": "wxid_luoxr", "nickname": "罗欣然"}
+{"msg_id": "m00055", "intent": "answer", "challenge": null, "sender": "wxid_teacher_neolaf", "nickname": "班主任 · 李老师"}
+{"msg_id": "m00056", "intent": "submission", "challenge": "C4A", "sender": "wxid_guoyq", "nickname": "郭雅琪"}
+{"msg_id": "m00057", "intent": "announcement", "challenge": "C4A", "sender": "wxid_teacher_neolaf", "nickname": "班主任 · 李老师"}
+{"msg_id": "m00058", "intent": "submission", "challenge": "C4A", "sender": "wxid_wuht", "nickname": "吴昊天"}
+{"msg_id": "m00059", "intent": "submission", "challenge": "C4A", "sender": "wxid_wuht", "nickname": "吴昊天"}
+{"msg_id": "m00060", "intent": "submission", "challenge": "C4A", "sender": "wxid_wuht", "nickname": "吴昊天"}
+{"msg_id": "m00236", "intent": "resource", "challenge": null, "sender": "wxid_fengyr", "nickname": "冯亦然"}
+{"msg_id": "m00061", "intent": "question", "challenge": "C4D", "sender": "wxid_sunl", "nickname": "孙乐"}
+{"msg_id": "m00062", "intent": "answer", "challenge": "C4D", "sender": "wxid_zhoujy", "nickname": "周嘉懿"}
+{"msg_id": "m00063", "intent": "social", "challenge": "C4D", "sender": "wxid_sunl", "nickname": "孙乐"}
+{"msg_id": "m00235", "intent": "question", "challenge": null, "sender": "wxid_dengzl", "nickname": "邓子龙"}
+{"msg_id": "m00064", "intent": "resource", "challenge": "C4B", "sender": "wxid_tangsh", "nickname": "唐思涵"}
+{"msg_id": "m00065", "intent": "question", "challenge": "C4B", "sender": "wxid_pengxy", "nickname": "彭心语"}
+{"msg_id": "m00066", "intent": "answer", "challenge": "C4B", "sender": "wxid_jxq2024", "nickname": "景雪晴"}
+{"msg_id": "m00237", "intent": "social", "challenge": null, "sender": "wxid_pengxy", "nickname": "彭心语"}
+{"msg_id": "m00067", "intent": "submission", "challenge": "C5", "sender": "wxid_hech", "nickname": "何承翰"}
+{"msg_id": "m00068", "intent": "submission", "challenge": "C5", "sender": "wxid_hech", "nickname": "何承翰"}
+{"msg_id": "m00069", "intent": "question", "challenge": "C5", "sender": "wxid_qiuzw", "nickname": "邱志伟"}
+{"msg_id": "m00070", "intent": "answer", "challenge": "C5", "sender": "wxid_linyz", "nickname": "林一舟"}
+{"msg_id": "m00071", "intent": "submission", "challenge": "C6", "sender": "wxid_chenxy", "nickname": "陈心怡"}
+{"msg_id": "m00072", "intent": "submission", "challenge": "C6", "sender": "wxid_chenxy", "nickname": "陈心怡"}
+{"msg_id": "m00073", "intent": "submission", "challenge": "C6", "sender": "wxid_chenxy", "nickname": "陈心怡"}
+{"msg_id": "m00074", "intent": "announcement", "challenge": null, "sender": "wxid_teacher_neolaf", "nickname": "班主任 · 李老师"}
+{"msg_id": "m00075", "intent": "social", "challenge": null, "sender": "wxid_majl", "nickname": "马嘉乐"}
+{"msg_id": "m00076", "intent": "social", "challenge": null, "sender": "wxid_fengyr", "nickname": "冯亦然"}
+{"msg_id": "m00077", "intent": "social", "challenge": null, "sender": "wxid_dengzl", "nickname": "邓子龙"}
+{"msg_id": "m00239", "intent": "social", "challenge": null, "sender": "wxid_yanghs", "nickname": "杨海森"}
+{"msg_id": "m00078", "intent": "question", "challenge": "C7", "sender": "wxid_xufy", "nickname": "徐方雨"}
+{"msg_id": "m00079", "intent": "answer", "challenge": "C7", "sender": "wxid_teacher_neolaf", "nickname": "班主任 · 李老师"}
+{"msg_id": "m00080", "intent": "submission", "challenge": "C7", "sender": "wxid_pengxy", "nickname": "彭心语"}
+{"msg_id": "m00081", "intent": "submission", "challenge": "C7", "sender": "wxid_pengxy", "nickname": "彭心语"}
+{"msg_id": "m00238", "intent": "social", "challenge": null, "sender": "wxid_qiuzw", "nickname": "邱志伟"}
+{"msg_id": "m00240", "intent": "discussion", "challenge": null, "sender": "wxid_jxq2024", "nickname": "景雪晴"}
+{"msg_id": "m00082", "intent": "question", "challenge": "C6A", "sender": "wxid_gaoyf", "nickname": "高宇飞"}
+{"msg_id": "m00083", "intent": "answer", "challenge": "C6A", "sender": "wxid_jxq2024", "nickname": "景雪晴"}
+{"msg_id": "m00084", "intent": "question", "challenge": "C6A", "sender": "wxid_gaoyf", "nickname": "高宇飞"}
+{"msg_id": "m00085", "intent": "answer", "challenge": "C6A", "sender": "wxid_jxq2024", "nickname": "景雪晴"}
+{"msg_id": "m00086", "intent": "submission", "challenge": "C6A", "sender": "wxid_wuht", "nickname": "吴昊天"}
+{"msg_id": "m00087", "intent": "submission", "challenge": "C6A", "sender": "wxid_wuht", "nickname": "吴昊天"}
+{"msg_id": "m00088", "intent": "submission", "challenge": "C4D", "sender": "wxid_sunl", "nickname": "孙乐"}
+{"msg_id": "m00089", "intent": "submission", "challenge": "C4D", "sender": "wxid_sunl", "nickname": "孙乐"}
+{"msg_id": "m00242", "intent": "social", "challenge": null, "sender": "wxid_zhaomx", "nickname": "赵明轩"}
+{"msg_id": "m00090", "intent": "announcement", "challenge": "C5", "sender": "wxid_teacher_neolaf", "nickname": "班主任 · 李老师"}
+{"msg_id": "m00091", "intent": "discussion", "challenge": "C5", "sender": "wxid_hech", "nickname": "何承翰"}
+{"msg_id": "m00092", "intent": "question", "challenge": "C3C", "sender": "wxid_fengyr", "nickname": "冯亦然"}
+{"msg_id": "m00093", "intent": "answer", "challenge": "C3C", "sender": "wxid_teacher_neolaf", "nickname": "班主任 · 李老师"}
+{"msg_id": "m00094", "intent": "social", "challenge": "C3C", "sender": "wxid_fengyr", "nickname": "冯亦然"}
+{"msg_id": "m00244", "intent": "question", "challenge": "C3C", "sender": "wxid_wuht", "nickname": "吴昊天"}
+{"msg_id": "m00095", "intent": "submission", "challenge": "C4D", "sender": "wxid_zhoujy", "nickname": "周嘉懿"}
+{"msg_id": "m00096", "intent": "discussion", "challenge": "C4D", "sender": "wxid_zhoujy", "nickname": "周嘉懿"}
+{"msg_id": "m00241", "intent": "social", "challenge": null, "sender": "wxid_linyz", "nickname": "林一舟"}
+{"msg_id": "m00097", "intent": "announcement", "challenge": "C4D", "sender": "wxid_teacher_neolaf", "nickname": "班主任 · 李老师"}
+{"msg_id": "m00098", "intent": "question", "challenge": "C6A", "sender": "wxid_yanghs", "nickname": "杨海森"}
+{"msg_id": "m00099", "intent": "answer", "challenge": "C6A", "sender": "wxid_chenxy", "nickname": "陈心怡"}
+{"msg_id": "m00243", "intent": "discussion", "challenge": null, "sender": "wxid_chenxy", "nickname": "陈心怡"}
+{"msg_id": "m00100", "intent": "announcement", "challenge": null, "sender": "wxid_teacher_neolaf", "nickname": "班主任 · 李老师"}
+{"msg_id": "m00101", "intent": "discussion", "challenge": "C8", "sender": "wxid_linyz", "nickname": "林一舟"}
+{"msg_id": "m00102", "intent": "discussion", "challenge": "C8", "sender": "wxid_jxq2024", "nickname": "景雪晴"}
+{"msg_id": "m00103", "intent": "announcement", "challenge": "C8", "sender": "wxid_teacher_neolaf", "nickname": "班主任 · 李老师"}
+{"msg_id": "m00104", "intent": "question", "challenge": "C8", "sender": "wxid_zhaomx", "nickname": "赵明轩"}
+{"msg_id": "m00105", "intent": "answer", "challenge": "C8", "sender": "wxid_teacher_neolaf", "nickname": "班主任 · 李老师"}
+{"msg_id": "m00106", "intent": "submission", "challenge": "C4A", "sender": "wxid_guoyq", "nickname": "郭雅琪"}
+{"msg_id": "m00245", "intent": "social", "challenge": null, "sender": "wxid_sunl", "nickname": "孙乐"}
+{"msg_id": "m00107", "intent": "announcement", "challenge": "C4A", "sender": "wxid_teacher_neolaf", "nickname": "班主任 · 李老师"}
+{"msg_id": "m00108", "intent": "question", "challenge": "C6", "sender": "wxid_xiemq", "nickname": "谢梦琪"}
+{"msg_id": "m00109", "intent": "answer", "challenge": "C6", "sender": "wxid_gaoyf", "nickname": "高宇飞"}
+{"msg_id": "m00110", "intent": "submission", "challenge": "C2", "sender": "wxid_majl", "nickname": "马嘉乐"}
+{"msg_id": "m00111", "intent": "submission", "challenge": "C2", "sender": "wxid_majl", "nickname": "马嘉乐"}
+{"msg_id": "m00247", "intent": "social", "challenge": null, "sender": "wxid_xufy", "nickname": "徐方雨"}
+{"msg_id": "m00112", "intent": "submission", "challenge": "C2", "sender": "wxid_dengzl", "nickname": "邓子龙"}
+{"msg_id": "m00113", "intent": "submission", "challenge": "C2", "sender": "wxid_dengzl", "nickname": "邓子龙"}
+{"msg_id": "m00114", "intent": "resource", "challenge": "C2", "sender": "wxid_xufy", "nickname": "徐方雨"}
+{"msg_id": "m00115", "intent": "social", "challenge": "C2", "sender": "wxid_sunl", "nickname": "孙乐"}
+{"msg_id": "m00246", "intent": "discussion", "challenge": null, "sender": "wxid_zhoujy", "nickname": "周嘉懿"}
+{"msg_id": "m00116", "intent": "submission", "challenge": "C4B", "sender": "wxid_tangsh", "nickname": "唐思涵"}
+{"msg_id": "m00117", "intent": "submission", "challenge": "C4B", "sender": "wxid_tangsh", "nickname": "唐思涵"}
+{"msg_id": "m00118", "intent": "question", "challenge": "C4B", "sender": "wxid_pengxy", "nickname": "彭心语"}
+{"msg_id": "m00119", "intent": "answer", "challenge": "C4B", "sender": "wxid_tangsh", "nickname": "唐思涵"}
+{"msg_id": "m00120", "intent": "social", "challenge": "C4B", "sender": "wxid_pengxy", "nickname": "彭心语"}
+{"msg_id": "m00121", "intent": "announcement", "challenge": "C8", "sender": "wxid_teacher_neolaf", "nickname": "班主任 · 李老师"}
+{"msg_id": "m00122", "intent": "announcement", "challenge": "C8", "sender": "wxid_teacher_neolaf", "nickname": "班主任 · 李老师"}
+{"msg_id": "m00123", "intent": "question", "challenge": "C8", "sender": "wxid_fengyr", "nickname": "冯亦然"}
+{"msg_id": "m00124", "intent": "answer", "challenge": "C8", "sender": "wxid_teacher_neolaf", "nickname": "班主任 · 李老师"}
+{"msg_id": "m00125", "intent": "social", "challenge": null, "sender": "wxid_qiuzw", "nickname": "邱志伟"}
+{"msg_id": "m00126", "intent": "submission", "challenge": "C8", "sender": "wxid_linyz", "nickname": "林一舟"}
+{"msg_id": "m00127", "intent": "submission", "challenge": "C8", "sender": "wxid_linyz", "nickname": "林一舟"}
+{"msg_id": "m00128", "intent": "submission", "challenge": "C8", "sender": "wxid_linyz", "nickname": "林一舟"}
+{"msg_id": "m00129", "intent": "submission", "challenge": "C8", "sender": "wxid_linyz", "nickname": "林一舟"}
+{"msg_id": "m00130", "intent": "announcement", "challenge": "C8", "sender": "wxid_teacher_neolaf", "nickname": "班主任 · 李老师"}
+{"msg_id": "m00250", "intent": "question", "challenge": null, "sender": "wxid_majl", "nickname": "马嘉乐"}
+{"msg_id": "m00131", "intent": "question", "challenge": "C8", "sender": "wxid_hech", "nickname": "何承翰"}
+{"msg_id": "m00132", "intent": "answer", "challenge": "C8", "sender": "wxid_teacher_neolaf", "nickname": "班主任 · 李老师"}
+{"msg_id": "m00133", "intent": "social", "challenge": "C8", "sender": "wxid_hech", "nickname": "何承翰"}
+{"msg_id": "m00249", "intent": "discussion", "challenge": null, "sender": "wxid_guoyq", "nickname": "郭雅琪"}
+{"msg_id": "m00251", "intent": "resource", "challenge": null, "sender": "wxid_gaoyf", "nickname": "高宇飞"}
+{"msg_id": "m00134", "intent": "discussion", "challenge": "C8", "sender": "wxid_jxq2024", "nickname": "景雪晴"}
+{"msg_id": "m00248", "intent": "social", "challenge": null, "sender": "wxid_hech", "nickname": "何承翰"}
+{"msg_id": "m00135", "intent": "question", "challenge": "C8", "sender": "wxid_linyz", "nickname": "林一舟"}
+{"msg_id": "m00136", "intent": "answer", "challenge": "C8", "sender": "wxid_jxq2024", "nickname": "景雪晴"}
+{"msg_id": "m00137", "intent": "submission", "challenge": "C4A", "sender": "wxid_guoyq", "nickname": "郭雅琪"}
+{"msg_id": "m00138", "intent": "submission", "challenge": "C4A", "sender": "wxid_guoyq", "nickname": "郭雅琪"}
+{"msg_id": "m00139", "intent": "question", "challenge": "C9", "sender": "wxid_sunl", "nickname": "孙乐"}
+{"msg_id": "m00140", "intent": "answer", "challenge": "C9", "sender": "wxid_zhoujy", "nickname": "周嘉懿"}
+{"msg_id": "m00253", "intent": "social", "challenge": null, "sender": "wxid_dengzl", "nickname": "邓子龙"}
+{"msg_id": "m00141", "intent": "submission", "challenge": "C7", "sender": "wxid_chenxy", "nickname": "陈心怡"}
+{"msg_id": "m00142", "intent": "submission", "challenge": "C7", "sender": "wxid_chenxy", "nickname": "陈心怡"}
+{"msg_id": "m00143", "intent": "question", "challenge": "C10", "sender": "wxid_yanghs", "nickname": "杨海森"}
+{"msg_id": "m00252", "intent": "social", "challenge": null, "sender": "wxid_tangsh", "nickname": "唐思涵"}
+{"msg_id": "m00144", "intent": "answer", "challenge": "C10", "sender": "wxid_wuht", "nickname": "吴昊天"}
+{"msg_id": "m00145", "intent": "announcement", "challenge": null, "sender": "wxid_teacher_neolaf", "nickname": "班主任 · 李老师"}
+{"msg_id": "m00254", "intent": "social", "challenge": null, "sender": "wxid_fengyr", "nickname": "冯亦然"}
+{"msg_id": "m00146", "intent": "submission", "challenge": "C4A", "sender": "wxid_majl", "nickname": "马嘉乐"}
+{"msg_id": "m00147", "intent": "submission", "challenge": "C4A", "sender": "wxid_majl", "nickname": "马嘉乐"}
+{"msg_id": "m00148", "intent": "discussion", "challenge": "C7", "sender": "wxid_xufy", "nickname": "徐方雨"}
+{"msg_id": "m00149", "intent": "discussion", "challenge": "C7", "sender": "wxid_pengxy", "nickname": "彭心语"}
+{"msg_id": "m00150", "intent": "announcement", "challenge": "C5", "sender": "wxid_teacher_neolaf", "nickname": "班主任 · 李老师"}
+{"msg_id": "m00256", "intent": "social", "challenge": null, "sender": "wxid_qiuzw", "nickname": "邱志伟"}
+{"msg_id": "m00151", "intent": "submission", "challenge": "C5", "sender": "wxid_dengzl", "nickname": "邓子龙"}
+{"msg_id": "m00152", "intent": "submission", "challenge": "C5", "sender": "wxid_dengzl", "nickname": "邓子龙"}
+{"msg_id": "m00153", "intent": "submission", "challenge": "C3", "sender": "wxid_fengyr", "nickname": "冯亦然"}
+{"msg_id": "m00154", "intent": "submission", "challenge": "C3", "sender": "wxid_fengyr", "nickname": "冯亦然"}
+{"msg_id": "m00155", "intent": "question", "challenge": "C3", "sender": "wxid_pengxy", "nickname": "彭心语"}
+{"msg_id": "m00156", "intent": "answer", "challenge": "C3", "sender": "wxid_fengyr", "nickname": "冯亦然"}
+{"msg_id": "m00157", "intent": "submission", "challenge": "C6A", "sender": "wxid_gaoyf", "nickname": "高宇飞"}
+{"msg_id": "m00158", "intent": "submission", "challenge": "C6A", "sender": "wxid_gaoyf", "nickname": "高宇飞"}
+{"msg_id": "m00258", "intent": "discussion", "challenge": null, "sender": "wxid_jxq2024", "nickname": "景雪晴"}
+{"msg_id": "m00255", "intent": "discussion", "challenge": null, "sender": "wxid_pengxy", "nickname": "彭心语"}
+{"msg_id": "m00159", "intent": "question", "challenge": "C10H", "sender": "wxid_tangsh", "nickname": "唐思涵"}
+{"msg_id": "m00160", "intent": "answer", "challenge": "C10H", "sender": "wxid_sunl", "nickname": "孙乐"}
+{"msg_id": "m00257", "intent": "social", "challenge": null, "sender": "wxid_yanghs", "nickname": "杨海森"}
+{"msg_id": "m00161", "intent": "submission", "challenge": "C8", "sender": "wxid_hech", "nickname": "何承翰"}
+{"msg_id": "m00162", "intent": "submission", "challenge": "C8", "sender": "wxid_hech", "nickname": "何承翰"}
+{"msg_id": "m00163", "intent": "discussion", "challenge": "C8", "sender": "wxid_hech", "nickname": "何承翰"}
+{"msg_id": "m00164", "intent": "announcement", "challenge": "C8", "sender": "wxid_teacher_neolaf", "nickname": "班主任 · 李老师"}
+{"msg_id": "m00165", "intent": "submission", "challenge": "C8", "sender": "wxid_wuht", "nickname": "吴昊天"}
+{"msg_id": "m00166", "intent": "submission", "challenge": "C8", "sender": "wxid_wuht", "nickname": "吴昊天"}
+{"msg_id": "m00167", "intent": "submission", "challenge": "C8", "sender": "wxid_wuht", "nickname": "吴昊天"}
+{"msg_id": "m00168", "intent": "submission", "challenge": "C8", "sender": "wxid_wuht", "nickname": "吴昊天"}
+{"msg_id": "m00169", "intent": "submission", "challenge": "C8", "sender": "wxid_zhaomx", "nickname": "赵明轩"}
+{"msg_id": "m00170", "intent": "submission", "challenge": "C8", "sender": "wxid_zhaomx", "nickname": "赵明轩"}
+{"msg_id": "m00171", "intent": "social", "challenge": null, "sender": "wxid_yanghs", "nickname": "杨海森"}
+{"msg_id": "m00172", "intent": "answer", "challenge": null, "sender": "wxid_teacher_neolaf", "nickname": "班主任 · 李老师"}
+{"msg_id": "m00261", "intent": "discussion", "challenge": null, "sender": "wxid_chenxy", "nickname": "陈心怡"}
+{"msg_id": "m00173", "intent": "question", "challenge": "C8", "sender": "wxid_chenxy", "nickname": "陈心怡"}
+{"msg_id": "m00174", "intent": "answer", "challenge": "C8", "sender": "wxid_teacher_neolaf", "nickname": "班主任 · 李老师"}
+{"msg_id": "m00260", "intent": "social", "challenge": null, "sender": "wxid_zhaomx", "nickname": "赵明轩"}
+{"msg_id": "m00259", "intent": "question", "challenge": "C3C", "sender": "wxid_linyz", "nickname": "林一舟"}
+{"msg_id": "m00175", "intent": "submission", "challenge": "C8", "sender": "wxid_jxq2024", "nickname": "景雪晴"}
+{"msg_id": "m00176", "intent": "submission", "challenge": "C8", "sender": "wxid_jxq2024", "nickname": "景雪晴"}
+{"msg_id": "m00177", "intent": "submission", "challenge": "C8", "sender": "wxid_jxq2024", "nickname": "景雪晴"}
+{"msg_id": "m00178", "intent": "submission", "challenge": "C8", "sender": "wxid_jxq2024", "nickname": "景雪晴"}
+{"msg_id": "m00179", "intent": "announcement", "challenge": "C8", "sender": "wxid_teacher_neolaf", "nickname": "班主任 · 李老师"}
+{"msg_id": "m00180", "intent": "social", "challenge": "C8", "sender": "wxid_jxq2024", "nickname": "景雪晴"}
+{"msg_id": "m00181", "intent": "submission", "challenge": "C7", "sender": "wxid_xufy", "nickname": "徐方雨"}
+{"msg_id": "m00182", "intent": "submission", "challenge": "C7", "sender": "wxid_xufy", "nickname": "徐方雨"}
+{"msg_id": "m00183", "intent": "announcement", "challenge": null, "sender": "wxid_teacher_neolaf", "nickname": "班主任 · 李老师"}
+{"msg_id": "m00184", "intent": "question", "challenge": "C10", "sender": "wxid_sunl", "nickname": "孙乐"}
+{"msg_id": "m00264", "intent": "discussion", "challenge": null, "sender": "wxid_zhoujy", "nickname": "周嘉懿"}
+{"msg_id": "m00185", "intent": "answer", "challenge": "C10", "sender": "wxid_zhoujy", "nickname": "周嘉懿"}
+{"msg_id": "m00186", "intent": "submission", "challenge": "C5", "sender": "wxid_linyz", "nickname": "林一舟"}
+{"msg_id": "m00187", "intent": "submission", "challenge": "C5", "sender": "wxid_linyz", "nickname": "林一舟"}
+{"msg_id": "m00188", "intent": "question", "challenge": "C8", "sender": "wxid_majl", "nickname": "马嘉乐"}
+{"msg_id": "m00263", "intent": "social", "challenge": null, "sender": "wxid_sunl", "nickname": "孙乐"}
+{"msg_id": "m00189", "intent": "answer", "challenge": "C8", "sender": "wxid_teacher_neolaf", "nickname": "班主任 · 李老师"}
+{"msg_id": "m00265", "intent": "question", "challenge": null, "sender": "wxid_xufy", "nickname": "徐方雨"}
+{"msg_id": "m00262", "intent": "social", "challenge": null, "sender": "wxid_wuht", "nickname": "吴昊天"}
+{"msg_id": "m00190", "intent": "announcement", "challenge": "C8", "sender": "wxid_teacher_neolaf", "nickname": "班主任 · 李老师"}
+{"msg_id": "m00191", "intent": "discussion", "challenge": "C8", "sender": "wxid_hech", "nickname": "何承翰"}
+{"msg_id": "m00192", "intent": "discussion", "challenge": "C8", "sender": "wxid_jxq2024", "nickname": "景雪晴"}
+{"msg_id": "m00193", "intent": "announcement", "challenge": "C8", "sender": "wxid_teacher_neolaf", "nickname": "班主任 · 李老师"}
+{"msg_id": "m00194", "intent": "discussion", "challenge": "C8", "sender": "wxid_linyz", "nickname": "林一舟"}
+{"msg_id": "m00195", "intent": "announcement", "challenge": "C8", "sender": "wxid_teacher_neolaf", "nickname": "班主任 · 李老师"}
+{"msg_id": "m00267", "intent": "social", "challenge": null, "sender": "wxid_guoyq", "nickname": "郭雅琪"}
+{"msg_id": "m00196", "intent": "question", "challenge": "C8", "sender": "wxid_guoyq", "nickname": "郭雅琪"}
+{"msg_id": "m00197", "intent": "answer", "challenge": "C8", "sender": "wxid_teacher_neolaf", "nickname": "班主任 · 李老师"}
+{"msg_id": "m00198", "intent": "submission", "challenge": "C8", "sender": "wxid_pengxy", "nickname": "彭心语"}
+{"msg_id": "m00199", "intent": "submission", "challenge": "C8", "sender": "wxid_pengxy", "nickname": "彭心语"}
+{"msg_id": "m00200", "intent": "submission", "challenge": "C8", "sender": "wxid_pengxy", "nickname": "彭心语"}
+{"msg_id": "m00201", "intent": "question", "challenge": "C8", "sender": "wxid_dengzl", "nickname": "邓子龙"}
+{"msg_id": "m00202", "intent": "answer", "challenge": "C8", "sender": "wxid_wuht", "nickname": "吴昊天"}
+{"msg_id": "m00266", "intent": "resource", "challenge": null, "sender": "wxid_hech", "nickname": "何承翰"}
+{"msg_id": "m00203", "intent": "submission", "challenge": "C8", "sender": "wxid_fengyr", "nickname": "冯亦然"}
+{"msg_id": "m00204", "intent": "submission", "challenge": "C8", "sender": "wxid_fengyr", "nickname": "冯亦然"}
+{"msg_id": "m00205", "intent": "discussion", "challenge": "C8", "sender": "wxid_fengyr", "nickname": "冯亦然"}
+{"msg_id": "m00206", "intent": "answer", "challenge": "C8", "sender": "wxid_teacher_neolaf", "nickname": "班主任 · 李老师"}
+{"msg_id": "m00268", "intent": "social", "challenge": null, "sender": "wxid_majl", "nickname": "马嘉乐"}
+{"msg_id": "m00207", "intent": "question", "challenge": "C10", "sender": "wxid_tangsh", "nickname": "唐思涵"}
+{"msg_id": "m00208", "intent": "answer", "challenge": "C10", "sender": "wxid_jxq2024", "nickname": "景雪晴"}
+{"msg_id": "m00209", "intent": "announcement", "challenge": "C8", "sender": "wxid_teacher_neolaf", "nickname": "班主任 · 李老师"}
+{"msg_id": "m00210", "intent": "submission", "challenge": "C6A", "sender": "wxid_sunl", "nickname": "孙乐"}
+{"msg_id": "m00211", "intent": "submission", "challenge": "C6A", "sender": "wxid_sunl", "nickname": "孙乐"}
+{"msg_id": "m00212", "intent": "social", "challenge": null, "sender": "wxid_qiuzw", "nickname": "邱志伟"}
+{"msg_id": "m00213", "intent": "submission", "challenge": "C8", "sender": "wxid_hech", "nickname": "何承翰"}
+{"msg_id": "m00214", "intent": "submission", "challenge": "C8", "sender": "wxid_hech", "nickname": "何承翰"}
+{"msg_id": "m00215", "intent": "discussion", "challenge": "C8", "sender": "wxid_hech", "nickname": "何承翰"}
+{"msg_id": "m00216", "intent": "announcement", "challenge": null, "sender": "wxid_teacher_neolaf", "nickname": "班主任 · 李老师"}
+{"msg_id": "m00217", "intent": "discussion", "challenge": null, "sender": "wxid_yanghs", "nickname": "杨海森"}
+{"msg_id": "m00218", "intent": "submission", "challenge": "C4D", "sender": "wxid_zhoujy", "nickname": "周嘉懿"}
+{"msg_id": "m00219", "intent": "social", "challenge": "C4D", "sender": "wxid_zhoujy", "nickname": "周嘉懿"}
+{"msg_id": "m00220", "intent": "question", "challenge": "C6A", "sender": "wxid_chenxy", "nickname": "陈心怡"}
+{"msg_id": "m00221", "intent": "answer", "challenge": "C6A", "sender": "wxid_jxq2024", "nickname": "景雪晴"}
+{"msg_id": "m00222", "intent": "social", "challenge": "C6A", "sender": "wxid_chenxy", "nickname": "陈心怡"}

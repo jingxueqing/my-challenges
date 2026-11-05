@@ -1,0 +1,148 @@
+# 挑战定义（Challenge Domain Config）
+# 来源：桌面《我的挑战》下 20 份官方 CHALLENGE.md / challenge.json（真实课程配置，非杜撰）
+# 编辑说明：新增挑战只改这里，代码不用动。文件名匹配用的是 naming.regex。
+
+meta:
+  semester: 2026 秋
+  class: AI+X 实验班 Elite20
+  spec_version: 1
+  updated: 2026-11-04
+
+# 文件名规范：姓名_挑战ID_内容.md  →  JingXueQing_C8_proposal.md
+# 也兼容真实提交里出现的：JingXueQing_C4A_skill-evaluator.skill、C2G-交付_JingXueQing_参数高尔夫/
+naming:
+  regex: '^(?P<student>[^_/]+?)_(?P<challenge>C\d+[A-Z]{0,2})_(?P<kind>[^_/]+?)(?:\.[A-Za-z0-9]+)?$'
+  # kind 别名归一化：把各种写法映射到标准 artifact kind
+  kind_aliases:
+    proposal: [proposal, 申请书, g1]
+    demo: [demo, 原型, prototype]
+    ailog: [AI日志, ai日志, ailog, AI_LOG, ai-log]
+    notes: [拿来说明, 参考, 引用, references]
+    aar: [AAR, aar, 复盘]
+    deliverable: [交付物, 方案设计, report, 报告, repo链接, app链接, 教学说明, 数据说明]
+
+# 默认要求：每个挑战至少要有主交付物 + AI 日志（课程硬规则：过程留痕）
+defaults:
+  required: [deliverable, ailog]
+
+challenges:
+  - id: C1
+    name_cn: 课程资料获取与翻译
+    name_en: Course Material Acquisition & Translation
+    due: null
+    required: [deliverable, ailog]
+    keywords: [翻译, 术语, 中英, 原文, stanford, 校对]
+  - id: C2
+    name_cn: AI for Math 论文
+    name_en: AI4Math Paper
+    due: null
+    required: [deliverable, ailog, notes]
+    keywords: [论文, latex, 摘要, 期刊, paper, 参考文献, 审稿]
+  - id: C2A
+    name_cn: 衡量 AGI 的认知能力
+    name_en: Measuring AGI Cognitive Capability
+    due: null
+    required: [deliverable, ailog]
+    keywords: [AGI, 认知, 评测, benchmark, attnscope]
+  - id: C2G
+    name_cn: 参数高尔夫 · 极限约束下的语言模型训练
+    name_en: Parameter Golf
+    due: null
+    required: [deliverable, ailog]
+    keywords: [参数, 训练, loss, 量化, 小模型]
+  - id: C3
+    name_cn: 群内高质量参与
+    name_en: High-quality Group Participation
+    due: null
+    required: [deliverable, ailog]
+    keywords: [群里, 发言, 参与, 讨论, 提问]
+  - id: C3C
+    name_cn: 双人协作与技能迁移
+    name_en: Pair Collaboration
+    due: null
+    required: [deliverable, ailog]
+    keywords: [双人, 协作, 结对, 搭档, 迁移]
+  - id: C4
+    name_cn: 技能分享与传播
+    name_en: Skill Sharing
+    due: null
+    required: [deliverable, ailog]
+    keywords: [技能, skill, 分享, 可复用]
+  - id: C4A
+    name_cn: 技能提交自动评审
+    name_en: Automated Skill Submission Review
+    due: null
+    required: [deliverable, ailog]
+    keywords: [评审, rubric, 评分, 自动评审, 误判]
+  - id: C4B
+    name_cn: 公众号文章生成技能
+    name_en: WeChat Article Generation Skill
+    due: null
+    required: [deliverable, ailog]
+    keywords: [公众号, 排版, 封面, 推文, 发布]
+  - id: C4C
+    name_cn: 作业自动求解与排版
+    name_en: Homework Solver & Typesetting
+    due: null
+    required: [deliverable, ailog]
+    keywords: [作业, 求解, 排版, 公式, docx]
+  - id: C4D
+    name_cn: 本地大模型 Agent 技能
+    name_en: Local LLM Agent Skill
+    due: null
+    required: [deliverable, ailog]
+    keywords: [ollama, 本地模型, gemma, agent, 显存]
+  - id: C5
+    name_cn: GitHub Repository
+    name_en: GitHub Repository
+    due: null
+    required: [deliverable, ailog]
+    keywords: [github, repo, 仓库, commit, readme, 开源]
+  - id: C5A
+    name_cn: GitHub 入门与仓库理解
+    name_en: GitHub Basics
+    due: null
+    required: [deliverable, ailog]
+    keywords: [github, 仓库分析, 提交历史, clone]
+  - id: C6
+    name_cn: Web Application
+    name_en: Web Application
+    due: null
+    required: [deliverable, ailog]
+    keywords: [部署, 网址, 上线, app, 分享链接, 域名]
+  - id: C6A
+    name_cn: 提交数据仪表盘
+    name_en: Submission Dashboard
+    due: null
+    required: [deliverable, ailog]
+    keywords: [仪表盘, dashboard, 看板, 统计, 图表]
+  - id: C7
+    name_cn: 内容传播
+    name_en: Content Distribution
+    due: null
+    required: [deliverable, ailog]
+    keywords: [传播, 阅读量, 发帖, 小红书, 视频号]
+  - id: C8
+    name_cn: 真实项目落地
+    name_en: Real-World Project Execution
+    due: 2026-12-31
+    required: [proposal, demo, ailog, notes]
+    keywords: [真实项目, proposal, 客户, 验收, 交付, AAR]
+  - id: C9
+    name_cn: 自驱项目
+    name_en: Self-Initiated Project
+    due: null
+    required: [deliverable, ailog]
+    keywords: [自驱, 选题, 自己的项目]
+  - id: C10
+    name_cn: 构建你的长期智能体（第二大脑）
+    name_en: Build Your Own Agent
+    due: null
+    required: [deliverable, ailog]
+    keywords: [第二大脑, 记忆, 长期, agent, 上下文]
+  - id: C10H
+    name_cn: 安装并驾驭 Hermes Agent
+    name_en: Hermes Agent
+    due: null
+    required: [deliverable, ailog]
+    keywords: [hermes, 安装, 配置, 驾驭]

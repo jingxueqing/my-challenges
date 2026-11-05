@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://elite20.local/schemas/submission.schema.json",
+  "title": "Submission",
+  "description": "一个学生在某个挑战上的提交（可包含多个 artifact）。状态由必备件是否齐全推导。",
+  "type": "object",
+  "required": ["id", "student", "challenge", "status", "kinds", "missing", "completeness", "artifacts"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^submission:" },
+    "student": { "type": "string" },
+    "nickname": { "type": "string" },
+    "challenge": { "type": "string", "pattern": "^C\\d{1,2}[A-Z]{0,2}$" },
+    "required": { "type": "array", "items": { "type": "string" } },
+    "kinds": {
+      "type": "array",
+      "items": { "enum": ["deliverable", "proposal", "demo", "ailog", "notes", "aar"] }
+    },
+    "missing": { "type": "array", "items": { "type": "string" } },
+    "completeness": { "type": "number", "minimum": 0, "maximum": 1 },
+    "status": { "enum": ["received", "reviewing", "accepted", "needs_revision"] },
+    "artifact_count": { "type": "integer", "minimum": 0 },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["kind", "file", "source"],
+        "properties": {
+          "id": { "type": "string" },
+          "kind": { "type": "string" },
+          "file": { "type": "string" },
+          "source": { "enum": ["wechat", "disk"] },
+          "msg_id": { "type": "string" },
+          "ts": { "type": "string" },
+          "bytes": { "type": "integer" },
+          "naming_ok": { "type": "boolean" }
+        }
+      }
+    },
+    "issues": { "type": "array", "items": { "type": "string" } },
+    "sources": { "type": "array", "items": { "enum": ["wechat", "disk"] } },
+    "first_ts": { "type": ["string", "null"] },
+    "last_ts": { "type": ["string", "null"] }
+  }
+}

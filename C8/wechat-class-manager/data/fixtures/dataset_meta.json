@@ -1,0 +1,18 @@
+{
+  "messages": 268,
+  "labels": 268,
+  "days": 14,
+  "start": "2026-10-21 08:35:47",
+  "end": "2026-11-03 20:40:41",
+  "intent_distribution": {
+    "submission": 72,
+    "question": 45,
+    "social": 42,
+    "answer": 41,
+    "discussion": 36,
+    "announcement": 26,
+    "resource": 6
+  },
+  "group": "AI+X 实验班 Elite20 · 挑战冲刺群",
+  "note": "合成脱敏数据集：人名除景雪晴外均为合成，消息内容为课程真实场景手写，用于复现与验收。"
+}

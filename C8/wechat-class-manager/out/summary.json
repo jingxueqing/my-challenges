@@ -1,0 +1,121 @@
+{
+  "generated_at": "2026-11-04 14:54:03",
+  "bridge": {
+    "source": "replay",
+    "group": "AI+X 实验班 Elite20 · 挑战冲刺群",
+    "days": 14,
+    "since": null,
+    "until": null,
+    "count": 268,
+    "earliest": "2026-10-21T08:35:47+08:00",
+    "latest": "2026-11-03T20:40:41+08:00",
+    "types": {
+      "text": 192,
+      "file": 74,
+      "link": 2
+    },
+    "senders": 21,
+    "generated_at": "2026-11-04T14:54:03+08:00"
+  },
+  "classify": {
+    "total": 268,
+    "distribution": {
+      "submission": 72,
+      "question": 61,
+      "answer": 44,
+      "social": 36,
+      "announcement": 27,
+      "discussion": 25,
+      "resource": 3
+    },
+    "needs_review": 56,
+    "avg_confidence": 0.727
+  },
+  "metrics": {
+    "accuracy": 0.9179,
+    "macro_f1": 0.878,
+    "total": 268,
+    "error_count": 22
+  },
+  "link": {
+    "total": 268,
+    "linked": 239,
+    "coverage": 0.892,
+    "by_method": {
+      "explicit_id": 116,
+      "inherited": 81,
+      "keyword": 42,
+      "none": 29
+    },
+    "by_challenge": {
+      "C8": 71,
+      "C5": 28,
+      "C2": 18,
+      "C4B": 16,
+      "C4D": 15,
+      "C6A": 14,
+      "C3": 13,
+      "C4A": 12,
+      "C6": 11,
+      "C7": 10,
+      "C10": 7,
+      "C4C": 6,
+      "C1": 6,
+      "C3C": 6,
+      "C9": 4,
+      "C10H": 2
+    }
+  },
+  "submissions": {
+    "submission_count": 44,
+    "complete_count": 36,
+    "needs_revision_count": 7,
+    "artifact_count": 307,
+    "cells": 400
+  },
+  "qa": {
+    "total_questions": 61,
+    "answered": 48,
+    "kept": 48,
+    "answer_rate": 0.787,
+    "avg_quality": 0.549
+  },
+  "profiles": {
+    "active_count": 20,
+    "silent_count": 2
+  },
+  "alerts": {
+    "total": 17,
+    "by_severity": {
+      "high": 1,
+      "medium": 15,
+      "low": 1
+    },
+    "by_type": {
+      "missing_artifacts": 7,
+      "unanswered_question": 4,
+      "engagement_drop": 2,
+      "silent_student": 2,
+      "low_submission_rate": 1,
+      "naming_violation": 1
+    }
+  },
+  "outputs": [
+    "alerts.json",
+    "classified.jsonl",
+    "dashboard",
+    "graph.db",
+    "linked.jsonl",
+    "messages.jsonl",
+    "metrics.json",
+    "nudges.json",
+    "nudges.md",
+    "profiles.json",
+    "qa.json",
+    "report.json",
+    "report.md",
+    "submissions.json",
+    "submissions_fs.json",
+    "summary.json"
+  ]
+}

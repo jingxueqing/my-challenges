@@ -1,0 +1,114 @@
+# 群配置（Group Config）
+# 成员名单为演示用合成名单（见 docs/数据说明.md 第 3 节）：
+# 真实提交数据来自本机磁盘（JingXueQing 的 19 个真实提交包），其余同学为脱敏合成。
+
+group:
+  name: AI+X 实验班 Elite20 · 挑战冲刺群
+  id: elite20_2026
+  aliases:
+    - Elite20
+    - AI+X实验班
+    - 精英20
+
+teacher:
+  wxid: wxid_teacher_neolaf
+  nickname: 班主任 · 李老师
+
+semester:
+  start: 2026-09-01
+  end: 2026-12-31
+  timezone: Asia/Shanghai
+
+# 预警阈值（改成你的班级口径即可，代码不用动）
+rules:
+  silent_days: 7
+  deadline_warn_days: 3
+  low_submission_rate: 0.3
+  question_unanswered_hours: 48
+  engagement_drop_ratio: 0.5
+  qa_min_quality: 0.35
+
+# 学生名单：wxid 为演示用固定 id，nickname 即群昵称
+roster:
+  - wxid: wxid_jxq2024
+    nickname: 景雪晴
+    major: 工商管理
+    enrollment: 2024-09-01
+    is_real: true          # 真实提交数据来自本机磁盘
+    aliases: [JingXueQing, 靖雪晴]
+  - wxid: wxid_linyz
+    nickname: 林一舟
+    major: 计算机科学与技术
+    enrollment: 2024-09-01
+  - wxid: wxid_zhaomx
+    nickname: 赵明轩
+    major: 软件工程
+    enrollment: 2024-09-01
+  - wxid: wxid_chenxy
+    nickname: 陈心怡
+    major: 视觉传达设计
+    enrollment: 2024-09-01
+  - wxid: wxid_wuht
+    nickname: 吴昊天
+    major: 数据科学
+    enrollment: 2024-09-01
+  - wxid: wxid_sunl
+    nickname: 孙乐
+    major: 汉语言文学
+    enrollment: 2024-09-01
+  - wxid: wxid_zhoujy
+    nickname: 周嘉懿
+    major: 电子信息工程
+    enrollment: 2024-09-01
+  - wxid: wxid_xufy
+    nickname: 徐方雨
+    major: 市场营销
+    enrollment: 2024-09-01
+  - wxid: wxid_hech
+    nickname: 何承翰
+    major: 计算机科学与技术
+    enrollment: 2024-09-01
+  - wxid: wxid_guoyq
+    nickname: 郭雅琪
+    major: 会计学
+    enrollment: 2024-09-01
+  - wxid: wxid_majl
+    nickname: 马嘉乐
+    major: 软件工程
+    enrollment: 2024-09-01
+  - wxid: wxid_luoxr
+    nickname: 罗欣然
+    major: 数字媒体艺术
+    enrollment: 2024-09-01
+  - wxid: wxid_gaoyf
+    nickname: 高宇飞
+    major: 人工智能
+    enrollment: 2024-09-01
+  - wxid: wxid_tangsh
+    nickname: 唐思涵
+    major: 工商管理
+    enrollment: 2024-09-01
+  - wxid: wxid_dengzl
+    nickname: 邓子龙
+    major: 网络工程
+    enrollment: 2024-09-01
+  - wxid: wxid_fengyr
+    nickname: 冯亦然
+    major: 英语
+    enrollment: 2024-09-01
+  - wxid: wxid_pengxy
+    nickname: 彭心语
+    major: 新闻传播
+    enrollment: 2024-09-01
+  - wxid: wxid_qiuzw
+    nickname: 邱志伟
+    major: 信息管理
+    enrollment: 2024-09-01
+  - wxid: wxid_xiemq
+    nickname: 谢梦琪
+    major: 电子商务
+    enrollment: 2024-09-01
+  - wxid: wxid_yanghs
+    nickname: 杨海森
+    major: 统计学
+    enrollment: 2024-09-01

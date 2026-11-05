@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://elite20.local/schemas/student.schema.json",
+  "title": "StudentProfile",
+  "description": "学生画像：活跃度、助人、提交覆盖、风险。engagement_score 口径写在 wcm/profile.py::_engagement。",
+  "type": "object",
+  "required": ["id", "wxid", "nickname", "msg_count", "engagement_score"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^student:" },
+    "wxid": { "type": "string" },
+    "nickname": { "type": "string" },
+    "major": { "type": "string" },
+    "is_real": { "type": "boolean", "description": "该学生的提交数据是否来自本机真实文件" },
+    "msg_count": { "type": "integer" },
+    "week_msgs": { "type": "integer" },
+    "prev_week_msgs": { "type": "integer" },
+    "delta_ratio": { "type": "number" },
+    "intents": { "type": "object", "additionalProperties": { "type": "integer" } },
+    "active_days": { "type": "integer" },
+    "silence_days": { "type": "integer" },
+    "questions_asked": { "type": "integer" },
+    "answers_given": { "type": "integer" },
+    "qa_answered": { "type": "integer" },
+    "helped_and_thanked": { "type": "integer" },
+    "submissions": { "type": "integer" },
+    "accepted": { "type": "integer" },
+    "needs_revision": { "type": "integer" },
+    "challenges": { "type": "array", "items": { "type": "string" } },
+    "skill_tags": { "type": "array", "items": { "type": "string" } },
+    "engagement_score": { "type": "number", "minimum": 0, "maximum": 100 },
+    "risk_flags": { "type": "array", "items": { "type": "string" } }
+  }
+}

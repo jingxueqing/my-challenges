@@ -1,0 +1,4533 @@
+{
+  "class_size": 20,
+  "student_count": 16,
+  "submission_count": 44,
+  "artifact_count": 307,
+  "complete_count": 36,
+  "needs_revision_count": 7,
+  "rows": [
+    {
+      "id": "submission:wxid_chenxy:C6",
+      "student": "wxid_chenxy",
+      "nickname": "陈心怡",
+      "major": "视觉传达设计",
+      "challenge": "C6",
+      "challenge_name": "Web Application",
+      "required": [
+        "deliverable",
+        "ailog"
+      ],
+      "kinds": [
+        "ailog",
+        "deliverable",
+        "demo"
+      ],
+      "missing": [],
+      "completeness": 1.0,
+      "status": "accepted",
+      "artifact_count": 3,
+      "artifacts": [
+        {
+          "id": "artifact:c30ce559f7",
+          "kind": "ailog",
+          "file": "陈心怡_C6_AI日志.md",
+          "source": "wechat",
+          "msg_id": "m00072",
+          "ts": "2026-10-25T10:21:40+08:00",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:587be7e409",
+          "kind": "deliverable",
+          "file": "陈心怡_C6_交付物.md",
+          "source": "wechat",
+          "msg_id": "m00071",
+          "ts": "2026-10-25T10:20:49+08:00",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:de1e9168e0",
+          "kind": "demo",
+          "file": "陈心怡_C6_demo.mp4",
+          "source": "wechat",
+          "msg_id": "m00073",
+          "ts": "2026-10-25T10:22:06+08:00",
+          "naming_ok": true
+        }
+      ],
+      "issues": [],
+      "sources": [
+        "wechat"
+      ],
+      "first_ts": "2026-10-25T10:20:49+08:00",
+      "last_ts": "2026-10-25T10:22:06+08:00"
+    },
+    {
+      "id": "submission:wxid_chenxy:C7",
+      "student": "wxid_chenxy",
+      "nickname": "陈心怡",
+      "major": "视觉传达设计",
+      "challenge": "C7",
+      "challenge_name": "内容传播",
+      "required": [
+        "deliverable",
+        "ailog"
+      ],
+      "kinds": [
+        "ailog",
+        "deliverable"
+      ],
+      "missing": [],
+      "completeness": 1.0,
+      "status": "accepted",
+      "artifact_count": 2,
+      "artifacts": [
+        {
+          "id": "artifact:3fc1217788",
+          "kind": "ailog",
+          "file": "陈心怡_C7_AI日志.md",
+          "source": "wechat",
+          "msg_id": "m00142",
+          "ts": "2026-10-29T11:01:00+08:00",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:b860ada233",
+          "kind": "deliverable",
+          "file": "陈心怡_C7_交付物.md",
+          "source": "wechat",
+          "msg_id": "m00141",
+          "ts": "2026-10-29T11:00:19+08:00",
+          "naming_ok": true
+        }
+      ],
+      "issues": [],
+      "sources": [
+        "wechat"
+      ],
+      "first_ts": "2026-10-29T11:00:19+08:00",
+      "last_ts": "2026-10-29T11:01:00+08:00"
+    },
+    {
+      "id": "submission:wxid_dengzl:C2",
+      "student": "wxid_dengzl",
+      "nickname": "邓子龙",
+      "major": "网络工程",
+      "challenge": "C2",
+      "challenge_name": "AI for Math 论文",
+      "required": [
+        "deliverable",
+        "ailog",
+        "notes"
+      ],
+      "kinds": [
+        "ailog",
+        "deliverable"
+      ],
+      "missing": [
+        "notes"
+      ],
+      "completeness": 0.667,
+      "status": "needs_revision",
+      "artifact_count": 2,
+      "artifacts": [
+        {
+          "id": "artifact:fb6d7e09ad",
+          "kind": "ailog",
+          "file": "邓子龙_C2_AI日志.md",
+          "source": "wechat",
+          "msg_id": "m00113",
+          "ts": "2026-10-27T14:21:49+08:00",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:67fa1bc720",
+          "kind": "deliverable",
+          "file": "邓子龙_C2_交付物.pdf",
+          "source": "wechat",
+          "msg_id": "m00112",
+          "ts": "2026-10-27T14:20:37+08:00",
+          "naming_ok": true
+        }
+      ],
+      "issues": [],
+      "sources": [
+        "wechat"
+      ],
+      "first_ts": "2026-10-27T14:20:37+08:00",
+      "last_ts": "2026-10-27T14:21:49+08:00"
+    },
+    {
+      "id": "submission:wxid_dengzl:C5",
+      "student": "wxid_dengzl",
+      "nickname": "邓子龙",
+      "major": "网络工程",
+      "challenge": "C5",
+      "challenge_name": "GitHub Repository",
+      "required": [
+        "deliverable",
+        "ailog"
+      ],
+      "kinds": [
+        "ailog",
+        "deliverable"
+      ],
+      "missing": [],
+      "completeness": 1.0,
+      "status": "accepted",
+      "artifact_count": 2,
+      "artifacts": [
+        {
+          "id": "artifact:e1cb002268",
+          "kind": "ailog",
+          "file": "邓子龙_C5_AI日志.md",
+          "source": "wechat",
+          "msg_id": "m00152",
+          "ts": "2026-10-30T09:41:28+08:00",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:f0f6e7e0af",
+          "kind": "deliverable",
+          "file": "邓子龙_C5_交付物.md",
+          "source": "wechat",
+          "msg_id": "m00151",
+          "ts": "2026-10-30T09:40:45+08:00",
+          "naming_ok": true
+        }
+      ],
+      "issues": [],
+      "sources": [
+        "wechat"
+      ],
+      "first_ts": "2026-10-30T09:40:45+08:00",
+      "last_ts": "2026-10-30T09:41:28+08:00"
+    },
+    {
+      "id": "submission:wxid_fengyr:C3",
+      "student": "wxid_fengyr",
+      "nickname": "冯亦然",
+      "major": "英语",
+      "challenge": "C3",
+      "challenge_name": "群内高质量参与",
+      "required": [
+        "deliverable",
+        "ailog"
+      ],
+      "kinds": [
+        "ailog",
+        "deliverable"
+      ],
+      "missing": [],
+      "completeness": 1.0,
+      "status": "accepted",
+      "artifact_count": 2,
+      "artifacts": [
+        {
+          "id": "artifact:3081e6bf5f",
+          "kind": "ailog",
+          "file": "冯亦然_C3_AI日志.md",
+          "source": "wechat",
+          "msg_id": "m00154",
+          "ts": "2026-10-30T10:01:18+08:00",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:7c09cf6342",
+          "kind": "deliverable",
+          "file": "冯亦然_C3_交付物.md",
+          "source": "wechat",
+          "msg_id": "m00153",
+          "ts": "2026-10-30T10:00:17+08:00",
+          "naming_ok": true
+        }
+      ],
+      "issues": [],
+      "sources": [
+        "wechat"
+      ],
+      "first_ts": "2026-10-30T10:00:17+08:00",
+      "last_ts": "2026-10-30T10:01:18+08:00"
+    },
+    {
+      "id": "submission:wxid_fengyr:C8",
+      "student": "wxid_fengyr",
+      "nickname": "冯亦然",
+      "major": "英语",
+      "challenge": "C8",
+      "challenge_name": "真实项目落地",
+      "required": [
+        "proposal",
+        "demo",
+        "ailog",
+        "notes"
+      ],
+      "kinds": [
+        "ailog",
+        "proposal"
+      ],
+      "missing": [
+        "demo",
+        "notes"
+      ],
+      "completeness": 0.5,
+      "status": "needs_revision",
+      "artifact_count": 2,
+      "artifacts": [
+        {
+          "id": "artifact:dc793f4697",
+          "kind": "ailog",
+          "file": "冯亦然_C8_AI日志.md",
+          "source": "wechat",
+          "msg_id": "m00204",
+          "ts": "2026-11-02T14:01:24+08:00",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:a27fc19ac6",
+          "kind": "proposal",
+          "file": "冯亦然_C8_proposal.md",
+          "source": "wechat",
+          "msg_id": "m00203",
+          "ts": "2026-11-02T14:00:50+08:00",
+          "naming_ok": true
+        }
+      ],
+      "issues": [],
+      "sources": [
+        "wechat"
+      ],
+      "first_ts": "2026-11-02T14:00:50+08:00",
+      "last_ts": "2026-11-02T14:01:24+08:00"
+    },
+    {
+      "id": "submission:wxid_gaoyf:C6A",
+      "student": "wxid_gaoyf",
+      "nickname": "高宇飞",
+      "major": "人工智能",
+      "challenge": "C6A",
+      "challenge_name": "提交数据仪表盘",
+      "required": [
+        "deliverable",
+        "ailog"
+      ],
+      "kinds": [
+        "ailog",
+        "deliverable"
+      ],
+      "missing": [],
+      "completeness": 1.0,
+      "status": "accepted",
+      "artifact_count": 2,
+      "artifacts": [
+        {
+          "id": "artifact:c6591cdc0a",
+          "kind": "ailog",
+          "file": "高宇飞_C6A_AI日志.md",
+          "source": "wechat",
+          "msg_id": "m00158",
+          "ts": "2026-10-30T11:21:18+08:00",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:78bcf9d2cf",
+          "kind": "deliverable",
+          "file": "高宇飞_C6A_交付物.md",
+          "source": "wechat",
+          "msg_id": "m00157",
+          "ts": "2026-10-30T11:20:43+08:00",
+          "naming_ok": true
+        }
+      ],
+      "issues": [],
+      "sources": [
+        "wechat"
+      ],
+      "first_ts": "2026-10-30T11:20:43+08:00",
+      "last_ts": "2026-10-30T11:21:18+08:00"
+    },
+    {
+      "id": "submission:wxid_guoyq:C1",
+      "student": "wxid_guoyq",
+      "nickname": "郭雅琪",
+      "major": "会计学",
+      "challenge": "C1",
+      "challenge_name": "课程资料获取与翻译",
+      "required": [
+        "deliverable",
+        "ailog"
+      ],
+      "kinds": [
+        "ailog",
+        "deliverable"
+      ],
+      "missing": [],
+      "completeness": 1.0,
+      "status": "accepted",
+      "artifact_count": 2,
+      "artifacts": [
+        {
+          "id": "artifact:0e95e1bd7b",
+          "kind": "ailog",
+          "file": "郭雅琪_C1_AI日志.md",
+          "source": "wechat",
+          "msg_id": "m00022",
+          "ts": "2026-10-22T10:13:35+08:00",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:c390d7cc77",
+          "kind": "deliverable",
+          "file": "郭雅琪_C1_交付物.md",
+          "source": "wechat",
+          "msg_id": "m00021",
+          "ts": "2026-10-22T10:12:43+08:00",
+          "naming_ok": true
+        }
+      ],
+      "issues": [],
+      "sources": [
+        "wechat"
+      ],
+      "first_ts": "2026-10-22T10:12:43+08:00",
+      "last_ts": "2026-10-22T10:13:35+08:00"
+    },
+    {
+      "id": "submission:wxid_guoyq:C4A",
+      "student": "wxid_guoyq",
+      "nickname": "郭雅琪",
+      "major": "会计学",
+      "challenge": "C4A",
+      "challenge_name": "技能提交自动评审",
+      "required": [
+        "deliverable",
+        "ailog"
+      ],
+      "kinds": [
+        "ailog",
+        "deliverable"
+      ],
+      "missing": [],
+      "completeness": 1.0,
+      "status": "reviewing",
+      "artifact_count": 4,
+      "artifacts": [
+        {
+          "id": "artifact:ca99b2bdf1",
+          "kind": "ailog",
+          "file": "郭雅琪_C4A_AI日志.md",
+          "source": "wechat",
+          "msg_id": "m00138",
+          "ts": "2026-10-29T09:06:07+08:00",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:ff709f6751",
+          "kind": "deliverable",
+          "file": "C4A评审器.zip",
+          "source": "wechat",
+          "msg_id": "m00056",
+          "ts": "2026-10-24T10:05:32+08:00",
+          "naming_ok": false
+        },
+        {
+          "id": "artifact:31a6f4208b",
+          "kind": "deliverable",
+          "file": "郭雅琪_C4A_交付物.md",
+          "source": "wechat",
+          "msg_id": "m00137",
+          "ts": "2026-10-29T09:05:31+08:00",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:4618a742b5",
+          "kind": "deliverable",
+          "file": "郭雅琪_C4A评审器_最终版.zip",
+          "source": "wechat",
+          "msg_id": "m00106",
+          "ts": "2026-10-27T09:10:46+08:00",
+          "naming_ok": false
+        }
+      ],
+      "issues": [
+        "命名不规范：C4A评审器.zip（应为 姓名_C4A_内容.md）",
+        "命名不规范：郭雅琪_C4A评审器_最终版.zip（应为 姓名_C4A_内容.md）"
+      ],
+      "sources": [
+        "wechat"
+      ],
+      "first_ts": "2026-10-24T10:05:32+08:00",
+      "last_ts": "2026-10-29T09:06:07+08:00"
+    },
+    {
+      "id": "submission:wxid_hech:C5",
+      "student": "wxid_hech",
+      "nickname": "何承翰",
+      "major": "计算机科学与技术",
+      "challenge": "C5",
+      "challenge_name": "GitHub Repository",
+      "required": [
+        "deliverable",
+        "ailog"
+      ],
+      "kinds": [
+        "ailog",
+        "deliverable"
+      ],
+      "missing": [],
+      "completeness": 1.0,
+      "status": "accepted",
+      "artifact_count": 2,
+      "artifacts": [
+        {
+          "id": "artifact:d83290420b",
+          "kind": "ailog",
+          "file": "何承翰_C5_AI日志.md",
+          "source": "wechat",
+          "msg_id": "m00068",
+          "ts": "2026-10-25T09:01:35+08:00",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:61e7e76ade",
+          "kind": "deliverable",
+          "file": "何承翰_C5_交付物.md",
+          "source": "wechat",
+          "msg_id": "m00067",
+          "ts": "2026-10-25T09:00:34+08:00",
+          "naming_ok": true
+        }
+      ],
+      "issues": [],
+      "sources": [
+        "wechat"
+      ],
+      "first_ts": "2026-10-25T09:00:34+08:00",
+      "last_ts": "2026-10-25T09:01:35+08:00"
+    },
+    {
+      "id": "submission:wxid_hech:C8",
+      "student": "wxid_hech",
+      "nickname": "何承翰",
+      "major": "计算机科学与技术",
+      "challenge": "C8",
+      "challenge_name": "真实项目落地",
+      "required": [
+        "proposal",
+        "demo",
+        "ailog",
+        "notes"
+      ],
+      "kinds": [
+        "ailog",
+        "demo",
+        "notes",
+        "proposal"
+      ],
+      "missing": [],
+      "completeness": 1.0,
+      "status": "accepted",
+      "artifact_count": 4,
+      "artifacts": [
+        {
+          "id": "artifact:6cadee3aa2",
+          "kind": "ailog",
+          "file": "何承翰_C8_AI日志.md",
+          "source": "wechat",
+          "msg_id": "m00162",
+          "ts": "2026-10-30T19:01:29+08:00",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:14609ffa5f",
+          "kind": "demo",
+          "file": "何承翰_C8_demo.zip",
+          "source": "wechat",
+          "msg_id": "m00214",
+          "ts": "2026-11-03T10:31:16+08:00",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:7905103cfc",
+          "kind": "notes",
+          "file": "何承翰_C8_拿来说明.md",
+          "source": "wechat",
+          "msg_id": "m00213",
+          "ts": "2026-11-03T10:30:23+08:00",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:ae0981876d",
+          "kind": "proposal",
+          "file": "何承翰_C8_proposal.md",
+          "source": "wechat",
+          "msg_id": "m00161",
+          "ts": "2026-10-30T19:00:16+08:00",
+          "naming_ok": true
+        }
+      ],
+      "issues": [],
+      "sources": [
+        "wechat"
+      ],
+      "first_ts": "2026-10-30T19:00:16+08:00",
+      "last_ts": "2026-11-03T10:31:16+08:00"
+    },
+    {
+      "id": "submission:wxid_jxq2024:C1",
+      "student": "wxid_jxq2024",
+      "nickname": "景雪晴",
+      "major": "工商管理",
+      "challenge": "C1",
+      "challenge_name": "课程资料获取与翻译",
+      "required": [
+        "deliverable",
+        "ailog"
+      ],
+      "kinds": [
+        "aar",
+        "ailog",
+        "deliverable"
+      ],
+      "missing": [],
+      "completeness": 1.0,
+      "status": "accepted",
+      "artifact_count": 6,
+      "artifacts": [
+        {
+          "id": "artifact:4864ffedd9",
+          "kind": "aar",
+          "file": "C1-交付_stanford-vibe-coding-zh/AAR.md",
+          "source": "disk",
+          "bytes": 7335,
+          "ts": "2026-09-27 22:42:55",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:604786745d",
+          "kind": "ailog",
+          "file": "C1-交付_stanford-vibe-coding-zh/AI日志.md",
+          "source": "disk",
+          "bytes": 9193,
+          "ts": "2026-09-27 22:42:31",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:efc1b9ad6e",
+          "kind": "deliverable",
+          "file": "C1-交付_stanford-vibe-coding-zh/README.md",
+          "source": "disk",
+          "bytes": 9153,
+          "ts": "2026-09-27 22:42:01",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:cb249a43be",
+          "kind": "deliverable",
+          "file": "C1-交付_stanford-vibe-coding-zh/eduseed-config-2024102110351-2.json",
+          "source": "disk",
+          "bytes": 1978,
+          "ts": "2026-09-28 11:44:51",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:86b5641147",
+          "kind": "deliverable",
+          "file": "C1-交付_stanford-vibe-coding-zh/run_all.sh",
+          "source": "disk",
+          "bytes": 2185,
+          "ts": "2026-09-27 21:42:42",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:c438bd5413",
+          "kind": "deliverable",
+          "file": "C1-交付_stanford-vibe-coding-zh/术语表.md",
+          "source": "disk",
+          "bytes": 4408,
+          "ts": "2026-09-27 22:25:37",
+          "naming_ok": true
+        }
+      ],
+      "issues": [],
+      "sources": [
+        "disk"
+      ],
+      "first_ts": null,
+      "last_ts": "2026-09-28 11:44:51"
+    },
+    {
+      "id": "submission:wxid_jxq2024:C2",
+      "student": "wxid_jxq2024",
+      "nickname": "景雪晴",
+      "major": "工商管理",
+      "challenge": "C2",
+      "challenge_name": "AI for Math 论文",
+      "required": [
+        "deliverable",
+        "ailog",
+        "notes"
+      ],
+      "kinds": [
+        "aar",
+        "ailog",
+        "deliverable",
+        "notes"
+      ],
+      "missing": [],
+      "completeness": 1.0,
+      "status": "accepted",
+      "artifact_count": 8,
+      "artifacts": [
+        {
+          "id": "artifact:f53d46138c",
+          "kind": "aar",
+          "file": "C2-交付_JingXueQing_AI4Math论文/七维AAR.md",
+          "source": "disk",
+          "bytes": 8482,
+          "ts": "2026-09-29 11:04:59",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:ec3975a0e6",
+          "kind": "ailog",
+          "file": "C2-交付_JingXueQing_AI4Math论文/AI协作日志.md",
+          "source": "disk",
+          "bytes": 12358,
+          "ts": "2026-09-29 11:04:59",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:a148050e5c",
+          "kind": "deliverable",
+          "file": "C2-交付_JingXueQing_AI4Math论文/AI4Math_Reliability_submission.zip",
+          "source": "disk",
+          "bytes": 506967,
+          "ts": "2026-09-29 11:05:00",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:c6f7c0b3b6",
+          "kind": "deliverable",
+          "file": "C2-交付_JingXueQing_AI4Math论文/BUILD_REPORT.txt",
+          "source": "disk",
+          "bytes": 873,
+          "ts": "2026-09-29 11:05:00",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:6b04b629d2",
+          "kind": "deliverable",
+          "file": "C2-交付_JingXueQing_AI4Math论文/README.md",
+          "source": "disk",
+          "bytes": 3548,
+          "ts": "2026-09-29 11:04:59",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:814d75ea1b",
+          "kind": "deliverable",
+          "file": "C2-交付_JingXueQing_AI4Math论文/paper.pdf",
+          "source": "disk",
+          "bytes": 478423,
+          "ts": "2026-09-29 11:04:59",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:107ee50be3",
+          "kind": "deliverable",
+          "file": "C2-交付_JingXueQing_AI4Math论文/paper.tex",
+          "source": "disk",
+          "bytes": 33539,
+          "ts": "2026-09-29 11:04:59",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:f0c7fc14a3",
+          "kind": "notes",
+          "file": "C2-交付_JingXueQing_AI4Math论文/references.bib",
+          "source": "disk",
+          "bytes": 9840,
+          "ts": "2026-09-29 11:04:59",
+          "naming_ok": true
+        }
+      ],
+      "issues": [],
+      "sources": [
+        "disk"
+      ],
+      "first_ts": null,
+      "last_ts": "2026-09-29 11:05:00"
+    },
+    {
+      "id": "submission:wxid_jxq2024:C2A",
+      "student": "wxid_jxq2024",
+      "nickname": "景雪晴",
+      "major": "工商管理",
+      "challenge": "C2A",
+      "challenge_name": "衡量 AGI 的认知能力",
+      "required": [
+        "deliverable",
+        "ailog"
+      ],
+      "kinds": [
+        "aar",
+        "ailog",
+        "deliverable",
+        "notes",
+        "proposal"
+      ],
+      "missing": [],
+      "completeness": 1.0,
+      "status": "accepted",
+      "artifact_count": 8,
+      "artifacts": [
+        {
+          "id": "artifact:91b81b9e61",
+          "kind": "aar",
+          "file": "C2A-交付_JingXueQing_AttnScope/JingXueQing_C2A_AAR.md",
+          "source": "disk",
+          "bytes": 6617,
+          "ts": "2026-10-03 19:06:40",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:f800e5e9ea",
+          "kind": "ailog",
+          "file": "C2A-交付_JingXueQing_AttnScope/JingXueQing_C2A_AI日志.md",
+          "source": "disk",
+          "bytes": 9529,
+          "ts": "2026-10-03 19:06:40",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:9fd1521e6c",
+          "kind": "deliverable",
+          "file": "C2A-交付_JingXueQing_AttnScope/JingXueQing_C2A_benchmark/README.md",
+          "source": "disk",
+          "bytes": 7383,
+          "ts": "2026-10-03 19:06:40",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:7e16ff2f20",
+          "kind": "deliverable",
+          "file": "C2A-交付_JingXueQing_AttnScope/JingXueQing_C2A_benchmark/requirements.txt",
+          "source": "disk",
+          "bytes": 173,
+          "ts": "2026-10-03 19:06:40",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:0688adc425",
+          "kind": "deliverable",
+          "file": "C2A-交付_JingXueQing_AttnScope/JingXueQing_C2A_benchmark/run_eval.py",
+          "source": "disk",
+          "bytes": 4245,
+          "ts": "2026-10-03 19:06:40",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:98a5c989b1",
+          "kind": "deliverable",
+          "file": "C2A-交付_JingXueQing_AttnScope/README_提交说明.md",
+          "source": "disk",
+          "bytes": 2051,
+          "ts": "2026-10-03 19:06:40",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:fa66a3fb7d",
+          "kind": "notes",
+          "file": "C2A-交付_JingXueQing_AttnScope/JingXueQing_C2A_拿来说明.md",
+          "source": "disk",
+          "bytes": 12145,
+          "ts": "2026-10-03 19:06:40",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:312d1533c2",
+          "kind": "proposal",
+          "file": "C2A-交付_JingXueQing_AttnScope/JingXueQing_C2A_proposal.md",
+          "source": "disk",
+          "bytes": 9120,
+          "ts": "2026-10-03 19:06:40",
+          "naming_ok": true
+        }
+      ],
+      "issues": [],
+      "sources": [
+        "disk"
+      ],
+      "first_ts": null,
+      "last_ts": "2026-10-03 19:06:40"
+    },
+    {
+      "id": "submission:wxid_jxq2024:C2G",
+      "student": "wxid_jxq2024",
+      "nickname": "景雪晴",
+      "major": "工商管理",
+      "challenge": "C2G",
+      "challenge_name": "参数高尔夫 · 极限约束下的语言模型训练",
+      "required": [
+        "deliverable",
+        "ailog"
+      ],
+      "kinds": [
+        "aar",
+        "ailog",
+        "deliverable",
+        "notes"
+      ],
+      "missing": [],
+      "completeness": 1.0,
+      "status": "accepted",
+      "artifact_count": 29,
+      "artifacts": [
+        {
+          "id": "artifact:2ac5f35f79",
+          "kind": "aar",
+          "file": "C2G-交付_JingXueQing_参数高尔夫_全量版/JingXueQing_C2G_AAR.md",
+          "source": "disk",
+          "bytes": 13557,
+          "ts": "2026-10-04 19:09:03",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:1301acfe4f",
+          "kind": "ailog",
+          "file": "C2G-交付_JingXueQing_参数高尔夫/JingXueQing_C2G_AI日志.md",
+          "source": "disk",
+          "bytes": 16877,
+          "ts": "2026-10-03 23:45:20",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:97d4c8abf7",
+          "kind": "ailog",
+          "file": "C2G-交付_JingXueQing_参数高尔夫_全量版/JingXueQing_C2G_AI日志.md",
+          "source": "disk",
+          "bytes": 16877,
+          "ts": "2026-10-03 23:45:20",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:dd9dab402b",
+          "kind": "deliverable",
+          "file": "C2G-交付_JingXueQing_参数高尔夫/JingXueQing_C2G_ablation.md",
+          "source": "disk",
+          "bytes": 14186,
+          "ts": "2026-10-03 23:44:32",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:23b21000d5",
+          "kind": "deliverable",
+          "file": "C2G-交付_JingXueQing_参数高尔夫/JingXueQing_C2G_leaderboard.md",
+          "source": "disk",
+          "bytes": 9855,
+          "ts": "2026-10-03 23:44:48",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:ee1ef4a1b3",
+          "kind": "deliverable",
+          "file": "C2G-交付_JingXueQing_参数高尔夫/JingXueQing_C2G_submission.json",
+          "source": "disk",
+          "bytes": 7398,
+          "ts": "2026-10-03 23:46:18",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:5f647c05bd",
+          "kind": "deliverable",
+          "file": "C2G-交付_JingXueQing_参数高尔夫/JingXueQing_C2G_submission.tar.gz",
+          "source": "disk",
+          "bytes": 66445,
+          "ts": "2026-10-03 23:50:18",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:357d265c79",
+          "kind": "deliverable",
+          "file": "C2G-交付_JingXueQing_参数高尔夫/JingXueQing_C2G_verify_bpb.py",
+          "source": "disk",
+          "bytes": 6000,
+          "ts": "2026-10-03 23:04:53",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:e63a4ee3cd",
+          "kind": "deliverable",
+          "file": "C2G-交付_JingXueQing_参数高尔夫/JingXueQing_C2G_方案设计.md",
+          "source": "disk",
+          "bytes": 16612,
+          "ts": "2026-10-03 23:46:03",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:7dea04badb",
+          "kind": "deliverable",
+          "file": "C2G-交付_JingXueQing_参数高尔夫/README_提交说明.md",
+          "source": "disk",
+          "bytes": 9440,
+          "ts": "2026-10-03 23:45:50",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:b592a9cf75",
+          "kind": "deliverable",
+          "file": "C2G-交付_JingXueQing_参数高尔夫_全量版/JingXueQing_C2G_ablation.md",
+          "source": "disk",
+          "bytes": 16675,
+          "ts": "2026-10-04 19:10:06",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:028e4f72d1",
+          "kind": "deliverable",
+          "file": "C2G-交付_JingXueQing_参数高尔夫_全量版/JingXueQing_C2G_leaderboard.md",
+          "source": "disk",
+          "bytes": 9855,
+          "ts": "2026-10-03 23:44:48",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:85aa5d07a6",
+          "kind": "deliverable",
+          "file": "C2G-交付_JingXueQing_参数高尔夫_全量版/JingXueQing_C2G_logs/README.md",
+          "source": "disk",
+          "bytes": 6353,
+          "ts": "2026-10-04 19:09:34",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:e3cb653191",
+          "kind": "deliverable",
+          "file": "C2G-交付_JingXueQing_参数高尔夫_全量版/JingXueQing_C2G_logs/real_seed0.log",
+          "source": "disk",
+          "bytes": 3522,
+          "ts": "2026-10-04 18:57:47",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:bd6a3335a5",
+          "kind": "deliverable",
+          "file": "C2G-交付_JingXueQing_参数高尔夫_全量版/JingXueQing_C2G_logs/real_seed1234.log",
+          "source": "disk",
+          "bytes": 3544,
+          "ts": "2026-10-04 19:05:33",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:f42decce0b",
+          "kind": "deliverable",
+          "file": "C2G-交付_JingXueQing_参数高尔夫_全量版/JingXueQing_C2G_logs/real_seed42.log",
+          "source": "disk",
+          "bytes": 3527,
+          "ts": "2026-10-04 18:51:18",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:85e558c91c",
+          "kind": "deliverable",
+          "file": "C2G-交付_JingXueQing_参数高尔夫_全量版/JingXueQing_C2G_logs/smoke_seed0.log",
+          "source": "disk",
+          "bytes": 1691,
+          "ts": "2026-10-03 23:43:58",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:1b0aa9b414",
+          "kind": "deliverable",
+          "file": "C2G-交付_JingXueQing_参数高尔夫_全量版/JingXueQing_C2G_logs/smoke_seed1234.log",
+          "source": "disk",
+          "bytes": 1705,
+          "ts": "2026-10-03 23:44:07",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:b1ba8e8db6",
+          "kind": "deliverable",
+          "file": "C2G-交付_JingXueQing_参数高尔夫_全量版/JingXueQing_C2G_logs/smoke_seed42.log",
+          "source": "disk",
+          "bytes": 2261,
+          "ts": "2026-10-03 23:43:58",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:cea968ecff",
+          "kind": "deliverable",
+          "file": "C2G-交付_JingXueQing_参数高尔夫_全量版/JingXueQing_C2G_submission.json",
+          "source": "disk",
+          "bytes": 11991,
+          "ts": "2026-10-04 19:06:49",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:35db60fff8",
+          "kind": "deliverable",
+          "file": "C2G-交付_JingXueQing_参数高尔夫_全量版/JingXueQing_C2G_submission.tar.gz",
+          "source": "disk",
+          "bytes": 1408593,
+          "ts": "2026-10-04 19:06:49",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:ac541ef279",
+          "kind": "deliverable",
+          "file": "C2G-交付_JingXueQing_参数高尔夫_全量版/JingXueQing_C2G_tokenizer.json",
+          "source": "disk",
+          "bytes": 299,
+          "ts": "2026-10-04 19:06:49",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:4996ca4151",
+          "kind": "deliverable",
+          "file": "C2G-交付_JingXueQing_参数高尔夫_全量版/JingXueQing_C2G_train_gpt.py",
+          "source": "disk",
+          "bytes": 50771,
+          "ts": "2026-10-03 23:32:04",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:ec1d795ba5",
+          "kind": "deliverable",
+          "file": "C2G-交付_JingXueQing_参数高尔夫_全量版/JingXueQing_C2G_verify_bpb.py",
+          "source": "disk",
+          "bytes": 6000,
+          "ts": "2026-10-03 23:04:53",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:357312e3f9",
+          "kind": "deliverable",
+          "file": "C2G-交付_JingXueQing_参数高尔夫_全量版/JingXueQing_C2G_方案草案.md",
+          "source": "disk",
+          "bytes": 14527,
+          "ts": "2026-10-03 22:02:22",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:3fd0b0e1cd",
+          "kind": "deliverable",
+          "file": "C2G-交付_JingXueQing_参数高尔夫_全量版/JingXueQing_C2G_方案设计.md",
+          "source": "disk",
+          "bytes": 16612,
+          "ts": "2026-10-03 23:46:03",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:5bb8992c50",
+          "kind": "deliverable",
+          "file": "C2G-交付_JingXueQing_参数高尔夫_全量版/README_提交说明.md",
+          "source": "disk",
+          "bytes": 13335,
+          "ts": "2026-10-04 19:08:42",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:feaccc3807",
+          "kind": "notes",
+          "file": "C2G-交付_JingXueQing_参数高尔夫/JingXueQing_C2G_拿来说明.md",
+          "source": "disk",
+          "bytes": 11423,
+          "ts": "2026-10-03 22:53:59",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:48b690fee4",
+          "kind": "notes",
+          "file": "C2G-交付_JingXueQing_参数高尔夫_全量版/JingXueQing_C2G_拿来说明.md",
+          "source": "disk",
+          "bytes": 11423,
+          "ts": "2026-10-03 22:53:59",
+          "naming_ok": true
+        }
+      ],
+      "issues": [],
+      "sources": [
+        "disk"
+      ],
+      "first_ts": null,
+      "last_ts": "2026-10-04 19:10:06"
+    },
+    {
+      "id": "submission:wxid_jxq2024:C4",
+      "student": "wxid_jxq2024",
+      "nickname": "景雪晴",
+      "major": "工商管理",
+      "challenge": "C4",
+      "challenge_name": "技能分享与传播",
+      "required": [
+        "deliverable",
+        "ailog"
+      ],
+      "kinds": [
+        "aar",
+        "ailog",
+        "deliverable",
+        "demo"
+      ],
+      "missing": [],
+      "completeness": 1.0,
+      "status": "accepted",
+      "artifact_count": 42,
+      "artifacts": [
+        {
+          "id": "artifact:7b91caa3f3",
+          "kind": "aar",
+          "file": "C4-提交_JingXueQing_ai-log-forge/JingXueQing_C4_AAR.md",
+          "source": "disk",
+          "bytes": 7161,
+          "ts": "2026-10-04 18:30:57",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:3b853fd0e4",
+          "kind": "aar",
+          "file": "C4-提交_JingXueQing_ai-log-forge/samples/Demo_C4_AAR.md",
+          "source": "disk",
+          "bytes": 1452,
+          "ts": "2026-10-03 20:53:51",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:0311c6cf61",
+          "kind": "aar",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器/评审输入样例/JingXueQing_C4_ai-log-forge/JingXueQing_C4_AAR.md",
+          "source": "disk",
+          "bytes": 7161,
+          "ts": "2026-10-04 20:13:53",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:41ea0c4ac0",
+          "kind": "aar",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器_另版含真实评审输入/真实评审输入/JingXueQing_C4_ai-log-forge/JingXueQing_C4_AAR.md",
+          "source": "disk",
+          "bytes": 7161,
+          "ts": "2026-10-04 20:13:53",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:98a3620429",
+          "kind": "ailog",
+          "file": "C4-提交_JingXueQing_ai-log-forge/JingXueQing_C4_AI日志.md",
+          "source": "disk",
+          "bytes": 10390,
+          "ts": "2026-10-03 20:45:04",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:cb4eae76e4",
+          "kind": "ailog",
+          "file": "C4-提交_JingXueQing_ai-log-forge/samples/Demo_C4_AI日志.md",
+          "source": "disk",
+          "bytes": 7658,
+          "ts": "2026-10-03 20:53:51",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:372fde3cb0",
+          "kind": "ailog",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器/评审输入样例/JingXueQing_C4_ai-log-forge/JingXueQing_C4_AI日志.md",
+          "source": "disk",
+          "bytes": 10390,
+          "ts": "2026-10-04 20:13:53",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:7180921eff",
+          "kind": "ailog",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器_另版含真实评审输入/真实评审输入/JingXueQing_C4_ai-log-forge/JingXueQing_C4_AI日志.md",
+          "source": "disk",
+          "bytes": 10390,
+          "ts": "2026-10-04 20:13:53",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:98107ae193",
+          "kind": "deliverable",
+          "file": "C4-提交_JingXueQing_ai-log-forge/C4上传包_JingXueQing.zip",
+          "source": "disk",
+          "bytes": 363184,
+          "ts": "2026-10-04 18:36:21",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:1e1b48beac",
+          "kind": "deliverable",
+          "file": "C4-提交_JingXueQing_ai-log-forge/JingXueQing_C4_ai-log-forge.skill",
+          "source": "disk",
+          "bytes": 23293,
+          "ts": "2026-10-03 20:40:30",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:fc2622ce79",
+          "kind": "deliverable",
+          "file": "C4-提交_JingXueQing_ai-log-forge/JingXueQing_C4_skill说明.md",
+          "source": "disk",
+          "bytes": 10081,
+          "ts": "2026-10-03 20:42:12",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:fd5aa3bee6",
+          "kind": "deliverable",
+          "file": "C4-提交_JingXueQing_ai-log-forge/JingXueQing_C4_交付物自检.md",
+          "source": "disk",
+          "bytes": 4587,
+          "ts": "2026-10-04 18:31:34",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:03d282b61d",
+          "kind": "deliverable",
+          "file": "C4-提交_JingXueQing_ai-log-forge/JingXueQing_C4_教学说明.md",
+          "source": "disk",
+          "bytes": 10274,
+          "ts": "2026-10-03 20:43:17",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:9748d2062b",
+          "kind": "deliverable",
+          "file": "C4-提交_JingXueQing_ai-log-forge/README_提交说明.md",
+          "source": "disk",
+          "bytes": 2910,
+          "ts": "2026-10-04 18:31:44",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:e0ac9e2cd6",
+          "kind": "deliverable",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器/评审输入样例/Elite20TA_C4_skill-explainer/Elite20TA_C4_skill-explainer.skill",
+          "source": "disk",
+          "bytes": 6225,
+          "ts": "2026-10-04 20:13:51",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:745d7d08d9",
+          "kind": "deliverable",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器/评审输入样例/JingXueQing_C4_ai-log-forge/C4上传包_JingXueQing.zip",
+          "source": "disk",
+          "bytes": 363184,
+          "ts": "2026-10-04 20:13:53",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:e9984f3a80",
+          "kind": "deliverable",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器/评审输入样例/JingXueQing_C4_ai-log-forge/JingXueQing_C4_ai-log-forge.skill",
+          "source": "disk",
+          "bytes": 23293,
+          "ts": "2026-10-04 20:13:53",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:9cf90f42a6",
+          "kind": "deliverable",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器/评审输入样例/JingXueQing_C4_ai-log-forge/JingXueQing_C4_skill说明.md",
+          "source": "disk",
+          "bytes": 10081,
+          "ts": "2026-10-04 20:13:53",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:064531921d",
+          "kind": "deliverable",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器/评审输入样例/JingXueQing_C4_ai-log-forge/JingXueQing_C4_交付物自检.md",
+          "source": "disk",
+          "bytes": 4587,
+          "ts": "2026-10-04 20:13:53",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:913c691caa",
+          "kind": "deliverable",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器/评审输入样例/JingXueQing_C4_ai-log-forge/JingXueQing_C4_教学说明.md",
+          "source": "disk",
+          "bytes": 10274,
+          "ts": "2026-10-04 20:13:53",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:14b4a738ec",
+          "kind": "deliverable",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器/评审输入样例/JingXueQing_C4_ai-log-forge/README_提交说明.md",
+          "source": "disk",
+          "bytes": 2910,
+          "ts": "2026-10-04 20:13:53",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:6c307a206e",
+          "kind": "deliverable",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器/评审输入样例/WeChatGroup_C4_wechat-doc-mapper/WeChatGroup_C4_wechat-doc-mapper.skill",
+          "source": "disk",
+          "bytes": 14774,
+          "ts": "2026-10-04 20:13:51",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:bad28b44c6",
+          "kind": "deliverable",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器_另版含真实评审输入/真实评审输入/Elite20TA_C4_skill-explainer/Elite20TA_C4_skill-explainer.skill",
+          "source": "disk",
+          "bytes": 6225,
+          "ts": "2026-10-04 20:13:51",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:f7ee6850e4",
+          "kind": "deliverable",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器_另版含真实评审输入/真实评审输入/JingXueQing_C4_ai-log-forge/C4上传包_JingXueQing.zip",
+          "source": "disk",
+          "bytes": 363184,
+          "ts": "2026-10-04 20:13:53",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:29b37a3507",
+          "kind": "deliverable",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器_另版含真实评审输入/真实评审输入/JingXueQing_C4_ai-log-forge/JingXueQing_C4_ai-log-forge.skill",
+          "source": "disk",
+          "bytes": 23293,
+          "ts": "2026-10-04 20:13:53",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:f5b49a5119",
+          "kind": "deliverable",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器_另版含真实评审输入/真实评审输入/JingXueQing_C4_ai-log-forge/JingXueQing_C4_skill说明.md",
+          "source": "disk",
+          "bytes": 10081,
+          "ts": "2026-10-04 20:13:53",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:57e282d46d",
+          "kind": "deliverable",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器_另版含真实评审输入/真实评审输入/JingXueQing_C4_ai-log-forge/JingXueQing_C4_交付物自检.md",
+          "source": "disk",
+          "bytes": 4587,
+          "ts": "2026-10-04 20:13:53",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:9e3d607e9b",
+          "kind": "deliverable",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器_另版含真实评审输入/真实评审输入/JingXueQing_C4_ai-log-forge/JingXueQing_C4_教学说明.md",
+          "source": "disk",
+          "bytes": 10274,
+          "ts": "2026-10-04 20:13:53",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:ff82770182",
+          "kind": "deliverable",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器_另版含真实评审输入/真实评审输入/JingXueQing_C4_ai-log-forge/README_提交说明.md",
+          "source": "disk",
+          "bytes": 2910,
+          "ts": "2026-10-04 20:13:53",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:86756ab0d3",
+          "kind": "deliverable",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器_另版含真实评审输入/真实评审输入/WeChatGroup_C4_wechat-doc-mapper/WeChatGroup_C4_wechat-doc-mapper.skill",
+          "source": "disk",
+          "bytes": 14774,
+          "ts": "2026-10-04 20:13:51",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:f60bdc077f",
+          "kind": "demo",
+          "file": "C4-提交_JingXueQing_ai-log-forge/JingXueQing_C4_demo.html",
+          "source": "disk",
+          "bytes": 10240,
+          "ts": "2026-10-03 20:46:30",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:bbc0f4dd47",
+          "kind": "demo",
+          "file": "C4-提交_JingXueQing_ai-log-forge/JingXueQing_C4_demo_01_终端实录.png",
+          "source": "disk",
+          "bytes": 135062,
+          "ts": "2026-10-03 20:53:08",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:cb8bc3fcdd",
+          "kind": "demo",
+          "file": "C4-提交_JingXueQing_ai-log-forge/JingXueQing_C4_demo_02_体检闭环.png",
+          "source": "disk",
+          "bytes": 64520,
+          "ts": "2026-10-03 20:53:08",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:45fa1e0fed",
+          "kind": "demo",
+          "file": "C4-提交_JingXueQing_ai-log-forge/JingXueQing_C4_demo_03_体检前后.png",
+          "source": "disk",
+          "bytes": 127415,
+          "ts": "2026-10-03 20:53:08",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:eb2ee74e5e",
+          "kind": "demo",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器/评审输入样例/JingXueQing_C4_ai-log-forge/JingXueQing_C4_demo.html",
+          "source": "disk",
+          "bytes": 10240,
+          "ts": "2026-10-04 20:13:53",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:1d867dce37",
+          "kind": "demo",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器/评审输入样例/JingXueQing_C4_ai-log-forge/JingXueQing_C4_demo_01_终端实录.png",
+          "source": "disk",
+          "bytes": 135062,
+          "ts": "2026-10-04 20:13:53",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:462ebb9812",
+          "kind": "demo",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器/评审输入样例/JingXueQing_C4_ai-log-forge/JingXueQing_C4_demo_02_体检闭环.png",
+          "source": "disk",
+          "bytes": 64520,
+          "ts": "2026-10-04 20:13:53",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:60f2e16865",
+          "kind": "demo",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器/评审输入样例/JingXueQing_C4_ai-log-forge/JingXueQing_C4_demo_03_体检前后.png",
+          "source": "disk",
+          "bytes": 127415,
+          "ts": "2026-10-04 20:13:53",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:bfab16189e",
+          "kind": "demo",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器_另版含真实评审输入/真实评审输入/JingXueQing_C4_ai-log-forge/JingXueQing_C4_demo.html",
+          "source": "disk",
+          "bytes": 10240,
+          "ts": "2026-10-04 20:13:53",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:f78a4eb86e",
+          "kind": "demo",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器_另版含真实评审输入/真实评审输入/JingXueQing_C4_ai-log-forge/JingXueQing_C4_demo_01_终端实录.png",
+          "source": "disk",
+          "bytes": 135062,
+          "ts": "2026-10-04 20:13:53",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:73b9a2b846",
+          "kind": "demo",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器_另版含真实评审输入/真实评审输入/JingXueQing_C4_ai-log-forge/JingXueQing_C4_demo_02_体检闭环.png",
+          "source": "disk",
+          "bytes": 64520,
+          "ts": "2026-10-04 20:13:53",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:dae4dad741",
+          "kind": "demo",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器_另版含真实评审输入/真实评审输入/JingXueQing_C4_ai-log-forge/JingXueQing_C4_demo_03_体检前后.png",
+          "source": "disk",
+          "bytes": 127415,
+          "ts": "2026-10-04 20:13:53",
+          "naming_ok": true
+        }
+      ],
+      "issues": [],
+      "sources": [
+        "disk"
+      ],
+      "first_ts": null,
+      "last_ts": "2026-10-04 20:13:53"
+    },
+    {
+      "id": "submission:wxid_jxq2024:C4A",
+      "student": "wxid_jxq2024",
+      "nickname": "景雪晴",
+      "major": "工商管理",
+      "challenge": "C4A",
+      "challenge_name": "技能提交自动评审",
+      "required": [
+        "deliverable",
+        "ailog"
+      ],
+      "kinds": [
+        "aar",
+        "ailog",
+        "deliverable",
+        "notes"
+      ],
+      "missing": [],
+      "completeness": 1.0,
+      "status": "accepted",
+      "artifact_count": 16,
+      "artifacts": [
+        {
+          "id": "artifact:504eaa9c59",
+          "kind": "aar",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器/JingXueQing_C4A_AAR.md",
+          "source": "disk",
+          "bytes": 7843,
+          "ts": "2026-10-05 11:13:18",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:169718801e",
+          "kind": "aar",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器_另版含真实评审输入/JingXueQing_C4A_AAR.md",
+          "source": "disk",
+          "bytes": 7843,
+          "ts": "2026-10-04 20:27:05",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:319748b013",
+          "kind": "ailog",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器/JingXueQing_C4A_AI日志.md",
+          "source": "disk",
+          "bytes": 11410,
+          "ts": "2026-10-05 11:13:30",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:12c3fa045a",
+          "kind": "ailog",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器_另版含真实评审输入/JingXueQing_C4A_AI日志.md",
+          "source": "disk",
+          "bytes": 11413,
+          "ts": "2026-10-04 20:24:49",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:3c3b96b3ce",
+          "kind": "deliverable",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器/JingXueQing_C4A_skill-evaluator.skill",
+          "source": "disk",
+          "bytes": 51050,
+          "ts": "2026-10-04 20:28:28",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:ba880108be",
+          "kind": "deliverable",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器/JingXueQing_C4A_教学说明.md",
+          "source": "disk",
+          "bytes": 9765,
+          "ts": "2026-10-04 20:25:30",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:24b0fac96c",
+          "kind": "deliverable",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器/JingXueQing_C4A_方案设计.md",
+          "source": "disk",
+          "bytes": 13639,
+          "ts": "2026-10-04 20:23:48",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:3262345ded",
+          "kind": "deliverable",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器/JingXueQing_C4A_评审报告.md",
+          "source": "disk",
+          "bytes": 8419,
+          "ts": "2026-10-05 11:13:18",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:92cad1e4e7",
+          "kind": "deliverable",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器/README_提交说明.md",
+          "source": "disk",
+          "bytes": 6957,
+          "ts": "2026-10-05 11:12:49",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:607d4c51d1",
+          "kind": "deliverable",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器_另版含真实评审输入/JingXueQing_C4A_skill-evaluator.skill",
+          "source": "disk",
+          "bytes": 51050,
+          "ts": "2026-10-04 20:28:28",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:e5576d099e",
+          "kind": "deliverable",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器_另版含真实评审输入/JingXueQing_C4A_教学说明.md",
+          "source": "disk",
+          "bytes": 9765,
+          "ts": "2026-10-04 20:25:30",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:d061e0b227",
+          "kind": "deliverable",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器_另版含真实评审输入/JingXueQing_C4A_方案设计.md",
+          "source": "disk",
+          "bytes": 13639,
+          "ts": "2026-10-04 20:23:48",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:d79eac04b0",
+          "kind": "deliverable",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器_另版含真实评审输入/JingXueQing_C4A_评审报告.md",
+          "source": "disk",
+          "bytes": 8419,
+          "ts": "2026-10-04 20:26:31",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:dd4e3437fe",
+          "kind": "deliverable",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器_另版含真实评审输入/README_提交说明.md",
+          "source": "disk",
+          "bytes": 5852,
+          "ts": "2026-10-04 20:27:26",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:cb2c56748d",
+          "kind": "notes",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器/JingXueQing_C4A_拿来说明.md",
+          "source": "disk",
+          "bytes": 8469,
+          "ts": "2026-10-04 20:22:59",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:8d3b377869",
+          "kind": "notes",
+          "file": "C4A-交付_JingXueQing_技能提交自动评审器_另版含真实评审输入/JingXueQing_C4A_拿来说明.md",
+          "source": "disk",
+          "bytes": 8469,
+          "ts": "2026-10-04 20:22:59",
+          "naming_ok": true
+        }
+      ],
+      "issues": [],
+      "sources": [
+        "disk"
+      ],
+      "first_ts": null,
+      "last_ts": "2026-10-05 11:13:30"
+    },
+    {
+      "id": "submission:wxid_jxq2024:C4B",
+      "student": "wxid_jxq2024",
+      "nickname": "景雪晴",
+      "major": "工商管理",
+      "challenge": "C4B",
+      "challenge_name": "公众号文章生成技能",
+      "required": [
+        "deliverable",
+        "ailog"
+      ],
+      "kinds": [
+        "aar",
+        "ailog",
+        "deliverable",
+        "notes"
+      ],
+      "missing": [],
+      "completeness": 1.0,
+      "status": "accepted",
+      "artifact_count": 17,
+      "artifacts": [
+        {
+          "id": "artifact:73f9478f6f",
+          "kind": "aar",
+          "file": "C4B-交付_JingXueQing_公众号文章生成技能/JingXueQing_C4B_AAR复盘.md",
+          "source": "disk",
+          "bytes": 14767,
+          "ts": "2026-10-06 12:38:41",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:9e360112a4",
+          "kind": "ailog",
+          "file": "C4B-交付_JingXueQing_公众号文章生成技能/JingXueQing_C4B_AI日志.md",
+          "source": "disk",
+          "bytes": 24429,
+          "ts": "2026-10-06 12:38:41",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:bcf7603117",
+          "kind": "deliverable",
+          "file": "C4B-交付_JingXueQing_公众号文章生成技能/JingXueQing_C4B_eval_result.json",
+          "source": "disk",
+          "bytes": 19497,
+          "ts": "2026-10-06 12:49:57",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:0e4e846b76",
+          "kind": "deliverable",
+          "file": "C4B-交付_JingXueQing_公众号文章生成技能/JingXueQing_C4B_output.body.html",
+          "source": "disk",
+          "bytes": 91280,
+          "ts": "2026-10-06 12:45:13",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:b8ef35c265",
+          "kind": "deliverable",
+          "file": "C4B-交付_JingXueQing_公众号文章生成技能/JingXueQing_C4B_output.html",
+          "source": "disk",
+          "bytes": 92230,
+          "ts": "2026-10-06 12:45:13",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:cafeccf9ab",
+          "kind": "deliverable",
+          "file": "C4B-交付_JingXueQing_公众号文章生成技能/JingXueQing_C4B_教学说明.md",
+          "source": "disk",
+          "bytes": 10035,
+          "ts": "2026-10-06 12:50:16",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:13522533ee",
+          "kind": "deliverable",
+          "file": "C4B-交付_JingXueQing_公众号文章生成技能/JingXueQing_C4B_文章源文件.md",
+          "source": "disk",
+          "bytes": 11929,
+          "ts": "2026-10-06 12:31:16",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:fc59cf6829",
+          "kind": "deliverable",
+          "file": "C4B-交付_JingXueQing_公众号文章生成技能/JingXueQing_C4B_文章链接.md",
+          "source": "disk",
+          "bytes": 6838,
+          "ts": "2026-10-06 13:28:33",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:77ef62394c",
+          "kind": "deliverable",
+          "file": "C4B-交付_JingXueQing_公众号文章生成技能/README_提交说明.md",
+          "source": "disk",
+          "bytes": 5425,
+          "ts": "2026-10-06 13:27:45",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:49a327c680",
+          "kind": "deliverable",
+          "file": "C4B-交付_JingXueQing_公众号文章生成技能/cover.png",
+          "source": "disk",
+          "bytes": 32980,
+          "ts": "2026-10-05 12:09:13",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:8d84a59fac",
+          "kind": "deliverable",
+          "file": "C4B-交付_JingXueQing_公众号文章生成技能/wechat-publisher-pro.zip",
+          "source": "disk",
+          "bytes": 85903,
+          "ts": "2026-10-06 12:49:57",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:fa6f5df1b6",
+          "kind": "deliverable",
+          "file": "C4B-交付_JingXueQing_公众号文章生成技能/发布操作清单.md",
+          "source": "disk",
+          "bytes": 4116,
+          "ts": "2026-10-06 13:27:45",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:44001e1448",
+          "kind": "deliverable",
+          "file": "C4B-交付_JingXueQing_公众号文章生成技能/附_对比版_高亮代码.body.html",
+          "source": "disk",
+          "bytes": 90848,
+          "ts": "2026-10-06 12:49:43",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:54761d1381",
+          "kind": "deliverable",
+          "file": "C4B-交付_JingXueQing_公众号文章生成技能/附_对比版_高亮代码.html",
+          "source": "disk",
+          "bytes": 91805,
+          "ts": "2026-10-06 12:49:43",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:4ff29e288e",
+          "kind": "deliverable",
+          "file": "C4B-交付_JingXueQing_公众号文章生成技能/附_探针对比_starter原版.html",
+          "source": "disk",
+          "bytes": 4169,
+          "ts": "2026-10-05 12:37:12",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:d14d9d2c0d",
+          "kind": "deliverable",
+          "file": "C4B-交付_JingXueQing_公众号文章生成技能/附_探针对比_改造后.html",
+          "source": "disk",
+          "bytes": 9310,
+          "ts": "2026-10-05 12:37:12",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:ef407fa07d",
+          "kind": "notes",
+          "file": "C4B-交付_JingXueQing_公众号文章生成技能/JingXueQing_C4B_拿来说明.md",
+          "source": "disk",
+          "bytes": 11183,
+          "ts": "2026-10-06 12:38:03",
+          "naming_ok": true
+        }
+      ],
+      "issues": [],
+      "sources": [
+        "disk"
+      ],
+      "first_ts": null,
+      "last_ts": "2026-10-06 13:28:33"
+    },
+    {
+      "id": "submission:wxid_jxq2024:C4C",
+      "student": "wxid_jxq2024",
+      "nickname": "景雪晴",
+      "major": "工商管理",
+      "challenge": "C4C",
+      "challenge_name": "作业自动求解与排版",
+      "required": [
+        "deliverable",
+        "ailog"
+      ],
+      "kinds": [
+        "aar",
+        "ailog",
+        "deliverable",
+        "notes"
+      ],
+      "missing": [],
+      "completeness": 1.0,
+      "status": "accepted",
+      "artifact_count": 11,
+      "artifacts": [
+        {
+          "id": "artifact:ae08ea1236",
+          "kind": "aar",
+          "file": "C4C-交付_JingXueQing_作业自动求解与排版/JingXueQing_C4C_AAR复盘.md",
+          "source": "disk",
+          "bytes": 12857,
+          "ts": "2026-10-07 15:56:23",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:9b03c2382b",
+          "kind": "ailog",
+          "file": "C4C-交付_JingXueQing_作业自动求解与排版/JingXueQing_C4C_AI日志.md",
+          "source": "disk",
+          "bytes": 19712,
+          "ts": "2026-10-07 15:55:11",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:35c6e47987",
+          "kind": "deliverable",
+          "file": "C4C-交付_JingXueQing_作业自动求解与排版/JingXueQing_C4C_homework-solver/SKILL.md",
+          "source": "disk",
+          "bytes": 11932,
+          "ts": "2026-10-07 15:57:35",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:3b92116812",
+          "kind": "deliverable",
+          "file": "C4C-交付_JingXueQing_作业自动求解与排版/JingXueQing_C4C_homework-solver/requirements.txt",
+          "source": "disk",
+          "bytes": 1395,
+          "ts": "2026-10-07 15:57:35",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:10e7b97055",
+          "kind": "deliverable",
+          "file": "C4C-交付_JingXueQing_作业自动求解与排版/JingXueQing_C4C_output.pdf",
+          "source": "disk",
+          "bytes": 296061,
+          "ts": "2026-10-07 15:56:43",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:30474c18de",
+          "kind": "deliverable",
+          "file": "C4C-交付_JingXueQing_作业自动求解与排版/JingXueQing_C4C_作业原件.md",
+          "source": "disk",
+          "bytes": 2213,
+          "ts": "2026-10-07 15:56:43",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:0f16f67d32",
+          "kind": "deliverable",
+          "file": "C4C-交付_JingXueQing_作业自动求解与排版/JingXueQing_C4C_教学说明.md",
+          "source": "disk",
+          "bytes": 11000,
+          "ts": "2026-10-07 15:52:22",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:2ceab3b5ff",
+          "kind": "deliverable",
+          "file": "C4C-交付_JingXueQing_作业自动求解与排版/JingXueQing_C4C_方案设计.md",
+          "source": "disk",
+          "bytes": 17806,
+          "ts": "2026-10-06 12:55:36",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:3ffeb71cb3",
+          "kind": "deliverable",
+          "file": "C4C-交付_JingXueQing_作业自动求解与排版/JingXueQing_C4C_验证报告.md",
+          "source": "disk",
+          "bytes": 13628,
+          "ts": "2026-10-06 12:56:40",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:5469ce5bd4",
+          "kind": "deliverable",
+          "file": "C4C-交付_JingXueQing_作业自动求解与排版/README_提交说明.md",
+          "source": "disk",
+          "bytes": 7846,
+          "ts": "2026-10-07 15:57:18",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:5141db9d40",
+          "kind": "notes",
+          "file": "C4C-交付_JingXueQing_作业自动求解与排版/JingXueQing_C4C_拿来说明.md",
+          "source": "disk",
+          "bytes": 12464,
+          "ts": "2026-10-07 15:53:04",
+          "naming_ok": true
+        }
+      ],
+      "issues": [],
+      "sources": [
+        "disk"
+      ],
+      "first_ts": null,
+      "last_ts": "2026-10-07 15:57:35"
+    },
+    {
+      "id": "submission:wxid_jxq2024:C4D",
+      "student": "wxid_jxq2024",
+      "nickname": "景雪晴",
+      "major": "工商管理",
+      "challenge": "C4D",
+      "challenge_name": "本地大模型 Agent 技能",
+      "required": [
+        "deliverable",
+        "ailog"
+      ],
+      "kinds": [
+        "ailog",
+        "deliverable",
+        "notes"
+      ],
+      "missing": [],
+      "completeness": 1.0,
+      "status": "accepted",
+      "artifact_count": 18,
+      "artifacts": [
+        {
+          "id": "artifact:587749afb6",
+          "kind": "ailog",
+          "file": "C4D-交付_JingXueQing_本地大模型Agent技能/JingXueQing_C4D_AI日志.md",
+          "source": "disk",
+          "bytes": 13866,
+          "ts": "2026-10-10 19:30:53",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:c2e3e8595c",
+          "kind": "deliverable",
+          "file": "C4D-交付_JingXueQing_本地大模型Agent技能/JingXueQing_C4D_agent-skill/README.md",
+          "source": "disk",
+          "bytes": 5405,
+          "ts": "2026-10-10 19:30:53",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:c9cbfbf776",
+          "kind": "deliverable",
+          "file": "C4D-交付_JingXueQing_本地大模型Agent技能/JingXueQing_C4D_agent-skill/SKILL.md",
+          "source": "disk",
+          "bytes": 4837,
+          "ts": "2026-10-10 19:30:53",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:0bc50eeb59",
+          "kind": "deliverable",
+          "file": "C4D-交付_JingXueQing_本地大模型Agent技能/JingXueQing_C4D_agent-skill/make_evidence.py",
+          "source": "disk",
+          "bytes": 12026,
+          "ts": "2026-10-10 19:30:53",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:70b8ba30c3",
+          "kind": "deliverable",
+          "file": "C4D-交付_JingXueQing_本地大模型Agent技能/JingXueQing_C4D_agent-skill/run_agent.py",
+          "source": "disk",
+          "bytes": 17239,
+          "ts": "2026-10-10 19:30:53",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:7a3509820c",
+          "kind": "deliverable",
+          "file": "C4D-交付_JingXueQing_本地大模型Agent技能/JingXueQing_C4D_map.html",
+          "source": "disk",
+          "bytes": 11454,
+          "ts": "2026-10-10 19:30:53",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:c5e90839d9",
+          "kind": "deliverable",
+          "file": "C4D-交付_JingXueQing_本地大模型Agent技能/JingXueQing_C4D_output_screenshots/01_doctor.png",
+          "source": "disk",
+          "bytes": 79653,
+          "ts": "2026-10-10 19:30:53",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:e864d90347",
+          "kind": "deliverable",
+          "file": "C4D-交付_JingXueQing_本地大模型Agent技能/JingXueQing_C4D_output_screenshots/02_selftest.png",
+          "source": "disk",
+          "bytes": 56000,
+          "ts": "2026-10-10 19:30:53",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:90d96ec13f",
+          "kind": "deliverable",
+          "file": "C4D-交付_JingXueQing_本地大模型Agent技能/JingXueQing_C4D_output_screenshots/03_agent_trace.png",
+          "source": "disk",
+          "bytes": 174799,
+          "ts": "2026-10-10 19:30:53",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:d9094bd3bd",
+          "kind": "deliverable",
+          "file": "C4D-交付_JingXueQing_本地大模型Agent技能/JingXueQing_C4D_output_screenshots/04_codegen.png",
+          "source": "disk",
+          "bytes": 41110,
+          "ts": "2026-10-10 19:30:53",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:f492c0cf60",
+          "kind": "deliverable",
+          "file": "C4D-交付_JingXueQing_本地大模型Agent技能/JingXueQing_C4D_output_screenshots/05_vision.png",
+          "source": "disk",
+          "bytes": 38974,
+          "ts": "2026-10-10 19:30:53",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:671c00dccb",
+          "kind": "deliverable",
+          "file": "C4D-交付_JingXueQing_本地大模型Agent技能/JingXueQing_C4D_output_screenshots/06_ctxbench.png",
+          "source": "disk",
+          "bytes": 84258,
+          "ts": "2026-10-10 19:30:53",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:0be2be3096",
+          "kind": "deliverable",
+          "file": "C4D-交付_JingXueQing_本地大模型Agent技能/JingXueQing_C4D_output_screenshots/07_tests.png",
+          "source": "disk",
+          "bytes": 50758,
+          "ts": "2026-10-10 19:30:53",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:78b6ec89bc",
+          "kind": "deliverable",
+          "file": "C4D-交付_JingXueQing_本地大模型Agent技能/JingXueQing_C4D_教学说明.md",
+          "source": "disk",
+          "bytes": 8184,
+          "ts": "2026-10-10 19:30:53",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:68a123d270",
+          "kind": "deliverable",
+          "file": "C4D-交付_JingXueQing_本地大模型Agent技能/JingXueQing_C4D_方案设计.md",
+          "source": "disk",
+          "bytes": 11428,
+          "ts": "2026-10-10 19:30:53",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:e4700d866b",
+          "kind": "deliverable",
+          "file": "C4D-交付_JingXueQing_本地大模型Agent技能/JingXueQing_C4D_验证报告.md",
+          "source": "disk",
+          "bytes": 16645,
+          "ts": "2026-10-10 19:30:53",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:1d93c5f17b",
+          "kind": "deliverable",
+          "file": "C4D-交付_JingXueQing_本地大模型Agent技能/README_提交说明.md",
+          "source": "disk",
+          "bytes": 6720,
+          "ts": "2026-10-10 19:30:53",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:a329aa7f7a",
+          "kind": "notes",
+          "file": "C4D-交付_JingXueQing_本地大模型Agent技能/JingXueQing_C4D_拿来说明.md",
+          "source": "disk",
+          "bytes": 9177,
+          "ts": "2026-10-10 19:30:53",
+          "naming_ok": true
+        }
+      ],
+      "issues": [],
+      "sources": [
+        "disk"
+      ],
+      "first_ts": null,
+      "last_ts": "2026-10-10 19:30:53"
+    },
+    {
+      "id": "submission:wxid_jxq2024:C5",
+      "student": "wxid_jxq2024",
+      "nickname": "景雪晴",
+      "major": "工商管理",
+      "challenge": "C5",
+      "challenge_name": "GitHub Repository",
+      "required": [
+        "deliverable",
+        "ailog"
+      ],
+      "kinds": [
+        "ailog",
+        "deliverable",
+        "notes"
+      ],
+      "missing": [],
+      "completeness": 1.0,
+      "status": "accepted",
+      "artifact_count": 7,
+      "artifacts": [
+        {
+          "id": "artifact:7d336e1f63",
+          "kind": "ailog",
+          "file": "C5-交付_JingXueQing_sias-local-map-agent/sias-local-map-agent/submission/JingXueQing_C5_AI日志.md",
+          "source": "disk",
+          "bytes": 1299,
+          "ts": "2026-11-01 17:38:41",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:3c98238a74",
+          "kind": "ailog",
+          "file": "C5-交付_JingXueQing_sias-local-map-agent/submission/JingXueQing_C5_AI日志.md",
+          "source": "disk",
+          "bytes": 1299,
+          "ts": "2026-11-01 17:38:08",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:bb20dc0596",
+          "kind": "deliverable",
+          "file": "C5-交付_JingXueQing_sias-local-map-agent/README_提交说明.md",
+          "source": "disk",
+          "bytes": 6741,
+          "ts": "2026-11-01 17:39:17",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:105f6900ef",
+          "kind": "deliverable",
+          "file": "C5-交付_JingXueQing_sias-local-map-agent/sias-local-map-agent/submission/JingXueQing_C5_repo链接.md",
+          "source": "disk",
+          "bytes": 1799,
+          "ts": "2026-11-01 17:38:41",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:6390a02b99",
+          "kind": "deliverable",
+          "file": "C5-交付_JingXueQing_sias-local-map-agent/submission/JingXueQing_C5_repo链接.md",
+          "source": "disk",
+          "bytes": 1799,
+          "ts": "2026-11-01 17:38:08",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:05affce4b8",
+          "kind": "notes",
+          "file": "C5-交付_JingXueQing_sias-local-map-agent/sias-local-map-agent/submission/JingXueQing_C5_拿来说明.md",
+          "source": "disk",
+          "bytes": 1518,
+          "ts": "2026-11-01 17:38:41",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:39f3f47aa8",
+          "kind": "notes",
+          "file": "C5-交付_JingXueQing_sias-local-map-agent/submission/JingXueQing_C5_拿来说明.md",
+          "source": "disk",
+          "bytes": 1518,
+          "ts": "2026-11-01 17:38:08",
+          "naming_ok": true
+        }
+      ],
+      "issues": [],
+      "sources": [
+        "disk"
+      ],
+      "first_ts": null,
+      "last_ts": "2026-11-01 17:39:17"
+    },
+    {
+      "id": "submission:wxid_jxq2024:C5A",
+      "student": "wxid_jxq2024",
+      "nickname": "景雪晴",
+      "major": "工商管理",
+      "challenge": "C5A",
+      "challenge_name": "GitHub 入门与仓库理解",
+      "required": [
+        "deliverable",
+        "ailog"
+      ],
+      "kinds": [
+        "aar",
+        "ailog",
+        "deliverable"
+      ],
+      "missing": [],
+      "completeness": 1.0,
+      "status": "accepted",
+      "artifact_count": 26,
+      "artifacts": [
+        {
+          "id": "artifact:c164d42c67",
+          "kind": "aar",
+          "file": "C5A-交付_JingXueQing_neoskills仓库分析/JingXueQing_C5A_AAR.md",
+          "source": "disk",
+          "bytes": 10375,
+          "ts": "2026-11-01 20:11:07",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:b67dc6f463",
+          "kind": "ailog",
+          "file": "C5A-交付_JingXueQing_neoskills仓库分析/JingXueQing_C5A_AI日志.md",
+          "source": "disk",
+          "bytes": 14333,
+          "ts": "2026-11-01 19:12:04",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:92138aae98",
+          "kind": "deliverable",
+          "file": "C5A-交付_JingXueQing_neoskills仓库分析/JingXueQing_C5A_GitHub账号.txt",
+          "source": "disk",
+          "bytes": 1753,
+          "ts": "2026-11-01 18:31:45",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:61284f2f93",
+          "kind": "deliverable",
+          "file": "C5A-交付_JingXueQing_neoskills仓库分析/JingXueQing_C5A_screenshots/01_clone.png",
+          "source": "disk",
+          "bytes": 69270,
+          "ts": "2026-11-01 20:10:45",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:28ea7b0dce",
+          "kind": "deliverable",
+          "file": "C5A-交付_JingXueQing_neoskills仓库分析/JingXueQing_C5A_screenshots/02_pytest_172_passed.png",
+          "source": "disk",
+          "bytes": 39476,
+          "ts": "2026-11-01 20:10:46",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:f87b446426",
+          "kind": "deliverable",
+          "file": "C5A-交付_JingXueQing_neoskills仓库分析/JingXueQing_C5A_screenshots/03_cli_help.png",
+          "source": "disk",
+          "bytes": 87940,
+          "ts": "2026-11-01 20:10:46",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:d4746c9785",
+          "kind": "deliverable",
+          "file": "C5A-交付_JingXueQing_neoskills仓库分析/JingXueQing_C5A_screenshots/04_ontology_init_load_validate.png",
+          "source": "disk",
+          "bytes": 40233,
+          "ts": "2026-11-01 20:10:46",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:c7976d8817",
+          "kind": "deliverable",
+          "file": "C5A-交付_JingXueQing_neoskills仓库分析/JingXueQing_C5A_screenshots/05_repro_belongs_to_error.png",
+          "source": "disk",
+          "bytes": 89317,
+          "ts": "2026-11-01 20:10:47",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:40ab00b5ed",
+          "kind": "deliverable",
+          "file": "C5A-交付_JingXueQing_neoskills仓库分析/JingXueQing_C5A_screenshots/06_doctor_ruff.png",
+          "source": "disk",
+          "bytes": 35919,
+          "ts": "2026-11-01 20:10:47",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:9b95c9c74e",
+          "kind": "deliverable",
+          "file": "C5A-交付_JingXueQing_neoskills仓库分析/JingXueQing_C5A_screenshots/07_branch_and_status.png",
+          "source": "disk",
+          "bytes": 34115,
+          "ts": "2026-11-01 20:10:47",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:bed11762bc",
+          "kind": "deliverable",
+          "file": "C5A-交付_JingXueQing_neoskills仓库分析/JingXueQing_C5A_screenshots/08_commit_history.png",
+          "source": "disk",
+          "bytes": 63488,
+          "ts": "2026-11-01 20:10:48",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:2f91703447",
+          "kind": "deliverable",
+          "file": "C5A-交付_JingXueQing_neoskills仓库分析/JingXueQing_C5A_screenshots/09_diff_stat.png",
+          "source": "disk",
+          "bytes": 63358,
+          "ts": "2026-11-01 20:10:48",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:b5109b6e7b",
+          "kind": "deliverable",
+          "file": "C5A-交付_JingXueQing_neoskills仓库分析/JingXueQing_C5A_screenshots/10_regression_after_change.png",
+          "source": "disk",
+          "bytes": 45654,
+          "ts": "2026-11-01 20:10:48",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:e01f913e18",
+          "kind": "deliverable",
+          "file": "C5A-交付_JingXueQing_neoskills仓库分析/JingXueQing_C5A_screenshots/11_github_push_and_pr.png",
+          "source": "disk",
+          "bytes": 95291,
+          "ts": "2026-11-01 20:10:49",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:8bd635cba5",
+          "kind": "deliverable",
+          "file": "C5A-交付_JingXueQing_neoskills仓库分析/JingXueQing_C5A_screenshots/12_web_profile_home.png",
+          "source": "disk",
+          "bytes": 235413,
+          "ts": "2026-11-01 17:39:18",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:1f5bacf9ae",
+          "kind": "deliverable",
+          "file": "C5A-交付_JingXueQing_neoskills仓库分析/JingXueQing_C5A_screenshots/13_web_my_repo_readme.png",
+          "source": "disk",
+          "bytes": 254325,
+          "ts": "2026-11-01 17:47:15",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:cb0fb4afe6",
+          "kind": "deliverable",
+          "file": "C5A-交付_JingXueQing_neoskills仓库分析/JingXueQing_C5A_screenshots/14_web_fork_neoskills.png",
+          "source": "disk",
+          "bytes": 215777,
+          "ts": "2026-11-01 17:48:48",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:d011932ee7",
+          "kind": "deliverable",
+          "file": "C5A-交付_JingXueQing_neoskills仓库分析/JingXueQing_C5A_screenshots/15_web_pr_overview.png",
+          "source": "disk",
+          "bytes": 305859,
+          "ts": "2026-11-01 18:06:33",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:7126a7b3a2",
+          "kind": "deliverable",
+          "file": "C5A-交付_JingXueQing_neoskills仓库分析/JingXueQing_C5A_screenshots/16_web_pr_files_changed.png",
+          "source": "disk",
+          "bytes": 312327,
+          "ts": "2026-11-01 18:52:34",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:ee617a5854",
+          "kind": "deliverable",
+          "file": "C5A-交付_JingXueQing_neoskills仓库分析/JingXueQing_C5A_screenshots/17_web_branch_commits.png",
+          "source": "disk",
+          "bytes": 162744,
+          "ts": "2026-11-01 18:43:06",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:eef32578ac",
+          "kind": "deliverable",
+          "file": "C5A-交付_JingXueQing_neoskills仓库分析/JingXueQing_C5A_screenshots/README.md",
+          "source": "disk",
+          "bytes": 3938,
+          "ts": "2026-11-01 20:11:00",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:a234ea23e7",
+          "kind": "deliverable",
+          "file": "C5A-交付_JingXueQing_neoskills仓库分析/JingXueQing_C5A_仓库分析.md",
+          "source": "disk",
+          "bytes": 10555,
+          "ts": "2026-10-31 22:33:45",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:9d26272924",
+          "kind": "deliverable",
+          "file": "C5A-交付_JingXueQing_neoskills仓库分析/JingXueQing_C5A_深度分析.md",
+          "source": "disk",
+          "bytes": 21951,
+          "ts": "2026-10-31 22:34:23",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:3946c879ff",
+          "kind": "deliverable",
+          "file": "C5A-交付_JingXueQing_neoskills仓库分析/README_提交说明.md",
+          "source": "disk",
+          "bytes": 8169,
+          "ts": "2026-11-01 20:10:53",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:7de90e9b8a",
+          "kind": "deliverable",
+          "file": "C5A-交付_JingXueQing_neoskills仓库分析/contribution/JingXueQing_C5A_PR描述.md",
+          "source": "disk",
+          "bytes": 3370,
+          "ts": "2026-10-31 22:34:57",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:9ddd9cb10e",
+          "kind": "deliverable",
+          "file": "C5A-交付_JingXueQing_neoskills仓库分析/contribution/JingXueQing_C5A_完整改动.diff",
+          "source": "disk",
+          "bytes": 10927,
+          "ts": "2026-10-31 22:29:26",
+          "naming_ok": true
+        }
+      ],
+      "issues": [],
+      "sources": [
+        "disk"
+      ],
+      "first_ts": null,
+      "last_ts": "2026-11-01 20:11:07"
+    },
+    {
+      "id": "submission:wxid_jxq2024:C6",
+      "student": "wxid_jxq2024",
+      "nickname": "景雪晴",
+      "major": "工商管理",
+      "challenge": "C6",
+      "challenge_name": "Web Application",
+      "required": [
+        "deliverable",
+        "ailog"
+      ],
+      "kinds": [
+        "aar",
+        "ailog",
+        "deliverable",
+        "demo",
+        "notes"
+      ],
+      "missing": [],
+      "completeness": 1.0,
+      "status": "accepted",
+      "artifact_count": 8,
+      "artifacts": [
+        {
+          "id": "artifact:bbca7726cb",
+          "kind": "aar",
+          "file": "C6-交付_JingXueQing_公众号创作台/JingXueQing_C6_AAR.md",
+          "source": "disk",
+          "bytes": 11015,
+          "ts": "2026-11-02 19:30:32",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:41a9b7c4fa",
+          "kind": "ailog",
+          "file": "C6-交付_JingXueQing_公众号创作台/JingXueQing_C6_AI日志.md",
+          "source": "disk",
+          "bytes": 21646,
+          "ts": "2026-11-02 18:25:14",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:9bb90f1920",
+          "kind": "deliverable",
+          "file": "C6-交付_JingXueQing_公众号创作台/JingXueQing_C6_app链接.md",
+          "source": "disk",
+          "bytes": 4906,
+          "ts": "2026-11-02 18:28:08",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:da32f8d82f",
+          "kind": "deliverable",
+          "file": "C6-交付_JingXueQing_公众号创作台/JingXueQing_C6_repo链接.md",
+          "source": "disk",
+          "bytes": 7008,
+          "ts": "2026-11-02 18:25:25",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:fd69963ff9",
+          "kind": "deliverable",
+          "file": "C6-交付_JingXueQing_公众号创作台/JingXueQing_C6_源码.bundle",
+          "source": "disk",
+          "bytes": 90641,
+          "ts": "2026-11-02 18:24:00",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:1972053d68",
+          "kind": "deliverable",
+          "file": "C6-交付_JingXueQing_公众号创作台/README_提交说明.md",
+          "source": "disk",
+          "bytes": 9638,
+          "ts": "2026-11-02 18:24:43",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:75f224b468",
+          "kind": "demo",
+          "file": "C6-交付_JingXueQing_公众号创作台/JingXueQing_C6_demo.mp4",
+          "source": "disk",
+          "bytes": 996824,
+          "ts": "2026-11-01 20:33:22",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:c70ef1846f",
+          "kind": "notes",
+          "file": "C6-交付_JingXueQing_公众号创作台/JingXueQing_C6_拿来说明.md",
+          "source": "disk",
+          "bytes": 4735,
+          "ts": "2026-11-02 09:48:32",
+          "naming_ok": true
+        }
+      ],
+      "issues": [],
+      "sources": [
+        "disk"
+      ],
+      "first_ts": null,
+      "last_ts": "2026-11-02 19:30:32"
+    },
+    {
+      "id": "submission:wxid_jxq2024:C6A",
+      "student": "wxid_jxq2024",
+      "nickname": "景雪晴",
+      "major": "工商管理",
+      "challenge": "C6A",
+      "challenge_name": "提交数据仪表盘",
+      "required": [
+        "deliverable",
+        "ailog"
+      ],
+      "kinds": [
+        "aar",
+        "ailog",
+        "deliverable",
+        "demo",
+        "notes"
+      ],
+      "missing": [],
+      "completeness": 1.0,
+      "status": "accepted",
+      "artifact_count": 34,
+      "artifacts": [
+        {
+          "id": "artifact:832e18b7ec",
+          "kind": "aar",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_AAR.md",
+          "source": "disk",
+          "bytes": 8129,
+          "ts": "2026-11-02 21:57:44",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:2a12250f69",
+          "kind": "ailog",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_AI日志.md",
+          "source": "disk",
+          "bytes": 13895,
+          "ts": "2026-11-02 20:39:38",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:ccc4e3e2ff",
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_pipeline/config.json",
+          "source": "disk",
+          "bytes": 3074,
+          "ts": "2026-11-02 20:39:38",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:ae89708bdb",
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_pipeline/digest.py",
+          "source": "disk",
+          "bytes": 4008,
+          "ts": "2026-11-02 20:39:38",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:02eb7c1003",
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_pipeline/make_excel.py",
+          "source": "disk",
+          "bytes": 16041,
+          "ts": "2026-11-02 20:39:38",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:a5734489f3",
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_pipeline/make_site.py",
+          "source": "disk",
+          "bytes": 1879,
+          "ts": "2026-11-02 20:39:38",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:37c69ac88d",
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_pipeline/pipeline.py",
+          "source": "disk",
+          "bytes": 28730,
+          "ts": "2026-11-02 20:39:38",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:2231e9ac1f",
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_pipeline/run.py",
+          "source": "disk",
+          "bytes": 4150,
+          "ts": "2026-11-02 20:39:38",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:6caa983e8e",
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_pipeline/spec_extract.py",
+          "source": "disk",
+          "bytes": 5752,
+          "ts": "2026-11-02 20:39:38",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:a27b986aaf",
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_pipeline/specs.py",
+          "source": "disk",
+          "bytes": 14588,
+          "ts": "2026-11-02 20:39:38",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:0796c56395",
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_report.xlsx",
+          "source": "disk",
+          "bytes": 21007,
+          "ts": "2026-11-02 19:39:53",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:d94d8d021b",
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_screenshots/01_总览.png",
+          "source": "disk",
+          "bytes": 862208,
+          "ts": "2026-11-02 19:54:09",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:18903886e4",
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_screenshots/02_按学生.png",
+          "source": "disk",
+          "bytes": 477981,
+          "ts": "2026-11-02 19:54:20",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:00d7b79b77",
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_screenshots/03_按挑战.png",
+          "source": "disk",
+          "bytes": 597865,
+          "ts": "2026-11-02 19:54:22",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:279a23ef49",
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_screenshots/04_时间线.png",
+          "source": "disk",
+          "bytes": 468923,
+          "ts": "2026-11-02 19:54:24",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:9dbe4c0f4c",
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_screenshots/05_缺失项.png",
+          "source": "disk",
+          "bytes": 243081,
+          "ts": "2026-11-02 19:54:36",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:bfde2136ca",
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_screenshots/06_方法与口径.png",
+          "source": "disk",
+          "bytes": 911604,
+          "ts": "2026-11-02 19:54:48",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:69acf1789a",
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_screenshots/07_记录详情.png",
+          "source": "disk",
+          "bytes": 848187,
+          "ts": "2026-11-02 20:05:05",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:1a33c46d30",
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_仪表盘/data.json",
+          "source": "disk",
+          "bytes": 226773,
+          "ts": "2026-11-02 19:39:54",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:7a69ad860a",
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_仪表盘/index.html",
+          "source": "disk",
+          "bytes": 150680,
+          "ts": "2026-11-02 19:39:54",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:65808d0fde",
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_教学说明.md",
+          "source": "disk",
+          "bytes": 7468,
+          "ts": "2026-11-02 20:39:38",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:cde9dba801",
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_数据/challenge_stats.csv",
+          "source": "disk",
+          "bytes": 1290,
+          "ts": "2026-11-02 19:39:53",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:fb5b4e406d",
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_数据/files.csv",
+          "source": "disk",
+          "bytes": 33113,
+          "ts": "2026-11-02 19:39:53",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:ab2caad6de",
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_数据/matrix.csv",
+          "source": "disk",
+          "bytes": 425,
+          "ts": "2026-11-02 19:39:53",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:46520f3455",
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_数据/records.csv",
+          "source": "disk",
+          "bytes": 1916,
+          "ts": "2026-11-02 19:39:53",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:6564566558",
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_数据/specs.json",
+          "source": "disk",
+          "bytes": 48728,
+          "ts": "2026-11-02 19:39:53",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:e4a4ead376",
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_数据/specs_extracted.json",
+          "source": "disk",
+          "bytes": 30402,
+          "ts": "2026-11-01 18:37:19",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:c3934e6fc8",
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_数据/submissions.json",
+          "source": "disk",
+          "bytes": 226773,
+          "ts": "2026-11-02 19:39:53",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:d0fb82e94e",
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_数据说明.md",
+          "source": "disk",
+          "bytes": 5641,
+          "ts": "2026-11-02 20:42:18",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:1f8a22dd99",
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_方案设计.md",
+          "source": "disk",
+          "bytes": 15272,
+          "ts": "2026-11-02 20:39:38",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:46ee4c0f30",
+          "kind": "deliverable",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/README_提交说明.md",
+          "source": "disk",
+          "bytes": 7590,
+          "ts": "2026-11-02 20:39:38",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:fd9808510c",
+          "kind": "demo",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_demo/README_demo.md",
+          "source": "disk",
+          "bytes": 890,
+          "ts": "2026-11-02 20:49:46",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:a6b8f7e80e",
+          "kind": "demo",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_demo/demo.html",
+          "source": "disk",
+          "bytes": 5196,
+          "ts": "2026-11-02 20:40:57",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:959962870d",
+          "kind": "notes",
+          "file": "C6A-交付_JingXueQing_提交数据仪表盘/JingXueQing_C6A_拿来说明.md",
+          "source": "disk",
+          "bytes": 5810,
+          "ts": "2026-11-02 20:39:38",
+          "naming_ok": true
+        }
+      ],
+      "issues": [],
+      "sources": [
+        "disk"
+      ],
+      "first_ts": null,
+      "last_ts": "2026-11-02 21:57:44"
+    },
+    {
+      "id": "submission:wxid_jxq2024:C7",
+      "student": "wxid_jxq2024",
+      "nickname": "景雪晴",
+      "major": "工商管理",
+      "challenge": "C7",
+      "challenge_name": "内容传播",
+      "required": [
+        "deliverable",
+        "ailog"
+      ],
+      "kinds": [
+        "aar",
+        "ailog",
+        "deliverable",
+        "notes"
+      ],
+      "missing": [],
+      "completeness": 1.0,
+      "status": "accepted",
+      "artifact_count": 5,
+      "artifacts": [
+        {
+          "id": "artifact:9754676751",
+          "kind": "aar",
+          "file": "C7-交付_JingXueQing_内容传播/JingXueQing_C7_AAR.md",
+          "source": "disk",
+          "bytes": 12618,
+          "ts": "2026-11-02 19:25:54",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:a6edf681ce",
+          "kind": "ailog",
+          "file": "C7-交付_JingXueQing_内容传播/JingXueQing_C7_AI日志.md",
+          "source": "disk",
+          "bytes": 16773,
+          "ts": "2026-11-02 19:25:54",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:7682a5badb",
+          "kind": "deliverable",
+          "file": "C7-交付_JingXueQing_内容传播/JingXueQing_C7_文章链接.md",
+          "source": "disk",
+          "bytes": 3989,
+          "ts": "2026-11-02 19:25:54",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:dd500770ef",
+          "kind": "deliverable",
+          "file": "C7-交付_JingXueQing_内容传播/README_提交说明.md",
+          "source": "disk",
+          "bytes": 8424,
+          "ts": "2026-11-02 19:25:54",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:03d729804b",
+          "kind": "notes",
+          "file": "C7-交付_JingXueQing_内容传播/JingXueQing_C7_拿来说明.md",
+          "source": "disk",
+          "bytes": 6971,
+          "ts": "2026-11-02 18:31:32",
+          "naming_ok": true
+        }
+      ],
+      "issues": [],
+      "sources": [
+        "disk"
+      ],
+      "first_ts": null,
+      "last_ts": "2026-11-02 19:25:54"
+    },
+    {
+      "id": "submission:wxid_jxq2024:C8",
+      "student": "wxid_jxq2024",
+      "nickname": "景雪晴",
+      "major": "工商管理",
+      "challenge": "C8",
+      "challenge_name": "真实项目落地",
+      "required": [
+        "proposal",
+        "demo",
+        "ailog",
+        "notes"
+      ],
+      "kinds": [
+        "ailog",
+        "demo",
+        "notes",
+        "proposal"
+      ],
+      "missing": [],
+      "completeness": 1.0,
+      "status": "accepted",
+      "artifact_count": 4,
+      "artifacts": [
+        {
+          "id": "artifact:65d9fe4f91",
+          "kind": "ailog",
+          "file": "景雪晴_C8_AI日志.md",
+          "source": "wechat",
+          "msg_id": "m00176",
+          "ts": "2026-10-31T19:31:13+08:00",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:58e1ce6e7e",
+          "kind": "demo",
+          "file": "景雪晴_C8_demo.mp4",
+          "source": "wechat",
+          "msg_id": "m00178",
+          "ts": "2026-10-31T19:33:22+08:00",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:26c8fa5fa0",
+          "kind": "notes",
+          "file": "景雪晴_C8_拿来说明.md",
+          "source": "wechat",
+          "msg_id": "m00177",
+          "ts": "2026-10-31T19:32:30+08:00",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:f752f6b4aa",
+          "kind": "proposal",
+          "file": "景雪晴_C8_proposal.md",
+          "source": "wechat",
+          "msg_id": "m00175",
+          "ts": "2026-10-31T19:30:38+08:00",
+          "naming_ok": true
+        }
+      ],
+      "issues": [],
+      "sources": [
+        "wechat"
+      ],
+      "first_ts": "2026-10-31T19:30:38+08:00",
+      "last_ts": "2026-10-31T19:33:22+08:00"
+    },
+    {
+      "id": "submission:wxid_linyz:C5",
+      "student": "wxid_linyz",
+      "nickname": "林一舟",
+      "major": "计算机科学与技术",
+      "challenge": "C5",
+      "challenge_name": "GitHub Repository",
+      "required": [
+        "deliverable",
+        "ailog"
+      ],
+      "kinds": [
+        "ailog",
+        "deliverable"
+      ],
+      "missing": [],
+      "completeness": 1.0,
+      "status": "accepted",
+      "artifact_count": 2,
+      "artifacts": [
+        {
+          "id": "artifact:4ea4f6ccff",
+          "kind": "ailog",
+          "file": "林一舟_C5_AI日志.md",
+          "source": "wechat",
+          "msg_id": "m00187",
+          "ts": "2026-11-01T11:21:36+08:00",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:339363ee47",
+          "kind": "deliverable",
+          "file": "林一舟_C5_交付物.md",
+          "source": "wechat",
+          "msg_id": "m00186",
+          "ts": "2026-11-01T11:20:12+08:00",
+          "naming_ok": true
+        }
+      ],
+      "issues": [],
+      "sources": [
+        "wechat"
+      ],
+      "first_ts": "2026-11-01T11:20:12+08:00",
+      "last_ts": "2026-11-01T11:21:36+08:00"
+    },
+    {
+      "id": "submission:wxid_linyz:C8",
+      "student": "wxid_linyz",
+      "nickname": "林一舟",
+      "major": "计算机科学与技术",
+      "challenge": "C8",
+      "challenge_name": "真实项目落地",
+      "required": [
+        "proposal",
+        "demo",
+        "ailog",
+        "notes"
+      ],
+      "kinds": [
+        "ailog",
+        "demo",
+        "notes",
+        "proposal"
+      ],
+      "missing": [],
+      "completeness": 1.0,
+      "status": "accepted",
+      "artifact_count": 4,
+      "artifacts": [
+        {
+          "id": "artifact:6a560f51fb",
+          "kind": "ailog",
+          "file": "林一舟_C8_AI日志.md",
+          "source": "wechat",
+          "msg_id": "m00127",
+          "ts": "2026-10-28T11:01:46+08:00",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:b2a58b49b3",
+          "kind": "demo",
+          "file": "林一舟_C8_demo.zip",
+          "source": "wechat",
+          "msg_id": "m00129",
+          "ts": "2026-10-28T11:03:02+08:00",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:1ea2954185",
+          "kind": "notes",
+          "file": "林一舟_C8_拿来说明.md",
+          "source": "wechat",
+          "msg_id": "m00128",
+          "ts": "2026-10-28T11:02:35+08:00",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:4ce52dc77a",
+          "kind": "proposal",
+          "file": "林一舟_C8_proposal.md",
+          "source": "wechat",
+          "msg_id": "m00126",
+          "ts": "2026-10-28T11:00:20+08:00",
+          "naming_ok": true
+        }
+      ],
+      "issues": [],
+      "sources": [
+        "wechat"
+      ],
+      "first_ts": "2026-10-28T11:00:20+08:00",
+      "last_ts": "2026-10-28T11:03:02+08:00"
+    },
+    {
+      "id": "submission:wxid_majl:C1",
+      "student": "wxid_majl",
+      "nickname": "马嘉乐",
+      "major": "软件工程",
+      "challenge": "C1",
+      "challenge_name": "课程资料获取与翻译",
+      "required": [
+        "deliverable",
+        "ailog"
+      ],
+      "kinds": [
+        "deliverable"
+      ],
+      "missing": [
+        "ailog"
+      ],
+      "completeness": 0.5,
+      "status": "needs_revision",
+      "artifact_count": 1,
+      "artifacts": [
+        {
+          "id": "artifact:c9052be688",
+          "kind": "deliverable",
+          "file": "马嘉乐_C1_交付物.md",
+          "source": "wechat",
+          "msg_id": "m00025",
+          "ts": "2026-10-22T11:02:07+08:00",
+          "naming_ok": true
+        }
+      ],
+      "issues": [],
+      "sources": [
+        "wechat"
+      ],
+      "first_ts": "2026-10-22T11:02:07+08:00",
+      "last_ts": "2026-10-22T11:02:07+08:00"
+    },
+    {
+      "id": "submission:wxid_majl:C2",
+      "student": "wxid_majl",
+      "nickname": "马嘉乐",
+      "major": "软件工程",
+      "challenge": "C2",
+      "challenge_name": "AI for Math 论文",
+      "required": [
+        "deliverable",
+        "ailog",
+        "notes"
+      ],
+      "kinds": [
+        "ailog",
+        "deliverable"
+      ],
+      "missing": [
+        "notes"
+      ],
+      "completeness": 0.667,
+      "status": "needs_revision",
+      "artifact_count": 2,
+      "artifacts": [
+        {
+          "id": "artifact:f47f748ea4",
+          "kind": "ailog",
+          "file": "马嘉乐_C2_AI日志.md",
+          "source": "wechat",
+          "msg_id": "m00111",
+          "ts": "2026-10-27T11:01:35+08:00",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:84bde1dfa5",
+          "kind": "deliverable",
+          "file": "马嘉乐_C2_交付物.pdf",
+          "source": "wechat",
+          "msg_id": "m00110",
+          "ts": "2026-10-27T11:00:36+08:00",
+          "naming_ok": true
+        }
+      ],
+      "issues": [],
+      "sources": [
+        "wechat"
+      ],
+      "first_ts": "2026-10-27T11:00:36+08:00",
+      "last_ts": "2026-10-27T11:01:35+08:00"
+    },
+    {
+      "id": "submission:wxid_majl:C4A",
+      "student": "wxid_majl",
+      "nickname": "马嘉乐",
+      "major": "软件工程",
+      "challenge": "C4A",
+      "challenge_name": "技能提交自动评审",
+      "required": [
+        "deliverable",
+        "ailog"
+      ],
+      "kinds": [
+        "ailog",
+        "deliverable"
+      ],
+      "missing": [],
+      "completeness": 1.0,
+      "status": "accepted",
+      "artifact_count": 2,
+      "artifacts": [
+        {
+          "id": "artifact:a2c2974267",
+          "kind": "ailog",
+          "file": "马嘉乐_C4A_AI日志.md",
+          "source": "wechat",
+          "msg_id": "m00147",
+          "ts": "2026-10-29T19:31:28+08:00",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:85c858775b",
+          "kind": "deliverable",
+          "file": "马嘉乐_C4A_交付物.md",
+          "source": "wechat",
+          "msg_id": "m00146",
+          "ts": "2026-10-29T19:30:17+08:00",
+          "naming_ok": true
+        }
+      ],
+      "issues": [],
+      "sources": [
+        "wechat"
+      ],
+      "first_ts": "2026-10-29T19:30:17+08:00",
+      "last_ts": "2026-10-29T19:31:28+08:00"
+    },
+    {
+      "id": "submission:wxid_pengxy:C7",
+      "student": "wxid_pengxy",
+      "nickname": "彭心语",
+      "major": "新闻传播",
+      "challenge": "C7",
+      "challenge_name": "内容传播",
+      "required": [
+        "deliverable",
+        "ailog"
+      ],
+      "kinds": [
+        "ailog",
+        "deliverable"
+      ],
+      "missing": [],
+      "completeness": 1.0,
+      "status": "accepted",
+      "artifact_count": 2,
+      "artifacts": [
+        {
+          "id": "artifact:8486758816",
+          "kind": "ailog",
+          "file": "彭心语_C7_AI日志.md",
+          "source": "wechat",
+          "msg_id": "m00081",
+          "ts": "2026-10-25T15:11:49+08:00",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:0b607ccec1",
+          "kind": "deliverable",
+          "file": "彭心语_C7_交付物.md",
+          "source": "wechat",
+          "msg_id": "m00080",
+          "ts": "2026-10-25T15:10:34+08:00",
+          "naming_ok": true
+        }
+      ],
+      "issues": [],
+      "sources": [
+        "wechat"
+      ],
+      "first_ts": "2026-10-25T15:10:34+08:00",
+      "last_ts": "2026-10-25T15:11:49+08:00"
+    },
+    {
+      "id": "submission:wxid_pengxy:C8",
+      "student": "wxid_pengxy",
+      "nickname": "彭心语",
+      "major": "新闻传播",
+      "challenge": "C8",
+      "challenge_name": "真实项目落地",
+      "required": [
+        "proposal",
+        "demo",
+        "ailog",
+        "notes"
+      ],
+      "kinds": [
+        "ailog",
+        "notes",
+        "proposal"
+      ],
+      "missing": [
+        "demo"
+      ],
+      "completeness": 0.75,
+      "status": "needs_revision",
+      "artifact_count": 3,
+      "artifacts": [
+        {
+          "id": "artifact:4daeb0294c",
+          "kind": "ailog",
+          "file": "彭心语_C8_AI日志.md",
+          "source": "wechat",
+          "msg_id": "m00199",
+          "ts": "2026-11-02T10:21:49+08:00",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:cd6433f736",
+          "kind": "notes",
+          "file": "彭心语_C8_拿来说明.md",
+          "source": "wechat",
+          "msg_id": "m00200",
+          "ts": "2026-11-02T10:22:11+08:00",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:8152172104",
+          "kind": "proposal",
+          "file": "彭心语_C8_proposal.md",
+          "source": "wechat",
+          "msg_id": "m00198",
+          "ts": "2026-11-02T10:20:09+08:00",
+          "naming_ok": true
+        }
+      ],
+      "issues": [],
+      "sources": [
+        "wechat"
+      ],
+      "first_ts": "2026-11-02T10:20:09+08:00",
+      "last_ts": "2026-11-02T10:22:11+08:00"
+    },
+    {
+      "id": "submission:wxid_sunl:C4D",
+      "student": "wxid_sunl",
+      "nickname": "孙乐",
+      "major": "汉语言文学",
+      "challenge": "C4D",
+      "challenge_name": "本地大模型 Agent 技能",
+      "required": [
+        "deliverable",
+        "ailog"
+      ],
+      "kinds": [
+        "ailog",
+        "deliverable"
+      ],
+      "missing": [],
+      "completeness": 1.0,
+      "status": "accepted",
+      "artifact_count": 2,
+      "artifacts": [
+        {
+          "id": "artifact:5d41f3e0dd",
+          "kind": "ailog",
+          "file": "孙乐_C4D_AI日志.md",
+          "source": "wechat",
+          "msg_id": "m00089",
+          "ts": "2026-10-26T10:01:15+08:00",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:60d7d256a3",
+          "kind": "deliverable",
+          "file": "孙乐_C4D_交付物.md",
+          "source": "wechat",
+          "msg_id": "m00088",
+          "ts": "2026-10-26T10:00:40+08:00",
+          "naming_ok": true
+        }
+      ],
+      "issues": [],
+      "sources": [
+        "wechat"
+      ],
+      "first_ts": "2026-10-26T10:00:40+08:00",
+      "last_ts": "2026-10-26T10:01:15+08:00"
+    },
+    {
+      "id": "submission:wxid_sunl:C6A",
+      "student": "wxid_sunl",
+      "nickname": "孙乐",
+      "major": "汉语言文学",
+      "challenge": "C6A",
+      "challenge_name": "提交数据仪表盘",
+      "required": [
+        "deliverable",
+        "ailog"
+      ],
+      "kinds": [
+        "ailog",
+        "deliverable"
+      ],
+      "missing": [],
+      "completeness": 1.0,
+      "status": "accepted",
+      "artifact_count": 2,
+      "artifacts": [
+        {
+          "id": "artifact:243e83ced8",
+          "kind": "ailog",
+          "file": "孙乐_C6A_AI日志.md",
+          "source": "wechat",
+          "msg_id": "m00211",
+          "ts": "2026-11-03T09:21:01+08:00",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:cfba55935f",
+          "kind": "deliverable",
+          "file": "孙乐_C6A_交付物.md",
+          "source": "wechat",
+          "msg_id": "m00210",
+          "ts": "2026-11-03T09:20:11+08:00",
+          "naming_ok": true
+        }
+      ],
+      "issues": [],
+      "sources": [
+        "wechat"
+      ],
+      "first_ts": "2026-11-03T09:20:11+08:00",
+      "last_ts": "2026-11-03T09:21:01+08:00"
+    },
+    {
+      "id": "submission:wxid_tangsh:C4B",
+      "student": "wxid_tangsh",
+      "nickname": "唐思涵",
+      "major": "工商管理",
+      "challenge": "C4B",
+      "challenge_name": "公众号文章生成技能",
+      "required": [
+        "deliverable",
+        "ailog"
+      ],
+      "kinds": [
+        "ailog",
+        "deliverable"
+      ],
+      "missing": [],
+      "completeness": 1.0,
+      "status": "accepted",
+      "artifact_count": 2,
+      "artifacts": [
+        {
+          "id": "artifact:d1213f3dd1",
+          "kind": "ailog",
+          "file": "唐思涵_C4B_AI日志.md",
+          "source": "wechat",
+          "msg_id": "m00117",
+          "ts": "2026-10-27T19:41:38+08:00",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:68fd151888",
+          "kind": "deliverable",
+          "file": "唐思涵_C4B_交付物.md",
+          "source": "wechat",
+          "msg_id": "m00116",
+          "ts": "2026-10-27T19:40:46+08:00",
+          "naming_ok": true
+        }
+      ],
+      "issues": [],
+      "sources": [
+        "wechat"
+      ],
+      "first_ts": "2026-10-27T19:40:46+08:00",
+      "last_ts": "2026-10-27T19:41:38+08:00"
+    },
+    {
+      "id": "submission:wxid_wuht:C4A",
+      "student": "wxid_wuht",
+      "nickname": "吴昊天",
+      "major": "数据科学",
+      "challenge": "C4A",
+      "challenge_name": "技能提交自动评审",
+      "required": [
+        "deliverable",
+        "ailog"
+      ],
+      "kinds": [
+        "ailog",
+        "deliverable",
+        "notes"
+      ],
+      "missing": [],
+      "completeness": 1.0,
+      "status": "accepted",
+      "artifact_count": 3,
+      "artifacts": [
+        {
+          "id": "artifact:5e7fcb21cd",
+          "kind": "ailog",
+          "file": "吴昊天_C4A_AI日志.md",
+          "source": "wechat",
+          "msg_id": "m00059",
+          "ts": "2026-10-24T11:01:12+08:00",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:d2e4038032",
+          "kind": "deliverable",
+          "file": "吴昊天_C4A_交付物.md",
+          "source": "wechat",
+          "msg_id": "m00058",
+          "ts": "2026-10-24T11:00:24+08:00",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:b28f828e21",
+          "kind": "notes",
+          "file": "吴昊天_C4A_拿来说明.md",
+          "source": "wechat",
+          "msg_id": "m00060",
+          "ts": "2026-10-24T11:02:42+08:00",
+          "naming_ok": true
+        }
+      ],
+      "issues": [],
+      "sources": [
+        "wechat"
+      ],
+      "first_ts": "2026-10-24T11:00:24+08:00",
+      "last_ts": "2026-10-24T11:02:42+08:00"
+    },
+    {
+      "id": "submission:wxid_wuht:C6A",
+      "student": "wxid_wuht",
+      "nickname": "吴昊天",
+      "major": "数据科学",
+      "challenge": "C6A",
+      "challenge_name": "提交数据仪表盘",
+      "required": [
+        "deliverable",
+        "ailog"
+      ],
+      "kinds": [
+        "ailog",
+        "deliverable"
+      ],
+      "missing": [],
+      "completeness": 1.0,
+      "status": "accepted",
+      "artifact_count": 2,
+      "artifacts": [
+        {
+          "id": "artifact:ef73e2a294",
+          "kind": "ailog",
+          "file": "吴昊天_C6A_AI日志.md",
+          "source": "wechat",
+          "msg_id": "m00087",
+          "ts": "2026-10-26T09:21:23+08:00",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:f573423f81",
+          "kind": "deliverable",
+          "file": "吴昊天_C6A_交付物.md",
+          "source": "wechat",
+          "msg_id": "m00086",
+          "ts": "2026-10-26T09:20:05+08:00",
+          "naming_ok": true
+        }
+      ],
+      "issues": [],
+      "sources": [
+        "wechat"
+      ],
+      "first_ts": "2026-10-26T09:20:05+08:00",
+      "last_ts": "2026-10-26T09:21:23+08:00"
+    },
+    {
+      "id": "submission:wxid_wuht:C8",
+      "student": "wxid_wuht",
+      "nickname": "吴昊天",
+      "major": "数据科学",
+      "challenge": "C8",
+      "challenge_name": "真实项目落地",
+      "required": [
+        "proposal",
+        "demo",
+        "ailog",
+        "notes"
+      ],
+      "kinds": [
+        "ailog",
+        "demo",
+        "notes",
+        "proposal"
+      ],
+      "missing": [],
+      "completeness": 1.0,
+      "status": "accepted",
+      "artifact_count": 4,
+      "artifacts": [
+        {
+          "id": "artifact:78b8700c9e",
+          "kind": "ailog",
+          "file": "吴昊天_C8_AI日志.md",
+          "source": "wechat",
+          "msg_id": "m00166",
+          "ts": "2026-10-31T09:01:00+08:00",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:40c11e6e79",
+          "kind": "demo",
+          "file": "吴昊天_C8_demo.py",
+          "source": "wechat",
+          "msg_id": "m00168",
+          "ts": "2026-10-31T09:03:20+08:00",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:61ae1789c8",
+          "kind": "notes",
+          "file": "吴昊天_C8_拿来说明.md",
+          "source": "wechat",
+          "msg_id": "m00167",
+          "ts": "2026-10-31T09:02:20+08:00",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:ecded22be7",
+          "kind": "proposal",
+          "file": "吴昊天_C8_proposal.md",
+          "source": "wechat",
+          "msg_id": "m00165",
+          "ts": "2026-10-31T09:00:36+08:00",
+          "naming_ok": true
+        }
+      ],
+      "issues": [],
+      "sources": [
+        "wechat"
+      ],
+      "first_ts": "2026-10-31T09:00:36+08:00",
+      "last_ts": "2026-10-31T09:03:20+08:00"
+    },
+    {
+      "id": "submission:wxid_xufy:C2",
+      "student": "wxid_xufy",
+      "nickname": "徐方雨",
+      "major": "市场营销",
+      "challenge": "C2",
+      "challenge_name": "AI for Math 论文",
+      "required": [
+        "deliverable",
+        "ailog",
+        "notes"
+      ],
+      "kinds": [
+        "ailog",
+        "deliverable"
+      ],
+      "missing": [
+        "notes"
+      ],
+      "completeness": 0.667,
+      "status": "needs_revision",
+      "artifact_count": 2,
+      "artifacts": [
+        {
+          "id": "artifact:8e3e47d0d2",
+          "kind": "ailog",
+          "file": "徐方雨_C2_AI日志.md",
+          "source": "wechat",
+          "msg_id": "m00040",
+          "ts": "2026-10-23T10:16:34+08:00",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:6a3289bd75",
+          "kind": "deliverable",
+          "file": "徐方雨_C2_交付物.pdf",
+          "source": "wechat",
+          "msg_id": "m00039",
+          "ts": "2026-10-23T10:15:31+08:00",
+          "naming_ok": true
+        }
+      ],
+      "issues": [],
+      "sources": [
+        "wechat"
+      ],
+      "first_ts": "2026-10-23T10:15:31+08:00",
+      "last_ts": "2026-10-23T10:16:34+08:00"
+    },
+    {
+      "id": "submission:wxid_xufy:C7",
+      "student": "wxid_xufy",
+      "nickname": "徐方雨",
+      "major": "市场营销",
+      "challenge": "C7",
+      "challenge_name": "内容传播",
+      "required": [
+        "deliverable",
+        "ailog"
+      ],
+      "kinds": [
+        "ailog",
+        "deliverable"
+      ],
+      "missing": [],
+      "completeness": 1.0,
+      "status": "accepted",
+      "artifact_count": 2,
+      "artifacts": [
+        {
+          "id": "artifact:b0c4917ee2",
+          "kind": "ailog",
+          "file": "徐方雨_C7_AI日志.md",
+          "source": "wechat",
+          "msg_id": "m00182",
+          "ts": "2026-11-01T09:11:33+08:00",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:4e082259c3",
+          "kind": "deliverable",
+          "file": "徐方雨_C7_交付物.md",
+          "source": "wechat",
+          "msg_id": "m00181",
+          "ts": "2026-11-01T09:10:42+08:00",
+          "naming_ok": true
+        }
+      ],
+      "issues": [],
+      "sources": [
+        "wechat"
+      ],
+      "first_ts": "2026-11-01T09:10:42+08:00",
+      "last_ts": "2026-11-01T09:11:33+08:00"
+    },
+    {
+      "id": "submission:wxid_zhaomx:C5",
+      "student": "wxid_zhaomx",
+      "nickname": "赵明轩",
+      "major": "软件工程",
+      "challenge": "C5",
+      "challenge_name": "GitHub Repository",
+      "required": [
+        "deliverable",
+        "ailog"
+      ],
+      "kinds": [
+        "ailog",
+        "deliverable"
+      ],
+      "missing": [],
+      "completeness": 1.0,
+      "status": "accepted",
+      "artifact_count": 2,
+      "artifacts": [
+        {
+          "id": "artifact:0c309aceaf",
+          "kind": "ailog",
+          "file": "赵明轩_C5_AI日志.md",
+          "source": "wechat",
+          "msg_id": "m00052",
+          "ts": "2026-10-24T08:51:20+08:00",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:dbdc0c6ff6",
+          "kind": "deliverable",
+          "file": "赵明轩_C5_交付物.md",
+          "source": "wechat",
+          "msg_id": "m00051",
+          "ts": "2026-10-24T08:50:02+08:00",
+          "naming_ok": true
+        }
+      ],
+      "issues": [],
+      "sources": [
+        "wechat"
+      ],
+      "first_ts": "2026-10-24T08:50:02+08:00",
+      "last_ts": "2026-10-24T08:51:20+08:00"
+    },
+    {
+      "id": "submission:wxid_zhaomx:C8",
+      "student": "wxid_zhaomx",
+      "nickname": "赵明轩",
+      "major": "软件工程",
+      "challenge": "C8",
+      "challenge_name": "真实项目落地",
+      "required": [
+        "proposal",
+        "demo",
+        "ailog",
+        "notes"
+      ],
+      "kinds": [
+        "ailog",
+        "proposal"
+      ],
+      "missing": [
+        "demo",
+        "notes"
+      ],
+      "completeness": 0.5,
+      "status": "needs_revision",
+      "artifact_count": 2,
+      "artifacts": [
+        {
+          "id": "artifact:004572a6a0",
+          "kind": "ailog",
+          "file": "赵明轩_C8_AI日志.md",
+          "source": "wechat",
+          "msg_id": "m00170",
+          "ts": "2026-10-31T10:01:06+08:00",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:d8a7165baa",
+          "kind": "proposal",
+          "file": "赵明轩_C8_proposal.md",
+          "source": "wechat",
+          "msg_id": "m00169",
+          "ts": "2026-10-31T10:00:12+08:00",
+          "naming_ok": true
+        }
+      ],
+      "issues": [],
+      "sources": [
+        "wechat"
+      ],
+      "first_ts": "2026-10-31T10:00:12+08:00",
+      "last_ts": "2026-10-31T10:01:06+08:00"
+    },
+    {
+      "id": "submission:wxid_zhoujy:C4D",
+      "student": "wxid_zhoujy",
+      "nickname": "周嘉懿",
+      "major": "电子信息工程",
+      "challenge": "C4D",
+      "challenge_name": "本地大模型 Agent 技能",
+      "required": [
+        "deliverable",
+        "ailog"
+      ],
+      "kinds": [
+        "ailog",
+        "deliverable"
+      ],
+      "missing": [],
+      "completeness": 1.0,
+      "status": "accepted",
+      "artifact_count": 2,
+      "artifacts": [
+        {
+          "id": "artifact:d32aedcf40",
+          "kind": "ailog",
+          "file": "周嘉懿_C4D_AI日志.md",
+          "source": "wechat",
+          "msg_id": "m00218",
+          "ts": "2026-11-03T19:30:03+08:00",
+          "naming_ok": true
+        },
+        {
+          "id": "artifact:4ef9f3f315",
+          "kind": "deliverable",
+          "file": "周嘉懿_C4D_交付物.md",
+          "source": "wechat",
+          "msg_id": "m00095",
+          "ts": "2026-10-26T14:00:43+08:00",
+          "naming_ok": true
+        }
+      ],
+      "issues": [],
+      "sources": [
+        "wechat"
+      ],
+      "first_ts": "2026-10-26T14:00:43+08:00",
+      "last_ts": "2026-11-03T19:30:03+08:00"
+    }
+  ],
+  "matrix": {
+    "wxid_jxq2024": {
+      "C1": "accepted",
+      "C2": "accepted",
+      "C2A": "accepted",
+      "C2G": "accepted",
+      "C4": "accepted",
+      "C4A": "accepted",
+      "C4B": "accepted",
+      "C4C": "accepted",
+      "C4D": "accepted",
+      "C5": "accepted",
+      "C5A": "accepted",
+      "C6": "accepted",
+      "C6A": "accepted",
+      "C7": "accepted",
+      "C8": "accepted"
+    },
+    "wxid_linyz": {
+      "C5": "accepted",
+      "C8": "accepted"
+    },
+    "wxid_zhaomx": {
+      "C5": "accepted",
+      "C8": "needs_revision"
+    },
+    "wxid_chenxy": {
+      "C6": "accepted",
+      "C7": "accepted"
+    },
+    "wxid_wuht": {
+      "C4A": "accepted",
+      "C6A": "accepted",
+      "C8": "accepted"
+    },
+    "wxid_sunl": {
+      "C4D": "accepted",
+      "C6A": "accepted"
+    },
+    "wxid_zhoujy": {
+      "C4D": "accepted"
+    },
+    "wxid_xufy": {
+      "C2": "needs_revision",
+      "C7": "accepted"
+    },
+    "wxid_hech": {
+      "C5": "accepted",
+      "C8": "accepted"
+    },
+    "wxid_guoyq": {
+      "C1": "accepted",
+      "C4A": "reviewing"
+    },
+    "wxid_majl": {
+      "C1": "needs_revision",
+      "C2": "needs_revision",
+      "C4A": "accepted"
+    },
+    "wxid_luoxr": {},
+    "wxid_gaoyf": {
+      "C6A": "accepted"
+    },
+    "wxid_tangsh": {
+      "C4B": "accepted"
+    },
+    "wxid_dengzl": {
+      "C2": "needs_revision",
+      "C5": "accepted"
+    },
+    "wxid_fengyr": {
+      "C3": "accepted",
+      "C8": "needs_revision"
+    },
+    "wxid_pengxy": {
+      "C7": "accepted",
+      "C8": "needs_revision"
+    },
+    "wxid_qiuzw": {},
+    "wxid_xiemq": {},
+    "wxid_yanghs": {}
+  },
+  "by_challenge": {
+    "C1": {
+      "name": "课程资料获取与翻译",
+      "zone": "Course Material Acquisition & Translation",
+      "submitted": 3,
+      "complete": 2,
+      "expected": 20,
+      "rate_all": 0.15,
+      "due": null
+    },
+    "C2": {
+      "name": "AI for Math 论文",
+      "zone": "AI4Math Paper",
+      "submitted": 4,
+      "complete": 1,
+      "expected": 20,
+      "rate_all": 0.2,
+      "due": null
+    },
+    "C2A": {
+      "name": "衡量 AGI 的认知能力",
+      "zone": "Measuring AGI Cognitive Capability",
+      "submitted": 1,
+      "complete": 1,
+      "expected": 20,
+      "rate_all": 0.05,
+      "due": null
+    },
+    "C2G": {
+      "name": "参数高尔夫 · 极限约束下的语言模型训练",
+      "zone": "Parameter Golf",
+      "submitted": 1,
+      "complete": 1,
+      "expected": 20,
+      "rate_all": 0.05,
+      "due": null
+    },
+    "C3": {
+      "name": "群内高质量参与",
+      "zone": "High-quality Group Participation",
+      "submitted": 1,
+      "complete": 1,
+      "expected": 20,
+      "rate_all": 0.05,
+      "due": null
+    },
+    "C3C": {
+      "name": "双人协作与技能迁移",
+      "zone": "Pair Collaboration",
+      "submitted": 0,
+      "complete": 0,
+      "expected": 20,
+      "rate_all": 0.0,
+      "due": null
+    },
+    "C4": {
+      "name": "技能分享与传播",
+      "zone": "Skill Sharing",
+      "submitted": 1,
+      "complete": 1,
+      "expected": 20,
+      "rate_all": 0.05,
+      "due": null
+    },
+    "C4A": {
+      "name": "技能提交自动评审",
+      "zone": "Automated Skill Submission Review",
+      "submitted": 4,
+      "complete": 3,
+      "expected": 20,
+      "rate_all": 0.2,
+      "due": null
+    },
+    "C4B": {
+      "name": "公众号文章生成技能",
+      "zone": "WeChat Article Generation Skill",
+      "submitted": 2,
+      "complete": 2,
+      "expected": 20,
+      "rate_all": 0.1,
+      "due": null
+    },
+    "C4C": {
+      "name": "作业自动求解与排版",
+      "zone": "Homework Solver & Typesetting",
+      "submitted": 1,
+      "complete": 1,
+      "expected": 20,
+      "rate_all": 0.05,
+      "due": null
+    },
+    "C4D": {
+      "name": "本地大模型 Agent 技能",
+      "zone": "Local LLM Agent Skill",
+      "submitted": 3,
+      "complete": 3,
+      "expected": 20,
+      "rate_all": 0.15,
+      "due": null
+    },
+    "C5": {
+      "name": "GitHub Repository",
+      "zone": "GitHub Repository",
+      "submitted": 5,
+      "complete": 5,
+      "expected": 20,
+      "rate_all": 0.25,
+      "due": null
+    },
+    "C5A": {
+      "name": "GitHub 入门与仓库理解",
+      "zone": "GitHub Basics",
+      "submitted": 1,
+      "complete": 1,
+      "expected": 20,
+      "rate_all": 0.05,
+      "due": null
+    },
+    "C6": {
+      "name": "Web Application",
+      "zone": "Web Application",
+      "submitted": 2,
+      "complete": 2,
+      "expected": 20,
+      "rate_all": 0.1,
+      "due": null
+    },
+    "C6A": {
+      "name": "提交数据仪表盘",
+      "zone": "Submission Dashboard",
+      "submitted": 4,
+      "complete": 4,
+      "expected": 20,
+      "rate_all": 0.2,
+      "due": null
+    },
+    "C7": {
+      "name": "内容传播",
+      "zone": "Content Distribution",
+      "submitted": 4,
+      "complete": 4,
+      "expected": 20,
+      "rate_all": 0.2,
+      "due": null
+    },
+    "C8": {
+      "name": "真实项目落地",
+      "zone": "Real-World Project Execution",
+      "submitted": 7,
+      "complete": 4,
+      "expected": 20,
+      "rate_all": 0.35,
+      "due": "2026-12-31"
+    },
+    "C9": {
+      "name": "自驱项目",
+      "zone": "Self-Initiated Project",
+      "submitted": 0,
+      "complete": 0,
+      "expected": 20,
+      "rate_all": 0.0,
+      "due": null
+    },
+    "C10": {
+      "name": "构建你的长期智能体（第二大脑）",
+      "zone": "Build Your Own Agent",
+      "submitted": 0,
+      "complete": 0,
+      "expected": 20,
+      "rate_all": 0.0,
+      "due": null
+    },
+    "C10H": {
+      "name": "安装并驾驭 Hermes Agent",
+      "zone": "Hermes Agent",
+      "submitted": 0,
+      "complete": 0,
+      "expected": 20,
+      "rate_all": 0.0,
+      "due": null
+    }
+  },
+  "by_student": {
+    "wxid_jxq2024": {
+      "nickname": "景雪晴",
+      "challenge_count": 15,
+      "accepted": 15,
+      "needs_revision": 0
+    },
+    "wxid_linyz": {
+      "nickname": "林一舟",
+      "challenge_count": 2,
+      "accepted": 2,
+      "needs_revision": 0
+    },
+    "wxid_zhaomx": {
+      "nickname": "赵明轩",
+      "challenge_count": 2,
+      "accepted": 1,
+      "needs_revision": 1
+    },
+    "wxid_chenxy": {
+      "nickname": "陈心怡",
+      "challenge_count": 2,
+      "accepted": 2,
+      "needs_revision": 0
+    },
+    "wxid_wuht": {
+      "nickname": "吴昊天",
+      "challenge_count": 3,
+      "accepted": 3,
+      "needs_revision": 0
+    },
+    "wxid_sunl": {
+      "nickname": "孙乐",
+      "challenge_count": 2,
+      "accepted": 2,
+      "needs_revision": 0
+    },
+    "wxid_zhoujy": {
+      "nickname": "周嘉懿",
+      "challenge_count": 1,
+      "accepted": 1,
+      "needs_revision": 0
+    },
+    "wxid_xufy": {
+      "nickname": "徐方雨",
+      "challenge_count": 2,
+      "accepted": 1,
+      "needs_revision": 1
+    },
+    "wxid_hech": {
+      "nickname": "何承翰",
+      "challenge_count": 2,
+      "accepted": 2,
+      "needs_revision": 0
+    },
+    "wxid_guoyq": {
+      "nickname": "郭雅琪",
+      "challenge_count": 2,
+      "accepted": 1,
+      "needs_revision": 0
+    },
+    "wxid_majl": {
+      "nickname": "马嘉乐",
+      "challenge_count": 3,
+      "accepted": 1,
+      "needs_revision": 2
+    },
+    "wxid_luoxr": {
+      "nickname": "罗欣然",
+      "challenge_count": 0,
+      "accepted": 0,
+      "needs_revision": 0
+    },
+    "wxid_gaoyf": {
+      "nickname": "高宇飞",
+      "challenge_count": 1,
+      "accepted": 1,
+      "needs_revision": 0
+    },
+    "wxid_tangsh": {
+      "nickname": "唐思涵",
+      "challenge_count": 1,
+      "accepted": 1,
+      "needs_revision": 0
+    },
+    "wxid_dengzl": {
+      "nickname": "邓子龙",
+      "challenge_count": 2,
+      "accepted": 1,
+      "needs_revision": 1
+    },
+    "wxid_fengyr": {
+      "nickname": "冯亦然",
+      "challenge_count": 2,
+      "accepted": 1,
+      "needs_revision": 1
+    },
+    "wxid_pengxy": {
+      "nickname": "彭心语",
+      "challenge_count": 2,
+      "accepted": 1,
+      "needs_revision": 1
+    },
+    "wxid_qiuzw": {
+      "nickname": "邱志伟",
+      "challenge_count": 0,
+      "accepted": 0,
+      "needs_revision": 0
+    },
+    "wxid_xiemq": {
+      "nickname": "谢梦琪",
+      "challenge_count": 0,
+      "accepted": 0,
+      "needs_revision": 0
+    },
+    "wxid_yanghs": {
+      "nickname": "杨海森",
+      "challenge_count": 0,
+      "accepted": 0,
+      "needs_revision": 0
+    }
+  },
+  "missing_required": [
+    {
+      "student": "wxid_dengzl",
+      "nickname": "邓子龙",
+      "challenge": "C2",
+      "missing": [
+        "notes"
+      ],
+      "status": "needs_revision"
+    },
+    {
+      "student": "wxid_fengyr",
+      "nickname": "冯亦然",
+      "challenge": "C8",
+      "missing": [
+        "demo",
+        "notes"
+      ],
+      "status": "needs_revision"
+    },
+    {
+      "student": "wxid_majl",
+      "nickname": "马嘉乐",
+      "challenge": "C1",
+      "missing": [
+        "ailog"
+      ],
+      "status": "needs_revision"
+    },
+    {
+      "student": "wxid_majl",
+      "nickname": "马嘉乐",
+      "challenge": "C2",
+      "missing": [
+        "notes"
+      ],
+      "status": "needs_revision"
+    },
+    {
+      "student": "wxid_pengxy",
+      "nickname": "彭心语",
+      "challenge": "C8",
+      "missing": [
+        "demo"
+      ],
+      "status": "needs_revision"
+    },
+    {
+      "student": "wxid_xufy",
+      "nickname": "徐方雨",
+      "challenge": "C2",
+      "missing": [
+        "notes"
+      ],
+      "status": "needs_revision"
+    },
+    {
+      "student": "wxid_zhaomx",
+      "nickname": "赵明轩",
+      "challenge": "C8",
+      "missing": [
+        "demo",
+        "notes"
+      ],
+      "status": "needs_revision"
+    }
+  ],
+  "cells": 400
+}

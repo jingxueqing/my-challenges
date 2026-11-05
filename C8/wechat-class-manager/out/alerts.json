@@ -1,0 +1,382 @@
+{
+  "as_of": "2026-11-03T20:40:41+08:00",
+  "total": 17,
+  "by_severity": {
+    "high": 1,
+    "medium": 15,
+    "low": 1
+  },
+  "by_type": {
+    "missing_artifacts": 7,
+    "unanswered_question": 4,
+    "engagement_drop": 2,
+    "silent_student": 2,
+    "low_submission_rate": 1,
+    "naming_violation": 1
+  },
+  "alerts": [
+    {
+      "id": "low_submission_rate:class",
+      "type": "low_submission_rate",
+      "severity": "high",
+      "subject": "class",
+      "message": "15 个挑战提交率低于 30%，最低 C2A（5%）",
+      "evidence": {
+        "challenges": [
+          {
+            "challenge": "C2A",
+            "submitted": 1,
+            "expected": 20,
+            "rate": 0.05
+          },
+          {
+            "challenge": "C2G",
+            "submitted": 1,
+            "expected": 20,
+            "rate": 0.05
+          },
+          {
+            "challenge": "C3",
+            "submitted": 1,
+            "expected": 20,
+            "rate": 0.05
+          },
+          {
+            "challenge": "C4",
+            "submitted": 1,
+            "expected": 20,
+            "rate": 0.05
+          },
+          {
+            "challenge": "C4C",
+            "submitted": 1,
+            "expected": 20,
+            "rate": 0.05
+          },
+          {
+            "challenge": "C5A",
+            "submitted": 1,
+            "expected": 20,
+            "rate": 0.05
+          },
+          {
+            "challenge": "C4B",
+            "submitted": 2,
+            "expected": 20,
+            "rate": 0.1
+          },
+          {
+            "challenge": "C6",
+            "submitted": 2,
+            "expected": 20,
+            "rate": 0.1
+          },
+          {
+            "challenge": "C1",
+            "submitted": 3,
+            "expected": 20,
+            "rate": 0.15
+          },
+          {
+            "challenge": "C4D",
+            "submitted": 3,
+            "expected": 20,
+            "rate": 0.15
+          },
+          {
+            "challenge": "C2",
+            "submitted": 4,
+            "expected": 20,
+            "rate": 0.2
+          },
+          {
+            "challenge": "C4A",
+            "submitted": 4,
+            "expected": 20,
+            "rate": 0.2
+          },
+          {
+            "challenge": "C6A",
+            "submitted": 4,
+            "expected": 20,
+            "rate": 0.2
+          },
+          {
+            "challenge": "C7",
+            "submitted": 4,
+            "expected": 20,
+            "rate": 0.2
+          },
+          {
+            "challenge": "C5",
+            "submitted": 5,
+            "expected": 20,
+            "rate": 0.25
+          }
+        ]
+      },
+      "action": "先确认是难度问题还是通知没触达，再决定是加提醒还是下调本周要求"
+    },
+    {
+      "id": "engagement_drop:wxid_tangsh",
+      "type": "engagement_drop",
+      "severity": "medium",
+      "subject": "wxid_tangsh",
+      "message": "唐思涵 本周发言 3 条，上周 7 条，下降 57%",
+      "evidence": {
+        "nickname": "唐思涵",
+        "this_week": 3,
+        "last_week": 7
+      },
+      "action": "看看是不是在憋大件，问一句「卡在哪」比催进度有用"
+    },
+    {
+      "id": "engagement_drop:wxid_zhaomx",
+      "type": "engagement_drop",
+      "severity": "medium",
+      "subject": "wxid_zhaomx",
+      "message": "赵明轩 本周发言 3 条，上周 7 条，下降 57%",
+      "evidence": {
+        "nickname": "赵明轩",
+        "this_week": 3,
+        "last_week": 7
+      },
+      "action": "看看是不是在憋大件，问一句「卡在哪」比催进度有用"
+    },
+    {
+      "id": "missing_artifacts:wxid_dengzl:C2",
+      "type": "missing_artifacts",
+      "severity": "medium",
+      "subject": "wxid_dengzl:C2",
+      "message": "邓子龙 的 C2 缺 1 件：拿来说明",
+      "evidence": {
+        "student": "邓子龙",
+        "challenge": "C2",
+        "missing": [
+          "notes"
+        ],
+        "artifacts": [
+          "ailog",
+          "deliverable"
+        ]
+      },
+      "action": "发一条只讲缺件的短消息，不要重复整份规范"
+    },
+    {
+      "id": "missing_artifacts:wxid_fengyr:C8",
+      "type": "missing_artifacts",
+      "severity": "medium",
+      "subject": "wxid_fengyr:C8",
+      "message": "冯亦然 的 C8 缺 2 件：早期验证物, 拿来说明",
+      "evidence": {
+        "student": "冯亦然",
+        "challenge": "C8",
+        "missing": [
+          "demo",
+          "notes"
+        ],
+        "artifacts": [
+          "ailog",
+          "proposal"
+        ]
+      },
+      "action": "发一条只讲缺件的短消息，不要重复整份规范"
+    },
+    {
+      "id": "missing_artifacts:wxid_majl:C1",
+      "type": "missing_artifacts",
+      "severity": "medium",
+      "subject": "wxid_majl:C1",
+      "message": "马嘉乐 的 C1 缺 1 件：AI 日志",
+      "evidence": {
+        "student": "马嘉乐",
+        "challenge": "C1",
+        "missing": [
+          "ailog"
+        ],
+        "artifacts": [
+          "deliverable"
+        ]
+      },
+      "action": "发一条只讲缺件的短消息，不要重复整份规范"
+    },
+    {
+      "id": "missing_artifacts:wxid_majl:C2",
+      "type": "missing_artifacts",
+      "severity": "medium",
+      "subject": "wxid_majl:C2",
+      "message": "马嘉乐 的 C2 缺 1 件：拿来说明",
+      "evidence": {
+        "student": "马嘉乐",
+        "challenge": "C2",
+        "missing": [
+          "notes"
+        ],
+        "artifacts": [
+          "ailog",
+          "deliverable"
+        ]
+      },
+      "action": "发一条只讲缺件的短消息，不要重复整份规范"
+    },
+    {
+      "id": "missing_artifacts:wxid_pengxy:C8",
+      "type": "missing_artifacts",
+      "severity": "medium",
+      "subject": "wxid_pengxy:C8",
+      "message": "彭心语 的 C8 缺 1 件：早期验证物",
+      "evidence": {
+        "student": "彭心语",
+        "challenge": "C8",
+        "missing": [
+          "demo"
+        ],
+        "artifacts": [
+          "ailog",
+          "notes",
+          "proposal"
+        ]
+      },
+      "action": "发一条只讲缺件的短消息，不要重复整份规范"
+    },
+    {
+      "id": "missing_artifacts:wxid_xufy:C2",
+      "type": "missing_artifacts",
+      "severity": "medium",
+      "subject": "wxid_xufy:C2",
+      "message": "徐方雨 的 C2 缺 1 件：拿来说明",
+      "evidence": {
+        "student": "徐方雨",
+        "challenge": "C2",
+        "missing": [
+          "notes"
+        ],
+        "artifacts": [
+          "ailog",
+          "deliverable"
+        ]
+      },
+      "action": "发一条只讲缺件的短消息，不要重复整份规范"
+    },
+    {
+      "id": "missing_artifacts:wxid_zhaomx:C8",
+      "type": "missing_artifacts",
+      "severity": "medium",
+      "subject": "wxid_zhaomx:C8",
+      "message": "赵明轩 的 C8 缺 2 件：早期验证物, 拿来说明",
+      "evidence": {
+        "student": "赵明轩",
+        "challenge": "C8",
+        "missing": [
+          "demo",
+          "notes"
+        ],
+        "artifacts": [
+          "ailog",
+          "proposal"
+        ]
+      },
+      "action": "发一条只讲缺件的短消息，不要重复整份规范"
+    },
+    {
+      "id": "silent_student:wxid_luoxr",
+      "type": "silent_student",
+      "severity": "medium",
+      "subject": "wxid_luoxr",
+      "message": "罗欣然 已 10 天零发言（最后一条 2026-10-24 09:30）",
+      "evidence": {
+        "nickname": "罗欣然",
+        "silence_days": 10,
+        "last_ts": "2026-10-24T09:30:33+08:00",
+        "msg_count": 2
+      },
+      "action": "私信问候，先问是不是遇到困难，不要一上来催交"
+    },
+    {
+      "id": "silent_student:wxid_xiemq",
+      "type": "silent_student",
+      "severity": "medium",
+      "subject": "wxid_xiemq",
+      "message": "谢梦琪 已 7 天零发言（最后一条 2026-10-27 10:00）",
+      "evidence": {
+        "nickname": "谢梦琪",
+        "silence_days": 7,
+        "last_ts": "2026-10-27T10:00:24+08:00",
+        "msg_count": 2
+      },
+      "action": "私信问候，先问是不是遇到困难，不要一上来催交"
+    },
+    {
+      "id": "unanswered_question:m00235",
+      "type": "unanswered_question",
+      "severity": "medium",
+      "subject": "m00235",
+      "message": "邓子龙 的提问已经 244 小时没人回答：「有没有更简单的做法？」",
+      "evidence": {
+        "question": "有没有更简单的做法？",
+        "asker": "邓子龙",
+        "age_hours": 244,
+        "challenge": null
+      },
+      "action": "要么自己答，要么指定一个懂的人答，别让问题烂在群里"
+    },
+    {
+      "id": "unanswered_question:m00250",
+      "type": "unanswered_question",
+      "severity": "medium",
+      "subject": "m00250",
+      "message": "马嘉乐 的提问已经 153 小时没人回答：「有没有更简单的做法？」",
+      "evidence": {
+        "question": "有没有更简单的做法？",
+        "asker": "马嘉乐",
+        "age_hours": 153,
+        "challenge": "C8"
+      },
+      "action": "要么自己答，要么指定一个懂的人答，别让问题烂在群里"
+    },
+    {
+      "id": "unanswered_question:m00259",
+      "type": "unanswered_question",
+      "severity": "medium",
+      "subject": "m00259",
+      "message": "林一舟 的提问已经 73 小时没人回答：「有同学一起结对吗？」",
+      "evidence": {
+        "question": "有同学一起结对吗？",
+        "asker": "林一舟",
+        "age_hours": 73,
+        "challenge": "C3C"
+      },
+      "action": "要么自己答，要么指定一个懂的人答，别让问题烂在群里"
+    },
+    {
+      "id": "unanswered_question:m00265",
+      "type": "unanswered_question",
+      "severity": "medium",
+      "subject": "m00265",
+      "message": "徐方雨 的提问已经 50 小时没人回答：「有没有更简单的做法？」",
+      "evidence": {
+        "question": "有没有更简单的做法？",
+        "asker": "徐方雨",
+        "age_hours": 50,
+        "challenge": null
+      },
+      "action": "要么自己答，要么指定一个懂的人答，别让问题烂在群里"
+    },
+    {
+      "id": "naming_violation:wxid_guoyq:C4A",
+      "type": "naming_violation",
+      "severity": "low",
+      "subject": "wxid_guoyq:C4A",
+      "message": "郭雅琪 的 C4A 提交文件命名不规范",
+      "evidence": {
+        "student": "郭雅琪",
+        "challenge": "C4A",
+        "issues": [
+          "命名不规范：C4A评审器.zip（应为 姓名_C4A_内容.md）",
+          "命名不规范：郭雅琪_C4A评审器_最终版.zip（应为 姓名_C4A_内容.md）"
+        ]
+      },
+      "action": "退回重发时给一个正确样例，别只说「不规范」"
+    }
+  ]
+}
