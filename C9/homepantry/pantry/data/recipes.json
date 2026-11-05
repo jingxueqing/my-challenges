@@ -1,0 +1,117 @@
+{
+  "_meta": {
+    "version": 1,
+    "note": "本地家常菜谱库。ingredients 直接用 lexicon 的规范名，main=true 表示主料（权重 3，缺了不建议做）。steps 为真实可操作步骤，不写套话。"
+  },
+  "recipes": [
+    {"id": "r01", "name": "番茄炒蛋", "time_min": 10, "difficulty": 1, "servings": 2, "tags": ["快手", "下饭", "素"],
+     "ingredients": [{"name": "番茄", "qty": 2, "unit": "个", "main": true}, {"name": "鸡蛋", "qty": 3, "unit": "个", "main": true}, {"name": "葱", "qty": 1, "unit": "根"}, {"name": "糖", "qty": 3, "unit": "g"}, {"name": "盐", "qty": 2, "unit": "g"}, {"name": "食用油", "qty": 20, "unit": "ml"}],
+     "steps": ["鸡蛋打散加一小撮盐；番茄切块，葱切末。", "热锅凉油，倒蛋液，等边缘凝固再推散，八成熟盛出。", "补一点油下番茄，中火炒到出汁软塌，加糖和盐。", "倒回鸡蛋翻两下，撒葱末关火。"],
+     "tip": "番茄先去皮（划十字烫 10 秒）口感更好；糖是提鲜不是让它变甜。"},
+
+    {"id": "r02", "name": "青椒肉丝", "time_min": 20, "difficulty": 2, "servings": 2, "tags": ["下饭", "荤"],
+     "ingredients": [{"name": "青椒", "qty": 3, "unit": "个", "main": true}, {"name": "猪肉", "qty": 200, "unit": "g", "main": true}, {"name": "大蒜", "qty": 2, "unit": "瓣"}, {"name": "酱油", "qty": 10, "unit": "ml"}, {"name": "淀粉", "qty": 5, "unit": "g"}, {"name": "食用油", "qty": 25, "unit": "ml"}],
+     "steps": ["肉切丝，加酱油、淀粉、一勺水抓匀腌 10 分钟。", "青椒去籽切丝，蒜切片。", "热锅多油，肉丝下锅快速划散变色即盛出。", "锅留底油爆香蒜片，下青椒大火炒 1 分钟，回肉丝，淋一点酱油炒匀。"],
+     "tip": "肉丝腌的时候加水是关键，出水才嫩。"},
+
+    {"id": "r03", "name": "土豆炖牛肉", "time_min": 80, "difficulty": 3, "servings": 3, "tags": ["硬菜", "炖", "荤"],
+     "ingredients": [{"name": "牛肉", "qty": 500, "unit": "g", "main": true}, {"name": "土豆", "qty": 2, "unit": "个", "main": true}, {"name": "胡萝卜", "qty": 1, "unit": "根"}, {"name": "洋葱", "qty": 1, "unit": "个"}, {"name": "姜", "qty": 3, "unit": "片"}, {"name": "八角", "qty": 1, "unit": "个"}, {"name": "酱油", "qty": 30, "unit": "ml"}, {"name": "料酒", "qty": 20, "unit": "ml"}],
+     "steps": ["牛肉切块冷水下锅，加料酒焯水，撇净浮沫后捞出冲净。", "热油炒香洋葱、姜片、八角，下牛肉块煸到表面微焦。", "加酱油炒上色，倒热水没过肉，大火烧开转小火炖 40 分钟。", "下土豆和胡萝卜块，再炖 20 分钟到土豆边角变糊，收汁。"],
+     "tip": "一定要加热水，冷水会让肉紧住；土豆后放才不会化成泥。"},
+
+    {"id": "r04", "name": "蒜蓉青菜", "time_min": 8, "difficulty": 1, "servings": 2, "tags": ["快手", "素", "清淡"],
+     "ingredients": [{"name": "青菜", "qty": 400, "unit": "g", "main": true}, {"name": "大蒜", "qty": 4, "unit": "瓣"}, {"name": "盐", "qty": 2, "unit": "g"}, {"name": "食用油", "qty": 15, "unit": "ml"}],
+     "steps": ["青菜洗净沥干，蒜切末。", "大火热锅，油稍多，爆香一半蒜末。", "下青菜全程大火翻炒 60-90 秒，菜叶刚塌就加盐。", "关火拌入剩下的生蒜末。"],
+     "tip": "生熟两拨蒜是这道菜的灵魂；青菜出水前就得出锅。"},
+
+    {"id": "r05", "name": "醋溜白菜", "time_min": 12, "difficulty": 1, "servings": 2, "tags": ["快手", "素", "开胃"],
+     "ingredients": [{"name": "白菜", "qty": 500, "unit": "g", "main": true}, {"name": "醋", "qty": 20, "unit": "ml"}, {"name": "干辣椒", "qty": 3, "unit": "个"}, {"name": "糖", "qty": 8, "unit": "g"}, {"name": "淀粉", "qty": 5, "unit": "g"}, {"name": "食用油", "qty": 20, "unit": "ml"}],
+     "steps": ["白菜帮子斜刀片薄，叶子撕块，分开放。", "醋、糖、淀粉加两勺水调成碗汁。", "爆香干辣椒，先下白菜帮大火炒 1 分钟，再下叶子。", "沿锅边淋碗汁，翻匀出锅。"],
+     "tip": "帮和叶分开下锅，不然帮还是生的叶已经烂了。"},
+
+    {"id": "r06", "name": "西红柿鸡蛋面", "time_min": 15, "difficulty": 1, "servings": 1, "tags": ["一人食", "快手", "主食"],
+     "ingredients": [{"name": "番茄", "qty": 1, "unit": "个", "main": true}, {"name": "鸡蛋", "qty": 1, "unit": "个", "main": true}, {"name": "面条", "qty": 100, "unit": "g", "main": true}, {"name": "葱", "qty": 1, "unit": "根"}, {"name": "盐", "qty": 2, "unit": "g"}],
+     "steps": ["番茄切小块，鸡蛋打散。", "少油炒蛋盛出；下番茄炒出红汁，加水烧开。", "下面条煮到八分熟，回鸡蛋，加盐。", "出锅撒葱花。"],
+     "tip": "番茄一定要炒到出沙再加水，汤才浓。"},
+
+    {"id": "r07", "name": "香菇滑鸡", "time_min": 35, "difficulty": 2, "servings": 3, "tags": ["下饭", "蒸", "荤"],
+     "ingredients": [{"name": "鸡腿", "qty": 3, "unit": "个", "main": true}, {"name": "香菇", "qty": 6, "unit": "朵", "main": true}, {"name": "姜", "qty": 3, "unit": "片"}, {"name": "酱油", "qty": 20, "unit": "ml"}, {"name": "淀粉", "qty": 8, "unit": "g"}, {"name": "料酒", "qty": 10, "unit": "ml"}],
+     "steps": ["鸡腿去骨切块，加酱油、料酒、淀粉、姜片抓匀腌 20 分钟。", "香菇泡软切片，铺在盘底，鸡肉铺上面。", "水开后上锅大火蒸 18 分钟。", "出锅把盘底汤汁淋回鸡肉上。"],
+     "tip": "香菇垫底吸鸡汁，比鸡肉还好吃；别蒸过头，肉会柴。"},
+
+    {"id": "r08", "name": "韭菜炒蛋", "time_min": 8, "difficulty": 1, "servings": 2, "tags": ["快手", "素"],
+     "ingredients": [{"name": "韭菜", "qty": 200, "unit": "g", "main": true}, {"name": "鸡蛋", "qty": 3, "unit": "个", "main": true}, {"name": "盐", "qty": 2, "unit": "g"}, {"name": "食用油", "qty": 20, "unit": "ml"}],
+     "steps": ["韭菜切 3cm 段，蛋打散。", "热油炒蛋到半凝固盛出。", "下韭菜大火 30 秒，回蛋，加盐翻两下立刻出锅。"],
+     "tip": "韭菜下锅别超过 40 秒，久了出水发黄。"},
+
+    {"id": "r09", "name": "清炒土豆丝", "time_min": 15, "difficulty": 1, "servings": 2, "tags": ["素", "下饭"],
+     "ingredients": [{"name": "土豆", "qty": 2, "unit": "个", "main": true}, {"name": "干辣椒", "qty": 2, "unit": "个"}, {"name": "醋", "qty": 10, "unit": "ml"}, {"name": "大蒜", "qty": 2, "unit": "瓣"}, {"name": "盐", "qty": 3, "unit": "g"}],
+     "steps": ["土豆切细丝，清水淘两遍去淀粉，泡着备用。", "爆香蒜和干辣椒。", "沥干土豆丝下锅大火快炒 2 分钟。", "沿锅边淋醋，加盐，炒 30 秒出锅。"],
+     "tip": "淘洗 + 泡水是脆的关键；醋要沿锅边淋才香。"},
+
+    {"id": "r10", "name": "冬瓜排骨汤", "time_min": 70, "difficulty": 2, "servings": 3, "tags": ["汤", "清淡"],
+     "ingredients": [{"name": "排骨", "qty": 500, "unit": "g", "main": true}, {"name": "冬瓜", "qty": 400, "unit": "g", "main": true}, {"name": "姜", "qty": 4, "unit": "片"}, {"name": "料酒", "qty": 15, "unit": "ml"}, {"name": "盐", "qty": 4, "unit": "g"}],
+     "steps": ["排骨冷水下锅焯水，撇沫捞出冲洗。", "排骨 + 姜片 + 料酒 + 足量热水，大火烧开转小火 45 分钟。", "冬瓜去皮切厚片，下锅再煮 15 分钟到透明。", "关火前加盐。"],
+     "tip": "盐一定最后放，早放排骨会柴。"},
+
+    {"id": "r11", "name": "紫菜蛋花汤", "time_min": 6, "difficulty": 1, "servings": 2, "tags": ["快手", "汤", "清淡"],
+     "ingredients": [{"name": "紫菜", "qty": 5, "unit": "g", "main": true}, {"name": "鸡蛋", "qty": 2, "unit": "个", "main": true}, {"name": "葱", "qty": 1, "unit": "根"}, {"name": "盐", "qty": 3, "unit": "g"}, {"name": "食用油", "qty": 3, "unit": "ml"}],
+     "steps": ["紫菜撕小片放碗底，加一点盐和几滴香油。", "水烧开，蛋液细流淋入并顺时针轻搅。", "蛋花成形后直接冲进紫菜碗里。", "撒葱花。"],
+     "tip": "紫菜不要下锅煮，冲开就好，久了发苦。"},
+
+    {"id": "r12", "name": "虾仁滑蛋", "time_min": 12, "difficulty": 2, "servings": 2, "tags": ["快手", "荤"],
+     "ingredients": [{"name": "虾", "qty": 200, "unit": "g", "main": true}, {"name": "鸡蛋", "qty": 4, "unit": "个", "main": true}, {"name": "淀粉", "qty": 5, "unit": "g"}, {"name": "盐", "qty": 3, "unit": "g"}, {"name": "料酒", "qty": 5, "unit": "ml"}],
+     "steps": ["虾仁去虾线，加盐、料酒、淀粉抓匀 5 分钟。", "蛋液加一点盐和两勺水打匀。", "虾仁滑炒到变色盛出，倒入蛋液。", "小火，用铲子从边缘往中间推，八成凝固关火，靠余温定型。"],
+     "tip": "全程小火 + 推开而不是翻炒，才有嫩滑的层次。"},
+
+    {"id": "r13", "name": "白菜豆腐炖粉条", "time_min": 30, "difficulty": 2, "servings": 3, "tags": ["炖", "素", "下饭"],
+     "ingredients": [{"name": "白菜", "qty": 400, "unit": "g", "main": true}, {"name": "豆腐", "qty": 300, "unit": "g", "main": true}, {"name": "粉条", "qty": 100, "unit": "g"}, {"name": "五花肉", "qty": 100, "unit": "g"}, {"name": "酱油", "qty": 20, "unit": "ml"}],
+     "steps": ["粉条温水泡 20 分钟；豆腐切厚片，白菜切段。", "五花肉煸出油，下白菜帮炒软。", "加酱油和热水，放豆腐、粉条，中火炖 15 分钟。", "下白菜叶再炖 3 分钟，收汁。"],
+     "tip": "豆腐先煎一下再炖不容易碎。"},
+
+    {"id": "r14", "name": "香肠炒饭", "time_min": 12, "difficulty": 1, "servings": 1, "tags": ["一人食", "快手", "主食"],
+     "ingredients": [{"name": "剩菜", "qty": 1, "unit": "碗", "main": true, "note": "或隔夜米饭"}, {"name": "香肠", "qty": 1, "unit": "根", "main": true}, {"name": "鸡蛋", "qty": 1, "unit": "个"}, {"name": "葱", "qty": 1, "unit": "根"}, {"name": "酱油", "qty": 5, "unit": "ml"}],
+     "steps": ["香肠切丁，葱切末。", "热锅下香肠煸出油，倒蛋液炒散。", "下米饭压散，大火翻炒到颗粒分明。", "淋酱油沿锅边，撒葱花出锅。"],
+     "tip": "米饭微波 30 秒再下锅更容易炒散。"},
+
+    {"id": "r15", "name": "凉拌黄瓜", "time_min": 8, "difficulty": 1, "servings": 2, "tags": ["快手", "素", "开胃"],
+     "ingredients": [{"name": "黄瓜", "qty": 2, "unit": "根", "main": true}, {"name": "大蒜", "qty": 3, "unit": "瓣"}, {"name": "醋", "qty": 15, "unit": "ml"}, {"name": "酱油", "qty": 10, "unit": "ml"}, {"name": "糖", "qty": 5, "unit": "g"}],
+     "steps": ["黄瓜拍裂切段，撒盐腌 5 分钟倒掉水。", "蒜切末，加醋、酱油、糖调匀。", "浇在黄瓜上，冷藏 5 分钟更入味。"],
+     "tip": "先腌出水再调味，才不会越拌越淡。"},
+
+    {"id": "r16", "name": "洋葱炒蛋", "time_min": 10, "difficulty": 1, "servings": 2, "tags": ["快手", "素"],
+     "ingredients": [{"name": "洋葱", "qty": 1, "unit": "个", "main": true}, {"name": "鸡蛋", "qty": 3, "unit": "个", "main": true}, {"name": "酱油", "qty": 5, "unit": "ml"}, {"name": "盐", "qty": 2, "unit": "g"}],
+     "steps": ["洋葱切丝，蛋打散。", "炒蛋到八成熟盛出。", "下洋葱中火炒到边缘透明发甜。", "回蛋，加酱油和盐炒匀。"],
+     "tip": "洋葱炒到透明才甜，生炒会辣。"},
+
+    {"id": "r17", "name": "清蒸鱼", "time_min": 25, "difficulty": 2, "servings": 2, "tags": ["清淡", "蒸", "荤"],
+     "ingredients": [{"name": "鱼", "qty": 1, "unit": "条", "main": true}, {"name": "葱", "qty": 2, "unit": "根"}, {"name": "姜", "qty": 5, "unit": "片"}, {"name": "酱油", "qty": 25, "unit": "ml"}, {"name": "食用油", "qty": 15, "unit": "ml"}],
+     "steps": ["鱼两面划刀，塞姜片葱段，盘底垫两根葱。", "水开后大火蒸 8 分钟（每 500g 约 8 分钟），关火焖 2 分钟。", "倒掉盘里的腥水，换新鲜葱丝。", "淋酱油，泼一勺烧到冒烟的热油。"],
+     "tip": "倒掉蒸出来的水这步别省，那是腥味来源。"},
+
+    {"id": "r18", "name": "手撕包菜", "time_min": 10, "difficulty": 1, "servings": 2, "tags": ["快手", "素", "下饭"],
+     "ingredients": [{"name": "白菜", "qty": 400, "unit": "g", "main": true, "note": "包菜更佳"}, {"name": "干辣椒", "qty": 3, "unit": "个"}, {"name": "大蒜", "qty": 3, "unit": "瓣"}, {"name": "醋", "qty": 10, "unit": "ml"}, {"name": "酱油", "qty": 10, "unit": "ml"}],
+     "steps": ["用手撕成片（别用刀切，断面不一样）。", "大火爆香蒜和干辣椒。", "下菜大火炒 90 秒到边缘透明。", "沿锅边淋醋和酱油，快速翻匀。"],
+     "tip": "手撕的不规则断面更挂汁，这是它比刀切好吃的原因。"},
+
+    {"id": "r19", "name": "麻婆豆腐", "time_min": 20, "difficulty": 2, "servings": 2, "tags": ["下饭", "辣", "素"],
+     "ingredients": [{"name": "豆腐", "qty": 400, "unit": "g", "main": true}, {"name": "猪肉", "qty": 100, "unit": "g", "main": true}, {"name": "豆瓣酱", "qty": 20, "unit": "g"}, {"name": "花椒", "qty": 3, "unit": "g"}, {"name": "淀粉", "qty": 8, "unit": "g"}, {"name": "大蒜", "qty": 2, "unit": "瓣"}],
+     "steps": ["豆腐切 2cm 块，淡盐水泡 5 分钟去豆腥。", "炒肉末到出油微焦，下豆瓣酱和蒜末炒出红油。", "加水烧开，轻轻推入豆腐，中火煮 5 分钟。", "分两次淋水淀粉勾芡，出锅撒花椒粉。"],
+     "tip": "勾芡分两次，第一次挂汁第二次收亮；全程推锅不要翻。"},
+
+    {"id": "r20", "name": "玉米排骨汤", "time_min": 60, "difficulty": 1, "servings": 3, "tags": ["汤", "清淡"],
+     "ingredients": [{"name": "排骨", "qty": 400, "unit": "g", "main": true}, {"name": "玉米", "qty": 2, "unit": "根", "main": true}, {"name": "胡萝卜", "qty": 1, "unit": "根"}, {"name": "姜", "qty": 3, "unit": "片"}, {"name": "盐", "qty": 4, "unit": "g"}],
+     "steps": ["排骨焯水冲净。", "全部材料（除盐）加热水，大火烧开转小火 40 分钟。", "加盐再煮 5 分钟。"],
+     "tip": "玉米切段前先掰断再切，粒不飞。"},
+
+    {"id": "r21", "name": "西红柿牛腩", "time_min": 90, "difficulty": 3, "servings": 3, "tags": ["硬菜", "炖", "荤"],
+     "ingredients": [{"name": "牛肉", "qty": 600, "unit": "g", "main": true}, {"name": "番茄", "qty": 4, "unit": "个", "main": true}, {"name": "洋葱", "qty": 1, "unit": "个"}, {"name": "姜", "qty": 3, "unit": "片"}, {"name": "番茄酱", "qty": 30, "unit": "g", "optional": true}],
+     "steps": ["牛腩切块焯水。", "番茄一半切丁炒成酱，一半切块留后放。", "下牛腩、洋葱、姜，加热水没过，小火 60 分钟。", "下番茄块再炖 20 分钟，收汁到浓稠。"],
+     "tip": "番茄分两次放：一次出味，一次保形。"},
+
+    {"id": "r22", "name": "豆干炒芹菜", "time_min": 12, "difficulty": 1, "servings": 2, "tags": ["快手", "素"],
+     "ingredients": [{"name": "豆干", "qty": 200, "unit": "g", "main": true}, {"name": "芹菜", "qty": 200, "unit": "g", "main": true}, {"name": "大蒜", "qty": 2, "unit": "瓣"}, {"name": "酱油", "qty": 10, "unit": "ml"}, {"name": "盐", "qty": 2, "unit": "g"}],
+     "steps": ["芹菜切段焯水 30 秒过凉（去涩保脆）。", "豆干切条，煎到边缘微黄。", "下蒜末、芹菜大火炒 1 分钟。", "加酱油和盐炒匀。"],
+     "tip": "芹菜焯水这步决定脆不脆。"}
+  ]
+}

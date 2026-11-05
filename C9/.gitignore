@@ -1,0 +1,22 @@
+# 不进仓库的东西
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# 本地数据库（库里是真实家庭数据，绝不入库）
+*.db
+*.sqlite
+*.sqlite3
+
+# 系统 / 编辑器
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# 导出与临时文件
+*.log
+/tmp_*
+export_*.md
