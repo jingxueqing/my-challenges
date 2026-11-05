@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>C10 Demo · 第二大脑的一次完整 KSTAR 循环</title>
+<style>
+:root{--bg:#f5f6f8;--card:#fff;--ink:#12161c;--mut:#6b7280;--line:#e3e6ea;
+--g:#137333;--b:#2f6feb;--code:#0b1220}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+font:15px/1.7 -apple-system,"PingFang SC","Helvetica Neue",Arial,sans-serif}
+.wrap{max-width:900px;margin:0 auto;padding:36px 20px 80px}
+h1{font-size:24px;margin:0 0 6px;letter-spacing:-.2px}
+.sub{color:var(--mut);font-size:13.5px}
+.banner{background:#eef4ff;border:1px solid #d5e2ff;border-radius:12px;
+padding:14px 16px;margin:20px 0 8px;font-size:13.5px}
+.banner b{color:#1a4fd0}
+.toolbar{display:flex;gap:10px;align-items:center;margin:16px 0 22px;flex-wrap:wrap}
+button{border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:999px;
+padding:7px 16px;font-size:13.5px;cursor:pointer;transition:.15s}
+button:hover{border-color:#c3c9d2}
+button.primary{background:var(--b);border-color:var(--b);color:#fff}
+button.primary:hover{background:#245ad0}
+.pill{font-size:12.5px;color:var(--mut);background:#fff;border:1px solid var(--line);
+border-radius:999px;padding:5px 12px}
+.step{margin:0 0 26px;opacity:.25;transition:opacity .5s}
+.step.on{opacity:1}
+.cap{display:flex;gap:10px;align-items:baseline;margin:0 0 8px;font-size:13.5px;color:#374151}
+.no{font:600 11px/1 ui-monospace,Menlo,monospace;color:#fff;background:#9aa3af;
+border-radius:5px;padding:4px 6px}
+.term{background:var(--code);border-radius:12px;overflow:hidden;
+box-shadow:0 1px 2px rgba(16,24,40,.06),0 8px 24px rgba(16,24,40,.06)}
+.bar{display:flex;align-items:center;gap:6px;padding:9px 12px;background:#111a2b}
+.bar i{width:10px;height:10px;border-radius:50%;background:#2b3a55;display:block}
+.bar .path{margin-left:8px;color:#7d8aa3;font:12px ui-monospace,Menlo,monospace}
+.cmd{padding:10px 14px;color:#e6edf3;font:13px/1.6 ui-monospace,Menlo,monospace;
+background:#0f1830;border-bottom:1px solid #1c2740;word-break:break-all}
+.cmd .p{color:#54d38a}
+.out{padding:12px 14px 14px;font:12.5px/1.65 ui-monospace,Menlo,monospace;
+color:#c9d5e4;white-space:pre-wrap;word-break:break-word;max-height:640px;overflow:auto}
+.ln{min-height:1.2em}
+.ln.hi{color:#9ae6b4}
+footer{margin-top:36px;color:var(--mut);font-size:12.5px;border-top:1px solid var(--line);padding-top:16px}
+code{background:#eceff3;padding:1px 5px;border-radius:4px;font-size:12.5px}
+</style></head><body><div class="wrap">
+<h1>一次完整的 KSTAR 循环</h1>
+<div class="sub">第二大脑 · 真实终端录制回放 ｜ 10 个命令 / 94 行输出 / 生成于 2026-11-05 21:28</div>
+
+<div class="banner">
+<b>这是回放，不是剪辑。</b> 页面里每一行都是 <code>bash demo/record.sh</code> 跑出来的原始 stdout，
+原样存于 <code>brain/demo/demo_transcript.txt</code>，你可以把命令复制到自己的终端重跑一遍。
+本次环境没有 ffmpeg（<code>which ffmpeg</code> 为空），所以没有产出 mp4——
+<b>与其交一个"因环境原因未提供"，不如交一份可复跑的证据。</b>
+</div>
+
+<div class="toolbar">
+  <button class="primary" id="play">▶ 逐步播放</button>
+  <button id="all">全部展开</button>
+  <button id="reset">重置</button>
+  <span class="pill">K 检索 → R 结果 → ΔR 写回 → distill → doctor → dash → report</span>
+</div>
+
+
+<section class="step" data-i="1">
+  <div class="cap"><span class="no">01</span>第 0 步：系统自检（内核 5 项断言，先过再铺数据）</div>
+  <div class="term">
+    <div class="bar"><i></i><i></i><i></i><span class="path">brain/</span></div>
+    <div class="cmd"><span class="p">$</span> python3 scripts/kstar.py selftest</div>
+    <div class="out"><div class="ln">selftest:&nbsp;5&nbsp;项通过，0&nbsp;项失败</div></div>
+  </div>
+</section>
+
+<section class="step" data-i="2">
+  <div class="cap"><span class="no">02</span>第 1 步：K —— 开工前检索，不许凭印象回忆</div>
+  <div class="term">
+    <div class="bar"><i></i><i></i><i></i><span class="path">brain/</span></div>
+    <div class="cmd"><span class="p">$</span> python3 scripts/kstar.py recall 移动端 验收 量错 --k 3</div>
+    <div class="out"><div class="ln">K（Knowledge）检索结果&nbsp;·&nbsp;query=移动端&nbsp;验收&nbsp;量错&nbsp;·&nbsp;层=all</div>
+<div class="ln">1.&nbsp;[episode]&nbsp;C9&nbsp;移动端&quot;还在溢出&quot;：我拿错了尺子&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;score=20.29</div>
+<div class="ln">&nbsp;&nbsp;&nbsp;memory/L2_episodes/EP-2026-11-04-10-c9-拿错了尺子.md</div>
+<div class="ln">&nbsp;&nbsp;&nbsp;命中&nbsp;动端、移动、验收（标签命中）</div>
+<div class="ln">2.&nbsp;[skill]&nbsp;measure-before-fix&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;score=9.87</div>
+<div class="ln">&nbsp;&nbsp;&nbsp;skills/measure-before-fix/SKILL.md</div>
+<div class="ln">&nbsp;&nbsp;&nbsp;命中&nbsp;动端、移动、验收（标签命中）</div>
+<div class="ln">3.&nbsp;[raw]&nbsp;2026-11-04-c9-无头-chrome-最小视口-500px-我拿错了&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;score=6.90</div>
+<div class="ln">&nbsp;&nbsp;&nbsp;memory/L1_raw/2026/11/2026-11-04-c9-无头-chrome-最小视口-500px-我拿错了.md</div>
+<div class="ln">&nbsp;&nbsp;&nbsp;命中&nbsp;验收（标签命中）</div></div>
+  </div>
+</section>
+
+<section class="step" data-i="3">
+  <div class="cap"><span class="no">03</span>第 2 步：K —— 检索这一轮实际要用的能力</div>
+  <div class="term">
+    <div class="bar"><i></i><i></i><i></i><span class="path">brain/</span></div>
+    <div class="cmd"><span class="p">$</span> python3 scripts/kstar.py recall 交付 打包 复现 --layer skill --k 3</div>
+    <div class="out"><div class="ln">K（Knowledge）检索结果&nbsp;·&nbsp;query=交付&nbsp;打包&nbsp;复现&nbsp;·&nbsp;层=skill</div>
+<div class="ln">1.&nbsp;[skill]&nbsp;deliverable-pack&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;score=14.05</div>
+<div class="ln">&nbsp;&nbsp;&nbsp;skills/deliverable-pack/SKILL.md</div>
+<div class="ln">&nbsp;&nbsp;&nbsp;命中&nbsp;交付、复现、打包（标签命中）</div>
+<div class="ln">2.&nbsp;[skill]&nbsp;scope-probe-first&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;score=4.24</div>
+<div class="ln">&nbsp;&nbsp;&nbsp;skills/scope-probe-first/SKILL.md</div>
+<div class="ln">&nbsp;&nbsp;&nbsp;命中&nbsp;交付（标签命中）</div>
+<div class="ln">3.&nbsp;[skill]&nbsp;aar-delta-r&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;score=1.41</div>
+<div class="ln">&nbsp;&nbsp;&nbsp;skills/aar-delta-r/SKILL.md</div>
+<div class="ln">&nbsp;&nbsp;&nbsp;命中&nbsp;交付（标签命中）</div></div>
+  </div>
+</section>
+
+<section class="step" data-i="4">
+  <div class="cap"><span class="no">04</span>第 3 步：R —— 关闭这一轮循环，自动算 ΔR（R̂ 是事前写的 0.88）</div>
+  <div class="term">
+    <div class="bar"><i></i><i></i><i></i><span class="path">brain/</span></div>
+    <div class="cmd"><span class="p">$</span> python3 scripts/kstar.py loop close RUN-20261105-2122 --r 0.86 --actual 8 项全达成（五层可跑/四层记忆/6 Skill 有记录/1 个迭代到 v4/distill 提名-裁决闭环/系统级 AAR/拿来说明 6 系统/数据可积累）；2 项打折：demo 无 mp4（沙箱无 ffmpeg，改真实 transcript + HTML 回放，按 0.5 计）、&quot;提交前已用 2 周&quot;不成立（系统今天建成，按 0.1 计）。加权 R=(8+0.5+0.1)/10=0.86。 --lesson 系统的第一批数据必须来自真实交付物回填，否则它会有一周的空白期；但回填之后，使用记录必须交给命令写，人不要再碰。</div>
+    <div class="out"><div class="ln hi">✓&nbsp;循环关闭：RUN-20261105-2122.md</div>
+<div class="ln hi">&nbsp;&nbsp;ΔR&nbsp;=&nbsp;0.02（R̂=0.88&nbsp;−&nbsp;R=0.86）→&nbsp;命中</div>
+<div class="ln hi">✓&nbsp;L2&nbsp;经验已写入：EP-2026-11-05-01-构建并交付-c10-第二大脑系统-五层可跑-7-.md</div>
+<div class="ln hi">&nbsp;&nbsp;ΔR&nbsp;=&nbsp;0.02&nbsp;→&nbsp;命中</div>
+<div class="ln hi">&nbsp;&nbsp;→&nbsp;已生成&nbsp;L2&nbsp;草稿（status=draft）：EP-2026-11-05-01-构建并交付-c10-第二大脑系统-五层可跑-7-.md</div></div>
+  </div>
+</section>
+
+<section class="step" data-i="5">
+  <div class="cap"><span class="no">05</span>第 4 步：写回 —— 循环自动落了一条 L2 草稿，人工确认后进正式库</div>
+  <div class="term">
+    <div class="bar"><i></i><i></i><i></i><span class="path">brain/</span></div>
+    <div class="cmd"><span class="p">$</span> python3 scripts/kstar.py ep list</div>
+    <div class="out"><div class="ln">ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R̂&nbsp;&nbsp;&nbsp;&nbsp;R&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ΔR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;判定&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;标题</div>
+<div class="ln">EP-2026-09-25-01&nbsp;&nbsp;&nbsp;2026-09-25&nbsp;0.95&nbsp;&nbsp;0.92&nbsp;&nbsp;&nbsp;0.03&nbsp;&nbsp;&nbsp;命中&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C1&nbsp;课程资料包：先做「尸体解剖」，再动手翻译</div>
+<div class="ln">EP-2026-09-29-02&nbsp;&nbsp;&nbsp;2026-09-29&nbsp;1.0&nbsp;&nbsp;&nbsp;0.85&nbsp;&nbsp;&nbsp;0.15&nbsp;&nbsp;&nbsp;轻度高估&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C2&nbsp;论文：把「不做什么」写进方法里</div>
+<div class="ln">EP-2026-10-05-03&nbsp;&nbsp;&nbsp;2026-10-05&nbsp;0.9&nbsp;&nbsp;&nbsp;0.8&nbsp;&nbsp;&nbsp;&nbsp;0.1&nbsp;&nbsp;&nbsp;&nbsp;轻度高估&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C4D&nbsp;本地&nbsp;Agent：先问机器，再问模型</div>
+<div class="ln">EP-2026-10-31-05&nbsp;&nbsp;&nbsp;2026-10-31&nbsp;0.9&nbsp;&nbsp;&nbsp;0.4&nbsp;&nbsp;&nbsp;&nbsp;0.5&nbsp;&nbsp;&nbsp;&nbsp;显著高估&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C8&nbsp;提交口径：数字对不上，功能再全也没人用</div>
+<div class="ln">EP-2026-10-31-06&nbsp;&nbsp;&nbsp;2026-10-31&nbsp;0.8&nbsp;&nbsp;&nbsp;0.55&nbsp;&nbsp;&nbsp;0.25&nbsp;&nbsp;&nbsp;显著高估&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C8&nbsp;预警聚合：吵的东西等于没有</div>
+<div class="ln">EP-2026-10-31-07&nbsp;&nbsp;&nbsp;2026-10-31&nbsp;0.9&nbsp;&nbsp;&nbsp;0.55&nbsp;&nbsp;&nbsp;0.35&nbsp;&nbsp;&nbsp;显著高估&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C8&nbsp;把&nbsp;4&nbsp;周压成&nbsp;1&nbsp;天：砍掉的不是时间，是反馈</div>
+<div class="ln">EP-2026-11-02-04&nbsp;&nbsp;&nbsp;2026-11-02&nbsp;0.9&nbsp;&nbsp;&nbsp;0.6&nbsp;&nbsp;&nbsp;&nbsp;0.3&nbsp;&nbsp;&nbsp;&nbsp;显著高估&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C7&nbsp;内容传播：发布是别人的权限，不是我的能力</div>
+<div class="ln">EP-2026-11-04-08&nbsp;&nbsp;&nbsp;2026-11-04&nbsp;0.6&nbsp;&nbsp;&nbsp;0.95&nbsp;&nbsp;&nbsp;-0.35&nbsp;&nbsp;低估&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C9&nbsp;先做&nbsp;200&nbsp;行单文件：40&nbsp;分钟证明闭环成立</div>
+<div class="ln">EP-2026-11-04-09&nbsp;&nbsp;&nbsp;2026-11-04&nbsp;0.85&nbsp;&nbsp;0.7&nbsp;&nbsp;&nbsp;&nbsp;0.15&nbsp;&nbsp;&nbsp;轻度高估&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C9&nbsp;一天&nbsp;9&nbsp;次失败：AI&nbsp;的代码&quot;看起来优雅&quot;，但没跑过真实句子</div>
+<div class="ln">EP-2026-11-04-10&nbsp;&nbsp;&nbsp;2026-11-04&nbsp;0.9&nbsp;&nbsp;&nbsp;0.45&nbsp;&nbsp;&nbsp;0.45&nbsp;&nbsp;&nbsp;显著高估&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C9&nbsp;移动端&quot;还在溢出&quot;：我拿错了尺子</div>
+<div class="ln">EP-2026-11-05-01&nbsp;&nbsp;&nbsp;2026-11-05&nbsp;0.88&nbsp;&nbsp;0.86&nbsp;&nbsp;&nbsp;0.02&nbsp;&nbsp;&nbsp;命中&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;构建并交付&nbsp;C10&nbsp;第二大脑系统（五层可跑&nbsp;+&nbsp;7&nbsp;份交付物）</div>
+<div class="ln">&nbsp;</div>
+<div class="ln">共&nbsp;11&nbsp;条｜平均&nbsp;ΔR=0.177｜最大高估=0.500｜最大低估=-0.350</div></div>
+  </div>
+</section>
+
+<section class="step" data-i="6">
+  <div class="cap"><span class="no">06</span>第 5 步：自进化 —— 从经验里提名候选 Skill（只提名，不上线）</div>
+  <div class="term">
+    <div class="bar"><i></i><i></i><i></i><span class="path">brain/</span></div>
+    <div class="cmd"><span class="p">$</span> python3 scripts/kstar.py distill --min 3</div>
+    <div class="out"><div class="ln">候选&nbsp;Skill（同一标签下&nbsp;≥3&nbsp;条经验）：</div>
+<div class="ln">&nbsp;</div>
+<div class="ln">-&nbsp;[ai-归因]&nbsp;3&nbsp;条&nbsp;&nbsp;★&nbsp;未覆盖</div>
+<div class="ln">&nbsp;&nbsp;&nbsp;&nbsp;EP-2026-09-29-02&nbsp;&nbsp;ΔR=0.15&nbsp;&nbsp;C2&nbsp;论文：把「不做什么」写进方法里</div>
+<div class="ln">&nbsp;&nbsp;&nbsp;&nbsp;EP-2026-10-31-05&nbsp;&nbsp;ΔR=0.5&nbsp;&nbsp;C8&nbsp;提交口径：数字对不上，功能再全也没人用</div>
+<div class="ln">&nbsp;&nbsp;&nbsp;&nbsp;EP-2026-11-04-09&nbsp;&nbsp;ΔR=0.15&nbsp;&nbsp;C9&nbsp;一天&nbsp;9&nbsp;次失败：AI&nbsp;的代码&quot;看起来优雅&quot;，但没跑过真实句子</div>
+<div class="ln">&nbsp;</div>
+<div class="ln">-&nbsp;[c8]&nbsp;3&nbsp;条&nbsp;&nbsp;★&nbsp;未覆盖</div>
+<div class="ln">&nbsp;&nbsp;&nbsp;&nbsp;EP-2026-10-31-05&nbsp;&nbsp;ΔR=0.5&nbsp;&nbsp;C8&nbsp;提交口径：数字对不上，功能再全也没人用</div>
+<div class="ln">&nbsp;&nbsp;&nbsp;&nbsp;EP-2026-10-31-06&nbsp;&nbsp;ΔR=0.25&nbsp;&nbsp;C8&nbsp;预警聚合：吵的东西等于没有</div>
+<div class="ln">&nbsp;&nbsp;&nbsp;&nbsp;EP-2026-10-31-07&nbsp;&nbsp;ΔR=0.35&nbsp;&nbsp;C8&nbsp;把&nbsp;4&nbsp;周压成&nbsp;1&nbsp;天：砍掉的不是时间，是反馈</div>
+<div class="ln">&nbsp;</div>
+<div class="ln">-&nbsp;[c9]&nbsp;3&nbsp;条&nbsp;&nbsp;★&nbsp;未覆盖</div>
+<div class="ln">&nbsp;&nbsp;&nbsp;&nbsp;EP-2026-11-04-08&nbsp;&nbsp;ΔR=-0.35&nbsp;&nbsp;C9&nbsp;先做&nbsp;200&nbsp;行单文件：40&nbsp;分钟证明闭环成立</div>
+<div class="ln">&nbsp;&nbsp;&nbsp;&nbsp;EP-2026-11-04-09&nbsp;&nbsp;ΔR=0.15&nbsp;&nbsp;C9&nbsp;一天&nbsp;9&nbsp;次失败：AI&nbsp;的代码&quot;看起来优雅&quot;，但没跑过真实句子</div>
+<div class="ln">&nbsp;&nbsp;&nbsp;&nbsp;EP-2026-11-04-10&nbsp;&nbsp;ΔR=0.45&nbsp;&nbsp;C9&nbsp;移动端&quot;还在溢出&quot;：我拿错了尺子</div>
+<div class="ln">&nbsp;</div>
+<div class="ln">（加&nbsp;--write&nbsp;可落盘候选文件）</div></div>
+  </div>
+</section>
+
+<section class="step" data-i="7">
+  <div class="cap"><span class="no">07</span>第 6 步：体检 —— 结构 / ΔR / 空壳 Skill / 积压笔记</div>
+  <div class="term">
+    <div class="bar"><i></i><i></i><i></i><span class="path">brain/</span></div>
+    <div class="cmd"><span class="p">$</span> python3 scripts/kstar.py doctor</div>
+    <div class="out"><div class="ln">──&nbsp;doctor&nbsp;──</div>
+<div class="ln">L1&nbsp;原始&nbsp;13&nbsp;篇｜L2&nbsp;经验&nbsp;11&nbsp;条（confirmed&nbsp;10&nbsp;/&nbsp;draft&nbsp;1）｜Skill&nbsp;6&nbsp;个｜Run&nbsp;1&nbsp;次</div>
+<div class="ln">&nbsp;</div>
+<div class="ln">⚠&nbsp;建议看（1）：</div>
+<div class="ln">&nbsp;&nbsp;-&nbsp;EP-2026-11-05-01&nbsp;仍是&nbsp;draft（未确认的经验不进正式检索）</div>
+<div class="ln">&nbsp;</div>
+<div class="ln">结论：结构健康</div></div>
+  </div>
+</section>
+
+<section class="step" data-i="8">
+  <div class="cap"><span class="no">08</span>第 7 步：看板 —— 由磁盘数据重算，不是截图</div>
+  <div class="term">
+    <div class="bar"><i></i><i></i><i></i><span class="path">brain/</span></div>
+    <div class="cmd"><span class="p">$</span> python3 scripts/kstar.py dash</div>
+    <div class="out"><div class="ln hi">✓&nbsp;看板已生成：reports/dashboard.html（8&nbsp;KB，离线可开）</div></div>
+  </div>
+</section>
+
+<section class="step" data-i="9">
+  <div class="cap"><span class="no">09</span>第 8 步：使用记录 —— 从 logs/usage.jsonl 流水生成</div>
+  <div class="term">
+    <div class="bar"><i></i><i></i><i></i><span class="path">brain/</span></div>
+    <div class="cmd"><span class="p">$</span> python3 scripts/kstar.py report --since 2026-09-01</div>
+    <div class="out"><div class="ln hi">✓&nbsp;使用记录已生成：reports/usage_log_auto.md</div>
+<div class="ln">#&nbsp;使用记录（自动生成）</div>
+<div class="ln">&nbsp;</div>
+<div class="ln">&gt;&nbsp;生成命令：`python3&nbsp;scripts/kstar.py&nbsp;report&nbsp;--since&nbsp;2026-09-01`</div>
+<div class="ln">&gt;&nbsp;生成时间：2026-11-05&nbsp;21:27</div>
+<div class="ln">&nbsp;</div>
+<div class="ln">##&nbsp;一、KSTAR&nbsp;循环执行（1&nbsp;次）</div>
+<div class="ln">&nbsp;</div>
+<div class="ln">|&nbsp;Run&nbsp;|&nbsp;开始&nbsp;|&nbsp;任务&nbsp;|&nbsp;Skill&nbsp;|&nbsp;R̂&nbsp;|&nbsp;R&nbsp;|&nbsp;ΔR&nbsp;|</div>
+<div class="ln">|---|---|---|---|---|---|---|</div>
+<div class="ln">|&nbsp;RUN-20261105-2122&nbsp;|&nbsp;2026-11-05T21:22&nbsp;|&nbsp;构建并交付&nbsp;C10&nbsp;第二大脑系统（五层可跑&nbsp;+&nbsp;7&nbsp;份交付物）&nbsp;|&nbsp;scope-probe-first,&nbsp;narrow-first-mvp,&nbsp;deliverable-pack&nbsp;|&nbsp;0.88&nbsp;|&nbsp;0.86&nbsp;|&nbsp;0.02&nbsp;|</div>
+<div class="ln">&nbsp;</div>
+<div class="ln">##&nbsp;二、经验与&nbsp;ΔR（11&nbsp;条）</div>
+<div class="ln">&nbsp;</div>
+<div class="ln">|&nbsp;ID&nbsp;|&nbsp;日期&nbsp;|&nbsp;标题&nbsp;|&nbsp;R̂&nbsp;|&nbsp;R&nbsp;|&nbsp;ΔR&nbsp;|&nbsp;判定&nbsp;|</div>
+<div class="ln">|---|---|---|---|---|---|---|</div>
+<div class="ln">|&nbsp;EP-2026-09-25-01&nbsp;|&nbsp;2026-09-25&nbsp;|&nbsp;C1&nbsp;课程资料包：先做「尸体解剖」，再动手翻译&nbsp;|&nbsp;0.95&nbsp;|&nbsp;0.92&nbsp;|&nbsp;0.03&nbsp;|&nbsp;命中&nbsp;|</div>
+<div class="ln">|&nbsp;EP-2026-09-29-02&nbsp;|&nbsp;2026-09-29&nbsp;|&nbsp;C2&nbsp;论文：把「不做什么」写进方法里&nbsp;|&nbsp;1.0&nbsp;|&nbsp;0.85&nbsp;|&nbsp;0.15&nbsp;|&nbsp;轻度高估&nbsp;|</div>
+<div class="ln">|&nbsp;EP-2026-10-05-03&nbsp;|&nbsp;2026-10-05&nbsp;|&nbsp;C4D&nbsp;本地&nbsp;Agent：先问机器，再问模型&nbsp;|&nbsp;0.9&nbsp;|&nbsp;0.8&nbsp;|&nbsp;0.1&nbsp;|&nbsp;轻度高估&nbsp;|</div>
+<div class="ln">|&nbsp;EP-2026-10-31-05&nbsp;|&nbsp;2026-10-31&nbsp;|&nbsp;C8&nbsp;提交口径：数字对不上，功能再全也没人用&nbsp;|&nbsp;0.9&nbsp;|&nbsp;0.4&nbsp;|&nbsp;0.5&nbsp;|&nbsp;显著高估&nbsp;|</div>
+<div class="ln">|&nbsp;EP-2026-10-31-06&nbsp;|&nbsp;2026-10-31&nbsp;|&nbsp;C8&nbsp;预警聚合：吵的东西等于没有&nbsp;|&nbsp;0.8&nbsp;|&nbsp;0.55&nbsp;|&nbsp;0.25&nbsp;|&nbsp;显著高估&nbsp;|</div>
+<div class="ln">|&nbsp;EP-2026-10-31-07&nbsp;|&nbsp;2026-10-31&nbsp;|&nbsp;C8&nbsp;把&nbsp;4&nbsp;周压成&nbsp;1&nbsp;天：砍掉的不是时间，是反馈&nbsp;|&nbsp;0.9&nbsp;|&nbsp;0.55&nbsp;|&nbsp;0.35&nbsp;|&nbsp;显著高估&nbsp;|</div>
+<div class="ln">|&nbsp;EP-2026-11-02-04&nbsp;|&nbsp;2026-11-02&nbsp;|&nbsp;C7&nbsp;内容传播：发布是别人的权限，不是我的能力&nbsp;|&nbsp;0.9&nbsp;|&nbsp;0.6&nbsp;|&nbsp;0.3&nbsp;|&nbsp;显著高估&nbsp;|</div>
+<div class="ln">|&nbsp;EP-2026-11-04-08&nbsp;|&nbsp;2026-11-04&nbsp;|&nbsp;C9&nbsp;先做&nbsp;200&nbsp;行单文件：40&nbsp;分钟证明闭环成立&nbsp;|&nbsp;0.6&nbsp;|&nbsp;0.95&nbsp;|&nbsp;-0.35&nbsp;|&nbsp;低估&nbsp;|</div>
+<div class="ln">|&nbsp;EP-2026-11-04-09&nbsp;|&nbsp;2026-11-04&nbsp;|&nbsp;C9&nbsp;一天&nbsp;9&nbsp;次失败：AI&nbsp;的代码&quot;看起来优雅&quot;，但没跑过真实句子&nbsp;|&nbsp;0.85&nbsp;|&nbsp;0.7&nbsp;|&nbsp;0.15&nbsp;|&nbsp;轻度高估&nbsp;|</div>
+<div class="ln">|&nbsp;EP-2026-11-04-10&nbsp;|&nbsp;2026-11-04&nbsp;|&nbsp;C9&nbsp;移动端&quot;还在溢出&quot;：我拿错了尺子&nbsp;|&nbsp;0.9&nbsp;|&nbsp;0.45&nbsp;|&nbsp;0.45&nbsp;|&nbsp;显著高估&nbsp;|</div>
+<div class="ln">|&nbsp;EP-2026-11-05-01&nbsp;|&nbsp;2026-11-05&nbsp;|&nbsp;构建并交付&nbsp;C10&nbsp;第二大脑系统（五层可跑&nbsp;+&nbsp;7&nbsp;份交付物）&nbsp;|&nbsp;0.88&nbsp;|&nbsp;0.86&nbsp;|&nbsp;0.02&nbsp;|&nbsp;命中&nbsp;|</div></div>
+  </div>
+</section>
+
+<section class="step" data-i="10">
+  <div class="cap"><span class="no">10</span>第 9 步：Skill 库快照（提交用，不手改）</div>
+  <div class="term">
+    <div class="bar"><i></i><i></i><i></i><span class="path">brain/</span></div>
+    <div class="cmd"><span class="p">$</span> python3 scripts/kstar.py export-skills --out ../JingXueQing_C10_skills</div>
+    <div class="out"><div class="ln hi">✓&nbsp;已导出&nbsp;6&nbsp;个&nbsp;Skill&nbsp;→&nbsp;../JingXueQing_C10_skills</div></div>
+  </div>
+</section>
+
+<footer>
+复现：<code>cd brain && bash demo/record.sh && python3 demo/make_demo.py</code><br>
+提交人：JingXueQing（景雪晴）· 学号 2024102110351 · C10 Build Your Own Agent
+</footer>
+</div>
+<script>
+(function(){
+  var steps=[].slice.call(document.querySelectorAll('.step'));
+  var i=0,timer=null;
+  function show(n){ for(var k=0;k<steps.length;k++) steps[k].classList.toggle('on',k<n); }
+  function play(){
+    if(timer){clearInterval(timer);timer=null;document.getElementById('play').textContent='▶ 逐步播放';return;}
+    if(i>=steps.length){i=0;show(0);}
+    document.getElementById('play').textContent='⏸ 暂停';
+    timer=setInterval(function(){
+      i++; show(i);
+      steps[i-1].scrollIntoView({behavior:'smooth',block:'center'});
+      if(i>=steps.length){clearInterval(timer);timer=null;
+        document.getElementById('play').textContent='▶ 逐步播放';}
+    },1400);
+  }
+  document.getElementById('play').onclick=play;
+  document.getElementById('all').onclick=function(){if(timer){clearInterval(timer);timer=null;}
+    i=steps.length;show(i);};
+  document.getElementById('reset').onclick=function(){if(timer){clearInterval(timer);timer=null;}
+    i=0;show(0);window.scrollTo({top:0,behavior:'smooth'});};
+  show(steps.length);  // 默认全部可
