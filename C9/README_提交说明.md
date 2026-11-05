@@ -33,7 +33,7 @@
 | 周产出物 | `JingXueQing_C9_W1_验收记录.md` + `homepantry/` + `screenshots/` | 13 段真实终端输出 + 可运行 V1 + 界面截图 | ✅ |
 | `姓名_C9_AAR_W周次.md` | `JingXueQing_C9_AAR_W1.md` | 有效/无效分析 + **动力检查 9/10** 的拆解 + 下周计划 | ✅ |
 | `姓名_C9_W周次_AI日志.md` | `JingXueQing_C9_AI日志.md`（同一份） | W1 内 proposal 与 V1 在同一天完成，所以日志只有一份；它同时记录了申请书写作与 9 次代码迭代，未拆成两份避免重复 | ✅ |
-| 公开链接 | 见 AAR「公开在哪里」 | 群内文案已备（本文第 6 节）；GitHub 本地仓库已就绪、**无远程地址，故不计为已公开** | ⏳ |
+| 公开链接 | https://github.com/jingxueqing/my-challenges/tree/main/C9 | 已公开在 GitHub 仓库 `jingxueqing/my-challenges` 的 `C9/` 目录（31 个文件，含代码、词典、测试、截图与全部文档）；群内文案已备（本文第 6 节） | ✅ |
 | 推进台账 | `JingXueQing_C9_推进台账.md` | 8 周周期表 + 失败信号自查 + `[待补]` 清单 | ✅ |
 
 ### 代码与文档
