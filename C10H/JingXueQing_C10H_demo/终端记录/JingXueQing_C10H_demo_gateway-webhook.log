@@ -1,0 +1,14 @@
+2026-11-06 15:47:22,398 INFO gateway.platforms.webhook: [webhook] Reloaded 1 dynamic route(s): deliverable-check
+2026-11-06 15:47:22,408 INFO gateway.platforms.webhook: [webhook] Listening on * (all interfaces, IPv4+IPv6):8644 — routes: deliverable-check
+2026-11-06 15:47:22,410 INFO gateway.run: ✓ webhook connected
+2026-11-06 15:47:22,561 INFO gateway.run: Gateway running with 1 platform(s)
+2026-11-06 15:50:30,239 INFO gateway.run: Connecting to webhook...
+2026-11-06 15:50:30,241 INFO gateway.platforms.webhook: [webhook] Reloaded 1 dynamic route(s): deliverable-check
+2026-11-06 15:50:30,243 INFO gateway.platforms.webhook: [webhook] Listening on * (all interfaces, IPv4+IPv6):8644 — routes: deliverable-check
+2026-11-06 15:50:30,249 INFO gateway.run: ✓ webhook connected
+2026-11-06 15:50:30,318 INFO gateway.run: Gateway running with 1 platform(s)
+2026-11-06 15:50:51,063 INFO gateway.platforms.webhook: [webhook] POST event=test route=deliverable-check prompt_len=3349 delivery=7d762cf71489452ba89288a318dacb26
+2026-11-06 15:50:51,155 INFO gateway.run: inbound message: platform=webhook user=deliverable-check chat=webhook:v2:WyJkZWZhdWx0IiwiZGVsaXZlcmFibGUtY2hlY2siLCI3ZDc2MmNmNzE0ODk0NTJiYTg5Mjg4YTMxOGRhY2IyNiJd msg='[IMPORTANT: The user has invoked the "challenge-deliverable-check" skill, indica' reply_to_id=None reply_to_text=''
+2026-11-06 15:51:43,307 INFO gateway.run: response ready: platform=webhook chat=webhook:v2:WyJkZWZhdWx0IiwiZGVsaXZlcmFibGUtY2hlY2siLCI3ZDc2MmNmNzE0ODk0NTJiYTg5Mjg4YTMxOGRhY2IyNiJd session=agent:main:webhook:webhook:webhook:v2:WyJkZWZhdWx0IiwiZGVsaXZlcmFibGUtY2hlY2siLCI3ZDc2MmNmNzE0ODk0NTJiYTg5Mjg4YTMxOGRhY2IyNiJd:webhook:deliverable-check time=52.2s api_calls=3 response=106 chars
+2026-11-06 15:51:43,358 INFO gateway.platforms.base: [Webhook] Sending response (106 chars) to webhook:v2:WyJkZWZhdWx0IiwiZGVsaXZlcmFibGUtY2hlY2siLCI3ZDc2MmNmNzE0ODk0NTJiYTg5Mjg4YTMxOGRhY2IyNiJd
+2026-11-06 15:51:43,370 INFO gateway.platforms.webhook: [webhook] Response for webhook:v2:WyJkZWZhdWx0IiwiZGVsaXZlcmFibGUtY2hlY2siLCI3ZDc2MmNmNzE0ODk0NTJiYTg5Mjg4YTMxOGRhY2IyNiJd: 已加载阿衡角色。
