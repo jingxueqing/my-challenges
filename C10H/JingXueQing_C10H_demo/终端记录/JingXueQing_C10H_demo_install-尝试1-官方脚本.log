@@ -1,0 +1,13 @@
+
+┌─────────────────────────────────────────────────────────┐
+│             ☤ Hermes Agent Installer                    │
+├─────────────────────────────────────────────────────────┤
+│  An open source AI agent by Nous Research.              │
+└─────────────────────────────────────────────────────────┘
+
+✓ prerequisites ok (git, curl)
+→ Installing the latest stable release (v0.23.0); --channel main follows every commit
+→ Cloning https://github.com/NousResearch/hermes-agent.git (main) into /Users/jingxueqing/.hermes/hermes-agent
+Cloning into '/Users/jingxueqing/.hermes/.hermes-clone-JiOocA/tree'...
+→ Fetching v0.23.0
+→ Checking out v0.23.0 (attempt 1 of 2)
