@@ -1,0 +1,15 @@
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│                         Scheduled Jobs (profile: default)               │
+└─────────────────────────────────────────────────────────────────────────┘
+
+  c71b73122cf4 [active]
+    Name:      C10H交付物自检
+    Schedule:  0 21 * * *
+    Repeat:    ∞
+    Next run:  2026-11-06T21:00:00+08:00
+    Deliver:   local
+    Skills:    challenge-deliverable-check
+    Last run:  2026-11-06T15:41:28.211324+08:00  ok
+    Execution: completed  87d0fd7c91b54aee9290f9b2bf9f3b3c
+
