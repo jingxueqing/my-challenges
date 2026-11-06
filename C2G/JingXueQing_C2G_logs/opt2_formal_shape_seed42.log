@@ -1,0 +1,15 @@
+[opt2] run=formal_shape_seed42 seed=42 srd=True formal=True cfg=11Lx512d seq=1024 start=18:12:21
+[env] device=cpu torch=2.14.1 seed=42 smoke=1
+[tok] byte-level tokenizer (vocab=256) — smoke / no-model path
+[data] smoke corpus built: /Users/jingxueqing/WorkBuddy/2026-10-03-21-53-07/c2g_opt2/data/smoke_corpus.txt (1.52 MB, real text)
+[data] smoke tokens: train=1,370,731 val=152,303 (byte-level, so 1 token == 1 UTF-8 byte)
+[model] 11L x 512d x 8H/4KV mlp=4x vocab=256 params=31,862,365
+[model] SRD=1 choices=[1, 2] TTDS=1 extra=3
+[ema] started at frac=0.502
+[train] steps=19 time=312.1s tok/s=499
+[ema] EMA weights loaded into model
+[eval] pre-quant  bpb=4.027773 nats/tok=2.7918 tokens=151,343 bytes=151,343
+[eval] post-quant bpb=4.024624 nats/tok=2.7897 tokens=151,343 bytes=151,343
+[eval] TTDS extra=3 bpb=4.028107 nats/tok=2.7921  delta=+0.003483
+[artifact] raw=63,791,616B compressed=20,375,949B code=50,771B total=20,426,720B cap=16,000,000B OVER CAP
+[done] {"run_id": "formal_shape_seed42", "seed": 42, "smoke": 1, "device": "cpu", "steps": 19, "train_seconds": 312.1, "params": 31862365, "vocab_size": 256, "eval_stride": 64, "train_seq_len": 1024, "pre_quant_bpb": 4.02777256, "post_quant_bpb": 4.0246244, "ttds_extra": 3, "ttds_bpb": 4.02810707, "ttt_bpb": null, "artifact_bytes": 20426720, "artifact_cap": 16000000, "artifact_ok": false, "srd_enabled": 1, "final_train_loss": 3.48643, "tokenizer": "byte"}

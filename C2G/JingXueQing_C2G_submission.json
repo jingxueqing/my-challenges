@@ -12,7 +12,8 @@
     "Reason 2: author's machine is Apple M1 / 8 GB / no CUDA; cannot run the track.",
     "Reason 3: FineWeb is unreachable from the author's network (HF / raw.githubusercontent HTTP 000).",
     "WHAT WAS ADDED NOW: the artifact contains REAL trained weights, and val_bpb_measured_local holds REAL measured BPB from a 3-seed local run.",
-    "The measured numbers are NOT track scores: 2.04M params, byte-level vocab 256, CPython-stdlib corpus, ~100 steps on one M1 CPU -- vs the track's 11Lx512d / SP8192 / FineWeb / 8xH100 / 600 s."
+    "The measured numbers are NOT track scores: 2.04M params, byte-level vocab 256, CPython-stdlib corpus, ~100 steps on one M1 CPU -- vs the track's 11Lx512d / SP8192 / FineWeb / 8xH100 / 600 s.",
+    "2026-11-06 update: the 10-04 stride A/B was found CONTAMINATED (different scored token sets) and superseded by a fair same-set A/B (see fair_stride_ablation_local, still negative at local scale). Added: TTDS retest (4/4 worse), SRD on/off contrast (no measurable effect), and a formal-shape 11Lx512d run whose artifact EXCEEDS the 16MB cap at 31.9M params -- registered under design_constraints."
   ],
   "val_bpb": null,
   "val_bpb_std": null,
@@ -189,7 +190,7 @@
     ]
   },
   "stride_ablation_local": {
-    "_note": "Direct A/B of the main hypothesis (sliding-window evaluation) on real data, same weights, only eval_stride changes. stride == seq_len means no sliding (= the baseline way).",
+    "_note": "SUPERSEDED / INVALID -- do not use. Post-hoc audit found the scored token SETS differ across strides (151,709 / 152,175 / 152,111) and the old _windows tail overlapped the last window (double scoring). Kept only as a documented mistake; see fair_stride_ablation_local.",
     "per_seed": {
       "42": {
         "stride_256": {
@@ -276,5 +277,63 @@
     "weights_seed": 0,
     "weights_sha256": "d43add442215c418e74ecee5e1bef2e3c4696733e54821e0ef74e9ba4ab48a21",
     "_previous_state": "The previously submitted tar.gz contained NO weights -- the trainer computed the compressed blob but never wrote it to disk. Fixed on 2026-10-04."
+  },
+  "fair_stride_ablation_local": {
+    "_note": "FAIR A/B of the main hypothesis, 2026-11-06. All regimes score the IDENTICAL token set [seq_len, n) by construction (asserted per seed); each token scored exactly once. Retrained 3 seeds. NOT comparable to leaderboard numbers (seq_len 256 vs 8192, ~150 steps vs 600s x 8xH100).",
+    "replaces": "stride_ablation_local (invalid, kept for the record)",
+    "config": "same as val_bpb_measured_local (2.04M params, seq_len 256, 180 s/seed)",
+    "regimes": {
+      "block": "official baseline protocol: non-overlapping chunks, within-chunk prefix context",
+      "slide256": "window = last 256 tokens, rightmost span scored (structurally equivalent to block; cross-check)",
+      "slide128 / slide64": "sliding window, scored-token context >= seq_len - stride"
+    },
+    "per_seed": {
+      "42": { "block": 3.218866, "slide256": 3.218752, "slide128": 3.277981, "slide64": 3.292856, "delta_slide64_vs_block": 0.073990 },
+      "0": { "block": 3.233591, "slide256": 3.233485, "slide128": 3.277889, "slide64": 3.289025, "delta_slide64_vs_block": 0.055434 },
+      "1234": { "block": 3.247889, "slide256": 3.247790, "slide128": 3.287315, "slide64": 3.296251, "delta_slide64_vs_block": 0.048362 }
+    },
+    "mean_delta_slide64_vs_block": 0.059262,
+    "verdict": "NEGATIVE at local scale, 3/3 seeds same direction; implementation-artifact explanation excluded (identical-set construction + slide256 ~= block). Set-equality caveat: block/slide256 miss each chunk's first token (official-protocol property); adding those hardest tokens would only RAISE block's BPB, so the true gap is smaller but the sign holds.",
+    "logs": [
+      "JingXueQing_C2G_logs/opt2_fair_srdon_seed42.log",
+      "JingXueQing_C2G_logs/opt2_fair_srdon_seed0.log",
+      "JingXueQing_C2G_logs/opt2_fair_srdon_seed1234.log"
+    ]
+  },
+  "ttds_retest": {
+    "_note": "Same weights, deeper unroll at eval only (extra 1->2 under slide64). Pre-registered H3 direction.",
+    "per_seed_delta": { "42": 0.004953, "0": 0.012489, "1234": 0.004820 },
+    "mean_delta": 0.007421,
+    "formal_shape_delta_extra_2_to_3": 0.003483,
+    "verdict": "4/4 experiments same direction: unrolling deeper than trained is WORSE. H3 confirmed at two scales. TTDS as currently designed is a negative-result component."
+  },
+  "srd_contrast_local": {
+    "_note": "Minimal controlled contrast: identical config/seed/180s budget, only SRD_ENABLED flips. Unbalanced step counts (random depth consumes compute), so noise-level -- NOT evidence in either direction.",
+    "per_seed": {
+      "42": { "on_steps": 155, "on_post_quant_bpb": 3.292834, "off_steps": 141, "off_post_quant_bpb": 3.280998 },
+      "0": { "on_steps": 151, "on_post_quant_bpb": 3.288986, "off_steps": 133, "off_post_quant_bpb": 3.309434 },
+      "1234": { "on_steps": 144, "on_post_quant_bpb": 3.296229, "off_steps": null, "off_post_quant_bpb": null }
+    },
+    "mean_on": 3.292683,
+    "mean_off": 3.295216,
+    "verdict": "no measurable effect at local scale; the SRD-insures-TTDS pairing is neither confirmed nor refuted -- formal ablation (matrix group D) deferred to the compute stage"
+  },
+  "formal_shape_run": {
+    "_note": "FORMAL MODEL SHAPE x LOCAL BUDGET. Not a track score: 19 steps is severely under-trained. Purpose: prove the script runs end-to-end at the formal shape, and measure the artifact size constraint.",
+    "date": "2026-11-06",
+    "config": "11L x 512d x 8H/4KV, mlp=4x, tied embeddings, 31,862,365 params, seq_len=1024, byte vocab 256, CPython corpus, 312 s, 19 steps, Apple M1 CPU",
+    "final_train_loss": 3.48643,
+    "pre_quant_bpb": 4.027773,
+    "post_quant_bpb": 4.024624,
+    "artifact_raw_bytes": 63791616,
+    "artifact_compressed_bytes": 20375949,
+    "artifact_total_bytes": 20426720,
+    "artifact_cap": 16000000,
+    "artifact_ok": false,
+    "log": "JingXueQing_C2G_logs/opt2_formal_shape_seed42.log"
+  },
+  "design_constraints": {
+    "_registered": "2026-11-06, from the formal-shape run",
+    "param_budget": "at int6-mat/int8-embed quantisation, 31.9M params compress to 20.4 MB > 16 MB cap (27% over). The formal config must either keep params <= ~24M or upgrade the compression pipeline (entropy coding / lower bit-width). All compliant leaderboard entries imply effective param counts below this."
   }
 }

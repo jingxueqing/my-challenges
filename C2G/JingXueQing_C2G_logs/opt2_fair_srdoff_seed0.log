@@ -1,0 +1,28 @@
+[opt2] run=fair_srdoff_seed0 seed=0 srd=False formal=False cfg=6Lx192d seq=256 start=18:05:56
+[env] device=cpu torch=2.14.1 seed=0 smoke=1
+[tok] byte-level tokenizer (vocab=256) — smoke / no-model path
+[data] smoke corpus built: /Users/jingxueqing/WorkBuddy/2026-10-03-21-53-07/c2g_opt2/data/smoke_corpus.txt (1.52 MB, real text)
+[data] smoke tokens: train=1,370,731 val=152,303 (byte-level, so 1 token == 1 UTF-8 byte)
+[model] 6L x 192d x 6H/3KV mlp=3x vocab=256 params=2,042,343
+[model] SRD=0 choices=[0] TTDS=1 extra=2
+step     20 loss 2.8714 extra 0 lr_scale 1.000 elapsed 24.7s (14%)
+step     40 loss 2.5062 extra 0 lr_scale 1.000 elapsed 49.8s (28%)
+step     60 loss 2.3536 extra 1 lr_scale 0.826 elapsed 74.4s (41%)
+[ema] started at frac=0.501
+step     80 loss 2.3918 extra 1 lr_scale 0.591 elapsed 105.0s (58%)
+step    100 loss 2.2627 extra 1 lr_scale 0.359 elapsed 134.9s (75%)
+step    120 loss 2.2668 extra 1 lr_scale 0.145 elapsed 162.7s (90%)
+[train] steps=133 time=180.9s tok/s=6,021
+[ema] EMA weights loaded into model
+[eval] pre-quant  bpb=3.306932 nats/tok=2.2922 tokens=152,111 bytes=152,111
+[eval] post-quant bpb=3.309434 nats/tok=2.2939 tokens=152,111 bytes=152,111
+[eval] TTDS extra=2 bpb=3.328402 nats/tok=2.3071  delta=+0.018968
+[artifact] raw=4,096,256B compressed=1,386,999B code=50,771B total=1,437,770B cap=16,000,000B OK
+[done] {"run_id": "fair_srdoff_seed0", "seed": 0, "smoke": 1, "device": "cpu", "steps": 133, "train_seconds": 180.9, "params": 2042343, "vocab_size": 256, "eval_stride": 64, "train_seq_len": 256, "pre_quant_bpb": 3.3069325, "post_quant_bpb": 3.30943356, "ttds_extra": 2, "ttds_bpb": 3.32840193, "ttt_bpb": null, "artifact_bytes": 1437770, "artifact_cap": 16000000, "artifact_ok": true, "srd_enabled": 0, "final_train_loss": 2.2315, "tokenizer": "byte"}
+[ab] block bpb=3.262605 toks=151,453 bytes=151,453
+[ab] slide256 bpb=3.262529 toks=151,454 bytes=151,454
+[ab] slide128 bpb=3.301744 toks=152,047 bytes=152,047
+[ab] slide64 bpb=3.309467 toks=152,047 bytes=152,047
+[ab] same_scored_set=False ({151453, 151454, 152047})
+[ab] TTDS extra=2 bpb=3.328436 delta=+0.018969
+[ab-final] {"run_id": "fair_srdoff_seed0", "seed": 0, "smoke": 1, "device": "cpu", "steps": 133, "train_seconds": 180.9, "params": 2042343, "vocab_size": 256, "eval_stride": 64, "train_seq_len": 256, "pre_quant_bpb": 3.3069325, "post_quant_bpb": 3.30943356, "ttds_extra": 2, "ttds_bpb": 3.32840193, "ttt_bpb": null, "artifact_bytes": 1437770, "artifact_cap": 16000000, "artifact_ok": true, "srd_enabled": 0, "final_train_loss": 2.2315, "tokenizer": "byte", "weights_file": "weights_fair_srdoff_seed0.bin", "weights_bytes": 1386999, "weights_sha256": "88538aedf7daf881cc957945824816fe5750d6c945eec747dde40dd529331536", "fair_ab": {"block": {"bpb": 3.262605, "nats_per_token": 2.261466, "scored_tokens": 151453, "scored_bytes": 151453}, "slide256": {"bpb": 3.262529, "nats_per_token": 2.261413, "scored_tokens": 151454, "scored_bytes": 151454}, "slide128": {"bpb": 3.301744, "nats_per_token": 2.288594, "scored_tokens": 152047, "scored_bytes": 152047}, "slide64": {"bpb": 3.309467, "nats_per_token": 2.293948, "scored_tokens": 152047, "scored_bytes": 152047}, "same_scored_set": false, "ttds_extra2": {"bpb": 3.328436, "delta_vs_base": 0.018969}}}
