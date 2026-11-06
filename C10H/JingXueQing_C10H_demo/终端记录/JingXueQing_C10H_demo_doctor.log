@@ -1,0 +1,149 @@
+
+┌─────────────────────────────────────────────────────────┐
+│                 🩺 Hermes Doctor                        │
+└─────────────────────────────────────────────────────────┘
+
+◆ Security Advisories
+  ✓ No active security advisories
+
+◆ MCP Server Security
+  ✓ No suspicious MCP stdio commands
+
+◆ Python Environment
+  ✓ Python 3.14.9
+  ✓ SQLite 3.53.1
+    → SQLite source id: 2026-05-05 10:34:17 c88b22011a54b4f6fbd149e9f8e4…
+    → state.db: WAL journal mode (1.1 MB)
+    → cron/executions.db: WAL journal mode (40.0 KB)
+    → projects.db: WAL journal mode (44.0 KB)
+    → kanban.db: WAL journal mode (116.0 KB)
+  ✓ Runtime venv staged (/Users/jingxueqing/.hermes/installs/384426c56ee69be1/environments/22619c29aeed44d9a8550122cd32a14f/venv) (active in this process)
+    → One switch silences all macOS folder prompts: grant your terminal app Full Disk Access and Hermes will never trip per-folder dialogs (Desktop/Downloads/Documents/...) again. Open: System Settings → Privacy & Security → Full Disk Access — or run:
+      open "x-apple.systempreferences:com.apple.preference.security?Privacy_AllFiles"
+    then enable your terminal (and Hermes.app if you use Desktop), and restart them once. With Hermes' stable signing identities the grant survives every update.
+
+◆ SSL / CA Certificates
+  ✓ TLS platform trust store configured; default SSL context available
+
+◆ Required Packages
+  ✓ OpenAI SDK
+  ✓ Rich (terminal UI)
+  ✓ python-dotenv
+  ✓ ruamel.yaml
+  ✓ HTTPX
+  ✓ Croniter (cron expressions) (optional)
+  ⚠ python-telegram-bot (optional, not installed)
+  ⚠ discord.py (optional, not installed)
+  ✓ Dashboard web surface (imports cleanly)
+
+◆ Configuration Files
+  ✓ .env file exists (in project directory)
+  ✓ ~/.hermes/config.yaml exists
+  ✗ model.provider 'ollama' is not a recognised provider (known: actual, ai-gateway, alibaba, alibaba-cloud-cn, alibaba-cn, alibaba-coding-cn, alibaba-coding-plan, alibaba-coding-plan-cn, alibaba-token-plan, alibaba-token-plan-cn, anthropic, arcee, auto, azure-foundry, bedrock, commandcode, commandcode-anthropic, commandcode-chat, commandcode-claude, custom, dashscope-cn, dashscope-coding-cn, dashscope-token-plan, dashscope-token-plan-cn, deep-infra, deepinfra, deepinfra-ai, deepseek, fireworks, fireworks-ai, fw, gemini, gmi, huggingface, kilocode, kimi-coding, kimi-coding-cn, lmstudio, meta, meta-ai, minimax, minimax-cn, minimax-oauth, moa, model-api, msl, muse, muse-spark, nebius, nebius-tf, nebius-token-factory, nebius-tokenfactory, nous, novita, novita-ai, novitaai, nvidia, ollama-cloud, openai-api, openai-codex, opencode-go, opencode-zen, openrouter, qwen-oauth, ramp, ramp-router, router, router.com, solar, solstice, solstice-oauth, stepfun, tencent-tokenhub, tencent-tokenplan, token-factory, tokenfactory, upstage, vertex, xai, xai-oauth, xiaomi, zai)
+  ✓ Config version up to date (v52)
+  ✓ No deprecated config keys or env vars
+
+◆ xAI Model Retirement (May 15, 2026)
+  ✓ No retired xAI models in config
+
+◆ Session Reset (timers removed Sep 7, 2026)
+  ✓ No idle/daily session_reset policy configured
+
+◆ Auth Providers
+  ⚠ Nous Portal auth (not logged in)
+  ⚠ OpenAI Codex auth (not logged in)
+    → No Codex credentials stored. Run `hermes auth add openai-codex --type oauth` to authenticate.
+    → codex CLI not installed (optional — only required to import tokens from an existing Codex CLI login)
+  ⚠ MiniMax OAuth (not logged in)
+  ⚠ xAI OAuth (not logged in)
+    → No xAI OAuth credentials stored. Select xAI Grok OAuth (SuperGrok / Premium+) in `hermes model`.
+
+◆ Directory Structure
+  ✓ ~/.hermes directory exists
+  ✓ ~/.hermes/cron/ exists
+  ✓ ~/.hermes/sessions/ exists
+  ✓ ~/.hermes/logs/ exists
+  ✓ ~/.hermes/skills/ exists
+  ✓ ~/.hermes/memories/ exists
+  ✓ ~/.hermes/cache/scratch/ is the scratch dir (TMPDIR; 0 B, entries pruned after 24h idle)
+    → TMPDIR=/var/folders/11/95kq69tx6l37q87_ltnh7x900000gn/T/ is set by you or the OS, so Hermes leaves it alone
+  ✓ ~/.hermes/SOUL.md exists (persona configured)
+  ✓ ~/.hermes/memories/ directory exists
+  ✓ MEMORY.md exists (27 chars)
+    → USER.md not created yet (will be created when the agent first writes a memory)
+  ✓ ~/.hermes/state.db exists (18 sessions)
+    → state.db logical size 1.2 MB, 307 pages, 0 free, WAL 1.4 MB
+    → 55 messages, 18 sessions, journal_mode=wal, 1 process(es) holding the DB open (the host gateway (PID 51936) serving profiles default)
+    → FTS tables: messages_fts, messages_fts_trigram
+  ✓ ~/.hermes/cron/ store is writable
+
+◆ Command Installation
+  ✓ Hermes entry point exists (/Users/jingxueqing/WorkBuddy/2026-11-06-11-18-00/hermes-src2/hermes)
+  ✓ ~/.local/bin/hermes exists (non-symlink)
+
+◆ External Tools
+  ✓ git
+  ✓ ripgrep (rg) (pm store) (faster file search)
+  ⚠ Docker/Podman not found (optional)
+  ✓ Node.js
+  ✓ Chromium (/Users/jingxueqing/.hermes/tools/chromium-1208/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing)
+
+◆ API Connectivity
+  Running 44 connectivity checks in parallel…                                                                        ✓ IPv6 route (IPv6 path to openrouter.ai reachable)
+  ⚠ OpenRouter API (not configured)
+
+◆ Tool Availability
+  ✓ browser
+  ✓ browser-use
+  ✓ catalog
+  ✓ clarify
+  ✓ code_execution
+  ✓ computer_use
+  ✓ connections
+  ✓ cronjob
+  ✓ delegation
+  ✓ desktop_ui
+  ✓ file
+  ✓ memory
+  ✓ onboarding
+  ✓ project
+  ✓ session_search
+  ✓ skills
+  ✓ terminal
+  ✓ todo
+  ✓ tts
+  ✓ video
+  ✓ vision
+  ✓ kanban (runtime-gated; loaded only for dispatcher-spawned workers)
+  ✓ web search (keenable)
+  ✓ web extract (keenable)
+  ⚠ a2a (system dependency not met)
+  ⚠ browser-cdp (system dependency not met)
+  ⚠ discord (missing DISCORD_BOT_TOKEN)
+  ⚠ discord_admin (missing DISCORD_BOT_TOKEN)
+  ⚠ feishu_doc (system dependency not met)
+  ⚠ feishu_drive (system dependency not met)
+  ⚠ hermes-yuanbao (system dependency not met)
+  ⚠ image_gen (image generation unavailable — check the provider selection and its key or SDK with 'hermes tools')
+  ⚠ video_gen (system dependency not met)
+  ⚠ x_search (missing XAI_API_KEY)
+
+◆ Skills Hub
+  ✓ Skills Hub directory exists
+  ✓ Lock file OK (0 hub-installed skill(s))
+  ⚠ No GITHUB_TOKEN (60 req/hr rate limit — set in ~/.hermes/.env for better rates)
+
+◆ Memory Provider
+  ✓ Built-in memory active (no external provider configured — this is fine)
+
+◆ NeMo Relay Plugins
+  ✓ No Relay plugin files found
+
+────────────────────────────────────────────────────────────
+  Found 2 issue(s) to address:
+
+  1. model.provider 'ollama' is unknown. Valid providers: actual, ai-gateway, alibaba, alibaba-cloud-cn, alibaba-cn, alibaba-coding-cn, alibaba-coding-plan, alibaba-coding-plan-cn, alibaba-token-plan, alibaba-token-plan-cn, anthropic, arcee, auto, azure-foundry, bedrock, commandcode, commandcode-anthropic, commandcode-chat, commandcode-claude, custom, dashscope-cn, dashscope-coding-cn, dashscope-token-plan, dashscope-token-plan-cn, deep-infra, deepinfra, deepinfra-ai, deepseek, fireworks, fireworks-ai, fw, gemini, gmi, huggingface, kilocode, kimi-coding, kimi-coding-cn, lmstudio, meta, meta-ai, minimax, minimax-cn, minimax-oauth, moa, model-api, msl, muse, muse-spark, nebius, nebius-tf, nebius-token-factory, nebius-tokenfactory, nous, novita, novita-ai, novitaai, nvidia, ollama-cloud, openai-api, openai-codex, opencode-go, opencode-zen, openrouter, qwen-oauth, ramp, ramp-router, router, router.com, solar, solstice, solstice-oauth, stepfun, tencent-tokenhub, tencent-tokenplan, token-factory, tokenfactory, upstage, vertex, xai, xai-oauth, xiaomi, zai. Fix: run 'hermes config set model.provider <valid_provider>'
+  2. Run 'hermes setup' to configure missing API keys for full tool access
+
+  Tip: run 'hermes doctor --fix' to auto-fix what's possible.
+
