@@ -1,0 +1,15 @@
+【环境】macOS 14.5 / 系统自带 python3 3.9 / 另有一个托管 python 3.13
+【在做什么】用我 C4B 做的公众号排版技能 `wechat_publisher.py`，把 A1.md 转成公众号 HTML。
+【进度】这是第 3 次跑，前两次是好的。
+【卡点】直接跑 `python3 scripts/wechat_publisher.py A1.md A1.html`：
+```
+ModuleNotFoundError: No module named 'markdown'
+```
+我期望能直接出 HTML，实际第一行就崩了，后面什么都没生成。
+【已尝试】
+1. `pip3 install markdown` 我没装 —— 会污染系统 python，而且我自己技能里写了「禁止自动装依赖」；
+2. 用 `python3 -c "import markdown"` 确认系统 python 确实没有这个包 → 排除「装错位置」；
+3. 换托管解释器 `~/.workbuddy/binaries/python/envs/default/bin/python3` 再跑，`md ok`，直接跑通。
+【我的结论】不是代码问题，是解释器选错。
+【想讨论的】你们写技能时是「要求用户自己备环境」，还是「技能自带 requirements」？
+我倾向后者，但要加一个「缺依赖就打印指引并退出」的开关，默认不装。
