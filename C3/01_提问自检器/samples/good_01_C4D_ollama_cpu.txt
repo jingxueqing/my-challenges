@@ -1,0 +1,16 @@
+【环境】MacBook Air M1 / 8GB 内存 / macOS 14.5 / Ollama 0.3.x
+【在做什么】C4D 本地大模型 Agent 技能，目标是用 Gemma 4 E2B 在本地跑一个只读文件的 Agent。
+【进度】刚装完 Ollama，这是第 2 轮试；之前用 CPU 跑 1B 的小模型是正常的。
+【卡点】`ollama serve` 起得来，`ollama run` 也能出字，但慢到不能用：同一句 prompt 要 40 多秒。
+【我试过什么】
+1. 按 README 跑 `ollama run gemma4:e2b`，报 tag 不存在；去 https://ollama.com/library/gemma4/tags 查到真实 tag 是 `gemma4:2b-it-qat`，改了之后能跑；
+2. 以为是内存不够，用 `top` 看只用了 4.1GB，没吃满 → 排除 OOM；
+3. 关掉其他 App 再跑，速度没变化 → 排除内存争抢。
+【我以为 / 实际】我以为能出字就是吃上 GPU 了。实际看 `~/.ollama/logs/server.log`，第一行就是 `library=cpu`，根本没走 Metal。
+【关键日志】
+```
+llama_model_load: library=cpu
+eval time = 41233.55 ms / 18 tokens
+```
+【我的判断（不一定对）】可能是 llama-server 二进制没被找到，我 `ollama serve` 时的工作目录不在 app 的 Resources/ 下。
+想问：M1 上遇到 `library=cpu` 的同学，你们是在哪个目录起的 serve？
