@@ -1,0 +1,237 @@
+{
+  "total": 91.9,
+  "grade": "强匹配",
+  "role_type": "非技术岗/复合岗",
+  "domain_scores": {
+    "业务与行业": 0.0,
+    "数据分析": 0.0,
+    "产品与需求": 97.7,
+    "沟通协作": 85.0,
+    "工程基础": 0.0,
+    "工具与平台": 0.0
+  },
+  "tags": [
+    {
+      "tag_id": "PRD01",
+      "name": "需求分析",
+      "domain": "产品与需求",
+      "weight": 0.1798,
+      "coverage": 1.0,
+      "required_hits": 2,
+      "bonus_hits": 0,
+      "have_hits": 2,
+      "is_hard_gap": false,
+      "evidence": [
+        "岗位职责：负责需求分析与需求评审，撰写 PRD 与规格说明，设计业务流程并推动落地",
+        "校园二手交易平台 需求分析  2024.10–2025.01",
+        "- 组织 3 次需求评审，推动开发排期落地"
+      ]
+    },
+    {
+      "tag_id": "PRD03",
+      "name": "流程设计",
+      "domain": "产品与需求",
+      "weight": 0.1798,
+      "coverage": 1.0,
+      "required_hits": 3,
+      "bonus_hits": 0,
+      "have_hits": 2,
+      "is_hard_gap": false,
+      "evidence": [
+        "岗位职责：负责需求分析与需求评审，撰写 PRD 与规格说明，设计业务流程并推动落地",
+        "任职要求：具备流程设计与 SOP 沉淀经验",
+        "- 独立撰写需求文档与业务流程说明，用流程图梳理寄售、审核、结算三个环节"
+      ]
+    },
+    {
+      "tag_id": "PRD04",
+      "name": "原型与交互",
+      "domain": "产品与需求",
+      "weight": 0.1659,
+      "coverage": 1.0,
+      "required_hits": 3,
+      "bonus_hits": 0,
+      "have_hits": 2,
+      "is_hard_gap": false,
+      "evidence": [
+        "会用 Figma 或 Axure 出原型",
+        "PPT 与方案文档撰写、Figma 原型（入门）、飞书与 Notion 协作"
+      ]
+    },
+    {
+      "tag_id": "COM01",
+      "name": "跨部门沟通",
+      "domain": "沟通协作",
+      "weight": 0.1573,
+      "coverage": 0.85,
+      "required_hits": 2,
+      "bonus_hits": 0,
+      "have_hits": 1,
+      "is_hard_gap": false,
+      "evidence": [
+        "有项目管理与跨部门协同经验",
+        "- 与供应链、销售两个部门对接，统一库存周转的统计口径，减少 2 次口径争议"
+      ]
+    },
+    {
+      "tag_id": "PRD02",
+      "name": "文档与规格撰写",
+      "domain": "产品与需求",
+      "weight": 0.1573,
+      "coverage": 1.0,
+      "required_hits": 2,
+      "bonus_hits": 0,
+      "have_hits": 2,
+      "is_hard_gap": false,
+      "evidence": [
+        "岗位职责：负责需求分析与需求评审，撰写 PRD 与规格说明，设计业务流程并推动落地",
+        "- 独立撰写需求文档与业务流程说明，用流程图梳理寄售、审核、结算三个环节",
+        "PPT 与方案文档撰写、Figma 原型（入门）、飞书与 Notion 协作"
+      ]
+    },
+    {
+      "tag_id": "PRD05",
+      "name": "项目推进",
+      "domain": "产品与需求",
+      "weight": 0.121,
+      "coverage": 0.85,
+      "required_hits": 1,
+      "bonus_hits": 0,
+      "have_hits": 1,
+      "is_hard_gap": false,
+      "evidence": [
+        "有项目管理与跨部门协同经验",
+        "- 组织 3 次需求评审，推动开发排期落地"
+      ]
+    },
+    {
+      "tag_id": "TOL04",
+      "name": "低代码与自动化",
+      "domain": "工具与平台",
+      "weight": 0.0389,
+      "coverage": 0.0,
+      "required_hits": 0,
+      "bonus_hits": 1,
+      "have_hits": 0,
+      "is_hard_gap": false,
+      "evidence": [
+        "了解低代码平台者优先"
+      ]
+    }
+  ],
+  "hard_gaps": [],
+  "strengths": [
+    "PRD01",
+    "PRD03",
+    "PRD04",
+    "PRD02"
+  ],
+  "advise": [
+    "工具类要求缺失优先级最低，可在入职后补，不要在简历里编造。"
+  ],
+  "ranking": [
+    {
+      "id": "J12",
+      "company": "某物流公司",
+      "title": "网络规划专员",
+      "total": 100.0,
+      "grade": "强匹配",
+      "role_type": "非技术岗/复合岗",
+      "hard_gaps": []
+    },
+    {
+      "id": "J09",
+      "company": "某教育科技",
+      "title": "产品运营（校招）",
+      "total": 96.1,
+      "grade": "强匹配",
+      "role_type": "非技术岗/复合岗",
+      "hard_gaps": []
+    },
+    {
+      "id": "J18",
+      "company": "某投资机构",
+      "title": "投后管理助理",
+      "total": 93.3,
+      "grade": "强匹配",
+      "role_type": "非技术岗/复合岗",
+      "hard_gaps": []
+    },
+    {
+      "id": "J16",
+      "company": "某上市公司",
+      "title": "财务分析（FP&A）",
+      "total": 93.0,
+      "grade": "强匹配",
+      "role_type": "非技术岗/复合岗",
+      "hard_gaps": []
+    },
+    {
+      "id": "J06",
+      "company": "某快消集团",
+      "title": "市场研究专员",
+      "total": 92.3,
+      "grade": "强匹配",
+      "role_type": "非技术岗/复合岗",
+      "hard_gaps": []
+    },
+    {
+      "id": "J07",
+      "company": "某 SaaS 公司",
+      "title": "产品经理（B端）",
+      "total": 91.9,
+      "grade": "强匹配",
+      "role_type": "非技术岗/复合岗",
+      "hard_gaps": []
+    },
+    {
+      "id": "J03",
+      "company": "某咨询公司",
+      "title": "数据分析顾问",
+      "total": 86.4,
+      "grade": "强匹配",
+      "role_type": "非技术岗/复合岗",
+      "hard_gaps": [
+        "客户沟通"
+      ]
+    },
+    {
+      "id": "J05",
+      "company": "某出行平台",
+      "title": "策略运营（数据方向）",
+      "total": 85.0,
+      "grade": "强匹配",
+      "role_type": "非技术岗/复合岗",
+      "hard_gaps": [
+        "抗压与节奏"
+      ]
+    },
+    {
+      "id": "J01",
+      "company": "某电商平台",
+      "title": "用户增长分析师",
+      "total": 84.4,
+      "grade": "强匹配",
+      "role_type": "非技术岗/复合岗",
+      "hard_gaps": [
+        "A/B 实验"
+      ]
+    },
+    {
+      "id": "J20",
+      "company": "某汽车公司",
+      "title": "用户增长运营",
+      "total": 83.7,
+      "grade": "强匹配",
+      "role_type": "非技术岗/复合岗",
+      "hard_gaps": [
+        "抗压与节奏"
+      ]
+    }
+  ],
+  "meta": {
+    "version": "1.2.0",
+    "jd": "data/jd_J07.txt",
+    "resume": "data/resume_demo.txt"
+  }
+}
