@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>岗位匹配报告 · 产品经理（B端）</title>
+<style>
+:root{
+  --ink:#152238; --ink-2:#4a5a75; --line:#dfe5ee; --bg:#f6f8fb; --card:#ffffff;
+  --accent:#1c4e8a; --accent-soft:#e8f0fa; --warn:#b4471f; --warn-soft:#fbeee9;
+  --ok:#1f6b4a; --ok-soft:#e7f4ee;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+ font:15px/1.7 -apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;}
+.wrap{max-width:960px;margin:0 auto;padding:40px 28px 72px}
+h1{font-size:26px;margin:0 0 6px;letter-spacing:-.3px}
+h2{font-size:18px;margin:40px 0 14px;padding-bottom:8px;border-bottom:2px solid var(--ink)}
+.sub{color:var(--ink-2);font-size:13px}
+.hero{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px 28px;
+ display:flex;gap:28px;align-items:center;flex-wrap:wrap;margin-top:22px}
+.score{font-size:56px;font-weight:700;line-height:1;letter-spacing:-2px}
+.score small{font-size:16px;color:var(--ink-2);font-weight:400;margin-left:4px}
+.badge{display:inline-block;padding:3px 11px;border-radius:999px;font-size:12.5px;
+ background:var(--accent-soft);color:var(--accent);border:1px solid #cfe0f2;margin-right:6px}
+.badge.warn{background:var(--warn-soft);color:var(--warn);border-color:#f0d3c8}
+.badge.ok{background:var(--ok-soft);color:var(--ok);border-color:#cfe8dc}
+.hero-meta{flex:1;min-width:220px}
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);
+ border-radius:10px;overflow:hidden;font-size:13.5px}
+th{text-align:left;background:#eef2f8;color:var(--ink-2);font-weight:600;padding:9px 12px;font-size:12.5px}
+td{padding:9px 12px;border-top:1px solid var(--line);vertical-align:top}
+tr:hover td{background:#fafbfd}
+.bar{height:9px;border-radius:5px;background:#e9eef6;overflow:hidden;min-width:90px}
+.bar i{display:block;height:100%;background:var(--accent);border-radius:5px}
+.bar i.low{background:var(--warn)}
+.bar i.mid{background:#c98a2e}
+.num{font-variant-numeric:tabular-nums;font-weight:600}
+.muted{color:var(--ink-2);font-size:12.5px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin-bottom:12px}
+.card.gap{border-left:4px solid var(--warn)}
+.card.tip{border-left:4px solid var(--accent)}
+.card h3{margin:0 0 6px;font-size:15px}
+ul{margin:6px 0 0;padding-left:20px}
+li{margin:3px 0}
+pre{background:#0f1826;color:#d8e2f0;padding:14px 16px;border-radius:10px;overflow:auto;font-size:12.5px;line-height:1.6}
+.footer{margin-top:44px;padding-top:16px;border-top:1px solid var(--line);color:var(--ink-2);font-size:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+</style></head>
+<body><div class="wrap">
+
+<h1>岗位匹配度报告</h1>
+<div class="sub">候选人：景雪晴 ｜ 目标岗位：产品经理（B端） ｜ 生成时间：2026-11-09 19:34</div>
+
+<div class="hero">
+  <div><div class="score">92<small>/100</small></div></div>
+  <div class="hero-meta">
+    <div style="margin-bottom:10px">
+      <span class="badge">强匹配</span>
+      <span class="badge">非技术岗/复合岗</span>
+      <span class="badge warn">硬缺口 0 项</span>
+    </div>
+    <div class="muted">总分 = 100 × Σ(需求权重 × 覆盖系数)。覆盖系数：未命中 0，命中 1 次 0.85，命中 ≥2 次 1.0。</div>
+  </div>
+</div>
+
+<h2>一、六域覆盖度</h2>
+<table><thead><tr><th>能力域</th><th>覆盖度</th><th>得分</th></tr></thead><tbody><tr><td><strong>业务与行业</strong><div class='muted'>对行业、商业模式、职能分工的理解，非技术岗的核心区分度</div></td><td style='width:120px'><div class="bar"><i class="low" style="width:0.0%"></i></div></td><td class='num' style='width:56px'>0</td></tr><tr><td><strong>数据分析</strong><div class='muted'>从数据到结论的完整链路能力，含口径、方法、可视化</div></td><td style='width:120px'><div class="bar"><i class="low" style="width:0.0%"></i></div></td><td class='num' style='width:56px'>0</td></tr><tr><td><strong>产品与需求</strong><div class='muted'>把模糊诉求转成可交付规格的能力</div></td><td style='width:120px'><div class="bar"><i class="" style="width:97.7%"></i></div></td><td class='num' style='width:56px'>98</td></tr><tr><td><strong>沟通协作</strong><div class='muted'>跨角色推进事情的能力，JD 中常以具体场景出现</div></td><td style='width:120px'><div class="bar"><i class="" style="width:85.0%"></i></div></td><td class='num' style='width:56px'>85</td></tr><tr><td><strong>工程基础</strong><div class='muted'>编程语言与计算机基础，技术岗的硬门槛</div></td><td style='width:120px'><div class="bar"><i class="low" style="width:0.0%"></i></div></td><td class='num' style='width:56px'>0</td></tr><tr><td><strong>工具与平台</strong><div class='muted'>具体软件/系统/平台的使用经验，替代成本最低的一类要求</div></td><td style='width:120px'><div class="bar"><i class="low" style="width:0.0%"></i></div></td><td class='num' style='width:56px'>0</td></tr></tbody></table>
+
+<h2>二、需求项明细（按权重降序）</h2>
+<table><thead><tr><th>能力项</th><th>需求权重</th><th>状态</th><th>证据句（JD / 简历）</th></tr></thead><tbody><tr><td><strong>需求分析</strong><div class='muted'>产品与需求 · PRD01</div></td><td class='num'>18.0%</td><td><span class='badge ok'>已具备</span></td><td class='muted'>岗位职责：负责需求分析与需求评审，撰写 PRD 与规格说明，设计业务流程并推动落地</td></tr><tr><td><strong>流程设计</strong><div class='muted'>产品与需求 · PRD03</div></td><td class='num'>18.0%</td><td><span class='badge ok'>已具备</span></td><td class='muted'>岗位职责：负责需求分析与需求评审，撰写 PRD 与规格说明，设计业务流程并推动落地</td></tr><tr><td><strong>原型与交互</strong><div class='muted'>产品与需求 · PRD04</div></td><td class='num'>16.6%</td><td><span class='badge ok'>已具备</span></td><td class='muted'>会用 Figma 或 Axure 出原型</td></tr><tr><td><strong>跨部门沟通</strong><div class='muted'>沟通协作 · COM01</div></td><td class='num'>15.7%</td><td><span class='badge'>单次佐证</span></td><td class='muted'>有项目管理与跨部门协同经验</td></tr><tr><td><strong>文档与规格撰写</strong><div class='muted'>产品与需求 · PRD02</div></td><td class='num'>15.7%</td><td><span class='badge ok'>已具备</span></td><td class='muted'>岗位职责：负责需求分析与需求评审，撰写 PRD 与规格说明，设计业务流程并推动落地</td></tr><tr><td><strong>项目推进</strong><div class='muted'>产品与需求 · PRD05</div></td><td class='num'>12.1%</td><td><span class='badge'>单次佐证</span></td><td class='muted'>有项目管理与跨部门协同经验</td></tr><tr><td><strong>低代码与自动化</strong><div class='muted'>工具与平台 · TOL04</div></td><td class='num'>3.9%</td><td><span class='badge warn'>缺失</span></td><td class='muted'>了解低代码平台者优先</td></tr></tbody></table>
+
+<h2>三、硬缺口</h2>
+<div class='card tip'><h3>硬门槛无缺失</h3><p class='muted'>本次 JD 的必需项均已命中至少一次。</p></div>
+
+<h2>四、改进建议</h2>
+<div class="card tip"><ul><li>工具类要求缺失优先级最低，可在入职后补，不要在简历里编造。</li></ul></div>
+
+<h2>五、岗位横向排名</h2>
+<table><thead><tr><th>#</th><th>岗位</th><th>类型</th><th>分数</th><th>结论</th><th>主要缺口</th></tr></thead><tbody><tr><td class='num'>1</td><td><strong>网络规划专员</strong><div class='muted'>某物流公司</div></td><td>非技术岗/复合岗</td><td class='num'>100.0</td><td>强匹配</td><td class='muted'>—</td></tr><tr><td class='num'>2</td><td><strong>产品运营（校招）</strong><div class='muted'>某教育科技</div></td><td>非技术岗/复合岗</td><td class='num'>96.1</td><td>强匹配</td><td class='muted'>—</td></tr><tr><td class='num'>3</td><td><strong>投后管理助理</strong><div class='muted'>某投资机构</div></td><td>非技术岗/复合岗</td><td class='num'>93.3</td><td>强匹配</td><td class='muted'>—</td></tr><tr><td class='num'>4</td><td><strong>财务分析（FP&amp;A）</strong><div class='muted'>某上市公司</div></td><td>非技术岗/复合岗</td><td class='num'>93.0</td><td>强匹配</td><td class='muted'>—</td></tr><tr><td class='num'>5</td><td><strong>市场研究专员</strong><div class='muted'>某快消集团</div></td><td>非技术岗/复合岗</td><td class='num'>92.3</td><td>强匹配</td><td class='muted'>—</td></tr><tr><td class='num'>6</td><td><strong>产品经理（B端）</strong><div class='muted'>某 SaaS 公司</div></td><td>非技术岗/复合岗</td><td class='num'>91.9</td><td>强匹配</td><td class='muted'>—</td></tr><tr><td class='num'>7</td><td><strong>数据分析顾问</strong><div class='muted'>某咨询公司</div></td><td>非技术岗/复合岗</td><td class='num'>86.4</td><td>强匹配</td><td class='muted'>客户沟通</td></tr><tr><td class='num'>8</td><td><strong>策略运营（数据方向）</strong><div class='muted'>某出行平台</div></td><td>非技术岗/复合岗</td><td class='num'>85.0</td><td>强匹配</td><td class='muted'>抗压与节奏</td></tr><tr><td class='num'>9</td><td><strong>用户增长分析师</strong><div class='muted'>某电商平台</div></td><td>非技术岗/复合岗</td><td class='num'>84.4</td><td>强匹配</td><td class='muted'>A/B 实验</td></tr><tr><td class='num'>10</td><td><strong>用户增长运营</strong><div class='muted'>某汽车公司</div></td><td>非技术岗/复合岗</td><td class='num'>83.7</td><td>强匹配</td><td class='muted'>抗压与节奏</td></tr></tbody></table>
+
+<div class="footer">
+  <p><strong>方法与局限</strong>：标签体系为 44 项自建 KSAO-lite 体系（见 taxonomy.py），关键词匹配不处理否定句与被动语义，
+  例如"未使用过 Python"会被判为命中。因此本工具定位是<strong>投递前的自查清单</strong>，不是自动筛选器。</p>
+  <p>样例数据为合成数据，仅用于演示与回归测试，不代表真实招聘市场。</p>
+  <p>jd-insight · 联合产出 · JingXueQing（业务与标签体系）× ChenYu（工程实现）</p>
+</div>
+
+</div></body></html>
